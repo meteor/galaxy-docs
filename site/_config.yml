@@ -14,6 +14,32 @@ versions:
 sidebar_categories:
   null:
     - index
+  Deploy:
+    - deploy-quickstart
+    - deploy-comprehensive
+    - setting-environment-variables
+    - configuring-mongodb
+    - meteorapp-domain
+    - deploy-troubleshooting
+    - base-image-packages
+    - deploy-region
+  Setup:
+    - custom-domains
+    - configuring-dns
+    - encryption
+  Monitor:
+    - app-overview
+    - containers
+  Manage:
+    - scaling
+    - high-availability
+    - configuring-prerender
+    - configuring-cdn
+    - file-management
+    - transferring-application-accounts
+  Accounts:
+    - billing
+    - adding-team-members
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'

@@ -4,7 +4,7 @@ order: 6
 description: Learn how to troubleshoot your deploy and get answers to frequently asked questions
 ---
 
-# Troubleshooting 502 errors
+<h2 id="502-errors">502 errors</h2>
 
 A 502 error (“Bad Gateway”) typically means that no containers have successfully started your app or that all app containers have become unhealthy (usually caused by CPU load).
 
@@ -20,10 +20,9 @@ If you believe your `MONGO_URL` is set correctly, try the following:
 * Run `dig +show [your app's domain]` in the terminal and verify that its CNAME points to `galaxy-ingress.meteor.com`. You can learn how to set up DNS [here](configuring-dns). If you recently changed your DNS settings, you may need to wait for the new records to propagate. DNS changes often propagate within 30 minutes (depending on the TTL configured for the record set), but in some cases it can take up to 24 hours. Contact your DNS provider if you think there is a problem.
 
 
+<h2 id="package-not-compatible">Package not compatible</h2>
 
-#Deploy fails with Package not compatible
-Apps that contain local packages with NPM dependancies which include binary components will fail to deploy to Galaxy by default. You'll know you've run into this issue when a `meteor deploy` to Galaxy fails with
- _"[package] is not compatible with architecture 'os.linux.x86\_64"_ (where [package] is replaced by the package name that is causing the issue).
+Apps that contain local packages with NPM dependancies which include binary components will fail to deploy to Galaxy by default. You'll know you've run into this issue when a `meteor deploy` to Galaxy fails with `[package] is not compatible with architecture 'os.linux.x86\_64` (where [package] is replaced by the package name that is causing the issue).
 
 Version 1.2.1 of Meteor (and higher) provides the `METEOR_BINARY_DEP_WORKAROUND` environment variable for Galaxy deployment (this does *not* work with meteor.com free hosting). To deploy your app to Galaxy using the workaround:
 

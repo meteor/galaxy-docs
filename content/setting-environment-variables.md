@@ -4,15 +4,9 @@ order: 4
 description: Learn how to adjust Galaxy environment variables using your app's settings.json file
 ---
 
-After reading this guide, you’ll know:
-
-1. How to adjust environment variables with `settings.json`
-2. What are the common environment variables used by Galaxy apps
-
-
 Environment variables in Galaxy are managed using your app's `settings.json` file. Galaxy interprets key/value pairs found in the `{"galaxy.meteor.com": {"env": { ... }}` section of your settings as environment variables.
 
-### Commonly used environment variables
+<h3 id="common-env-variables">Commonly used environment variables</h3>
 
 The following environment variable are most commonly set for Galaxy apps:
 
@@ -30,7 +24,7 @@ The following are example formats for Mongo URL variables. You will have to conf
 The following is an example setting for the `MAIL_URL` environment variable:
 `smtp://postmaster%40your.mailserver.address.com:password@mailserver.smtp.address.com:587`
 
-### A settings.json example
+<h3 id="settings-example">settings.json example</h3>
 
 ```json
 {
@@ -44,5 +38,5 @@ The following is an example setting for the `MAIL_URL` environment variable:
 }
 ```
 
-### See also
+<h3 id="see-also">See also</h3>
 `Meteor.settings` in [Meteor docs](http://docs.meteor.com/#/full/meteor_settings).

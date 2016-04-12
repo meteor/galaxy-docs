@@ -1,7 +1,7 @@
 ---
 title: Introduction
 order: 0
-description: This is the guide for using Galaxy, the simplest way to deploy, scale, and monitor Meteor apps. Galaxy was made by the same team that created the Meteor.
+description: The guide for using Galaxy to deploy, scale, and monitor Meteor apps.
 ---
 
 <h2 id="what-is-galaxy">What is Galaxy?</h2>

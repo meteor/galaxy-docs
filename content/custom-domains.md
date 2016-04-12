@@ -1,5 +1,5 @@
 ---
-title: Custom Domains
+title: Custom domains
 order: 13
 description: Learn how to make an application accessible via a custom domain name
 ---

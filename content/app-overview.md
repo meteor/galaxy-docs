@@ -1,8 +1,12 @@
 ---
-title: App overview
+title: App
 order: 11
-description: Learn how to...
+description: Learn how to monitor your app
 ---
 
 Todo:
-- write this
+- App resource usage
+- Stop App
+ -- wont be billed, settings preserved
+- Delete App
+ -- just copy & paste copy from UI

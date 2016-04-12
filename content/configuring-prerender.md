@@ -1,24 +1,17 @@
 ---
-title: Enable SEO with pre-render
+title: SEO with prerender
 order: 17
 description:
 ---
 
-Todo:
-Why pre-rendering?
+<h2 id="prerender">Prerender.io integration</h2>
 
-Galaxy provides an integrated pre-rendering service, Prerender.io, to improve your Meteor app’s search engine optimization (SEO). The Prerender.io service is included as part of Galaxy and does not incur an additional cost.
+Galaxy provides an integrated pre-rendering service, Prerender.io, to optimize your Meteor app for search engines (SEO). The Prerender.io service is included as part of Galaxy at no additional cost. See [https://prerender.io/](https://prerender.io/) for more information about the Prerender.io service.
 
-See [https://prerender.io/](https://prerender.io/) for more information about the Prerender.io service.
+<h3 id="prerender-use">Add prerendering</h3>
 
-## Enabling Prerender.io SEO for your application
+Type `$ meteor add mdg:seo` in your app's directory to add the prerender package. Galaxy will then automatically  enable the Prerender.io service when you deploy your app.
 
-Add the mdg:seo package to your application.
-
-`$ meteor add mdg:seo`
-
-When you deploy this application to Galaxy, Galaxy will automatically enable Prerender.io service for the application.
-
-## Using your own Prerender service
+<h3 id="prerender-alternative">Using your own Prerender service</h3>
 
 You can use your own Prerender service by configuring it in the application settings. If Galaxy finds a pre-configured Prerender service, then Galaxy will not configure the application to use Galaxy's integrated Prerender.io service.

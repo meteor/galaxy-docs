@@ -1,5 +1,5 @@
 ---
-title: Deploying to other regions
+title: Regions
 order: 8
 description: Learn how to deploy your app to regions around the world
 ---

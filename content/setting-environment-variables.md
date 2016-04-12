@@ -1,5 +1,5 @@
 ---
-title: Configuring environment variables with settings.json
+title: Environment variables
 order: 4
 description: Learn how to adjust Galaxy environment variables using your app's settings.json file
 ---

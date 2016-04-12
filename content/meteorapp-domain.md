@@ -1,5 +1,5 @@
 ---
-title: Deploying to the .meteorapp.com subdomain
+title: meteorapp.com subdomain
 order: 5
 description: Learn how to use the provided .meteorapp.com subdomain
 ---

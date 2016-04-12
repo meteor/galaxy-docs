@@ -1,5 +1,5 @@
 ---
-title: Base image packages
+title: Base image
 order: 7
 description: Learn which packages are on the Galaxy base image
 ---

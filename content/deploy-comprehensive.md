@@ -1,5 +1,5 @@
 ---
-title: Deploy Guide
+title: Deploy guide
 order: 2
 description: Learn how to deploy an app to Galaxy with these detailed instructions.
 ---

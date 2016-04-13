@@ -1,36 +1,32 @@
 ---
-title: Custom domains
+title: Domains (coming soon)
 order: 13
 description: Learn how to make an application accessible via a custom domain name
 ---
 
-Todo:
-- Custom domains via UI
 
+To make an application accessible via a custom domain name, you must first specify the hostname while deploying the application.
 
+<h3 id="command-line">When first deploying</h3>
 
-To make an application accessible via a custom domain name, you must specify the hostname while deploying the application.
-
-Specify the hostname through the command line:
+When first deploying specify the hostname through the command line:
 
 `DEPLOY_HOSTNAME=galaxy.meteor.com meteor deploy [hostname] --settings path-to-settings.json`
 
-To change the hostname, use the CLI to deploy the same application to a new hostname:
+Once your app is successfully deployed to Galaxy make sure to [configure your DNS](/dns.html) to make that hostname  accessible.
+
+If you want to change the hostname of your app then deploy a new app at the designated hostname. Once that's deployed, you can safely delete the old app.
 
 `DEPLOY_HOSTNAME=galaxy.meteor.com meteor deploy [new_hostname] --settings path-to-settings.json`
 
-Ensure that you have configured DNS for the domain:
+<h3 id="add-domain">Adding custom domains</h3>
 
-https://galaxy.meteor.com/help/configuring-dns
+You can access the same app from multiple domains by adding custom domains. Just navigate to the **Domains & Encryption** section of your app's settings page and add new domains via the user interface.
 
-Note: There is no longer a need to specify domains up front as part of a whitelist. To utilize a new hostname for your application, just specify that hostname while deploying the application.
+<img src="/images/email-add-domain.png"/>
 
-*Troubleshooting issues with Domains*
+<h3 id="troubleshooting">Troubleshooting</h3>
 
-_Error: "This host domain is already in use on Galaxy"_
+- `This host domain is already in use on Galaxy` The specified domain is being utilized by another application on Galaxy. Deploy your application to a different domain name.
 
-The specified domain is being utilized by another application on Galaxy. Deploy your application to a different domain name.
-
-_Error: "hostname: Requested domain contains invalid characters."_
-
-The specified domain name has invalid characters. Domain names need to consist of lowercase letters & numbers. The top level domain can only be lowercase letters.
+- `hostname: Requested domain contains invalid characters.` The specified domain name has invalid characters. Domain names need to consist of lowercase letters & numbers. The top level domain can only be lowercase letters.

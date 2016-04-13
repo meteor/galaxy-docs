@@ -16,16 +16,16 @@ sidebar_categories:
     - index
   Deploy:
     - deploy-quickstart
-    - deploy-comprehensive
-    - setting-environment-variables
-    - configuring-mongodb
+    - deploy-guide
+    - environment-variables
+    - mongodb
     - meteorapp-domain
     - deploy-troubleshooting
     - base-image-packages
     - deploy-region
   Setup:
     - custom-domains
-    - configuring-dns
+    - dns
     - encryption
   Monitor:
     - app-overview
@@ -33,10 +33,10 @@ sidebar_categories:
   Manage:
     - scaling
     - high-availability
-    - configuring-prerender
-    - configuring-cdn
+    - seo
+    - cdn
     - file-management
-    - transferring-application-accounts
+    - transfer-apps
   Accounts:
     - billing
     - adding-team-members

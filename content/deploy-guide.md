@@ -29,6 +29,8 @@ If you need one:
 
 <h2 id="galaxy-deploy">Deploy your app to Galaxy</h2>
 
+<h3 id="account-selection">Specify an account to deploy</h2>
+
 <h2 id="configure-app">Configure your app</h2>
 
 

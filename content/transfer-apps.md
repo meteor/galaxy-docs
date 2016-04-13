@@ -1,12 +1,10 @@
 ---
-title: Transferring apps
+title: Transfer apps
 order: 23
 description: Learn how to transfer an app to another account
 ---
 
-You can deploy an application to one Galaxy account at a time.
-
-Galaxy utilizes the following policy to select the account to deploy your app to:
+You can deploy an application to one Galaxy account at a time. Galaxy utilizes the following policy to select the account to deploy your app to:
 
 1. If an application with the specified hostname already exists in an account, Galaxy deploys to the same account.
 2. If it is a new application, Galaxy chooses the individual user account if it exists.
@@ -14,11 +12,13 @@ Galaxy utilizes the following policy to select the account to deploy your app to
 
 If you are a member of two or more accounts, you can then transfer the application to a different account.
 
-### Meteor 1.3
+<h3 id="meteor-13">Transfer with Meteor 1.3</h3>
+
 To transfer the application, on the command line, type:
 `DEPLOY_HOSTNAME=galaxy.meteor.com meteor authorized [your_existing_hostname] --transfer [new_account_name]`
 
-### Meteor < 1.2
+<h3 id="meteor-12">Transfer with Meteor < 1.2</h3>
+
 To transfer the application, on the command line, type:
 `DEPLOY_HOSTNAME=galaxy.meteor.com meteor authorized [your_existing_hostname] --add [new_account_name]`
 

@@ -1,5 +1,5 @@
 ---
-title: Integrating with a CDN
+title: CDN
 order: 9
 description: Learn how to configure a CDN with Galaxy
 ---
@@ -14,5 +14,6 @@ WebAppInternals.setBundledJsCssPrefix(
 If you have static assets such as images used in your templates (for example `<img src="foo.png" />`) that you would also like to have cached by the CDN, you'll need to include the CDN prefix in the image tag. Combined with the previous example, the image would tag become `<img src="https://xyc.cloudfront.com/foo.png" />`. We recommend you create a helper that does this for you only in production.
 
 
-## Forwarding Cookies from the CDN
+<h3 id="forward-cookies">Forwarding Cookies from the CDN</h3>
+
 In general, you don’t want to forward cookies from your CDN, as it leads to overcaching. Specifically, you should not forward the `galaxy-sticky` cookie, as it will result in caching one copy of every asset per container that you application runs.

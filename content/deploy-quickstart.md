@@ -4,11 +4,11 @@ order: 1
 description: Learn how to quickly deploy an app to Galaxy with these step-by-step instructions.
 ---
 
-Galaxy makes it simple to deploy, scale, and monitor your Meteor app. This quickstart guide will walk new users through deploying your first app. It is the abridged version of the [comprehensive guide]() aimed at developers who have experience deploying apps with remote databases.
+Galaxy makes it simple to deploy, scale, and monitor your Meteor app. This quickstart guide will walk new users through deploying your first app. It is the abridged version of the [comprehensive guide](/deploy-guide.html) aimed at developers who have experience deploying apps with remote databases.
 
 <h2 id="get-ready-for-deploy">Get your app ready</h2>
 
-Before you begin, [configure access to your MongoDB database]() and set up any [environment variables]() your app depends on using your app’s settings.json file.
+Before you begin, [configure access to your MongoDB database](/mongodb.html) and set up any [environment variables](/environment-variables.html) your app depends on using your app’s settings.json file.
 
 <h2 id="deploy-app">Deploy your app</h2>
 
@@ -41,11 +41,14 @@ Once your app is successfully deployed, head on over to your [Galaxy dashboard](
 
 Add a domain in your app’s settings and point your DNS to `galaxy-ingress.meteor.com`.
 
-[Enable encryption]() to secure sensitive data by generating a free [Let’s Encrypt]() certificate or uploading a custom certificate.
+<img src="images/email-add-domain.png" style="">
 
+[Enable encryption](/encryption.html) to secure sensitive data by generating a free [Let’s Encrypt](https://letsencrypt.org) certificate or uploading your own custom certificate.
+
+<img src="images/email-enable-ssl.png" style="width: 300px;">
 
 <h3 id="related">Learn more</h3>
 
-- Read our [comprehensive guide]() for deploying apps
-- Learn how to [deploy to a specific account]()
-- Learn how to [transfer apps]() between accounts
+- Read our [comprehensive guide](/deploy-guide.html) for deploying apps
+- Learn how to [deploy to a specific account](/deploy-guide.html#account-selection)
+- Learn how to [transfer apps](/transfer-apps.html) between accounts

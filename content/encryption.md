@@ -1,5 +1,5 @@
 ---
-title: Encryption
+title: Encryption (coming soon)
 order: 11
 description: Learn how to enable SSL encryption to secure sensitive data
 ---

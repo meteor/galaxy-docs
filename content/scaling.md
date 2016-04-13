@@ -8,7 +8,7 @@ Scaling and sizing your application is specific to the architecture and performa
 
 <h3 id="what-to-look-for">What to look for</h3>
 
-We recommend that you scale when your app’s container usage exceeds 70% memory or consistently spikes to 100% CPU. Use Galaxy’s performance graphs to see your resource usage over time.
+We recommend that you scale when your app’s container usage exceeds either 70% memory, 80% CPU, or consistently spikes to 100% CPU. Use Galaxy’s performance graphs to track your resource usage over time.
 
 <img src="images/email-galaxy-performance-graphs-600x468.jpg" style="">
 

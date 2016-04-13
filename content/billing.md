@@ -10,7 +10,7 @@ Billing is based on usage down to the second. Billing begins when you deploy or 
 
 Customers who signed up prior to Q2 2016 may have a custom Galaxy plan where the billing rate varies according to the details of their plan, how many containers used, and the size of those containers.
 
-Please note that pricing is not impacted by:
+Pricing is **not** impacted by:
 
 - Memory usage of your app
 - Number of connected clients/traffic
@@ -19,6 +19,6 @@ Please note that pricing is not impacted by:
 
 <h3 id="billing-update">Payment and statements</h3>
 
-Galaxy accepts major credit cards: Visa, Mastercard, American Express, and Discover. View and change payment details by going to your account settings.
+Galaxy accepts major credit cards: Visa, Mastercard, American Express, and Discover. View and change payment details by going to your account settings page.
 
-Every month an invoice is emailed for the total monthly usage. Invoices show usage broken out by app. View and download past statements in the Galaxy app by going to your account settings.
+Every month a statement is emailed for the total monthly usage. Statements show usage broken out by app. View and download past statements in the Galaxy app by going to your account settings.

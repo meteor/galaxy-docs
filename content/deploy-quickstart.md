@@ -47,7 +47,7 @@ Add a domain in your app’s settings and point your DNS to `galaxy-ingress.mete
 
 <img src="images/email-enable-ssl.png" style="width: 300px;">
 
-<h3 id="related">Learn more</h3>
+**Learn more**
 
 - Read our [comprehensive guide](/deploy-guide.html) for deploying apps
 - Learn how to [deploy to a specific account](/deploy-guide.html#account-selection)

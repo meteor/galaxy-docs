@@ -22,13 +22,3 @@ By default new applications are deployed to Compact containers. Compact containe
 
 <img src="images/email-scale-up.gif" style="float:right">
 **Horizontal scaling** increases your app’s available resources by adding more containers. This is useful when sudden increases in usage or traffic cause your app to be less performant.
-
-
-<h3 id="container-sizes">Container sizes</h3>
-
-You can then change the container size for the application to any of the following:
-
-- Compact: 512 MB/0.5 ECU
-- Standard: 1 GB/1 ECU
-- Double: 2 GB/2 ECU
-- Quad: 4 GB/4 ECU

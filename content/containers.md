@@ -8,7 +8,7 @@ Galaxy containers are packaged environments that are optimized to run Meteor. Ea
 
 <h3 id="usage">Usage</h3>
 
-Each container has CPU and Memory allowance. Galaxy combines the pooled resources of all containers to track overall app performance. Users can dive into individual container performance using the graphs on the app's containers page.
+Each container has CPU and Memory allowance. Galaxy combines the pooled resources of all containers to track overall app performance. You can dive into individual container performance using the graphs on the app's containers page.
 
 <img src="/images/container-item.png" style="margin: 1em 0;"/>
 
@@ -21,7 +21,12 @@ Since every app has unique architecture and performance characteristics, adjusti
 - Double: 2 GB/2 ECU
 - Quad: 4 GB/4 ECU
 
-<h3 id="connect-specific">Connect to a specific container</h3>
+<h3 id="connect-logs">View logs from a specific container</h3>
+
+Accessing the logs from a specific container can help you diagnose any unexpected behavior. Click on the <span class="icon-document"></span> icon near the container name to see the logs from this container.
+
+
+<h3 id="connect-container">Connect to a specific container</h3>
 
 If you suspect a container is misbehaving or would like to access container-specific information, you may want to connect to that specific container to learn more. From your app's containers page, click on the <span class="icon-share"></span> icon near the container's name to see your app as served by this container.
 

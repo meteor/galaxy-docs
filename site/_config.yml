@@ -28,7 +28,7 @@ sidebar_categories:
     - dns
     - encryption
   Monitor:
-    - app-overview
+    - app
     - containers
   Manage:
     - scaling

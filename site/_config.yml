@@ -11,7 +11,7 @@ language:
 timezone:
 versions:
   - '1'
-github_repo: https://github.com/meteor/galaxy-docs
+github_repo: meteor/galaxy-docs
 sidebar_categories:
   null:
     - index

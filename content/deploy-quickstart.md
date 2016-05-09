@@ -41,6 +41,7 @@ Once your app is successfully deployed, head on over to your [Galaxy dashboard](
 
 Add a domain in your app’s settings and point your DNS to `galaxy-ingress.meteor.com`.
 
+//TODO: Change image to not show workpop
 <img src="images/email-add-domain.png" style="">
 
 [Enable encryption](/encryption.html) to secure sensitive data by generating a free [Let’s Encrypt](https://letsencrypt.org) certificate or uploading your own custom certificate.

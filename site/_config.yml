@@ -19,10 +19,8 @@ sidebar_categories:
     - deploy-guide
     - environment-variables
     - mongodb
-    - meteorapp-domain
     - deploy-troubleshooting
     - base-image-packages
-    - deploy-region
   Setup:
     - custom-domains
     - dns

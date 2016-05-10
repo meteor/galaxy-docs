@@ -9,4 +9,7 @@ If you need persistant file storage for your application, you should use a robus
 
 With each container, you should be able to use up to 512 MB of disk space for temporary local file storage.
 
-Application containers have read/write access to /tmp directory and sub-directories. If there is application code or packages that try to writ to `/root` or to the $HOME directories, these will fail, as those directories do not allow read/write access. 
+Application containers are given read/write access to the /tmp directory and /tmp sub-directories. Application containers do not have read/write access to the `/root` directory or to the `$HOME` directory.
+
+In your application, when deploying to Galaxy, ensure that no package or application code tries to write to the `/root` directory on the local filesystem.
+

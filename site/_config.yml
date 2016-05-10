@@ -9,6 +9,8 @@ description:
 author:
 language:
 timezone:
+apis:
+  segment: G21NW9GGR3lY3f37qLk9Ym1fH6EjfJFB
 versions:
   - '1'
 github_repo: meteor/galaxy-docs

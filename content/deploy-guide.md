@@ -16,7 +16,7 @@ This guide will cover:
 <h2 id="sign-up">Sign up for Galaxy</h2>
 You will need a Galaxy account that your Meteor Development Account has deploy authorization for. 
 
-[Sign up] (https://www.meteor.com/galaxy/signup) here for a new Galaxy Account.
+[Sign up](https://www.meteor.com/galaxy/signup) here for a new Galaxy Account.
 
 <h2 id="mongo-configure">Configure your MongoDB database</h2>
 

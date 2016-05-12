@@ -12,7 +12,7 @@ If your app is deployed at a subdomain such as `app.mycompany.com` or `www.mycom
 
 <h3 id="root-domain-redirect">Redirecting the root domain</h3>
 
-The root domain is also called the naked or apex domain. A common scenario is one where your app is hosted at `www.mycompany.com` and you would like `mycompany.com` to redirect to the same app. This is done by setting up URL redirection from `mycompany.com` to `www.mycompany.com`. The way to do this varies greatly based on your DNS provider, common methods we recommend are:
+The root domain is also called the naked or apex domain. A common scenario is one where your app is hosted at `www.mycompany.com` and you would like `mycompany.com` to redirect to the same app. This is done by setting up URL redirection from `mycompany.com` to `www.mycompany.com`. The way to do this varies greatly based on your DNS provider; common methods we recommend are:
 
 * [URL Record at DNSimple](https://support.dnsimple.com/articles/url-record/)
 * [Using S3 redirects with Amazon's Route53](https://aws.amazon.com/blogs/aws/root-domain-website-hosting-for-amazon-s3/)

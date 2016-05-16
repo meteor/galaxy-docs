@@ -16,6 +16,8 @@ To enable encryption painlessly, we recommend generating a free [Let's Encrypt](
 
 <img src="images/email-enable-ssl.png" style="width: 500px;">
 
+Let's Encrypt certificates are not available for wildcard (*.) domains.
+
 <h3 id="Custom certificate">Custom certificate</h3>
 
 You can also upload a custom key and certificate. Private keys and certificates should be in the PEM format (this is the same format used by nginx). If intermediate certificates are used in addition to the primary certificate, they should be placed in the same file as the primary certificate. The primary certificate should come first, followed by the intermediate certificates.

@@ -18,9 +18,9 @@ Galaxy is the simplest way to deploy, scale, and manage your Meteor apps.
 
 <h3 id="quickstart">Get Started</h3>
 
-- Use the [deploy quickstart]() to deploy your app to Galaxy. It is recommended for developers who have experience deploying apps with remote databases.
+- Use the [deploy quickstart](/deploy-quickstart.html) to deploy your app to Galaxy. It is recommended for developers who have experience deploying apps with remote databases.
 
-- Follow the [deploy guide]() for a detailed step-by-step tutorial of deploying your app to Galaxy.
+- Follow the [deploy guide](/deploy-guide.html) for a detailed step-by-step tutorial of deploying your app to Galaxy.
 
 <h3 id="contribute">Contribute</h3>
 

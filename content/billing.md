@@ -4,7 +4,7 @@ order: 14
 description: Learn how Galaxy bills per container
 ---
 
-<h3 id="billing-usage">Pay for what you use</h3>
+<h2 id="billing-usage">Pay for what you use</h2>
 
 Billing is based on usage down to the second. Billing begins when you deploy or increase the number of containers and stops when you stop your app. With the [current pricing](https://www.meteor.com/why-meteor/pricing), it will cost you less than $0.15 to run a compact container for 4 hours. If you want to stop billing, stop your app, and billing will stop even though the app is still visible in the UI ready to be started again.
 
@@ -16,8 +16,15 @@ Pricing is **not** impacted by:
 - Number of connected clients/traffic
 - Number of deploys or users
 
+<h2 id="reserved-pricing">Reserved Pricing</h2>
 
-<h3 id="billing-update">Payment and statements</h3>
+Galaxy Reserved Pricing guarantees a specific amount of container capacity per month at a discounted price compared to pay-as-you-go pricing. 
+
+By paying upfront for monthly capacity, you’ll receive ~20% off the equivalent pay-as-you-go rates. Galaxy Reserved Pricing costs $40 USD per GB RAM month (1 GB minimum, billed annually). 
+
+Any usage during the month beyond the reserved base capacity will be billed at normal metered rates. 
+
+<h2 id="billing-update">Payment and statements</h2>
 
 Galaxy accepts major credit cards: Visa, Mastercard, American Express, and Discover. View and change payment details by going to your account settings page.
 

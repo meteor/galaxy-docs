@@ -66,13 +66,13 @@ In your application directory, create a file named settings.json. Put the Mongo 
 }
 ```
 
-For a detailed example of the settings.json file, see [Environment Variables](/environment-variables.md).
+For a detailed example of the settings.json file, see [Environment Variables](/environment-variables.html).
 
 <h2 id="select-hostname">Select a hostname</h2>
 
 Choose a hostname that your application will be available to the public on. You can choose a custom domain or you can choose to use the included `meteorapp.com` domain.
 
-If you have a custom domain name, then you need to point your DNS (in your registrar’s dashboard) to galaxy-ingress.meteor.com. More instructions on DNS configuration can be found [here](/mongodb).
+If you have a custom domain name, then you need to point your DNS (in your registrar’s dashboard) to galaxy-ingress.meteor.com. More instructions on DNS configuration can be found [here](/dns.html).
 
 <h2 id="galaxy-deploy">Deploy your application to Galaxy</h2>
 

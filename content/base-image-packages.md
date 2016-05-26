@@ -16,6 +16,8 @@ The Galaxy base image runs Ubuntu 14.04 and comes with a set of packages pre-ins
 - [imagemagick](http://packages.ubuntu.com/trusty/imagemagick)
 - [graphicsmagick](http://packages.ubuntu.com/trusty/graphicsmagick-dbg)
 - [libcairo2-dev](http://packages.ubuntu.com/trusty/libcairo2-dev)
+- [poppler-utils](http://packages.ubuntu.com/trusty/poppler-utils)
+- [libjpeg-dev](http://packages.ubuntu.com/trusty/libjpeg-dev)
 - [wkhtmltopdf](http://packages.ubuntu.com/trusty/wkhtmltopdf) (for HTML to PDF conversion including prerequisites)
     - [libssl-dev](http://packages.ubuntu.com/trusty/libssl-dev)
     - [xfonts-base](http://packages.ubuntu.com/trusty/xfonts-base)

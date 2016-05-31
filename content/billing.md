@@ -18,9 +18,9 @@ Pricing is **not** impacted by:
 
 <h2 id="reserved-pricing">Reserved Pricing</h2>
 
-Galaxy Reserved Pricing guarantees a specific amount of container capacity per month at a discounted price compared to pay-as-you-go pricing. 
+Galaxy Reserved Pricing guarantees a specific amount of container capacity at a discounted price compared to pay-as-you-go pricing. 
 
-By paying upfront for monthly capacity, you’ll receive ~20% off the equivalent pay-as-you-go rates. Galaxy Reserved Pricing costs $40 USD per GB RAM month (1 GB minimum, billed annually). 
+By paying upfront for container capacity, you’ll receive ~20% off the equivalent pay-as-you-go rates. Galaxy Reserved Pricing costs $40 USD per GB RAM month (available in 1 GB increments only, billed annually). 
 
 Any usage during the month beyond the reserved base capacity will be billed at normal metered rates. 
 

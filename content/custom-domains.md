@@ -6,7 +6,7 @@ description: Learn how to make an application accessible via a custom domain nam
 
 You can specify one or more hostnames for an application. Galaxy will make the app be available on those hostnames. These hostnames can be on a custom domain, or can use the Galaxy provided .meteorapp.com domain.
 
-<h3 id="command-line">When first deploying</h3>
+<h2 id="command-line">When first deploying</h2>
 
 When first deploying specify the hostname through the command line:
 
@@ -18,17 +18,23 @@ If you want to change the primary hostname of your app then deploy a new app at 
 
 `DEPLOY_HOSTNAME=galaxy.meteor.com meteor deploy [new_hostname] --settings path-to-settings.json`
 
-<h3 id="meteorapp-subdomain">.meteorapp.com</h3>
+<h2 id="meteorapp-subdomain">Included .meteorapp.com domain</h2>
 
-Galaxy provides subdomains on .meteorapp.com for use by any app deployed to Galaxy. You can deploy apps to `<custom.subdomain>.meteorapp.com` as the host.
+Galaxy allows subdomains on .meteorapp.com for use by any app deployed to Galaxy. You can deploy apps to `<custom.subdomain>.meteorapp.com` as the hostname.
 
-<h3 id="add-domain">Adding additional domains</h3>
+<h2 id="add-domain">Adding additional custom domains</h2>
 
 You can access the same app from multiple domains by adding custom domains. Just navigate to the **Domains & Encryption** section of your app's settings page and add new domains via the user interface.
 
-<img src="/images/email-add-domain.png"/>
+The domain must be one of the following forms:
+* A fully qualified domain name such as foo.mydomain.com
+* A wildcard domain name such *.mydomain.com
 
-<h3 id="troubleshooting">Troubleshooting</h3>
+If you specify a wildcard domain, then all subdomain.mydomain.com requests will be routed to that app.
+
+<img src="/images/view-custom-domains.png"/>
+
+<h2 id="troubleshooting">Troubleshooting</h2>
 
 - `This host domain is already in use on Galaxy` The specified domain is being utilized by another application on Galaxy. Deploy your application to a different domain name.
 

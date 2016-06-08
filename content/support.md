@@ -12,4 +12,4 @@ Galaxy customers have the option to upgrade to higher levels of paid Galaxy supp
 
 <h3 id="Meteor Developer Support">Meteor Developer Support</h3>
 
-Meteor Developer Support helps customers build production Meteor apps the right way, ensuring architectural best practices and timely responses to technical inquiries related to Meteor application development. Please request more information [here] (https://www.meteor.com/developer-support).
+Meteor Developer Support helps customers build production Meteor apps the right way, ensuring architectural best practices and timely responses to technical inquiries related to Meteor application development. Please request more information [here](https://www.meteor.com/developer-support).

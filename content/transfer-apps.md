@@ -24,6 +24,13 @@ To transfer the application, on the command line, type:
 
 You need to have deploy privileges to the account `new_account_name`.
 
+<h2 id="across-regions">Transfer across regions</h2>
+
+To transfer an app from one region to another, re-deploy the app to the target region.
+
+1. Deploy the same app code to the target region with a new hostname. Use the DEPLOY_HOSTNAME for the target hostname and set up DNS for the new hostname to point to the target region's ingress point.
+2. Stop the app in the original region.
+
 <h2 id="billing-after-transfer">Billing for transferred applications</h2>
 
 The application container usage that occurred while the application was owned by the old account will be billed to the old account. Any new application container usage that occurs after the transfer to the new account will be billed to the new account.

@@ -24,6 +24,7 @@ sidebar_categories:
     - mongodb
     - deploy-troubleshooting
     - base-image-packages
+    - deploy-region
   Setup:
     - custom-domains
     - dns

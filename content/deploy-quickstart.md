@@ -12,6 +12,12 @@ Before you begin, [configure access to your MongoDB database](/mongodb.html) and
 
 <h2 id="deploy-app">Deploy your app</h2>
 
+The value of DEPLOY_HOSTNAME will depend on which region you are deploying to:
+
+- To deploy to us-east-1: DEPLOY_HOSTNAME=galaxy.meteor.com
+
+- To deploy to eu-west-1: DEPLOY_HOSTNAME=eu-west-1.galaxy.meteor.com
+
 <h3 id="deploy-mac">Mac and Linux</h3>
 
 On the command line, within your app's directory, type:
@@ -40,6 +46,11 @@ $ meteor deploy [hostname] --settings path-to-settings.json
 Once your app is successfully deployed, head on over to your [Galaxy dashboard](http://galaxy.meteor.com) to configure your app by adding a custom domain name and enabling SSL encryption.
 
 Add a domain in your app’s settings and point your DNS to `galaxy-ingress.meteor.com`.
+
+Note: For apps in Galaxy Europe (eu-west-1 region): 
+
+- go to this [Galaxy dashboard](http://eu-west-1.galaxy.meteor.com) 
+- point your DNS to `eu-west-1.galaxy-ingress.meteor.com`
 
 <img src="images/email-add-domain.png" style="">
 

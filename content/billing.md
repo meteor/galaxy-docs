@@ -6,7 +6,12 @@ description: Learn how Galaxy bills per container
 
 <h2 id="billing-usage">Pay for what you use</h2>
 
-Billing is based on Galaxy container usage, pro-rated to the second. Billing begins when you deploy and stops when you stop or delete your app. With the [current pricing](https://www.meteor.com/why-meteor/pricing), it will cost you less than $0.15 to run a compact container for 4 hours. Your metered pricing varies with the quantity and size of containers used to run your apps. If you want to stop billing, stop your app, and billing will stop even though the app is still visible in the UI ready to be started again.
+Billing is based on Galaxy container usage, pro-rated to the second. Billing begins when you deploy and stops when you stop or delete your app. With the current pricing, it will cost you less than $0.15 to run a compact container for 4 hours. Your metered pricing varies with the quantity and size of containers used to run your apps. If you want to stop billing, stop your app, and billing will stop even though the app is still visible in the UI ready to be started again.
+
+Container usage pricing:
+
+- Galaxy US: $0.07 per GB/hour
+- Galaxy EU: $0.08 per GB/hour
 
 Customers who signed up prior to March 2016 may have an older Galaxy plan where pricing varies according to the details of their plan, support tier selected, how many containers used, and the size of those containers.
 

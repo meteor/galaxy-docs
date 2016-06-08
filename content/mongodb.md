@@ -8,7 +8,7 @@ Since Galaxy doesn’t provide a MongoDB cluster, you will need to host one your
 
 To configure MongoDB for your Meteor application, see the detailed steps in the [Deployment guide](/deploy-guide.html#mongo-configure). 
 
-Currently, Galaxy runs in the 'US-East-1' AWS region. For optimum performance, please ensure your database is running in the same region.
+For optimum performance, please ensure your database is running in the same region.
 
 <h2 id="configure-oplog">Configuring Oplog Tailing</h2>
 

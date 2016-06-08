@@ -8,7 +8,13 @@ Before users can access your application, you must configure your DNS records to
 
 <h3 id="subdomain">Hosting on a subdomain</h3>
 
-If your app is deployed at a subdomain such as `app.mycompany.com` or `www.mycompany.com`, simply add a CNAME record to your DNS provider pointing to `galaxy-ingress.meteor.com`. Ensure the hostname you [deployed to](deploying-to-galaxy) matches the [fully qualified domain name](https://en.wikipedia.org/wiki/Fully_qualified_domain_name) of your app (i.e `app.mycompany.com`).
+If your app is deployed at a subdomain such as `app.mycompany.com` or `www.mycompany.com`, simply add a CNAME record to your DNS provider pointing to:
+
+- `galaxy-ingress.meteor.com` for applications in the us-east-1 region. 
+
+- `eu-west-1.galaxy-ingress.meteor.com` for applications in the eu-west-1 region.  
+
+Ensure the hostname you [deployed to](deploying-to-galaxy) matches the [fully qualified domain name](https://en.wikipedia.org/wiki/Fully_qualified_domain_name) of your app (i.e `app.mycompany.com`).
 
 <h3 id="root-domain-redirect">Redirecting the root domain</h3>
 

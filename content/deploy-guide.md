@@ -22,6 +22,8 @@ You will need a Galaxy account that your Meteor Development Account has deploy a
 
 If your Meteor application has a package that requires Mongo, then you will need a Mongo database configured for your application. If you want to use a hosted database provider, We recommend that you provision it from one of these providers: [mLab](www.mlab.com) and [compose](www.compose.io).
 
+For optimum performance, we recommend that you setup a database in the same AWS region as your app deployment.
+
 <h3 id="">Configure a free Sandbox MongoDB database</h3>
 
 mLab offers a free sandbox MongoDB database. The sandbox is a single node database that is good for non-production workloads. 
@@ -78,6 +80,12 @@ If you have a custom domain name, then you need to point your DNS (in your regis
 
 Use the Meteor CLI tool to deploy the application to Galaxy. Make sure that you are signed into an authorized Meteor Developer Account that has access to deploy to Galaxy. Use the CLI command `meteor whoami` to verify which Meteor Developer Account you are signed into.
 
+The value of DEPLOY_HOSTNAME will depend on which region you are deploying to:
+
+- To deploy to us-east-1: DEPLOY_HOSTNAME=galaxy.meteor.com
+
+- To deploy to eu-west-1: DEPLOY_HOSTNAME=eu-west-1.galaxy.meteor.com
+
 <h3 id="deploy-mac">Mac and Linux</h3>
 
 On the command line, within your application's directory, type:
@@ -120,7 +128,13 @@ The first thing you should do is verify that the deployment was successful. Chec
 
 Once your application is successfully deployed, head on over to your [Galaxy dashboard](http://galaxy.meteor.com) to configure your application by adding a custom domain name and enabling SSL encryption.
 
-Add a domain in your application’s settings and point your DNS to `galaxy-ingress.meteor.com`.
+Add a domain in your application’s settings and point your DNS to:
+
+- `galaxy-ingress.meteor.com` for applications in the us-east-1 region. 
+
+- `eu-west-1.galaxy-ingress.meteor.com` for applications in the eu-west-1 region.  
+
+If you are deploying to a root domain (for example mydomain.com), then follow the advanced instructions [here](/dns.html).
 
 <img src="images/email-add-domain.png" style="">
 

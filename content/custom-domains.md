@@ -20,7 +20,9 @@ If you want to change the primary hostname of your app then deploy a new app at 
 
 <h2 id="meteorapp-subdomain">Included .meteorapp.com domain</h2>
 
-Galaxy allows subdomains on .meteorapp.com for use by any app deployed to Galaxy. You can deploy apps to `<custom.subdomain>.meteorapp.com` as the hostname.
+Galaxy allows subdomains on .meteorapp.com for use by any app deployed to Galaxy. You can deploy apps to `<custom.subdomain>.meteorapp.com` as the hostname for apps deployed to Galaxy us-east-1 region.
+
+For apps deployed to eu-west-1 region, you can deploy apps to `<custom.subdomain>.eu.meteorapp.com`,
 
 <h2 id="add-domain">Adding additional custom domains</h2>
 

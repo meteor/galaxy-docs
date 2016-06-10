@@ -18,6 +18,10 @@ You will need a Galaxy account that your Meteor Development Account has deploy a
 
 [Sign up](https://www.meteor.com/galaxy/signup) here for a new Galaxy Account.
 
+Once you have created your account, sign in to Galaxy. Depending on the region you want to deploy your apps to, go to the URL and sign in with your username and password:
+- For US East: https://galaxy.meteor.com/
+- For EU West: https://eu-west-1.galaxy.meteor.com/
+
 <h2 id="mongo-configure">Configure your MongoDB database</h2>
 
 If your Meteor application has a package that requires Mongo, then you will need a Mongo database configured for your application. If you want to use a hosted database provider, We recommend that you provision it from one of these providers: [mLab](www.mlab.com) and [compose](www.compose.io).

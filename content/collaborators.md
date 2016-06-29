@@ -4,7 +4,9 @@ order: 11
 description: Learn how to add collaborators to your app
 ---
 
-You can add collaborators to an app by creating an organization and transferring the app to that organization. Organizations allow you to deploy, scale, and monitor apps with a team of developers.
+You can add collaborators to an app by creating a Galaxy account that is owned by a Meteor organization and transferring the app to that organization account. 
+
+Galaxy organizations accounts allow you to deploy, scale, and monitor apps with a team of developers.
 
 <h3 id="instructions">Get Galaxy for organizations</h3>
 

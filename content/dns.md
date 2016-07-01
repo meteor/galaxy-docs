@@ -48,7 +48,11 @@ www.mycompany.com.    1800   IN    CNAME        galaxy-ingress.meteor.com.
 
 <h2 id="hosting-root-domain">Hosting on a root domain (advanced)</h2>
 
-In general, hosting your app directly on a root domain is not recommended (see [yes-www](http://www.yes-www.org/why-use-www/)). If you must do so, it's possible by using an ALIAS (also called an ANAME) record. First, you'll need to deploy your app to the root domain (e.g `myapp.com`). Next, you will need to add an ALIAS record to your DNS provider that points your root domain to `galaxy-ingress.meteor.com`. Not all DNS providers support this feature and the implementation is usually verify specific to each provider, ones we know and recommend are:
+In general, hosting your app directly on a root domain is not recommended (see [yes-www](http://www.yes-www.org/why-use-www/)). If you must do so, it's possible by using an ALIAS (also called an ANAME) record. 
+
+First, you'll need to either deploy your app to the root domain (e.g `myapp.com`) or add the root domain as an [additional domain for your app](custom-domains.html#add-domain). Next, you will need to add an ALIAS record to your DNS provider that points your root domain to `galaxy-ingress.meteor.com`. 
+
+Not all DNS providers support this feature and the implementation is usually verify specific to each provider, ones we know and recommend are:
 
 * [ALIAS Record at DNSimple](https://support.dnsimple.com/articles/alias-record/)
 

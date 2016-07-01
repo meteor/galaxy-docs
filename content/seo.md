@@ -14,4 +14,4 @@ Type `$ meteor add mdg:seo` in your app's directory to add the prerender package
 
 <h4 id="prerender-alternative">Using your own Prerender service</h4>
 
-You can use your own Prerender service by configuring it in the application settings. If Galaxy finds a pre-configured Prerender service, then Galaxy will not configure the application to use Galaxy's integrated Prerender.io service.
+You can use your own Prerender service by configuring it in the application settings file (settings.json). If Galaxy finds a pre-configured Prerender service, then Galaxy will not configure the application to use Galaxy's integrated Prerender.io service.

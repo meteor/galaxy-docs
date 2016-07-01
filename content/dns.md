@@ -22,6 +22,7 @@ The root domain is also called the naked or apex domain. A common scenario is on
 
 * [URL Record at DNSimple](https://support.dnsimple.com/articles/url-record/)
 * [Using S3 redirects with Amazon's Route53](https://aws.amazon.com/blogs/aws/root-domain-website-hosting-for-amazon-s3/)
+* [Free redirect service from wwwizer](http://wwwizer.com/naked-domain-redirect)
 
 <h2 id="testing">Testing locally</h2>
 
@@ -50,6 +51,5 @@ www.mycompany.com.    1800   IN    CNAME        galaxy-ingress.meteor.com.
 In general, hosting your app directly on a root domain is not recommended (see [yes-www](http://www.yes-www.org/why-use-www/)). If you must do so, it's possible by using an ALIAS (also called an ANAME) record. First, you'll need to deploy your app to the root domain (e.g `myapp.com`). Next, you will need to add an ALIAS record to your DNS provider that points your root domain to `galaxy-ingress.meteor.com`. Not all DNS providers support this feature and the implementation is usually verify specific to each provider, ones we know and recommend are:
 
 * [ALIAS Record at DNSimple](https://support.dnsimple.com/articles/alias-record/)
-* [Free redirect service from wwwizer](http://wwwizer.com/naked-domain-redirect)
 
 *Note:* If you decide to host directly on a root domain, you will likely want to forward `www` to your root domain by setting up URL redirection (see above).

@@ -10,7 +10,7 @@ Before users can access your application, you must configure your DNS records to
 
 If your app is deployed at a subdomain such as `app.mycompany.com` or `www.mycompany.com`, simply add a CNAME record to your DNS provider pointing to:
 
-- `galaxy-ingress.meteor.com` for applications in the us-east-1 region. 
+- `us-east-1.galaxy-ingress.meteor.com` for applications in the us-east-1 region. 
 
 - `eu-west-1.galaxy-ingress.meteor.com` for applications in the eu-west-1 region.  
 
@@ -48,7 +48,7 @@ www.mycompany.com.    1800   IN    CNAME        galaxy-ingress.meteor.com.
 
 <h2 id="hosting-root-domain">Hosting on a root domain (advanced)</h2>
 
-In general, hosting your app directly on a root domain is not recommended (see [yes-www](http://www.yes-www.org/why-use-www/)). If you must do so, it's possible by using an ALIAS (also called an ANAME) record. 
+In general, hosting your app directly on a root domain is not recommended (see [yes-www](http://www.yes-www.org/why-use-www/)). If you must do so, it's possible by using an ALIAS (also called an ANAME record).
 
 First, you'll need to either deploy your app to the root domain (e.g `myapp.com`) or add the root domain as an [additional domain for your app](custom-domains.html#add-domain). Next, you will need to add an ALIAS record to your DNS provider that points your root domain to `galaxy-ingress.meteor.com`. 
 

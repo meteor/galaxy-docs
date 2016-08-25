@@ -4,7 +4,7 @@ order: 10
 description: Learn how to configure DNS to point to Galaxy
 ---
 
-Before users can access your application, you must configure your DNS records to point to Galaxy. The exact process is specific to your DNS provider, however the general method is the same.
+Before users can access your application, you must configure your DNS records to point to Galaxy. The exact process is specific to your DNS provider, however, the general method is the same.
 
 <h2 id="subdomain">Hosting on a subdomain</h2>
 

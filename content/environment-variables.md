@@ -8,11 +8,11 @@ Environment variables in Galaxy are managed using your app's `settings.json` fil
 
 <h3 id="common-env-variables">Commonly used environment variables</h3>
 
-The following environment variable are most commonly set for Galaxy apps:
+The following environment variable are commonly set for Galaxy apps:
 
 - `MONGO_URL`: If you have any Meteor packages that requires a Mongo database, then this environment variable must be set. See your database provider instructions to determine the correct format and content for the URL.
 - `MONGO_OPLOG_URL`: This is an optional environment variable if you are using MongoDB for your application. This is a performance optimization that we recommend for production applications. Read more in our [detailed documentation](https://github.com/meteor/docs/blob/master/long-form/oplog-observe-driver.md#oplogobservedriver-in-production) or in [this useful guide](https://meteorhacks.com/mongodb-oplog-and-meteor/).
-- `ROOT_URL`: This is an optional environment variable. If you have any Meteor packages that need to generate a URL, then those packages will use `ROOT_URL` to identify the URL that the app is hosted at. The default value for this is the primary hostname that your app is deployed to. This variable hooks up to the Meteor.absoluteUrl() API.
+- `ROOT_URL`: This is an optional environment variable. If you have any Meteor packages that need to generate a URL, then those packages will use `ROOT_URL` to identify the URL where the app is hosted. The default value for this is the primary hostname that your app is deployed to. This variable hooks up to the Meteor.absoluteUrl() API.
 - `MAIL_URL`: This is required if you have the `email`  package in your application. In order to send email from the application, the `MAIL_URL` environment variable needs to be set.
 
 The following are example formats for Mongo URL variables. You will have to configure a database and a user account with rights to access that database with your database provider.

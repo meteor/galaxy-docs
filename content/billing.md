@@ -20,13 +20,15 @@ Pricing is **not** impacted by:
 - Number of connected clients/traffic
 - Number of deploys or users
 
-<h2 id="reserved-pricing">Reserved Pricing</h2>
+<h2 id="reserved-pricing">Prepaid Pricing</h2>
 
-Galaxy Reserved Pricing guarantees a specific amount of container capacity at a discounted price compared to pay-as-you-go pricing. 
+Galaxy Prepaid Pricing guarantees a specific amount of container capacity at a discounted price compared to pay-as-you-go pricing. 
 
-By paying upfront for container capacity, you’ll receive ~20% off the equivalent pay-as-you-go rates. Galaxy Reserved Pricing currently costs $45 USD per GB RAM month (available in 1 GB increments only, billed annually). 
+By paying upfront for container capacity, you’ll receive ~20% off the equivalent pay-as-you-go rates. Galaxy Prepaid Pricing currently costs $45 USD per GB RAM month (available in 1 GB increments only, billed annually). 
 
 Any usage during the month beyond the reserved base capacity will be billed at normal metered rates. 
+
+Contact <a href="mailto:galaxysales@meteor.com">galaxysales@meteor.com</a> if you'd like to add this to your account.
 
 <h2 id="billing-update">Payment and statements</h2>
 

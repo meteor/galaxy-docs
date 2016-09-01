@@ -4,6 +4,10 @@ order: 6
 description: Learn how to troubleshoot your deploy and get answers to frequently asked questions
 ---
 
+<h2 id="503-errors">503 errors</h2>
+
+The 503 error ("Service Unavailable: No healthy enpoints to handle the request.") indicates that our image builder was not able to successfully create a container, when attempting to deploy. We would suggest that you test and debug this locally, as this usually indicates a problem in your code that prevents deployment.
+
 <h2 id="502-errors">502 errors</h2>
 
 A 502 error (“Bad Gateway”) typically means that no containers have successfully started your app or that all app containers have become unhealthy (usually caused by CPU load).
@@ -30,3 +34,22 @@ Version 1.2.1 of Meteor (and higher) provides the `METEOR_BINARY_DEP_WORKAROUND`
 2. Next, deploy to galaxy by setting the `METEOR_BINARY_DEP_WORKAROUND=t` environment variable. An example deploy command would look like `METEOR_BINARY_DEP_WORKAROUND=t DEPLOY_HOSTNAME=galaxy.meteor.com meteor deploy ...` , replacing `...` with the rest of your deployment command (URL, settings, etc.).
 
 If you are uncertain if this matches your situation, you can use [this test app](https://github.com/zol/meteor-bignum-test) to reproduce the error and confirm a fix.
+
+<h2 id="package-error">Module missing or package error</h2>
+
+This usually indicates that the module or package working locally in your application is not working after deployment. While third-party packages are unsupported, an explanation of our system may assist you in your troubleshooting.
+ 
+When you deploy an app, we bundle node_modules into it. npm packages that are required on the client side get build into the bundle that's uploaded to Galaxy. As a result, Galaxy doesn't need to npm install for client side bundling to work.
+
+If you are using dynamic requires - for example, require(variable) instead of require("fixed-name") - that could be problematic. To handle these, you should put require("react/package.json") somewhere in your application code to make sure it gets bundled.
+
+If you happen to be using an older version of Meteor, consider updating to a newer version, as that has been known to resolve issues in some cases.
+
+While troubleshooting, you may find these commands helpful:
+meteor npm --save invariant
+meteor npm --save object-assign
+
+A method to test in a local environment and try to mimic Galaxy is to run locally with --production. The way node_modules are pulled in is different on a remote deploy to a server (including Galaxy) than it is when building locally. The --production setting will minimize and concatenate all the js into one file, which should assist you in the troubleshooting process.
+
+
+

@@ -35,21 +35,21 @@ Version 1.2.1 of Meteor (and higher) provides the `METEOR_BINARY_DEP_WORKAROUND`
 
 If you are uncertain if this matches your situation, you can use [this test app](https://github.com/zol/meteor-bignum-test) to reproduce the error and confirm a fix.
 
-<h2 id="package-error">Module missing or package error</h2>
+<h2 id="package-error">Module missing or npm error</h2>
 
 This usually indicates that the module or package working locally in your application is not working after deployment. While third-party packages are unsupported, an explanation of our system may assist you in your troubleshooting.
  
-When you deploy an app, we bundle node_modules into it. npm packages that are required on the client side get build into the bundle that's uploaded to Galaxy. As a result, Galaxy doesn't need to npm install for client side bundling to work.
+When you deploy an app, we bundle node_modules into it. npm packages that are required on the client side get built into the bundle uploaded to Galaxy. As a result, Galaxy doesn't need to use npm install for client side bundling to work.
 
-If you are using dynamic requires - for example, require(variable) instead of require("fixed-name") - that could be problematic. To handle these, you should put require("react/package.json") somewhere in your application code to make sure it gets bundled.
+If you are using dynamic requires - for example, require(variable) instead of require("fixed-name") - that may cause issues. To avoid this, put require("react/package.json") somewhere in your application code to make sure it gets bundled.
 
-If you happen to be using an older version of Meteor, consider updating to a newer version, as that has been known to resolve issues in some cases.
+If you happen to be using an older version of Meteor, consider updating to a more recent version, as that has been known to resolve issues in some cases.
 
-While troubleshooting, you may find these commands helpful:
+You may also find these commands helpful:
 meteor npm --save invariant
 meteor npm --save object-assign
 
-A method to test in a local environment and try to mimic Galaxy is to run locally with --production. The way node_modules are pulled in is different on a remote deploy to a server (including Galaxy) than it is when building locally. The --production setting will minimize and concatenate all the js into one file, which should assist you in the troubleshooting process.
+A recommended method to mimic Galaxy is to run locally with --production. The way node_modules are pulled in is different on a remote deployment to a server (including Galaxy) than when building locally. The --production setting will minimize and concatenate all the JS into one file, which should assist you in the troubleshooting process.
 
 
 

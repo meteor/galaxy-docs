@@ -4,7 +4,7 @@ order: 9
 description: Learn how to configure a CDN with Galaxy
 ---
 
-Configuring a CDN with Galaxy is largely the same as [using a CDN with Meteor in any context](http://guide.meteor.com/deployment.html#cdn). Once you’ve setup the CDN with your application as its origin (so for instance, you may have a [CloudFront](https://aws.amazon.com/cloudfront/) distribution named xyz.cloudfront.net, which proxies for www.exampleapp.com), you can tell Meteor to serve static JS and CSS assets from the CDN with
+Configuring a CDN with Galaxy is largely the same as [using a CDN with Meteor in any context](http://guide.meteor.com/deployment.html#cdn). Once you’ve setup the CDN with your application as its origin (for example, a [CloudFront](https://aws.amazon.com/cloudfront/) distribution named xyz.cloudfront.net which proxies for www.exampleapp.com), you can tell Meteor to serve static JS and CSS assets from the CDN with
 
 ```
 WebAppInternals.setBundledJsCssPrefix(

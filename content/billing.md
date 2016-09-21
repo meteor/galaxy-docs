@@ -26,7 +26,7 @@ Galaxy Prepaid Pricing guarantees a specific amount of container capacity at a d
 
 By paying upfront for container capacity, you’ll receive ~20% off the equivalent pay-as-you-go rates. Galaxy Prepaid Pricing currently costs $45 USD per GB RAM month (available in 1 GB increments only, billed annually). 
 
-Any usage during the month beyond the reserved base capacity will be billed at normal metered rates. 
+Any usage during the month beyond the reserved base capacity will be billed at normal metered rates. To add Prepaid Pricing to your account, simply log a support ticket from within Galaxy and let us know how many GB's you'd like to add. 
 
 Contact <a href="mailto:galaxysales@meteor.com">galaxysales@meteor.com</a> if you'd like to add this to your account.
 

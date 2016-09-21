@@ -24,4 +24,4 @@ Galaxy is the simplest way to deploy, scale, and manage your Meteor apps.
 
 <h3 id="contribute">Contribute</h3>
 
-Ongoing Galaxy documentation development takes place in the open on GitHub. We encourage pull requests and issues to discuss problems with and changes that could be made to improve the clarity and quality of content. 
+Ongoing Galaxy documentation development takes place in the open on GitHub. We encourage pull requests and issues to discuss changes that can improve the clarity and quality of content. 

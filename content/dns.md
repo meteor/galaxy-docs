@@ -36,7 +36,7 @@ Add a line to `/etc/hosts` (Windows: `c:\windows\system32\drivers\etc\hosts`) th
 [Galaxy's current ip address]   [Your app's hostname, e.g app.mycompany.com]
 ```
 
-To ensure your changes take effect, you can reset your computer's local DNS cache with `sudo dscacheutil -flushcache` (on a mac, or see [these instructions](https://www.whatsmydns.net/flush-dns.html) for other OSes) after making your changes.
+To ensure your changes take effect, you can reset your computer's local DNS cache with `sudo dscacheutil -flushcache` (on a Mac; see [these instructions](https://www.whatsmydns.net/flush-dns.html) for other OSes) after making your changes.
 
 <h2 id="dns-propagation">DNS propagation</h2>
 
@@ -52,7 +52,7 @@ In general, hosting your app directly on a root domain is not recommended (see [
 
 First, you'll need to either deploy your app to the root domain (e.g `myapp.com`) or add the root domain as an [additional domain for your app](custom-domains.html#add-domain). Next, you will need to add an ALIAS record to your DNS provider that points your root domain to `galaxy-ingress.meteor.com`. 
 
-Not all DNS providers support this feature and the implementation is usually verify specific to each provider, ones we know and recommend are:
+Not all DNS providers support this feature and the implementation is usually very specific to each provider. Providers we know and recommend are:
 
 * [ALIAS Record at DNSimple](https://support.dnsimple.com/articles/alias-record/)
 

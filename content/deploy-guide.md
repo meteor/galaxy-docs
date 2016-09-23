@@ -14,7 +14,7 @@ This guide will cover:
 - Configuring domains and SSL Encryption for the application 
 
 <h2 id="sign-up">Sign up for Galaxy</h2>
-You will need a Galaxy account that your Meteor Development Account has deploy authorization for. 
+You will need a Galaxy account that your Meteor Development Account has deploy authorization to use. 
 
 [Sign up](https://www.meteor.com/galaxy/signup) here for a new Galaxy Account.
 
@@ -24,7 +24,7 @@ Once you have created your account, sign in to Galaxy. Depending on the region y
 
 <h2 id="mongo-configure">Configure your MongoDB database</h2>
 
-If your Meteor application has a package that requires Mongo, then you will need a Mongo database configured for your application. If you want to use a hosted database provider, We recommend that you provision it from one of these providers: [mLab](www.mlab.com) and [compose](www.compose.io).
+If your Meteor application has a package that requires Mongo, then you'll need a Mongo database configured for your application. If you want to use a hosted database provider, we recommend that you provision it from one of these providers: [mLab](www.mlab.com) and [compose](www.compose.io).
 
 For optimum performance, we recommend that you setup a database in the same AWS region as your app deployment.
 
@@ -60,7 +60,7 @@ Note the MongoDB URI shown on the database page. You will use this URI with the 
 
 Create a Meteor settings file that will define the set of configurations needed for your application to deploy and run on Galaxy. At a minimum, the settings file needs to contain the connection URL to the MongoDB database.
 
-In your application directory, create a file named settings.json. Put the Mongo URI in the file, with this format:
+In your application directory, create a file named settings.json. Put the Mongo URI in the file, using this format:
 
 ```
 {
@@ -76,13 +76,13 @@ For a detailed example of the settings.json file, see [Environment Variables](/e
 
 <h2 id="select-hostname">Select a hostname</h2>
 
-Choose a hostname that your application will be available to the public on. You can choose a custom domain or you can choose to use the included `meteorapp.com` domain.
+Choose a hostname that the public can use to access your application. You can choose a custom domain or you can choose the included `meteorapp.com` domain.
 
 If you have a custom domain name, then you need to point your DNS (in your registrar’s dashboard) to galaxy-ingress.meteor.com. More instructions on DNS configuration can be found [here](/dns.html).
 
 <h2 id="galaxy-deploy">Deploy your application to Galaxy</h2>
 
-Use the Meteor CLI tool to deploy the application to Galaxy. Make sure that you are signed into an authorized Meteor Developer Account that has access to deploy to Galaxy. Use the CLI command `meteor whoami` to verify which Meteor Developer Account you are signed into.
+Use the Meteor CLI tool to deploy the application to Galaxy. Make sure that you are signed into an authorized Meteor Developer Account that has permission to deploy to Galaxy. Use the CLI command `meteor whoami` to verify which Meteor Developer Account you are signed into.
 
 The value of DEPLOY_HOSTNAME will depend on which region you are deploying to:
 
@@ -102,7 +102,7 @@ DEPLOY_HOSTNAME=galaxy.meteor.com meteor deploy [hostname] --settings path-to-se
 
 <h3 id="deploy-windows">Windows</h3>
 
-If you are using Windows, the commands to deploy are slightly different. You need to set the environment variable first, then run the deployment command second (the syntax is the same as everything you'd put for meteor deploy). The commands will look like this:
+If you are using Windows, the commands to deploy are slightly different. You need to set the environment variable first, then run the deployment command second (the syntax is the same as everything you'd write for meteor deploy). The commands will look like this:
 
 ```
 $ SET DEPLOY_HOSTNAME=galaxy.meteor.com

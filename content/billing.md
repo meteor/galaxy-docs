@@ -28,6 +28,8 @@ By paying upfront for container capacity, you’ll receive ~20% off the equivale
 
 Any usage during the month beyond the reserved base capacity will be billed at normal metered rates. To add Prepaid Pricing to your account, simply log a support ticket from within Galaxy and let us know how many GB's you'd like to add. 
 
+Contact <a href="mailto:galaxysales@meteor.com">galaxysales@meteor.com</a> if you'd like to add this to your account.
+
 <h2 id="billing-update">Payment and statements</h2>
 
 Galaxy accepts PayPal and major credit cards: Visa, Mastercard, American Express, and Discover. You may view and change payment details in your account settings page.

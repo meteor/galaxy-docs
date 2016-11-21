@@ -24,7 +24,7 @@ Once you have created your account, sign in to Galaxy. Depending on the region y
 
 <h2 id="mongo-configure">Configure your MongoDB database</h2>
 
-If your Meteor application has a package that requires Mongo, then you'll need a Mongo database configured for your application. If you want to use a hosted database provider, we recommend that you provision it from one of these providers: [mLab](www.mlab.com) and [compose](www.compose.io).
+If your Meteor application has a package that requires Mongo, then you'll need a Mongo database configured for your application. If you want to use a hosted database provider, we recommend that you provision it from one of these providers: [mLab](https://www.mlab.com) and [compose](https://www.compose.io).
 
 For optimum performance, we recommend that you setup a database in the same AWS region as your app deployment.
 

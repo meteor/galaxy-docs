@@ -30,16 +30,18 @@ There are two options for configuring a redirect of https://example.com to https
 
 We recommend the first option, which is usually easier to implement.
 
-Option 1
+**Option 1**
 
-Step 1) Point the root domain (example.com) DNS to Galaxy. See our [instructions](http://galaxy-guide.meteor.com/dns.html#hosting-root-domain) on how to do this with an ALIAS record.
-Step 2) Add example.com as an additional domain to the app on the Settings page.
+- Step 1) Point the root domain (example.com) DNS to Galaxy. See our [instructions](http://galaxy-guide.meteor.com/dns.html#hosting-root-domain) on how to do this with an ALIAS record.
+
+- Step 2) Add example.com as an additional domain to the app on the Settings page.
 For our www.example.com app, that would be at [https://galaxy.meteor.com/app/www.example.com/settings](https://galaxy.meteor.com/app/www.example.com/settings) (not a valid address).
-Step 3) Enable Force HTTPS for the app on the Settings page.
 
-Option 2
+- Step 3) Enable Force HTTPS for the app on the Settings page.
 
-User a redirection service to redirect example.com to www.example.com. The redirection service needs to support both root domains as well as SSL. A good example would be [Amazon’s S3 redirection](http://docs.aws.amazon.com/AmazonS3/latest/dev/how-to-page-redirect.html), which supports both.
+**Option 2**
+
+Use a redirection service to redirect example.com to www.example.com. The redirection service needs to support both root domains as well as SSL. A good example would be [Amazon’s S3 redirection](http://docs.aws.amazon.com/AmazonS3/latest/dev/how-to-page-redirect.html), which supports both.
 
 <h2 id="testing">Testing locally</h2>
 

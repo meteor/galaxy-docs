@@ -58,6 +58,10 @@ Note: For apps in Galaxy Europe (eu-west-1 region):
 
 <img src="images/email-enable-ssl.png" style="width: 300px;">
 
+<h2 id="usage">Usage</h2>
+
+Keep running your app for as long as you want. Simply “Stop” your app on the Settings page and billing will stop. Your app’s code and settings are preserved until you’re ready to run it again.
+
 **Learn more**
 
 - Read our [comprehensive guide](/deploy-guide.html) for deploying apps

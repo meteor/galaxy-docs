@@ -43,6 +43,26 @@ For our www.example.com app, that would be at [https://galaxy.meteor.com/app/www
 
 Use a redirection service to redirect example.com to www.example.com. The redirection service needs to support both root domains as well as SSL. A good example would be [Amazon’s S3 redirection](http://docs.aws.amazon.com/AmazonS3/latest/dev/how-to-page-redirect.html), which supports both.
 
+<h2 id="hosting-root-domain">Hosting on a root domain (advanced)</h2>
+
+In general, hosting your app directly on a root domain is not recommended (see [yes-www](http://www.yes-www.org/why-use-www/)). If you must do so, it's possible by using an ALIAS (also called an ANAME record).
+
+First, you'll need to either deploy your app to the root domain (e.g `myapp.com`) or add the root domain as an [additional domain for your app](custom-domains.html#add-domain). Next, you will need to add an ALIAS record to your DNS provider that points your root domain to `galaxy-ingress.meteor.com`. 
+
+Not all DNS providers support this feature and the implementation is usually very specific to each provider. Providers we know and recommend are:
+
+* [ALIAS Record at DNSimple](https://support.dnsimple.com/articles/alias-record/)
+
+*Note:* If you decide to host directly on a root domain, you will likely want to forward `www` to your root domain by setting up URL redirection (see above).
+
+<h2 id="dns-propagation">DNS propagation</h2>
+
+DNS is distributed and cooperative, and it takes time for the world to see your changes.  In many countries, it usually updates within about 30 minutes, but it can take up to 24 hours or even longer in some circumstances (depending on the record's TTL). You can check your ALIAS (or ANAME or CNAME) independently of your app in the terminal by typing `dig +show www.mycompany.com`. If it returns an `ANSWER SECTION` including something like the following, you are in good shape:
+
+```
+www.mycompany.com.    1800   IN    CNAME        galaxy-ingress.meteor.com.
+```
+
 <h2 id="testing">Testing locally</h2>
 
 A quick way to test that your app is working (this will only affect your local machine) is by modifying the `/etc/hosts` file to resolve your app's hostname to the Galaxy load balancer's IP address directly.
@@ -57,22 +77,3 @@ Add a line to `/etc/hosts` (Windows: `c:\windows\system32\drivers\etc\hosts`) th
 
 To ensure your changes take effect, you can reset your computer's local DNS cache with `sudo dscacheutil -flushcache` (on a Mac; see [these instructions](https://www.whatsmydns.net/flush-dns.html) for other OSes) after making your changes.
 
-<h2 id="dns-propagation">DNS propagation</h2>
-
-DNS is distributed and cooperative, and it takes time for the world to see your changes.  In many countries, it usually updates within about 30 minutes, but it can take up to 24 hours or even longer in some circumstances (depending on the record's TTL). You can check your ALIAS (or ANAME or CNAME) independently of your app in the terminal by typing `dig +show www.mycompany.com`. If it returns an `ANSWER SECTION` including something like the following, you are in good shape:
-
-```
-www.mycompany.com.    1800   IN    CNAME        galaxy-ingress.meteor.com.
-```
-
-<h2 id="hosting-root-domain">Hosting on a root domain (advanced)</h2>
-
-In general, hosting your app directly on a root domain is not recommended (see [yes-www](http://www.yes-www.org/why-use-www/)). If you must do so, it's possible by using an ALIAS (also called an ANAME record).
-
-First, you'll need to either deploy your app to the root domain (e.g `myapp.com`) or add the root domain as an [additional domain for your app](custom-domains.html#add-domain). Next, you will need to add an ALIAS record to your DNS provider that points your root domain to `galaxy-ingress.meteor.com`. 
-
-Not all DNS providers support this feature and the implementation is usually very specific to each provider. Providers we know and recommend are:
-
-* [ALIAS Record at DNSimple](https://support.dnsimple.com/articles/alias-record/)
-
-*Note:* If you decide to host directly on a root domain, you will likely want to forward `www` to your root domain by setting up URL redirection (see above).

@@ -6,6 +6,10 @@ description: Learn how to configure DNS to point to Galaxy
 
 Before users can access your application, you must configure your DNS records to point to Galaxy. While the process will be specific to your DNS provider, the general method is the same.
 
+<h2 id="meteorapp">Using Galaxy's built-in domain names</h2>
+
+If you're in the US region (galaxy.meteor.com) and you deploy your example app to example.meteorapp.com, or if you're in the EU region (eu-west-1.galaxy.meteor.com) and you deploy your example app to example.eu.meteorapp.com, no DNS configuration is needed; Galaxy will handle all of that for you (where 'example' should be substituted in with the actual name of your app). Note that example.meteor.com is not available - your site won't resolve if you try to use it.
+
 <h2 id="subdomain">Hosting on a subdomain</h2>
 
 If your app is deployed at a subdomain such as `www.mycompany.com` or `app.mycompany.com`, simply add a CNAME record to your DNS provider pointing to:
@@ -18,14 +22,16 @@ Ensure the hostname you [deployed to](deploying-to-galaxy) matches the [fully qu
 
 <h2 id="root-domain-redirect">Redirecting the root domain</h2>
 
-The root domain is also called the naked or apex domain. A common scenario is when your app is hosted at `www.mycompany.com` and you'd like `mycompany.com` to redirect to the same app. This is done by setting up URL redirection from `mycompany.com` to `www.mycompany.com`. While the way to do this varies by DNS provider, these are common methods we recommend:
+The root domain is also called the naked or apex domain. A common scenario is when your app is hosted at `www.mycompany.com` and you'd like `mycompany.com` to redirect to the same app. In this scenario, you don't want to emphasize the shorter URL of mycompany.com.
+
+This is done by setting up URL redirection from `mycompany.com` to `www.mycompany.com`. While the way to do this varies by DNS provider, these are common methods we recommend:
 
 * [URL Record at DNSimple](https://support.dnsimple.com/articles/url-record/)
 * [Free redirect service from wwwizer](http://wwwizer.com/naked-domain-redirect)
 
 <h2 id="hosting-root-domain">Hosting on a root domain (advanced)</h2>
 
-In general, hosting your app directly on a root domain is not recommended (see [yes-www](http://www.yes-www.org/why-use-www/)). If you must do so, it's possible by using an ALIAS (also called an ANAME record).
+In this scenario, you do want to emphasize a short URL like mycompany.com. While hosting on a root domain [can introduce complications](http://www.yes-www.org/why-use-www/), it's possible to do by using an ALIAS (also called an ANAME record).
 
 First, you'll need to either deploy your app to the root domain (e.g `myapp.com`) or add the root domain as an [additional domain for your app](custom-domains.html#add-domain). Next, you will need to add an ALIAS record to your DNS provider that points your root domain to `galaxy-ingress.meteor.com`. 
 
@@ -37,20 +43,15 @@ Not all DNS providers support this feature and the implementation is usually ver
 
 <h2 id="root-domain-redirect-https">Setting up the root domain when HTTPS is enabled</h2>
 
-There are two options for configuring a redirect of https://example.com to https://www.example.com. The first option is usually easier to implement.
+There are two options for configuring a redirect of https://example.com to https://www.example.com. Option 1 is usually easier to implement.
 
 **Option 1**
 
-- Step 1) Point the root domain (example.com) DNS to Galaxy. You can do this with an [ALIAS record](http://galaxy-guide.meteor.com/dns.html#hosting-root-domain).
-
-- Step 2) Add example.com as an additional domain to the app on the Settings page.
-For www.example.com, that would be: [https://galaxy.meteor.com/app/www.example.com/settings](https://galaxy.meteor.com/app/www.example.com/settings) (not a real app).
-
-- Step 3) Enable Force HTTPS for the app on the Settings page.
+Follow the Hosting on a root domain instructions above; then enable Force HTTPS for the app on the Settings page.
 
 **Option 2**
 
-Use a redirection service to redirect example.com to www.example.com. The redirection service needs to support both root domains as well as SSL. A good example is [Amazon’s S3 redirection](http://docs.aws.amazon.com/AmazonS3/latest/dev/how-to-page-redirect.html), which supports both.
+Use a redirection service that supports both root domains as well as SSL. A good example is [Amazon’s S3 redirection](http://docs.aws.amazon.com/AmazonS3/latest/dev/how-to-page-redirect.html).
 
 <h2 id="dns-propagation">DNS propagation</h2>
 

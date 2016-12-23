@@ -47,7 +47,7 @@ There are two options for configuring a redirect of https://example.com to https
 
 **Option 1**
 
-Follow the Hosting on a root domain instructions above; then enable Force HTTPS for the app on the Settings page.
+Follow the [Hosting on a root domain](#hosting-root-domain) instructions; then enable Force HTTPS for the app on the Settings page.
 
 **Option 2**
 

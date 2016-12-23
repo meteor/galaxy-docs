@@ -6,7 +6,7 @@ description: Learn how to configure DNS to point to Galaxy
 
 Before users can access your application, you must configure your DNS records to point to Galaxy. While the process will be specific to your DNS provider, the general method is the same.
 
-<h2 id="meteorapp">Using Galaxy's built-in domain names</h2>
+<h2 id="meteorapp">meteorapp.com and eu.meteorapp.com: Galaxy's built-in domain names</h2>
 
 If you're in the US region (galaxy.meteor.com) and you deploy your example app to example.meteorapp.com, or if you're in the EU region (eu-west-1.galaxy.meteor.com) and you deploy your example app to example.eu.meteorapp.com, no DNS configuration is needed; Galaxy will handle all of that for you (where 'example' should be substituted in with the actual name of your app). Note that example.meteor.com is not available - your site won't resolve if you try to use it.
 

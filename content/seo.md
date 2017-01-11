@@ -12,6 +12,8 @@ Galaxy provides an integrated pre-rendering service, Prerender.io, to optimize y
 
 Type `$ meteor add mdg:seo` in your app's directory to add the prerender package. Galaxy will then automatically enable the Prerender.io service when you deploy your app. You will see a prerender token in your application's logs. 
 
+If you're using the spiderable package, please remove it, since the prerender and spiderable packages are not compatible with each other.
+
 <h4 id="prerender-details">Administration and settings</h4>
 
 The prerendering service offered by Galaxy is designed to provide a shared service across all apps in Galaxy, with pre-determined caching policies and no need for per app management or administration through the service. There is no login available to users. We currently offer a guarantee of at most 4 days as the cache freshness policy.

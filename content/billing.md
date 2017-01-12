@@ -43,7 +43,8 @@ Galaxy accepts PayPal and major credit cards: Visa, MasterCard, American Express
 Every month a statement is emailed for your total monthly usage. Statements show metered usage broken out by app. You may view and download past statements in your Galaxy account settings.
 
 <h2 id="stopping-charges">Stopping Charges</h2>
-While you can't stop charges for resources used in the past, you can stop charges, going forward, by stopping or deleting your containers.
+
+While you can't stop charges for resources used in the past, you can stop charges, going forward, by stopping or deleting your apps.
 
 At a minimum, you must stop your containers in every region where they are running. To check both regions, add your account name to the end of https://galaxy.meteor.com/ and https://eu-west-1.galaxy.meteor.com/. Every app listed in your account will have a gray circle next to it, if it's containers have been stopped. Alternatively, if you're sure that you'll never reuse the containers in an app, you can delete the app to permanently remove it.
 

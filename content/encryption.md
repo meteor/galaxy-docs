@@ -4,7 +4,7 @@ order: 11
 description: Learn how to enable SSL encryption to secure sensitive data
 ---
 
-SSL encryption is a security protocol to encrypted connections between servers and clients. We highly recommend that you enable SSL encryption to secure your app's sensitive data and to avoid issues with websockets connecting from behind certain firewalls. You should add the `force-ssl` package to your application to ensure connections over http are redirected to https. Galaxy provides two ways to enable encryption: generating a Let's Encrypt certificate or uploading your own custom certificate.
+SSL encryption is a security protocol to encrypted connections between servers and clients. We highly recommend that you enable SSL encryption to secure your app's sensitive data and to avoid issues with websockets connecting from behind certain firewalls. Galaxy provides two ways to enable encryption: generating a Let's Encrypt certificate or uploading your own custom certificate.  Additionally, a "Force HTTPS" option can be enabled on each domain to ensure connections over HTTP are redirected to HTTPS.
 
 <h2 id="custom-domain">Before you begin</h2>
 

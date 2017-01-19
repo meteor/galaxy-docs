@@ -8,7 +8,7 @@ We recommend deploying your app to region(s) where your customers reside for low
 
 Galaxy allows you to deploy your app to the following regions:
 
-- AWS `us-east-1` in Virgina, USA (default region)
+- AWS `us-east-1` in Virginia, USA (default region)
 
 - AWS `eu-west-1` in Dublin, Ireland
 

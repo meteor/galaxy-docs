@@ -12,6 +12,7 @@ You can deploy an application to one Galaxy account at a time. Galaxy utilizes t
 
 If you are a member of two or more accounts, you can then transfer the application to a different account.
 
+
 <h2 id="meteor-13">Transfer with Meteor 1.3 or higher versions</h2>
 
 To transfer the application, on the command line, type:

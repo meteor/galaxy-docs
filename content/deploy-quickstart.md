@@ -58,6 +58,10 @@ Note: For apps in Galaxy Europe (eu-west-1 region):
 
 <img src="images/email-enable-ssl.png" style="width: 300px;">
 
+<h2 id="billing">How Billing Works</h2>
+
+You're only billed when you have an app running. Keep running your app for as long as you want and pay-as-you-go at low metered rates. Simply “Stop” your app on the Settings page and billing will stop. Your app’s code and settings are preserved until you’re ready to run it again. You can read more about billing [here](http://galaxy-guide.meteor.com/billing.html).
+
 **Learn more**
 
 - Read our [comprehensive guide](/deploy-guide.html) for deploying apps

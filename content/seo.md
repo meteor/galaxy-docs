@@ -10,7 +10,9 @@ Galaxy provides an integrated pre-rendering service, Prerender.io, to optimize y
 
 <h4 id="prerender-use">Add prerendering</h4>
 
-Type `$ meteor add mdg:seo` in your app's directory to add the prerender package. Galaxy will then automatically enable the Prerender.io service when you deploy your app. You will see a prerender token in your application's logs. 
+Type `$ meteor add mdg:seo` in your app's directory to add the prerender package. Galaxy will automatically enable the Prerender.io service when you deploy your app. 
+
+If you're using the spiderable package, please remove it, since the prerender and spiderable packages are not compatible with each other.
 
 <h4 id="prerender-details">Administration and settings</h4>
 

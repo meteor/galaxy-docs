@@ -59,7 +59,7 @@ Not all DNS providers support this feature and the implementation is usually ver
 
 DNS is distributed and cooperative, and it takes time for the world to see your changes.  In many countries, it usually updates within about 30 minutes, but it can take up to 24 hours or even longer in some circumstances (depending on the record's TTL).
 
-You can check your ALIAS (or ANAME or CNAME) independently of your app in the terminal by typing `dig +show www.mycompany.com`. If your `ANSWER SECTION` includes a record like this, you are in good shape:
+You can check if your ALIAS or ANAME or CNAME setting was successful in the terminal by typing `dig +show www.mycompany.com`. If your `ANSWER SECTION` includes a record like this, you are in good shape:
 
 ```
 www.mycompany.com.    1800   IN    CNAME        galaxy-ingress.meteor.com.

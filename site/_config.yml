@@ -22,6 +22,7 @@ sidebar_categories:
     - deploy-guide
     - environment-variables
     - mongodb
+    - container-environment
     - deploy-troubleshooting
     - base-image-packages
     - deploy-region

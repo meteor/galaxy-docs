@@ -1,6 +1,6 @@
 ---
 title: Regions
-order: 8
+order: 16
 description: Learn how to deploy your app to regions around the world
 ---
 

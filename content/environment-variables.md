@@ -1,6 +1,6 @@
 ---
 title: Environment variables
-order: 4
+order: 12
 description: Learn how to adjust Galaxy environment variables using your app's settings.json file
 ---
 

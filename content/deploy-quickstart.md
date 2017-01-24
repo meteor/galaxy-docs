@@ -1,6 +1,6 @@
 ---
 title: Deploy quickstart
-order: 1
+order: 10
 description: Learn how to quickly deploy an app to Galaxy with these step-by-step instructions.
 ---
 

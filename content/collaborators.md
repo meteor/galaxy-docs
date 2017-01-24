@@ -1,6 +1,6 @@
 ---
 title: Collaborators
-order: 11
+order: 51
 description: Learn how to add collaborators to your app
 ---
 

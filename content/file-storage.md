@@ -1,6 +1,6 @@
 ---
 title: File storage
-order: 11
+order: 44
 description: File storage for application containers 
 ---
 Galaxy provides temporary file storage for application containers to use. Galaxy does not provide persistent file storage for application containers to use.

@@ -1,6 +1,6 @@
 ---
 title: Scaling
-order: 12
+order: 40
 description: Learn how to improve your app’s performance by scaling
 ---
 

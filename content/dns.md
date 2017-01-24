@@ -1,6 +1,6 @@
 ---
 title: DNS
-order: 10
+order: 21
 description: Learn how to configure DNS to point to Galaxy
 ---
 

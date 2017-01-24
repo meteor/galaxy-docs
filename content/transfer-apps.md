@@ -1,6 +1,6 @@
 ---
 title: Transfer apps
-order: 23
+order: 45
 description: Learn how to transfer an app to another account
 ---
 

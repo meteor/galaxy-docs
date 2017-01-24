@@ -1,6 +1,6 @@
 ---
 title: CDN
-order: 9
+order: 43
 description: Learn how to configure a CDN with Galaxy
 ---
 

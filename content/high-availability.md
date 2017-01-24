@@ -1,6 +1,6 @@
 ---
 title: High-availability
-order: 11
+order: 41
 description: Learn how to make your app fault tolerant by enabling high-availability
 ---
 

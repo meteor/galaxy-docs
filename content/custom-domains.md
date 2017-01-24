@@ -1,6 +1,6 @@
 ---
 title: Domains
-order: 13
+order: 20
 description: Learn how to make an application accessible via a custom domain name
 ---
 

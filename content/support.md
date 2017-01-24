@@ -1,6 +1,6 @@
 ---
 title: Support
-order: 12
+order: 52
 description: Learn about support options available in Galaxy
 ---
 

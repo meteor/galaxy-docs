@@ -1,6 +1,6 @@
 ---
 title: Encryption
-order: 11
+order: 22
 description: Learn how to enable SSL encryption to secure sensitive data
 ---
 

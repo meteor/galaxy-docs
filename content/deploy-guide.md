@@ -1,6 +1,6 @@
 ---
 title: Deploy guide
-order: 2
+order: 11
 description: Learn how to deploy an application to Galaxy with these detailed step by step instructions.
 ---
 

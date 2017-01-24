@@ -1,6 +1,6 @@
 ---
 title: Billing
-order: 14
+order: 50
 description: Learn how Galaxy bills per container
 ---
 

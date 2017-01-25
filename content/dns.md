@@ -4,13 +4,21 @@ order: 21
 description: Learn how to configure DNS to point to Galaxy
 ---
 
-Before users can access your application, you must configure your DNS records to point to Galaxy. While the process will be specific to your DNS provider, the general method is the same.
+Before users can access your application, you must configure your DNS records to point to Galaxy. While the process will be specific to your DNS provider, the general method is the same. Please note that Galaxy is not a DNS provider and you’ll need to use your existing DNS provider to set DNS records.
 
 <h2 id="meteorapp">meteorapp.com and eu.meteorapp.com</h2>
 
-You are free to use Galaxy's built-in domain names. If you're in the US region (galaxy.meteor.com) and you deploy your example app to example.meteorapp.com, or if you're in the EU region (eu-west-1.galaxy.meteor.com) and you deploy your example app to example.eu.meteorapp.com, no DNS configuration is needed; Galaxy will handle all of that for you (where 'example' should be substituted in with the actual name of your app). Note that example.meteor.com is not available - your site won't resolve if you try to use it.
+You are free to use Galaxy's built-in domain names. SSL is enabled on these domains by default.
 
-<h2 id="subdomain">Hosting on a subdomain</h2>
+If you're in the US region (galaxy.meteor.com), deploy your example app to example.meteorapp.com.
+
+If you're in the EU region (eu-west-1.galaxy.meteor.com), deploy your example app to example.eu.meteorapp.com.
+
+Substitute in the actual name of your app for 'example'. Beyond that, no DNS configuration is necesary; Galaxy handles all of this for you.
+
+*Note:* example.meteor.com is not available. You cannot deploy to meteor.com domains. 
+
+<h2 id="subdomain">Hosting on a subdomain with CNAME</h2>
 
 If your app is deployed at a subdomain such as `www.mycompany.com` or `app.mycompany.com`, simply add a CNAME record to your DNS provider pointing to:
 
@@ -18,7 +26,9 @@ If your app is deployed at a subdomain such as `www.mycompany.com` or `app.mycom
 
 - `eu-west-1.galaxy-ingress.meteor.com` for applications in the eu-west-1 region.  
 
-Ensure the hostname you [deployed to](deploying-to-galaxy) matches the [fully qualified domain name](https://en.wikipedia.org/wiki/Fully_qualified_domain_name) of your app (i.e `app.mycompany.com`).
+Ensure the hostname you [deployed to](deploy-quickstart.html) matches the [fully qualified domain name](https://en.wikipedia.org/wiki/Fully_qualified_domain_name) of your app (i.e `app.mycompany.com`).
+
+[We recommend you use SSL](encryption.html) as a best practice. You can either enable LetsEncrypt using our integration or upload your own certificate.
 
 <h2 id="root-domain-redirect">Redirecting the root domain</h2>
 
@@ -29,7 +39,9 @@ This is done by setting up URL redirection from `mycompany.com` to `www.mycompan
 * [URL Record at DNSimple](https://support.dnsimple.com/articles/url-record/)
 * [Free redirect service from wwwizer](http://wwwizer.com/naked-domain-redirect)
 
-<h2 id="hosting-root-domain">Hosting on a root domain (advanced)</h2>
+Because another service is hosting the redirect page, you'll need to set up SSL using their methods, which will most likely involve a certificate upload.
+
+<h2 id="hosting-root-domain">Hosting on a root domain using ALIAS</h2>
 
 In this scenario, you do want to emphasize a short URL like mycompany.com. While hosting on a root domain [can introduce complications](http://www.yes-www.org/why-use-www/), it's possible to do by using an ALIAS (also called an ANAME record).
 
@@ -41,27 +53,19 @@ Not all DNS providers support this feature and the implementation is usually ver
 
 *Note:* If you decide to host directly on a root domain, you will likely want to forward `www` to your root domain by setting up URL redirection (see above).
 
-<h2 id="root-domain-redirect-https">Setting up the root domain when HTTPS is enabled</h2>
-
-There are two options for configuring a redirect of https://example.com to https://www.example.com. Option 1 is usually easier to implement.
-
-**Option 1**
-
-Follow the [Hosting on a root domain](#hosting-root-domain) instructions; then enable Force HTTPS for the app on the Settings page.
-
-**Option 2**
-
-Use a redirection service that supports both root domains as well as SSL. A good example is [Amazon’s S3 redirection](http://docs.aws.amazon.com/AmazonS3/latest/dev/how-to-page-redirect.html).
+[We recommend you use SSL](encryption.html) as a best practice. You can either enable LetsEncrypt using our integration or upload your own certificate.
 
 <h2 id="dns-propagation">DNS propagation</h2>
 
-DNS is distributed and cooperative, and it takes time for the world to see your changes.  In many countries, it usually updates within about 30 minutes, but it can take up to 24 hours or even longer in some circumstances (depending on the record's TTL). You can check your ALIAS (or ANAME or CNAME) independently of your app in the terminal by typing `dig +show www.mycompany.com`. If your `ANSWER SECTION` includes a record like this, you are in good shape:
+DNS is distributed and cooperative, and it takes time for the world to see your changes.  In many countries, it usually updates within about 30 minutes, but it can take up to 24 hours or even longer in some circumstances (depending on the record's TTL).
+
+You can check if your ALIAS or ANAME or CNAME setting was successful in the terminal by typing `dig +show www.mycompany.com`. If your `ANSWER SECTION` includes a record like this, you are in good shape:
 
 ```
 www.mycompany.com.    1800   IN    CNAME        galaxy-ingress.meteor.com.
 ```
 
-<h2 id="testing">Testing locally</h2>
+<h2 id="testing">Testing your DNS changes</h2>
 
 A quick way to test that your app is working is by modifying the `/etc/hosts` file to resolve your app's hostname to the Galaxy load balancer's IP address directly. Note that this will only affect your local machine.
 

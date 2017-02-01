@@ -125,6 +125,9 @@ DEPLOY_HOSTNAME=galaxy.meteor.com meteor deploy [hostname] --settings path-to-se
 
 Where `username` is the Galaxy account username the application should deploy into. You need to have deploy privileges to the account.  Note: this only applies for new applications, as any subsequent deploys will already be attached to an account and re-use the same account.
 
+<h3 id="deployment-token">Using a deployment token</h3>
+
+Galaxy can also accept deployment tokens, which are good for 90 days. You can pass METEOR_SESSION_FILE=token.json before meteor login to generate a login session token so you don’t have to share your login credentials with third-party service providers. This solution is recommended for continuous integration service providers.
 
 <h2 id="configure-app">Configure your application</h2>
 

@@ -4,9 +4,9 @@ order: 13
 description: Learn how to configure your MongoDB provider for Galaxy
 ---
 
-Since Galaxy doesn’t provide a MongoDB cluster, you will need to host one yourself. We recommend using a dedicated database hosting service such as [mLab](https://mongolab.com/) or [Compose](https://www.compose.io/).
+Since Galaxy doesn’t provide a MongoDB cluster, you will need to host one yourself. We recommend using a dedicated database hosting service such as [mLab](https://mongolab.com/), [Compose](https://www.compose.io/) or [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
 
-To configure MongoDB for your Meteor application, see the detailed steps in the [Deployment guide](/deploy-guide.html#mongo-configure). 
+To configure MongoDB for your Meteor application, see the detailed steps in the [Deployment guide](/deploy-guide.html#mongo-configure).
 
 For optimum performance, please ensure your database is running in the same region.
 
@@ -23,3 +23,4 @@ MongoDB is configured using environment variables in your 'settings.json' file. 
 **Learn more**
 
 - Read this [compose.io article](https://www.compose.io/articles/meteors-new-galaxy-and-the-perfectly-composed-companion/) for using Compose.io databases with your Meteor app
+- Read this [OK GROW! article](https://www.okgrow.com/posts/mongodb-atlas-setup) for a detailed step-by-step guide to connecting your Meteor app to MongoDB Atlas with Oplog tailing.

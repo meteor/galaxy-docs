@@ -159,3 +159,4 @@ If you are deploying to a root domain (for example mydomain.com), then follow th
 - Read our [quickstart guide](/deploy-quickstart.html) for deploying applications
 - Learn how to [deploy to a specific account](/deploy-guide.html#account-selection)
 - Learn how to [transfer apps](/transfer-apps.html) between accounts
+- Learn how to [deploy a production ready MongoDB database on Atlas](https://www.okgrow.com/posts/mongodb-atlas-setup) by OK GROW!.

@@ -18,9 +18,11 @@ You will need a Galaxy account that your Meteor Development Account has deploy a
 
 [Sign up](https://www.meteor.com/galaxy/signup) here for a new Galaxy Account.
 
-Once you have created your account, sign in to Galaxy. Depending on the region you want to deploy your apps to, go to the URL and sign in with your username and password:
-- For US East: https://galaxy.meteor.com/
-- For EU West: https://eu-west-1.galaxy.meteor.com/
+Once you have created your account, sign in to Galaxy. Depending on the region you want to deploy your apps to, go to the URL and sign in with your username and password.
+
+For US East, use https://galaxy.meteor.com/.
+
+For EU West, use https://eu-west-1.galaxy.meteor.com/.
 
 <h2 id="mongo-configure">Configure your MongoDB database</h2>
 
@@ -125,6 +127,11 @@ DEPLOY_HOSTNAME=galaxy.meteor.com meteor deploy [hostname] --settings path-to-se
 
 Where `username` is the Galaxy account username the application should deploy into. You need to have deploy privileges to the account.  Note: this only applies for new applications, as any subsequent deploys will already be attached to an account and re-use the same account.
 
+<h3 id="deployment-token">Using a deployment token</h3>
+
+Galaxy can also accept deployment tokens, which are good for 90 days. You can pass `METEOR_SESSION_FILE=token.json` before meteor login to generate a login session token so you don’t have to share your login credentials with third-party service providers. This solution is recommended for continuous integration service providers.
+
+You can use a deployment token as an alternative to typing in your username and password. You'll need to specify it both when running `meteor login` on your machine to generate the file, and when actually running `meteor deploy` in CI. Please note that your organization choice does not affect your deployment token.
 
 <h2 id="configure-app">Configure your application</h2>
 

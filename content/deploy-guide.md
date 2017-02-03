@@ -11,10 +11,10 @@ This guide will cover:
 - Specifying Meteor application settings
 - Setting the hostname
 - Using the Meteor CLI tool to deploy the application
-- Configuring domains and SSL Encryption for the application 
+- Configuring domains and SSL Encryption for the application
 
 <h2 id="sign-up">Sign up for Galaxy</h2>
-You will need a Galaxy account that your Meteor Development Account has deploy authorization to use. 
+You will need a Galaxy account that your Meteor Development Account has deploy authorization to use.
 
 [Sign up](https://www.meteor.com/galaxy/signup) here for a new Galaxy Account.
 
@@ -26,17 +26,17 @@ For EU West, use https://eu-west-1.galaxy.meteor.com/.
 
 <h2 id="mongo-configure">Configure your MongoDB database</h2>
 
-If your Meteor application has a package that requires Mongo, then you'll need a Mongo database configured for your application. If you want to use a hosted database provider, we recommend that you provision it from one of these providers: [mLab](https://www.mlab.com) and [compose](https://www.compose.io).
+If your Meteor application has a package that requires Mongo, then you'll need a Mongo database configured for your application. If you want to use a hosted database provider, we recommend that you provision it from one of these providers: [mLab](https://www.mlab.com), [compose](https://www.compose.io) or [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
 
 For optimum performance, we recommend that you setup a database in the same AWS region as your app deployment.
 
 <h3 id="">Configure a free Sandbox MongoDB database</h3>
 
-mLab offers a free sandbox MongoDB database. The sandbox is a single node database that is good for non-production workloads. 
+mLab offers a free sandbox MongoDB database. The sandbox is a single node database that is good for non-production workloads.
 
 This sub-section will walk through creating a new sandbox database.  
 
-Create an account on mLab. Within your mLab account, go to https://mlab.com/create and select the Sandbox option in the Single-node plan. 
+Create an account on mLab. Within your mLab account, go to https://mlab.com/create and select the Sandbox option in the Single-node plan.
 
 <img>
 <img src="images/mlab-create-account.png" style="">
@@ -46,7 +46,7 @@ Provide a name for the database and create the deployment.
 
 <img src="images/mlab-set-db-name.png" style="">
 
-The newly created database will be listed in your account. Select the database. 
+The newly created database will be listed in your account. Select the database.
 
 <img src="images/mlab-view-databases.png" style="">
 
@@ -66,10 +66,10 @@ In your application directory, create a file named settings.json. Put the Mongo 
 
 ```
 {
-  "galaxy.meteor.com": { 
-     "env": { 
-       "MONGO_URL": "mongodb://<dbuser>:<dbpassword>@<dbserver>:<dbport>/<dbname>" 
-     } 
+  "galaxy.meteor.com": {
+     "env": {
+       "MONGO_URL": "mongodb://<dbuser>:<dbpassword>@<dbserver>:<dbport>/<dbname>"
+     }
    }
 }
 ```
@@ -141,7 +141,7 @@ Once your application is successfully deployed, head on over to your [Galaxy das
 
 Add a domain in your application’s settings and point your DNS to:
 
-- `galaxy-ingress.meteor.com` for applications in the us-east-1 region. 
+- `galaxy-ingress.meteor.com` for applications in the us-east-1 region.
 
 - `eu-west-1.galaxy-ingress.meteor.com` for applications in the eu-west-1 region.  
 

@@ -18,7 +18,7 @@ Note that code-level review lies outside the scope of Galaxy's support.
 
 <h2 id="503-errors">503 errors and Deployment failures</h2>
 
-The 503 error will show `Service Unavailable: No healthy enpoints to handle the request` when you try to visit your URL. This indicates that our image builder was not able to successfully create a container, when attempting to deploy. This usually indicates a problem in your code that prevents deployment.
+The 503 error will show `Service Unavailable: No healthy endpoints to handle the request` when you try to visit your URL. This indicates that our image builder was not able to successfully create a container, when attempting to deploy. This usually indicates a problem in your code that prevents deployment.
 
 You may see the 503 error temporarily, if trying to resolve a URL in your browser within 1-2 minutes of issuing your deploy command. If you've waited 15 minutes or more, the problem will almost surely not resolve itself by waiting longer.
 

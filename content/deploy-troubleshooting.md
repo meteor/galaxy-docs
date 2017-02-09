@@ -25,15 +25,15 @@ This usually indicates that the module or package working locally in your applic
  
 When you deploy an app, we bundle node_modules into it. npm packages that are required on the client side get built into the bundle uploaded to Galaxy. As a result, Galaxy doesn't need to use npm install for client side bundling to work.
 
-If you are using dynamic requires - for example, require(variable) instead of require("fixed-name") - that may cause issues. To avoid this, put require("react/package.json") somewhere in your application code to make sure it gets bundled.
+If you are using dynamic requires - for example, `require(variable)` instead of `require("fixed-name")` - that may cause issues. To avoid this, put `require("react/package.json")` somewhere in your application code to ensure it gets bundled.
 
 If you happen to be using an older version of Meteor, consider updating to a more recent version, as that has been known to resolve issues in some cases.
 
 You may also find these commands helpful:
-meteor npm --save invariant
-meteor npm --save object-assign
+`meteor npm --save invariant`
+`meteor npm --save object-assign`
 
-A recommended method to mimic Galaxy is to run locally with --production. The way node_modules are pulled in is different on a remote deployment to a server (including Galaxy) than when building locally. The --production setting will minimize and concatenate all the JS into one file, which should assist you in the troubleshooting process.
+A recommended method to mimic Galaxy is to run locally with `--production`. The way node_modules are pulled in is different on a remote deployment to a server (including Galaxy) than when building locally. The `--production` setting will minimize and concatenate all the JS into one file, which should assist you in the troubleshooting process.
 
 <h2 id="package-not-compatible">Package not compatible</h2>
 
@@ -45,5 +45,16 @@ Version 1.2.1 of Meteor (and higher) provides the `METEOR_BINARY_DEP_WORKAROUND`
 2. Next, deploy to galaxy by setting the `METEOR_BINARY_DEP_WORKAROUND=t` environment variable. An example deploy command would look like `METEOR_BINARY_DEP_WORKAROUND=t DEPLOY_HOSTNAME=galaxy.meteor.com meteor deploy ...` , replacing `...` with the rest of your deployment command (URL, settings, etc.).
 
 If you are uncertain if this matches your situation, you can use [this test app](https://github.com/zol/meteor-bignum-test) to reproduce the error and confirm a fix.
+
+<h2 id="memory-issues">Memory issues</h2>
+
+The log message `The container has run out of memory. A new container will be started to replace it.` means that the container running your application tried to get more memory than was allocated to it. Containers in this state are automatically killed.
+
+You can see memory utilization in the container view of your app. If your container is running out of memory, you may need to [scale up](/scaling.html) according to your needs. You can always scale back down after refactoring your app to consume less memory.
+
+You can also use npm modules to profile your memory usage and better understand erratic memory usage. The heapdump npm module is one such module, though you'll need to transfer the file it creates to a place like S3 to download it for closer examination. Another such module is memwatch-next. While Galaxy does not officially support the use of third-party modules, our community has found them to be helpful in the past.
+
+
+
 
 

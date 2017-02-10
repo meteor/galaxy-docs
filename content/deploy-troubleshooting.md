@@ -8,23 +8,29 @@ description: Learn how to troubleshoot your deploy and get answers to frequently
 
 Check these items if you're having trouble with uptime, performance or deployment.
 - Your Meteor version. More current versions may resolve issues found in older Meteor versions. While the reverse is rare and generally shouldn't happen, if you're recently upgraded Meteor versions and start having difficulties, consider reverting to your last Meteor version.
-- Your container's memory and CPU usage. If your app is running out of memory, you may need to either switch to a larger container or refactor your app to use less memory. In the short term, the only guaranteed solution is to use a container large enough to handle all your app's memory needs.
-- Your app's logs. While 'All' shows all errors, consider breaking it down by tab. If your app is running and struggling before failing, check the 'App' tab. If your app is crashing before deployment and never successfully launching, check the 'Service' tab. Note that both can happen simultaneously: the earlier version of your app may be throwing errors, while the recent version created to fix the problem may have a code error preventing deployment. In that case, 'Service' will be more helpful.
-- Check GitHub to see if your issue is listed with a suggested workaround or solution.
-- Consider running more than 1 container, if uptime for your app is mission-critical and you're currently running a single container.
-- Write in to support. To minimize the back-and-forth, please send in the name of the affected app, the conditions that trigger the issue (confirmed or suspected), steps to reproduce, and relevant logs. Try to resolve errors listed in the logs before writing in.
+- Your container's memory and CPU usage. If your app is running out of memory, you may need to switch to a larger container, use more containers, or refactor your app to use less memory. In the short term, the only guaranteed solution is to use enough Galaxy resources to handle all your app's memory needs.
+- Your app's logs. While 'All' shows all errors, consider breaking it down by tab. If your app is running and struggling before failing, check the 'App' tab. If your app fails when Galaxy tries to build it into a container image, check the 'Service' tab. Note that both can happen simultaneously: the earlier version of your app may be throwing errors, while the recent version created to fix the problem may have a code issue preventing deployment. In that case, 'Service' will be more helpful.
+- Check <a href="http://github.com/meteor/meteor/issues/">GitHub</a> to see if any related Meteor issue lists workarounds or solutions.
+- Consider running more than 1 container, or 3 containers to qualify for high-availability status. If you run one container, that makes the machine your container is running on a single point of failure. In the event of a hardware problem, your app will be down until Galaxy starts it up again on a new machine.
+- <a href="mailto:support@meteor.com">Write in</a> to support. To minimize the back-and-forth, please send in the name of the affected app, the conditions that trigger the issue (confirmed or suspected), steps to reproduce, and relevant logs. Try to resolve errors listed in the logs before writing in.
 
-Note that code-level review lies outside the scope of Galaxy's support.
+Note that code-level review lies outside the scope of Galaxy's support. If this is important to you, consider [Meteor Development Support](/support.html).
 
-<h2 id="503-errors">503 errors and Deployment failures</h2>
+<h2 id="503-errors">503 errors and Deployment Failures</h2>
 
-The 503 error will show `Service Unavailable: No healthy endpoints to handle the request` when you try to visit your URL. This indicates that our image builder was not able to successfully create a container, when attempting to deploy. This usually indicates a problem in your code that prevents deployment.
+Your app may throw a 503 error and show `Service Unavailable: No healthy endpoints to handle the request` when you try to visit your URL. This means no healthy containers are currenty available to serve your app.
 
-You may see the 503 error temporarily, if trying to resolve a URL in your browser within 1-2 minutes of issuing your deploy command. If you've waited 15 minutes or more, the problem will almost surely not resolve itself by waiting longer.
+There are several potential reasons for this. One example is that all containers are unhealthy, because they are all stuck in a CPU loop. Another reason is that none are running, because they all recently crashed (especially if the total number of your containers is 1, and it hasn't had time to restart). Another reason is because your build failed, if this is the first time you're deploying a container for that app or if the only other available containers built successfully but are unhealthy.
 
-Begin by checking the logs tab to see if your app is crashing. The 'Service' tab will show build errors. Most of the time, the key to a solution will be found in the exception or error messages. Keep iterating on code fixes and deployments until the error goes away, a new error appears, or your app deploys successfully.
+The most common cause for this error is a problem in your code that prevents deployment.
 
-A common cause of the 503 error is that your `MONGO_URL` variable is missing or is set incorrectly. You can verify what `MONGO_URL` Galaxy is using by going to the app's dashboard and choosing the settings tab. To learn how to set it correctly, check the following resources:
+In some cases you may see the 503 error temporarily, if trying to resolve a URL in your browser within 1-2 minutes of issuing your deploy command. If you've waited 15 minutes or more, the problem will almost surely not resolve itself by waiting longer.
+
+Begin by checking the logs tab to see if your app is crashing. The 'Service' tab may show you important build errors, in addition to the stopping and starting of containers.
+
+Most of the time, the key to a solution will be found in the exception or error messages. Keep iterating on code fixes and deployments until the error goes away, a new error appears, or your app deploys successfully.
+
+A common reason that your app may be crashing on startup is that your `MONGO_URL` variable is missing or is set incorrectly. You can verify what `MONGO_URL` Galaxy is using by going to the app's dashboard and choosing the settings tab. To learn how to set it correctly, check the following resources:
 
 * [Environment variables](/environment-variables.html) will show you how to set up your `settings.json` file.
 * [This compose.io article](https://www.compose.io/articles/meteors-new-galaxy-and-the-perfectly-composed-companion/) explains the settings for `MONGO_URL` and `MONGO_OPLOG_URL` in detail.
@@ -32,19 +38,23 @@ A common cause of the 503 error is that your `MONGO_URL` variable is missing or 
 If you believe your `MONGO_URL` is set correctly, try the following:
 
 * Check the app dashboard and verify the app status is green (healthy).
-* Run `dig +show [your app's domain]` in the terminal and verify that its CNAME points to `galaxy-ingress.meteor.com`. You can learn how to set up DNS [here](configuring-dns). If you recently changed your DNS settings, you may need to wait for the new records to propagate. DNS changes often propagate within 30 minutes (depending on the TTL configured for the record set), but in some cases it can take up to 24 hours. Contact your DNS provider if you think there is a problem.
+* Run `dig +show [your app's domain]` in the terminal and verify that its CNAME points to Galaxy. You can learn how to set up DNS [here](/dns.html).
+  * If you are in the US region, your CNAME should point to `us-east-1.galaxy-ingress.meteor.com`.
+  * If you are in the EU region, your CNAME should point to `eu-west-1.galaxy-ingress.meteor.com.` 
+
+If you recently changed your DNS settings, you may need to wait for the new records to propagate. DNS changes often propagate within 30 minutes (depending on the TTL configured for the record set), but in some cases it can take up to 24 hours. Contact your DNS provider if you think there is a problem.
 
 <h2 id="package-error">Module missing or npm error</h2>
 
-This usually indicates that the module or package working locally in your application is not working after deployment. While third-party packages are unsupported, an explanation may help you to troubleshoot.
+This usually indicates that the module or package working locally in your application is not working after deployment. While we don't offer support for the use of specific third-party packages, an explanation may help you to troubleshoot.
  
-When you deploy an app, we bundle node_modules into it; npm packages that are required on the client side get built into the bundle uploaded to Galaxy. Galaxy doesn't need to use `npm install` for client side bundling to work.
+When you deploy an app, we bundle node_modules into it; npm packages that are required on the client side get built into the bundle uploaded to Galaxy. Galaxy doesn't need to run `npm install` for client side bundling to work.
 
 Note that dynamic requires may cause issues. An example would be using `require(variable)` instead of `require("fixed-name")`. To avoid this, put `require("react/package.json")` somewhere in your app's code to ensure it gets bundled.
 
 You may find these commands to be helpful:
-`meteor npm --save invariant`
-`meteor npm --save object-assign`
+- `meteor npm --save invariant`
+- `meteor npm --save object-assign`
 
 If you happen to be using an older version of Meteor, consider updating to a more recent version, as that has been known to resolve issues in the past.
 
@@ -65,13 +75,13 @@ If you are uncertain if this matches your situation, you can use [this test app]
 
 Memory issues are frequently indicated in your logs. The log message `The container has run out of memory. A new container will be started to replace it.` means that the container running your application tried to get more memory than was allocated to it. Containers in this state are automatically killed.
 
-You can see memory utilization in the container view of your app. Check the 5 minute, 1 hour, 1 day and 30 day views; if you see memory spiking to 90% or more, that is almost certainly the problem.
+You can see memory utilization in the [container view](/containers.html) of your app. If you see memory spiking to 90% or more, that is almost certainly the problem.
 
-If your container is running out of memory, you may need to [scale up](/scaling.html) to fix this. You can always scale back down after refactoring your app to consume less memory. If you continue to run your app as is, the only way to prevent it from dying is to allocate containers with more than enough memory.
+If your container is running out of memory, you may need to [scale up](/scaling.html) to fix this. You can always scale back down after refactoring your app to consume less memory. If you continue to run your app as is, the only way to prevent it from dying is to allocate resources with more than enough memory. A working solution may include more containers, bigger containers, or both.
 
-You can also use npm modules to profile your memory usage and pinpoint erratic memory usage. The heapdump npm module is one such module, though you'll need to transfer the file it creates to a place like S3 for download and closer examination. Another such module is memwatch-next.
+You can also use npm modules to profile your memory usage and pinpoint erratic memory usage. The <a href="https://www.npmjs.com/package/heapdump">heapdump</a> npm module is one such module, though you'll need to transfer the file it creates to a place like S3 for download and closer examination. Another such module is <a href="https://www.npmjs.com/package/memwatch-next">memwatch-next</a>.
 
-While Galaxy does not officially support the use of third-party modules, our community has found the use of memory-profiling npm modules to be helpful. Check the GitHub page of your module for more information.
+While Galaxy does not officially support the use of specific third-party modules, our community has found these memory-profiling npm modules to be helpful, though you may prefer to use others. Check the <a href="https://github.com/">GitHub page</a> of your module for more information.
 
 
 

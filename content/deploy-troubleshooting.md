@@ -62,7 +62,7 @@ A recommended method is to mimic Galaxy and run locally with `--production`. The
 
 <h2 id="package-not-compatible">Package not compatible</h2>
 
-Apps that contain local packages with NPM dependancies which include binary components will fail to deploy to Galaxy by default. You'll know you've run into this issue when a `meteor deploy` to Galaxy fails with `[package] is not compatible with architecture 'os.linux.x86\_64` (where [package] is replaced by the package name that is causing the issue).
+Apps that contain local packages with NPM dependencies which include binary components will fail to deploy to Galaxy by default. You'll know you've run into this issue when a `meteor deploy` to Galaxy fails with `[package] is not compatible with architecture 'os.linux.x86\_64` (where [package] is replaced by the package name that is causing the issue).
 
 Version 1.2.1 of Meteor (and higher) provides the `METEOR_BINARY_DEP_WORKAROUND` environment variable for Galaxy deployment. To deploy your app to Galaxy using the workaround:
 

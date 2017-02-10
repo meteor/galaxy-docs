@@ -16,7 +16,7 @@ Check these items if you're having trouble with uptime, performance or deploymen
 
 Note that code-level review lies outside the scope of Galaxy's support. If this is important to you, consider [Meteor Development Support](/support.html).
 
-<h2 id="503-errors">503 errors and Deployment Failures</h2>
+<h2 id="503-errors">503 errors or Deployment Failures</h2>
 
 Your app may throw a 503 error and show `Service Unavailable: No healthy endpoints to handle the request` when you try to visit your URL. This means no healthy containers are currenty available to serve your app.
 

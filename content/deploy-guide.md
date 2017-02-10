@@ -78,7 +78,7 @@ For a detailed example of the settings.json file, see [Environment Variables](/e
 
 <h2 id="select-hostname">Select a hostname</h2>
 
-Choose a hostname that the public can use to access your application. You can choose a custom domain or you can choose the included `meteorapp.com` domain.
+Choose a hostname that the public can use to access your application. You can choose a custom domain or you can choose the included `meteorapp.com` domain; for the latter, you can deploy to `<hostname>.meteorapp.com` in the US region and `<hostname>.eu.meteorapp.com` in the EU region.
 
 If you have a custom domain name, then you need to point your DNS (in your registrar’s dashboard) to galaxy-ingress.meteor.com. More instructions on DNS configuration can be found [here](/dns.html).
 

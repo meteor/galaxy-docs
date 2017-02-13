@@ -24,8 +24,6 @@ There are several potential reasons for this. One example is that all containers
 
 The most common cause for this error is a problem in your code that prevents deployment.
 
-In some rare cases you may see the 503 error temporarily, if trying to resolve a URL in your browser within 1-2 minutes of issuing your deploy command. Waiting should resolve this. If you've waited 15 minutes or more, however, the problem will almost surely not resolve itself by waiting longer.
-
 Begin by checking the logs tab to see if your app is crashing. The 'Service' tab may show you important build errors, in addition to the stopping and starting of containers.
 
 Most of the time, the key to a solution will be found in the exception or error messages. Keep iterating on code fixes and deployments until the error goes away, a new error appears, or your app deploys successfully.

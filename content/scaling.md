@@ -41,11 +41,11 @@ Horizontal scaling does not restart your containers.
 
 <h3 id="garbage-collection">Garbage collection</h3>
 
-You may need to change Node's garbage collection settings for optimal performance. Garbage collection, in this context, refers to automatic memory management; memory occupied by objects that are no longer in use by the program will be freed up for general use, though the required checks can come at a performance cost.
+You may need to change Node's garbage collection settings for optimal performance. Garbage collection, in this context, refers to automatic memory management. Memory occupied by objects that are no longer in use by your code will be freed up for general use within your container, though the required checks can come at a performance cost.
 
 Node, the JavaScript engine that powers Meteor, has a powerful garbage collector which can be tuned via various command-line options. One of the most important knobs is the "max old space size" setting, which tells Node how much memory to allow the largest part of the memory heap to grow to. Node's default, in our environment, is to allow slightly over 1 GB (1400 MB) of memory for this space.
 
-You can control this option (and more generally, any Node setting that can be controlled at the command-line) by setting the environment variable $NODE_OPTIONS in your [settings.json file](/environment-variables.html). The value of the --max-old-space-size flag is an integer number of megabytes. For example, to allow 2000MB for the old space size, set NODE_OPTIONS to "--max-old-space-size=2000".
+You can control this option (and more generally, any Node setting that can be controlled at the command-line) by setting the environment variable `$NODE_OPTIONS` in your [settings.json file](/environment-variables.html). The value of the --max-old-space-size flag is an integer number of megabytes. For example, to allow 2000MB for the old space size, set `NODE_OPTIONS` to "--max-old-space-size=2000".
 
 Note that while this is generally the largest part of a Node process's memory usage, it does not control the Node process's entire memory footprint. Additionally, if your process forks other subprocesses, they will use their own memory within your container's memory limits.
 

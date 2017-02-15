@@ -18,7 +18,7 @@ If you're using the spiderable package, please remove it, since the prerender an
 
 You can check to see if your changes took hold by running the <a href="https://curl.haxx.se/download.html">curl</a> command. If the URL of your app is www.example.com, you would run this command:
 
-`curl 'https://www.launchisland.com/?_escaped_fragment_='`
+`curl 'https://www.example.com/?_escaped_fragment_='`
 
 Confirm that the output contains the text that your site shows once the JS is run. If you only see a header and a reference to a script file, you may need to troubleshoot.
 

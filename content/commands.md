@@ -70,6 +70,12 @@ This can be important for troubleshooting, if you are a member of one or more or
 
 `meteor list-sites` lists all the apps you have access to, across all your organizations.
 
+<h3 id="update">update</h3>
+
+`meteor update` allows you to update your Meteor version. You can use the `--release` flag to specify a version.
+
+This can resolve issues involving deployment and application uptime, especially if the Meteor version used to deploy your app significantly predates the last released Meteor version.
+
 <h2>Other</h2>
 
 <h3 id="mup">mup</h3>

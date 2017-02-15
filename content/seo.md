@@ -16,7 +16,7 @@ If you're using the spiderable package, please remove it, since the prerender an
 
 <h4 id="confirmation">Confirmation</h4>
 
-You can check to see if your changes took hold by running this command:
+You can check to see if your changes took hold by running the <a href="https://curl.haxx.se/download.html">curl</a> command. If the URL of your app is www.example.com, you would run this command:
 
 `curl 'https://www.launchisland.com/?_escaped_fragment_='`
 

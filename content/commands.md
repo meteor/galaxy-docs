@@ -4,13 +4,15 @@ order: 46
 description: A reference for Galaxy's commands
 ---
 
-<h2>meteor</h2>
+<h2>meteor CLI: Frequently Used Commands</h2>
 
 <h3 id="deployment">deploy</h3>
 
 <h4>Mac and Unix</h4>
 
-`meteor deploy` can be used for creating new apps and updating existing ones. The full command is:
+`meteor deploy` can be used for creating new apps and updating existing ones.
+
+The full command is:
 
 `DEPLOY_HOSTNAME=[region] meteor deploy [hostname] --settings [path-to-settings-file]`
 
@@ -46,6 +48,12 @@ You don't have to set `DEPLOY_HOSTNAME` if you app meets the conditions describe
 
 For this to work, you must have deploy privileges to the account `new_account_name`.
 
+<h3 id="whoami">whoami</h3>
+
+`meteor whoami` will tell you which user you are logged in as.
+
+This can be important for troubleshooting, if you are a member of one or more organizations and are having access issues.
+
 <h3 id="login">login</h3>
 
 `meteor login` will prompt you for a username and password to log you in, given the correct credentials.
@@ -61,12 +69,6 @@ This token will be good for 90 days from the time of generation.
 <h3 id="logout">logout</h3>
 
 `meteor logout` will log you out as the current user.
-
-<h3 id="whoami">whoami</h3>
-
-`meteor whoami` will tell you which user you are logged in as.
-
-This can be important for troubleshooting, if you are a member of one or more organizations and are having access issues.
 
 <h3 id="list-sites">list-sites</h3>
 

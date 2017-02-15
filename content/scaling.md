@@ -6,7 +6,7 @@ description: Learn how to improve your app’s performance by scaling
 
 Scaling and sizing your application is specific to the architecture and performance characteristics of your app. As apps grow they often require more resources to perform well. Galaxy accommodates growth by offering vertical and horizontal resource scaling.
 
-As long as you maintain one continously running container at all times, scaling with Galaxy happens without downtime, so your users will not experience service interruption.
+Scaling with Galaxy happens without downtime; your users will not experience service interruption, as long as you maintain at least one continuously running container at all times.
 
 <h3 id="what-to-look-for">What to look for</h3>
 
@@ -18,23 +18,15 @@ We recommend that you scale when your app’s container usage exceeds either 70%
 
 By default, new applications are deployed to Compact containers. Compact containers are appropriate for small apps. For large codebases, we recommend that you run your app on Standard containers.
 
-You may need to change your garbage collection settings for optimal performance. Garbage collection, in this context, refers to automatic memory management; memory occupied by objects that are no longer in use by the program can be freed up for general use, though the required checks can come at a performance cost.
-
-Garbage collection settings for Meteor apps should be based on how much memory is available to the container. Since all Meteor apps run in a Node.js environment, it's important to know that Node's default settings effectively limit you to slightly over 1 GB (1400 MB) of memory. This is the amount of heap size that can be used by the main process, by default.
-
-You can manage the amount of memory dedicated to garbage collection by setting the environment variable `$NODE_OPTIONS`. To set aside 2000 MB for garbage collection, for example, use this setting:
-
-`$NODE_OPTIONS='--max-old-space-size=2000'`
-
-Users of Double/Quad containers are advised to set the flag higher than its default of 1400 MB to take full advantage of their memory. Conversely, users of Standard/Compact sized containers may want to lower this setting to prevent OOM (out-of-memory) errors. 
-
 **Vertical scaling** increases your app's available resources by expanding the size of each container. Use this method of scaling when your app requires more CPU or RAM than the current container size can handle. If handling a single user/connection needs more memory/CPU than will fit in the currently used container size, you'll need to vertically scale, even if the usage doesn't last for long.
 
-You should set $NODE_OPTIONS higher than the default of 1400 MB to take full advantage of larger-sized containers.
+Use NODE_OPTIONS to set --max-old-space-size higher than the default of 1400 MB, to take full advantage of larger-sized containers.
 
 Vertical scaling works best for one-time changes, when you won't need to change container sizes often. 
 
-Vertical scaling restarts all your containers. Note that larger containers may take slightly longer to scale up or restart.
+Vertical scaling restarts all your containers. If you adjust the container size of a container, that container will restart.
+
+Note that larger containers may take slightly longer to restart.
 
 <img src="images/container-upsize.gif" style="">
 
@@ -46,3 +38,19 @@ Horizontal scaling is recommended if you need to scale up and down, gradually an
 A good rule of thumb is to use the smallest container size that can handle a single user's load, and scale horizontally beyond this.
 
 Horizontal scaling does not restart your containers.
+
+<h3 id="garbage-collection">Garbage collection</h3>
+
+You may need to change Node's garbage collection settings for optimal performance. Garbage collection, in this context, refers to automatic memory management; memory occupied by objects that are no longer in use by the program will be freed up for general use, though the required checks can come at a performance cost.
+
+Node, the JavaScript engine that powers Meteor, has a powerful garbage collector which can be tuned via various command-line options. One of the most important knobs is the "max old space size" setting, which tells Node how much memory to allow the largest part of the memory heap to grow to. Node's default, in our environment, is to allow slightly over 1 GB (1400 MB) of memory for this space.
+
+You can control this option (and more generally, any Node setting that can be controlled at the command-line) by setting the environment variable $NODE_OPTIONS in your [settings.json file](/environment-variables.html). The value of the --max-old-space-size flag is an integer number of megabytes. For example, to allow 2000MB for the old space size, set NODE_OPTIONS to "--max-old-space-size=2000".
+
+Note that while this is generally the largest part of a Node process's memory usage, it does not control the Node process's entire memory footprint. Additionally, if your process forks other subprocesses they will use their own memory within your container's memory limits.
+
+Users of Double and Quad containers may want to set this flag higher than its default of 1400 MB to take full advantage of their container's memory. Conversely, users of Standard and Compact containers may want to lower this setting to ensure that their Node processes do their best to collect enough garbage to stay inside the container limits.
+
+We are currently investigating the best default values for each container type, in order to set defaults for our users. We welcome your <a href="mailto:support@meteor.com>feedback</a> as to what works best, along with any conditions or qualifications that apply.
+
+

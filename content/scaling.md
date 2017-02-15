@@ -20,7 +20,7 @@ By default, new applications are deployed to Compact containers. Compact contain
 
 **Vertical scaling** increases your app's available resources by expanding the size of each container. Use this method of scaling when your app requires more CPU or RAM than the current container size can handle. If handling a single user/connection needs more memory/CPU than will fit in the currently used container size, you'll need to vertically scale, even if the usage doesn't last for long.
 
-Use NODE_OPTIONS to set --max-old-space-size higher than the default of 1400 MB, to take full advantage of larger-sized containers.
+Consider changing your [garbage collection settings](#garbage-collection), to take full advantage of larger-sized containers.
 
 Vertical scaling works best for one-time changes, when you won't need to change container sizes often. 
 

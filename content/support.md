@@ -4,7 +4,7 @@ order: 52
 description: Learn about support options available in Galaxy
 ---
 
-All Galaxy customers can submit support cases from within Galaxy and receive a 1 business day Support SLA for non-critical tickets. A critical ticket is one that impacts Galaxy's performance or uptime as a whole, and will receive expedited review.
+All Galaxy customers can submit support cases from within Galaxy and receive a 1 business day Support SLA.
 
 You can submit tickets to Galaxy support at [galaxy.meteor.com/support](https://galaxy.meteor.com/support). You can also access the ticketing page from the left-hand dropdown menu within your Galaxy account.
 

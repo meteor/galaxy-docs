@@ -47,10 +47,12 @@ Node, the JavaScript engine that powers Meteor, has a powerful garbage collector
 
 You can control this option (and more generally, any Node setting that can be controlled at the command-line) by setting the environment variable $NODE_OPTIONS in your [settings.json file](/environment-variables.html). The value of the --max-old-space-size flag is an integer number of megabytes. For example, to allow 2000MB for the old space size, set NODE_OPTIONS to "--max-old-space-size=2000".
 
-Note that while this is generally the largest part of a Node process's memory usage, it does not control the Node process's entire memory footprint. Additionally, if your process forks other subprocesses they will use their own memory within your container's memory limits.
+Note that while this is generally the largest part of a Node process's memory usage, it does not control the Node process's entire memory footprint. Additionally, if your process forks other subprocesses, they will use their own memory within your container's memory limits.
 
-Users of Double and Quad containers may want to set this flag higher than its default of 1400 MB to take full advantage of their container's memory. Conversely, users of Standard and Compact containers may want to lower this setting to ensure that their Node processes do their best to collect enough garbage to stay inside the container limits.
+Users of Double and Quad containers may want to set this flag higher than its default of 1400 MB to take full advantage of their container's memory.
 
-We are currently investigating the best default values for each container type, in order to set defaults for our users. We welcome your <a href="mailto:support@meteor.com>feedback</a> as to what works best, along with any conditions or qualifications that apply.
+Conversely, users of Standard and Compact containers may want to lower this setting to ensure that their Node processes do their best to collect enough garbage to stay inside their container limits.
+
+We are currently investigating the best default values for each container type, in order to set defaults for our users. We welcome your <a href="mailto:support@meteor.com">feedback</a> as to what works best, in your own experience.
 
 

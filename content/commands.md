@@ -6,11 +6,11 @@ description: A reference for Galaxy's commands
 
 <h2>meteor</h2>
 
-<h3 id="deployment">Deployment</h3>
+<h3 id="deployment">deploy</h3>
 
 <h4>Mac and Unix</h4>
 
-The deployment command for creating new apps and updating existing ones is:
+`meteor deploy` can be used for creating new apps and updating existing ones. The full command is:
 
 `DEPLOY_HOSTNAME=[region] meteor deploy [hostname] --settings [path-to-settings-file]`
 
@@ -29,14 +29,16 @@ If your app satisfies these conditions, the deployment command can be simplified
 
 <h4>Windows</h4>
 
-On Windows, the `DEPLOY_HOSTNAME` command should be split into two separate commands, occupying two separate lines.
+On Windows, the deploy command should be split into two separate commands, occupying two separate lines.
 
 `DEPLOY_HOSTNAME=...` should be changed to `SET DEPLOY_HOSTNAME...` and should occupy one line.
 `meteor deploy` should occupy another line.
 
 You don't have to set `DEPLOY_HOSTNAME` if you app meets the conditions described above.
 
-<h3 id="transfer-app">Transfer application</h3>
+<h3 id="transfer-app">transfer</h3>
+
+`meteor authorized` can be used to transfer applications.
 
 - Transfer with Meteor 1.3 or higher versions: `DEPLOY_HOSTNAME=galaxy.meteor.com meteor authorized [your_existing_hostname] --transfer [new_account_name]`
 
@@ -74,11 +76,6 @@ This can be important for troubleshooting, if you are a member of one or more or
 
 `meteor update` allows you to update your Meteor version. You can use the `--release` flag to specify a version.
 
-This can resolve issues involving deployment and application uptime, especially if the Meteor version used to deploy your app significantly predates the last released Meteor version.
+This can resolve issues involving deployment and application uptime, especially if the Meteor version used to deploy your app significantly predates the most recent Meteor version.
 
-<h2>Other</h2>
-
-<h3 id="mup">mup</h3>
-
-The `mup` utility is not officially supported on Galaxy. While you are free to use it, note that you may encounter issues with mup that Galaxy support cannot resolve.
 

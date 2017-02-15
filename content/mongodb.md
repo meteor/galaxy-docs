@@ -23,4 +23,4 @@ MongoDB is configured using environment variables in your 'settings.json' file. 
 **Learn more**
 
 - Read this [compose.io article](https://www.compose.io/articles/meteors-new-galaxy-and-the-perfectly-composed-companion/) to use Compose.io databases with your Meteor app
-- Read this [OK Grow! article](https://www.okgrow.com/posts/mongodb-atlas-setup) to connect your Meteor app to MongoDB Atlas with Oplog tailing
+- Read this [OK GROW! article](https://www.okgrow.com/posts/mongodb-atlas-setup) to connect your Meteor app to MongoDB Atlas with Oplog tailing

@@ -38,9 +38,9 @@ On Windows, the deploy command should be split into two separate commands, occup
 
 You don't have to set `DEPLOY_HOSTNAME` if you app meets the conditions described above.
 
-<h3 id="transfer-app">transfer</h3>
+<h3 id="transfer-app">authorized transfer</h3>
 
-`meteor authorized` can be used to transfer applications.
+`meteor authorized` can be used to transfer applications with the `--transfer` flag.
 
 - Transfer with Meteor 1.3 or higher versions: `DEPLOY_HOSTNAME=galaxy.meteor.com meteor authorized [your_existing_hostname] --transfer [new_account_name]`
 
@@ -70,7 +70,7 @@ This token will be good for 90 days from the time of generation.
 
 `meteor logout` will log you out as the current user.
 
-<h3 id="list-sites">list-sites</h3>
+<h3 id="list-sites">list sites</h3>
 
 `meteor list-sites` lists all the apps you have access to, across all your organizations.
 

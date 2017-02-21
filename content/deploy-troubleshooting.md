@@ -13,13 +13,13 @@ Check these items if you're having trouble with uptime, performance or deploymen
 - Check <a href="http://github.com/meteor/meteor/issues/">GitHub</a> to see if any related Meteor issue lists workarounds or solutions.
 - Check the <a href="http://github.com/meteor/meteor/issues/">forums</a> for related issues and solutions. 
 - Consider running more than 1 container, or 3 containers to qualify for high-availability status. If you run one container, that makes the machine your container is running on a single point of failure. In the event of a hardware problem, your app will be down until Galaxy starts it up again on a new machine.
-- Write in to <a href="mailto:support@meteor.com">support</a>. To minimize the back-and-forth, please send in the name of the affected app, the conditions that trigger the issue (confirmed or suspected), steps to reproduce, and relevant logs. Try to resolve errors listed in the logs before writing in.
+- Write in to <a href="mailto:support@meteor.com">support</a>. To minimize the back-and-forth, please send in the name of the affected app, the conditions that trigger the issue (confirmed or suspected), steps to reproduce, and relevant logs. Try to resolve errors listed in the logs before writing in. If your container is running with the error, please try to leave it in the running state when contacting support, since that will help us to troubleshoot. Do not remove containers throwing errors, as that will prevent us from inspecting the container and the logs. While stopping the container is not as helpful for troubleshooting as leaving the container running, it will leave the logs intact.
 
 Note that code-level review lies outside the scope of Galaxy's support. If this is important to you, consider [Meteor Development Support](/support.html).
 
-<h2 id="503-errors">503 errors or Deployment Failures</h2>
+<h2 id="503-errors">503 errors, 502 errors or Deployment Failures</h2>
 
-Your app may throw a 503 error and show `Service Unavailable: No healthy endpoints to handle the request` when you try to visit your URL. This means no healthy containers are currently available to serve your app.
+Your app may throw a 503 error and show `Service Unavailable: No healthy endpoints to handle the request` when you try to visit your URL. You may also see a 502 error with the message `Registered endpoints failed to handle the request.` This means no healthy containers are currently available to serve your app.
 
 There are several potential reasons for this. One example is that all containers are unhealthy, because they are all stuck in a CPU loop. Another reason is that none are running, because they all recently crashed (especially if the total number of your containers is 1, and it hasn't had time to restart). Another reason is because your build failed, if this is the first time you're deploying a container for that app or if the only other available containers built successfully but are unhealthy.
 

@@ -7,13 +7,18 @@ description: Learn how to troubleshoot your deploy and get answers to frequently
 <h2 id="general-advice">General Advice</h2>
 
 Check these items if you're having trouble with uptime, performance or deployment.
-- Your Meteor version. More current versions may resolve issues found in older Meteor versions. While the reverse is rare and generally shouldn't happen, if you're recently upgraded Meteor versions and start having difficulties, consider reverting to your last Meteor version.
-- Your container's memory and CPU usage. If your app is running out of memory, you may need to switch to a larger container, use more containers, or refactor your app to use less memory. In the short term, the only guaranteed solution is to use enough Galaxy resources to handle all your app's memory needs.
-- Your app's logs. While 'All' shows all output, consider breaking it down by tab. If your app is running and struggling before failing, check the 'App' tab. If your app fails when Galaxy tries to build it into a container image, check the 'Service' tab. Note that both can happen simultaneously: the earlier version of your app may be throwing errors, while the recent version created to fix the problem may have a code issue preventing deployment. In that case, 'Service' will be more helpful.
-- Check <a href="http://github.com/meteor/meteor/issues/">GitHub</a> to see if any related Meteor issue lists workarounds or solutions.
-- Check the <a href="http://github.com/meteor/meteor/issues/">forums</a> for related issues and solutions. 
-- Consider running more than 1 container, or 3 containers to qualify for high-availability status. If you run one container, that makes the machine your container is running on a single point of failure. In the event of a hardware problem, your app will be down until Galaxy starts it up again on a new machine.
-- Write in to <a href="mailto:support@meteor.com">support</a>. To minimize the back-and-forth, please send in the name of the affected app, the conditions that trigger the issue (confirmed or suspected), steps to reproduce, and relevant logs. Try to resolve errors listed in the logs before writing in. If your container is running with the error, please try to leave it in the running state when contacting support, since that will help us to troubleshoot. Do not remove containers throwing errors, as that will prevent us from inspecting the container and the logs. While stopping the container is not as helpful for troubleshooting as leaving the container running, it will leave the logs intact.
+* Your Meteor version. More current versions may resolve issues found in older Meteor versions. While the reverse is rare and generally shouldn't happen, if you're recently upgraded Meteor versions and start having difficulties, consider reverting to your last Meteor version.
+* Your container's memory and CPU usage. If your app is running out of memory, you may need to switch to a larger container, use more containers, or refactor your app to use less memory.
+  * In the short term, the only guaranteed solution is to scale up and use enough Galaxy resources to handle all your app's memory needs.
+* Your app's logs. While 'All' shows all output, consider breaking it down by tab. If your app is running and struggling before failing, check the 'App' tab. If your app fails when Galaxy tries to build it into a container image, check the 'Service' tab.
+  * Note that both can happen simultaneously: the earlier version of your app may be throwing errors, while the recent version created to fix the problem may have a code issue preventing deployment. In that case, the 'Service' tab will be more helpful.
+* Check <a href="http://github.com/meteor/meteor/issues/">GitHub</a> to see if any related Meteor issue lists workarounds or solutions.
+* Check the <a href="https://forums.meteor.com/">forums</a> for related issues and solutions. 
+* Consider running more than 1 container, or 3 containers to qualify for high-availability status.
+  * If you run one container, that makes the machine your container is running on a single point of failure. In the event of a hardware failure, your app will be down until Galaxy starts it up again on a new machine.
+* Write in to <a href="mailto:support@meteor.com">support</a>. To minimize the back-and-forth, please send in the name of the affected app, the conditions that trigger the issue (confirmed or suspected), steps to reproduce, and relevant logs. Try to resolve errors listed in the logs before writing in.
+  * If your app's container is running with the error, please try to leave it in the running state when contacting support, since that will help us to troubleshoot. Do not remove containers throwing errors, as that will prevent us from inspecting the container and the logs.
+  * While stopping the container is not as helpful for troubleshooting as leaving the container running, it will leave the logs intact.
 
 Note that code-level review lies outside the scope of Galaxy's support. If this is important to you, consider [Meteor Development Support](/support.html).
 
@@ -55,9 +60,17 @@ You may find these commands to be helpful:
 - `meteor npm --save invariant`
 - `meteor npm --save object-assign`
 
+A common type of npm error will show up during the build process, in the 'All' or 'Service' tab of your logs. If you were deploying an example package using version number 1.0.0, it would show up as follows:
+
+`Failed at the example@1.0.0 install script 'prebuild --install'`
+
+This means that this package failed to install, using that version. A long term solution may involve either communicating with the package maintainer, or our release manager, to massage the issue. In the short term, the best immediate solution usually involves changing the version - either of the package version, or of the Meteor version, if builds suddenly start failing upon upgrading to a new Meteor version.
+
 If you happen to be using an older version of Meteor, consider updating to a more recent version, as that has been known to resolve issues in the past.
 
-A recommended method is to mimic Galaxy and run locally with `--production`. The way node_modules are pulled in is different on a remote deployment to a server (including Galaxy) than when building locally. The `--production` setting will minimize and concatenate all the JS into one file.
+If neither of those solutions work, try removing the package entirely, and making any necessary adjustments to your app to accommodate this change.
+
+A recommended method for emulating Galaxy is to run locally with `--production`. The way node_modules are pulled in is different on a remote deployment to a server (including Galaxy) than when building locally. The `--production` setting will minimize and concatenate all the JS into one file.
 
 <h2 id="package-not-compatible">Package not compatible</h2>
 

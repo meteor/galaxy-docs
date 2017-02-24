@@ -52,7 +52,7 @@ If you recently changed your DNS settings, you may need to wait for the new reco
 
 <h2 id="deployment-failure">Deployment failures</h2>
 
-A deployment failure means simply that our system couldn't create a container to deploy your app. If this happens, it will be noted in the logs.
+A deployment failure means our system couldn't build a container to deploy your app. When this happens, it is noted in the logs.
 
 Begin by checking the logs tab to see if your app is crashing. The 'Service' tab may show you important build errors, in addition to the stopping and starting of containers.
 

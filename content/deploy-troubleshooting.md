@@ -26,19 +26,15 @@ Note that code-level review lies outside the scope of Galaxy's support. If this 
 
 You may see a 502 error with the message `Registered endpoints failed to handle the request` when you try to visit your URL. This means that the request failed, despite the fact that our system thought there was a healthy container at the beginning of the request.
 
-This often happens because our back end wasn't able to respond, due to a deployment failure (described below).
+This often happens because our back end wasn't able to respond, due to a [deployment failure](#deployment-failure).
 
-<h2 id="503-errors">503 errors or Deployment Failures</h2>
+<h2 id="503-errors">503 errors</h2>
 
 Your app may throw a 503 error and show `Service Unavailable: No healthy endpoints to handle the request` when you try to visit your URL.  This means no healthy containers are currently available to serve your app.
 
 There are several potential reasons for this. One example is that all containers are unhealthy, because they are all stuck in a CPU loop. Another reason is that none are running, because they all recently crashed (especially if the total number of your containers is 1, and it hasn't had time to restart). Another reason is because your build failed, if this is the first time you're deploying a container for that app or if the only other available containers built successfully but are unhealthy.
 
-The most common cause for this error is a problem in your code that prevents deployment.
-
-Begin by checking the logs tab to see if your app is crashing. The 'Service' tab may show you important build errors, in addition to the stopping and starting of containers.
-
-Most of the time, the key to a solution will be found in the exception or error messages. Keep iterating on code fixes and deployments until the error goes away, a new error appears, or your app deploys successfully.
+The most common cause of the 503 error is a problem in your code that prevents deployment - a [deployment failure](#deployment-failure).
 
 A common reason that your app may be crashing on startup is that your `MONGO_URL` variable is missing or is set incorrectly. You can verify what `MONGO_URL` Galaxy is using by going to the app's dashboard and choosing the settings tab. To learn how to set it correctly, check the following resources:
 
@@ -54,6 +50,14 @@ If you believe your `MONGO_URL` is set correctly, try the following:
 
 If you recently changed your DNS settings, you may need to wait for the new records to propagate. DNS changes often propagate within 30 minutes (depending on the TTL configured for the record set), but in some cases it can take up to 24 hours. Contact your DNS provider if you think there is a problem.
 
+<h2 id="deployment-failure">Deployment failures</h2>
+
+A deployment failure means simply that our system couldn't create a container to deploy your app. If this happens, it will be noted in the logs.
+
+Begin by checking the logs tab to see if your app is crashing. The 'Service' tab may show you important build errors, in addition to the stopping and starting of containers.
+
+Most of the time, the key to a solution will be found in the exception or error messages. Keep iterating on code fixes and deployments until the error goes away, a new error appears, or your app deploys successfully.
+
 <h2 id="package-error">Module missing or npm error</h2>
 
 This usually indicates that the module or package working locally in your application is not working after deployment. While we don't offer support for the use of specific third-party packages, an explanation may help you to troubleshoot.
@@ -62,9 +66,7 @@ When you deploy an app, we bundle node_modules into it; npm packages that are re
 
 Note that dynamic requires may cause issues. An example would be using `require(variable)` instead of `require("fixed-name")`. To avoid this, put `require("react/package.json")` somewhere in your app's code to ensure it gets bundled.
 
-You may find these commands to be helpful:
-- `meteor npm --save invariant`
-- `meteor npm --save object-assign`
+You may find the `meteor npm install --save package` command to be helpful, where `package` should be replaced with the name of the package you are trying to install. This will add the package to your package.json file, using the latest version and any needed dependencies. Alternatively, you can also specify a package file directly in your package.json file, though you'll need to add the version number and any necessary dependencies.
 
 A common type of npm error will show up during the build process, in the 'All' or 'Service' tab of your logs. If you were deploying an example package using version number 1.0.0, it would show up as follows:
 

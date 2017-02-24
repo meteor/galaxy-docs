@@ -66,7 +66,9 @@ When you deploy an app, we bundle node_modules into it; npm packages that are re
 
 Note that dynamic requires may cause issues. An example would be using `require(variable)` instead of `require("fixed-name")`. To avoid this, put `require("react/package.json")` somewhere in your app's code to ensure it gets bundled.
 
-You may find the `meteor npm install --save package` command to be helpful, where `package` should be replaced with the name of the package you are trying to install. This will add the package to your package.json file, using the latest version and any needed dependencies. Alternatively, you can also specify a package file directly in your package.json file, though you'll need to add the version number and any necessary dependencies.
+You may find the `meteor npm install --save package` command to be helpful, where `package` should be replaced with the name of the package you are trying to install. This will add the package to your package.json file, using the latest version and any needed dependencies.
+
+Alternatively, you can specify the package name directly in your package.json file, with the version number and any necessary dependencies.
 
 A common type of npm error will show up during the build process, in the 'All' or 'Service' tab of your logs. If you were deploying an example package using version number 1.0.0, it would show up as follows:
 

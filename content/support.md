@@ -10,9 +10,15 @@ You can submit tickets to Galaxy support at [galaxy.meteor.com/support](https://
 
 Galaxy's support hours cover all business days (American holidays excepted) from Monday-Friday, 9AM-6PM Pacific time. Our commitment to you is to respond within the span of one business day from the time of your message's arrival. If you write in outside business hours, your message's arrival time, for SLA purposes, will be counted as the next earliest business hour.
 
-Galaxy support is dedicated to resolving Galaxy-specific issues and troubleshooting cases where Galaxy's performance may be at fault. While we strive for "best effort" with regard to questions pertaining to Meteor, they are not an officially supported Galaxy subject area. 
+Galaxy support is dedicated to resolving Galaxy-specific issues and troubleshooting cases where Galaxy's performance may be at fault. If you surface a bug in Meteor or Galaxy that prevents deployment, or uncover a problem or performance issue with Galaxy as a whole, Galaxy support will work to resolve this.
+
+While we strive for "best effort" with regard to non-deployment questions pertaining to Meteor, third-party packages and other topics, they are not an officially supported Galaxy subject matter area. Note that Galaxy support does not provide code-level review.
 
 If you would like expert assistance with your Meteor question, consider a subscription to [Meteor Developer Support](#developer).
+
+Alternatively, you may also want to consider using <a href="http://github.com/meteor/meteor/issues/">GitHub</a> or the <a href="https://forums.meteor.com/">forums</a>. GitHub is excellent for tracking issues, while the forums are provided for community use concerning any kind of issue.
+
+If your issue cannot be resolved as presented, it may be considered as a feature request, though Galaxy support cannot provide ETA's or timelines for roadmap-related questions.
 
 <h3 id="Enhanced Galaxy Support Options">Enhanced Galaxy Support Options</h3>
 

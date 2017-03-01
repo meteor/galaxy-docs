@@ -21,6 +21,8 @@ Since every app has unique architecture and performance characteristics, adjusti
 - Double: 2 GB/2 ECU
 - Quad: 4 GB/4 ECU
 
+[ECU units](https://aws.amazon.com/ec2/faqs/) are defined by Amazon and are designed to provide a relative measure of processing power.
+
 <h3 id="connect-logs">View logs from a specific container</h3>
 
 Accessing the logs from a specific container can help you diagnose any unexpected behavior. Click on the <span class="icon-document"></span> icon near the container name to see the logs from this container.
@@ -40,33 +42,6 @@ In instances when application code behaves unexpectedly you may want to kill a c
 
 You can kill a container by going to the designated container on your app's containers page and clicking the kill button below the title.
 
-<h3 id="icon-meanings">Icon meanings</h3>
-
-<img src="/images/green_circle.png" style="margin: 1em 0;"/>
-
-The green full circle indicates that your container is running, and passed its health checks. For an app that should be running, this is the desired state.
-
-<img src="/images/green_circle_outlined.png" style="margin: 1em 0;"/>
-
-The outlined green full circle means that your app's status is starting, updating, or stopping. It should leave this state fairly quickly.
-
-<img src="/images/empty_circle_outlined.png" style="margin: 1em 0;"/>
-
-The outlined green empty circle means that your app is starting, but has encountered an issue.
-
-This can mean:
-- your app has never successfully run all its containers, or has not since the last time it was stopped
-- your app is currently running (possibly unhealthy) containers fewer in number than the amount it is trying to run
-
-Potential causes include a build failure, or a regular crash upon startup.
-
-<img src="/images/red_circle.png" style="margin: 1em 0;"/>
-
-The red full circle indicates that all containers your app is trying to run are unhealthy. Your app won't be able to load or run successfully until you resolve the issue.
-
-<img src="/images/gray_circle.png" style="margin: 1em 0;"/>
-
-The gray full circle indicates that all containers in your app are stopped. If necessary, you can check the Activity Log in your account's right-hand sidebar to determine which user(s) completed this action.
 
 
 

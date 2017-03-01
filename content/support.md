@@ -31,6 +31,5 @@ Meteor Developer Support helps customers build production Meteor apps the right 
 <h3 id="Holidays">Galaxy Holidays</h3>
 
 Non-business days in 2017 include:
-- 2/20/17 - President's Day
 - 5/29/17 - Memorial Day
 - 7/4/17 - Independence Day

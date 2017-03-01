@@ -18,8 +18,6 @@ If you would like expert assistance with your Meteor question, consider a subscr
 
 Alternatively, you may also want to consider using <a href="http://github.com/meteor/meteor/issues/">GitHub</a> or the <a href="https://forums.meteor.com/">forums</a>. GitHub is excellent for tracking issues, while the forums are provided for community use concerning any kind of issue.
 
-If your issue cannot be resolved as presented, it may be considered as a feature request, though Galaxy support cannot provide ETA's or timelines for roadmap-related questions.
-
 <h3 id="Enhanced Galaxy Support Options">Enhanced Galaxy Support Options</h3>
 
 Galaxy customers have the option to upgrade to higher levels of paid Galaxy support for guaranteed response times as short as 15-minutes with 24x7x365 coverage, including critical cases related to application downtime or degraded performance. Please contact [Galaxy Sales](mailto:galaxysales@meteor.com) for more details.

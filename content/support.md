@@ -4,6 +4,8 @@ order: 52
 description: Learn about support options available in Galaxy
 ---
 
+<h3 id="Galaxy Support">Galaxy Support</h3>
+
 All Galaxy customers can submit support cases from within Galaxy and receive a 1 business day Support SLA.
 
 You can submit tickets to Galaxy support at [galaxy.meteor.com/support](https://galaxy.meteor.com/support). You can also access the ticketing page from the left-hand dropdown menu within your Galaxy account.
@@ -26,7 +28,7 @@ Galaxy customers have the option to upgrade to higher levels of paid Galaxy supp
 
 Meteor Developer Support helps customers build production Meteor apps the right way, ensuring architectural best practices and timely responses to technical inquiries related to Meteor application development. You can request more information <a name="developer"/>[here](https://www.meteor.com/developer-support)</a>.
 
-<h3 id="Holidays">Galaxy Holidays</h3>
+<h3 id="Holidays">Company Holidays</h3>
 
 Non-business days in 2017 include:
 - 5/29/17 - Memorial Day

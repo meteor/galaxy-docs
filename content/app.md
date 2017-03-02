@@ -50,7 +50,7 @@ This can mean:
 - your app has never successfully run all its containers, or has not since the last time it was stopped
 - your app is currently running (possibly unhealthy) containers fewer in number than the amount it is trying to run
 
-Potential causes include a build failure, or a regular crash upon startup.
+Potential causes include a build failure caused by an inability to build your code as written, or a regular crash upon startup. The problem will need to be resolved before your app can successfully run.
 
 <img src="/images/red_circle.png" style="margin: 1em 0;"/>
 
@@ -58,7 +58,7 @@ The red full circle indicates that all the containers your app is trying to run 
 
 <img src="/images/gray_circle.png" style="margin: 1em 0;"/>
 
-The gray full circle indicates that all the containers in your app's container set are stopped. If necessary, you can check the Activity Log in your account's right-hand sidebar to determine which user(s) completed this action.
+The gray full circle indicates that all the containers in your app's container set are stopped. If necessary, you can check the Activity Log in your account's right-hand sidebar to determine which user(s) completed this action. You can always restart your containers, at any time.
 
 <h2 id="settings">Settings</h2>
 

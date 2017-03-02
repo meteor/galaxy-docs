@@ -18,7 +18,19 @@ To use Oplog tailing, the database must be a Replica set enabled database. The s
 
 <h2 id="configuration">Configuring the app settings file</h2>
 
-MongoDB is configured using environment variables in your 'settings.json' file. Refer to the [environment variables](/environment-variables.html) section of the Help Center to find a complete example. Note that a valid `MONGO_URL` is required unless you have removed the `mongo` package from your app. A missing/invalid `MONGO_URL` is a common cause of failed deployments.
+MongoDB is configured using environment variables in your 'settings.json' file. Refer to the [environment variables](/environment-variables.html) section of the Help Center to find a complete example.
+
+Note that a valid `MONGO_URL` is required unless you have removed the `mongo` package from your app. A missing/invalid `MONGO_URL` is a common cause of failed deployments.
+
+<h2 id="authentication">Connecting to your database</h2>
+
+Galaxy is agnostic about how you talk to MongoDB, as long as you provide the appropriate credentials. If you can't connect, follow these steps:
+
+1. Review the settings and examples on the [Environment variables](/environment-variables.html) page
+2. Try connecting without a Mongo Oplog URL to see if that is causing the issue
+3. Verify the URL and username/password by connecting through a MongoDB tool or CLI
+
+If it still isn't working, you may want to check <a href="http://github.com/meteor/meteor/issues/">GitHub</a> and the <a href="https://forums.meteor.com/">forums</a>, or write to your database provider. They'll usually have more visibility into the issue than anyone in Galaxy support.
 
 **Learn more**
 

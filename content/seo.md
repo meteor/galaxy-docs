@@ -24,9 +24,11 @@ Confirm that the output contains the text that your site shows once the JS is ru
 
 <h4 id="prerender-details">Administration and settings</h4>
 
-The prerendering service offered by Galaxy is designed to provide a shared service across all apps in Galaxy, with pre-determined caching policies and no need for per app management or administration through the service. There is no login available to users. We currently offer a guarantee of at most 4 days as the cache freshness policy.
+The prerendering service offered by Galaxy is designed to provide a shared service across all apps in Galaxy, with pre-determined caching policies and no need for per app management or administration through the service.
 
-If you need to trigger your own recaches, for specific pages, then you should use your own prerender.io service.
+We currently offer a guarantee of at most 4 days as the cache freshness policy. There is no login available to users. 
+
+If you need to trigger your recaches for specific pages, or need to recache more frequently, we recommend that you set up your own prerender.io service.
 
 <h4 id="prerender-alternative">Using your own Prerender service</h4>
 

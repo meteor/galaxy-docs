@@ -1,10 +1,10 @@
 ---
-title: Logging
+title: Logs
 order: 32
 description: How to use your logs
 ---
 
-Logging should be your first stop when troubleshooting any Galaxy issue. When working with Galaxy support, an agent will usually begin by consulting your logs. If a clearly noted issue has been marked there, you can save time by reading the logs and iterating on your code until the error goes away.
+The logs should be your first stop when troubleshooting any Galaxy issue. When working with Galaxy support, an agent will usually begin by consulting your logs. If a clearly noted issue has been marked there, you can save time by reading the logs and iterating on your code until the error goes away.
 
 You can reach the logs dashboard by clicking on your app, then clicking the "Logs" tab.
 

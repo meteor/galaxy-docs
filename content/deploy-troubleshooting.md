@@ -24,9 +24,9 @@ Note that code-level review lies outside the scope of Galaxy's support. If this 
 
 <h2 id="502-errors">502 errors</h2>
 
-You may see a 502 error with the message `Registered endpoints failed to handle the request` when you try to visit your URL. This means that the request failed, despite the fact that your system thought there was a healthy container at the beginning of the request.
+You may see a 502 error with the message `Registered endpoints failed to handle the request` when you try to visit your URL. This means that the request failed, despite the fact that our system thought there was a healthy container at the beginning of the request.
 
-This often happens because your back end wasn't able to respond, due to a [deployment failure](#deployment-failure).
+This often happens because your backend wasn't able to respond, when communicating with our proxy servers. You may need to profile your app to determine the cause of this error.
 
 <h2 id="503-errors">503 errors</h2>
 

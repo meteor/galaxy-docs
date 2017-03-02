@@ -24,9 +24,9 @@ Note that code-level review lies outside the scope of Galaxy's support. If this 
 
 <h2 id="502-errors">502 errors</h2>
 
-You may see a 502 error with the message `Registered endpoints failed to handle the request` when you try to visit your URL. This means that the request failed, despite the fact that our system thought there was a healthy container at the beginning of the request.
+You may see a 502 error with the message `Registered endpoints failed to handle the request` when you try to visit your URL. This means that the request failed, despite the fact that your system thought there was a healthy container at the beginning of the request.
 
-This often happens because our back end wasn't able to respond, due to a [deployment failure](#deployment-failure).
+This often happens because your back end wasn't able to respond, due to a [deployment failure](#deployment-failure).
 
 <h2 id="503-errors">503 errors</h2>
 
@@ -52,7 +52,7 @@ If you recently changed your DNS settings, you may need to wait for the new reco
 
 <h2 id="deployment-failure">Deployment failures</h2>
 
-A deployment failure means our system couldn't build a container to deploy your app. When this happens, it is noted in the logs.
+A deployment failure means your system couldn't build a container to deploy your app. When this happens, it is noted in the logs.
 
 Begin by checking the logs tab to see if your app is crashing. The 'Service' tab may show you important build errors, in addition to the stopping and starting of containers.
 
@@ -74,7 +74,7 @@ A common type of npm error will show up during the build process, in the 'All' o
 
 `Failed at the example@1.0.0 install script 'prebuild --install'`
 
-This means that this package failed to install, using that version. A long term solution may involve either communicating with the package maintainer, or our release manager, to massage the issue. In the short term, the best immediate solution usually involves changing the version - either of the package version, or of the Meteor version, if builds suddenly start failing upon upgrading to a new Meteor version.
+This means that this package failed to install, using that version. A long term solution may involve either communicating with the package maintainer, or the Meteor release manager, to massage the issue. In the short term, the best immediate solution usually involves changing the version - either of the package version, or of the Meteor version, if builds suddenly start failing upon upgrading to a new Meteor version.
 
 If you happen to be using an older version of Meteor, consider updating to a more recent version, as that has been known to resolve issues in the past.
 
@@ -103,7 +103,7 @@ If your container is running out of memory, you may need to [scale up](/scaling.
 
 You can also use npm modules to profile your memory usage and pinpoint erratic memory usage. The <a href="https://www.npmjs.com/package/heapdump">heapdump</a> npm module is one such module, though you'll need to transfer the file it creates to a place like S3 for download and closer examination. Another such module is <a href="https://www.npmjs.com/package/memwatch-next">memwatch-next</a>.
 
-While Galaxy does not officially support the use of specific third-party modules, our community has found these memory-profiling npm modules to be helpful, though you may prefer to use others. Check the <a href="https://github.com/">GitHub page</a> of your module for more information.
+While Galaxy does not officially support the use of specific third-party modules, the community has found these memory-profiling npm modules to be helpful, though you may prefer to use others. Check the <a href="https://github.com/">GitHub page</a> of your module for more information.
 
 
 

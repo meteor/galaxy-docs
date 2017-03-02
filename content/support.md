@@ -22,11 +22,15 @@ Alternatively, you may also want to consider using <a href="http://github.com/me
 
 <h3 id="Enhanced Galaxy Support Options">Enhanced Galaxy Support Options</h3>
 
-Galaxy customers have the option to upgrade to higher levels of paid Galaxy support for guaranteed response times as short as 15-minutes with 24x7x365 coverage, including critical cases related to application downtime or degraded performance. Please contact [Galaxy Sales](mailto:galaxysales@meteor.com) for more details.
+Galaxy customers have the option to upgrade to higher levels of paid Galaxy support for guaranteed response times as short as 15-minutes with 24x7x365 coverage, including critical cases related to application downtime or degraded performance.
+
+Please contact [Galaxy Sales](mailto:galaxysales@meteor.com) for more details.
 
 <h3 id="Meteor Developer Support">Meteor Developer Support</h3>
 
-Meteor Developer Support helps customers build production Meteor apps the right way, ensuring architectural best practices and timely responses to technical inquiries related to Meteor application development. You can request more information <a name="developer"/>[here](https://www.meteor.com/developer-support)</a>.
+Meteor Developer Support helps customers build production Meteor apps the right way, ensuring architectural best practices and timely responses to technical inquiries related to Meteor application development.
+
+Please fill out our <a name="developer"/>[Developer Support](https://www.meteor.com/developer-support)</a> form for more information.
 
 <h3 id="Holidays">Company Holidays</h3>
 

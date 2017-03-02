@@ -33,6 +33,7 @@ sidebar_categories:
   Monitor:
     - app
     - containers
+    - logs
   Manage:
     - scaling
     - high-availability

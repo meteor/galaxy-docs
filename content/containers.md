@@ -21,10 +21,11 @@ Since every app has unique architecture and performance characteristics, adjusti
 - Double: 2 GB/2 ECU
 - Quad: 4 GB/4 ECU
 
+[ECU](https://aws.amazon.com/ec2/faqs/#hardware-information) is defined by Amazon and is designed to provide a relative measure of processing power. The abbreviation stands for EC2 Compute Unit.
+
 <h3 id="connect-logs">View logs from a specific container</h3>
 
 Accessing the logs from a specific container can help you diagnose any unexpected behavior. Click on the <span class="icon-document"></span> icon near the container name to see the logs from this container.
-
 
 <h3 id="connect-container">Connect to a specific container</h3>
 
@@ -32,8 +33,20 @@ If you suspect a container is misbehaving or would like to access container-spec
 
 Since we re-route to a new container when your container is unavailable, you should verify which container subscriptions and remote method calls are being routed through.
 
-You can [inspect the `X-Galaxy-Container` response header](https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading#http-headers) for the `websocket` resource using [Chrome DevTools](https://developer.chrome.com/devtools) or the equivalent in your browser.
+You can inspect the `X-Galaxy-Container` [response header](https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading#http-headers) for the `websocket` resource using [Chrome DevTools](https://developer.chrome.com/devtools) or the equivalent in your browser.
 
 <h3 id="kill">Kill a container</h3>
 
-In instances when application code behaves unexpectedly you may want to kill a container. This forcefully stops the  running process and launches your Meteor app in a fresh container. Kill a container by going to the designated container on your app's containers page and clicking the kill button below the title.
+In instances when application code behaves unexpectedly you may want to kill a container. This forcefully stops the  running process and launches your Meteor app in a fresh container.
+
+You can kill a container by going to the designated container on your app's containers page and clicking the kill button below the title.
+
+
+
+
+
+
+
+
+
+

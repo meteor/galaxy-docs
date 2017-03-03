@@ -16,7 +16,7 @@ There are several logging tabs you can click, below the "Logs" tab itself. These
 
 - All: for the combined view.
 - App: for application-specific messages and errors.
-- Service: for messages generated during the build process.
+- Service: for messages generated during the build process, and messages saying that a container is starting or stopping.
 - Errors: exclusively for errors, which are flagged in red in other tab views.
 
 Breakdown by tab will be especially useful if you have multiple containers running, and are regularly deploying.
@@ -37,7 +37,7 @@ Check this to see what your app is doing during normal operations. You can alway
 
 If your app isn't successfully deploying, this is the tab you'll want to check. Our image builder tries to build your app into a container; if it fails, the failure will be noted here.
 
-A <a href="https://github.com/meteor/meteor/issues/8136">common error</a> is that a particular version of a package wasn't able to be built by our image builder. If this happens to your app, the output will frequently include a line like this, after the package install line:
+One type of error (example <a href="https://github.com/meteor/meteor/issues/8136">here</a>) is that a particular version of a package wasn't able to be built by our image builder. If this happens to your app, the output will frequently include a line like this, after the package install line:
 
 `node-pre-gyp install --fallback-to-build`
 

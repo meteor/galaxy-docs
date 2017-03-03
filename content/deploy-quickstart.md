@@ -32,7 +32,9 @@ DEPLOY_HOSTNAME=galaxy.meteor.com meteor deploy [hostname] --settings path-to-se
 
 <h3 id="deploy-windows">Windows</h3>
 
-If you are using Windows, the commands to deploy are slightly different. You need to set the environment variable first, then run the deployment command second (the syntax is the same as everything you'd put for meteor deploy). The commands will look like this:
+If you are using Windows, the commands to deploy are slightly different. You need to set the environment variable first, then run the deployment command second (the syntax is the same as everything you'd put for meteor deploy).
+
+The commands will look like this, for the example case of us-east-1:
 
 ```
 $ SET DEPLOY_HOSTNAME=galaxy.meteor.com
@@ -43,14 +45,9 @@ $ meteor deploy [hostname] --settings path-to-settings.json
 
 <h2 id="configure-app">Configure your app</h2>
 
-Once your app is successfully deployed, head on over to your [Galaxy dashboard](http://galaxy.meteor.com) to configure your app by adding a custom domain name and enabling SSL encryption.
+Once your app is successfully deployed, head on over to the [us-east-1](http://galaxy.meteor.com) dashboard or the [eu-west-1](http://eu-west-1.galaxy.meteor.com) dashboard to configure your app by adding a custom domain name and enabling SSL encryption.
 
-Add a domain in your app’s settings and point your DNS to `galaxy-ingress.meteor.com`.
-
-Note: For apps in Galaxy Europe (eu-west-1 region): 
-
-- go to this [Galaxy dashboard](http://eu-west-1.galaxy.meteor.com) 
-- point your DNS to `eu-west-1.galaxy-ingress.meteor.com`
+Add a domain in your app’s settings and point your DNS to `galaxy-ingress.meteor.com` for the us-east-1 region, or `eu-west-1.galaxy-ingress.meteor.com` for the eu-west-1 region.
 
 <img src="images/email-add-domain.png" style="">
 
@@ -60,7 +57,9 @@ Note: For apps in Galaxy Europe (eu-west-1 region):
 
 <h2 id="billing">How Billing Works</h2>
 
-You're only billed when you have an app running. Keep running your app for as long as you want and pay-as-you-go at low metered rates. Simply “Stop” your app on the Settings page and billing will stop. Your app’s code and settings are preserved until you’re ready to run it again. You can read more about billing [here](http://galaxy-guide.meteor.com/billing.html).
+You're only billed when you have an app running. Keep running your app for as long as you want and pay-as-you-go at low metered rates. Simply “Stop” your app on the Settings page and billing will stop. Your app’s code and settings are preserved until you’re ready to run it again.
+
+You can see your bills in your account's Settings page and read more about billing in our [billing](http://galaxy-guide.meteor.com/billing.html) article.
 
 **Learn more**
 

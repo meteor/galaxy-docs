@@ -21,12 +21,11 @@ Since every app has unique architecture and performance characteristics, adjusti
 - Double: 2 GB/2 ECU
 - Quad: 4 GB/4 ECU
 
-[ECU units](https://aws.amazon.com/ec2/faqs/) are defined by Amazon and are designed to provide a relative measure of processing power.
+[ECU](https://aws.amazon.com/ec2/faqs/#hardware-information) is defined by Amazon and is designed to provide a relative measure of processing power. The abbreviation stands for EC2 Compute Unit.
 
 <h3 id="connect-logs">View logs from a specific container</h3>
 
 Accessing the logs from a specific container can help you diagnose any unexpected behavior. Click on the <span class="icon-document"></span> icon near the container name to see the logs from this container.
-
 
 <h3 id="connect-container">Connect to a specific container</h3>
 

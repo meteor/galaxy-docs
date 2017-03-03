@@ -18,13 +18,13 @@ Your app's resource usage is determined by the size and number of containers. Ga
 
 <h2 id="containers">Containers</h2>
 
-Galaxy containers are packaged environments for Meteor apps. Dive into individual container performance metrics on the container page. Read more in the [container article](/container.html) and the [container environment article](/container-environment.html).
+Galaxy containers are packaged environments for Meteor apps. Dive into individual container performance metrics on the container page. Read more in the [containers](/container.html) and [container environment](/container-environment.html) articles.
 
 <img src="/images/galaxy-app-container.png" style="width: 600px"/>
 
 <h2 id="logs">Logs</h2>
 
-Galaxy records the output of your app's logs in addition to printing operational logs for your deployment. Logs are aggregated from all containers in your app and ordered chronologically. Read more in the [logs article](/logs.html).
+Galaxy records the output of your app's logs in addition to printing operational logs for your deployment. Logs are aggregated from all containers in your app and ordered chronologically. Read more in the [logs](/logs.html) article.
 
 <img src="/images/galaxy-app-logs.png" style="width: 600px"/>
 

@@ -102,11 +102,11 @@ While Galaxy does not officially support the use of specific third-party modules
 
 <h2 id="continuing-issues">Continuing issues</h2>
 
-First, confirm that you're able to run your app locally without any issues. If possible, try to duplicate the issues that you see in your app. This may involve running your app for locally for longer than usual and even simulating traffic, to recreate the same conditions.
+First, confirm that you're able to run your app locally. If possible, try to duplicate the issues that you see in your app. This may involve running your app for locally for longer than usual and even simulating traffic, to recreate the same conditions.
 
 Next, consider adding more exception handlers, as an uncaught exception may cause your app to crash.
 
-Finally, try printing more information to your logs. In the absence of other information, adding more information will help you to troubleshoot. Any minor changes you make to your code to enable this can always be disabled, once you've diagnosed the issue.
+Finally, try printing more information to your logs. If you can't spot any error messages or warnings in your app's current form, printing more information may help you to troubleshoot. Any minor changes you make to your code to enable this can always be disabled, once you've diagnosed the issue.
 
 
 

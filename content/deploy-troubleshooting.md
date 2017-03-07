@@ -100,7 +100,13 @@ You can also use npm modules to profile your memory usage and pinpoint erratic m
 
 While Galaxy does not officially support the use of specific third-party modules, the community has found these memory-profiling npm modules to be helpful, though you may prefer to use others. Check the <a href="https://github.com/">GitHub page</a> of your module for more information.
 
+<h2 id="continuing-issues">Continuing issues</h2>
 
+First, confirm that you're able to run your app locally without any issues. If possible, try to duplicate the issues that you see in your app. This may involve running your app for locally for longer than usual and even simulating traffic, to recreate the same conditions.
+
+Next, consider adding more exception handlers, as an uncaught exception may cause your app to crash.
+
+Finally, try printing more information to your logs. In the absence of other information, adding more information will help you to troubleshoot. Any minor changes you make to your code to enable this can always be disabled, once you've diagnosed the issue.
 
 
 

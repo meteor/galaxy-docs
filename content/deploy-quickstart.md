@@ -14,9 +14,9 @@ Before you begin, [configure access to your MongoDB database](/mongodb.html) and
 
 The value of DEPLOY_HOSTNAME will depend on which region you are deploying to:
 
-- To deploy to us-east-1: DEPLOY_HOSTNAME=galaxy.meteor.com
+- To deploy to US East: DEPLOY_HOSTNAME=galaxy.meteor.com
 
-- To deploy to eu-west-1: DEPLOY_HOSTNAME=eu-west-1.galaxy.meteor.com
+- To deploy to EU West: DEPLOY_HOSTNAME=eu-west-1.galaxy.meteor.com
 
 <h3 id="deploy-mac">Mac and Linux</h3>
 
@@ -34,7 +34,7 @@ DEPLOY_HOSTNAME=galaxy.meteor.com meteor deploy [hostname] --settings path-to-se
 
 If you are using Windows, the commands to deploy are slightly different. You need to set the environment variable first, then run the deployment command second (the syntax is the same as everything you'd put for meteor deploy).
 
-The commands will look like this, for the example case of us-east-1:
+The commands will look like this, for the example case of US East:
 
 ```
 $ SET DEPLOY_HOSTNAME=galaxy.meteor.com
@@ -45,9 +45,9 @@ $ meteor deploy [hostname] --settings path-to-settings.json
 
 <h2 id="configure-app">Configure your app</h2>
 
-Once your app is successfully deployed, head on over to the [us-east-1](http://galaxy.meteor.com) dashboard or the [eu-west-1](http://eu-west-1.galaxy.meteor.com) dashboard to configure your app by adding a custom domain name and enabling SSL encryption.
+Once your app is successfully deployed, head on over to the [US East](http://galaxy.meteor.com) dashboard or the [EU West](http://eu-west-1.galaxy.meteor.com) dashboard to configure your app by adding a custom domain name and enabling SSL encryption.
 
-Add a domain in your app’s settings and point your DNS to `galaxy-ingress.meteor.com` for the us-east-1 region, or `eu-west-1.galaxy-ingress.meteor.com` for the eu-west-1 region.
+Add a domain in your app’s settings and point your DNS to `galaxy-ingress.meteor.com` for the US East region, or `eu-west-1.galaxy-ingress.meteor.com` for the EU West region.
 
 <img src="images/email-add-domain.png" style="">
 

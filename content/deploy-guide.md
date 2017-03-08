@@ -78,7 +78,7 @@ For a detailed example of the settings.json file, see [Environment Variables](/e
 
 <h2 id="select-hostname">Select a hostname</h2>
 
-Choose a hostname that the public can use to access your application. You can use a custom domain or you can use the included *.meteorapp.com domain. If you are using the included domain, use <hostname>.meteorapp.com for apps deployed to the us-east-1 region or <hostname>.eu.meteorapp.com for apps deployed to the eu-west-1 region.
+Choose a hostname that the public can use to access your application. You can use a custom domain or you can use the included *.meteorapp.com domain. If you are using the included domain, use <hostname>.meteorapp.com for apps deployed to the US East region or <hostname>.eu.meteorapp.com for apps deployed to the EU West region.
 
 If you have a custom domain name, then you need to point your DNS (in your registrar’s dashboard) to galaxy-ingress.meteor.com. More instructions on DNS configuration can be found [here](/dns.html).
 
@@ -88,9 +88,9 @@ Use the Meteor CLI tool to deploy the application to Galaxy. Make sure that you 
 
 The value of DEPLOY_HOSTNAME will depend on which region you are deploying to:
 
-- To deploy to us-east-1: DEPLOY_HOSTNAME=galaxy.meteor.com
+- To deploy to US East: DEPLOY_HOSTNAME=galaxy.meteor.com
 
-- To deploy to eu-west-1: DEPLOY_HOSTNAME=eu-west-1.galaxy.meteor.com
+- To deploy to EU West: DEPLOY_HOSTNAME=eu-west-1.galaxy.meteor.com
 
 <h3 id="deploy-mac">Mac and Linux</h3>
 
@@ -141,9 +141,9 @@ Once your application is successfully deployed, head on over to your [Galaxy das
 
 Add a domain in your application’s settings and point your DNS to:
 
-- `galaxy-ingress.meteor.com` for applications in the us-east-1 region.
+- `galaxy-ingress.meteor.com` for applications in the US East region.
 
-- `eu-west-1.galaxy-ingress.meteor.com` for applications in the eu-west-1 region.  
+- `eu-west-1.galaxy-ingress.meteor.com` for applications in the EU West region.  
 
 If you are deploying to a root domain (for example mydomain.com), then follow the advanced instructions [here](/dns.html).
 

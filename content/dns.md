@@ -14,7 +14,7 @@ If you're in the US region (galaxy.meteor.com), deploy your example app to examp
 
 If you're in the EU region (eu-west-1.galaxy.meteor.com), deploy your example app to example.eu.meteorapp.com.
 
-Substitute in the actual name of your app for 'example'. Beyond that, no DNS configuration is necesary; Galaxy handles all of this for you.
+Substitute in the actual name of your app for 'example'. Beyond that, no DNS configuration is necessary; Galaxy handles all of this for you.
 
 *Note:* example.meteor.com is not available. You cannot deploy to meteor.com domains. 
 
@@ -22,9 +22,9 @@ Substitute in the actual name of your app for 'example'. Beyond that, no DNS con
 
 If your app is deployed at a subdomain such as `www.mycompany.com` or `app.mycompany.com`, simply add a CNAME record to your DNS provider pointing to:
 
-- `us-east-1.galaxy-ingress.meteor.com` for applications in the us-east-1 region. 
+- `us-east-1.galaxy-ingress.meteor.com` for applications in the US East region. 
 
-- `eu-west-1.galaxy-ingress.meteor.com` for applications in the eu-west-1 region.  
+- `eu-west-1.galaxy-ingress.meteor.com` for applications in the EU West region.  
 
 Ensure the hostname you [deployed to](deploy-quickstart.html) matches the [fully qualified domain name](https://en.wikipedia.org/wiki/Fully_qualified_domain_name) of your app (i.e `app.mycompany.com`).
 

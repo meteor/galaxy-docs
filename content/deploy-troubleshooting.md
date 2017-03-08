@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting
-order: 15
+order: 39
 description: Learn how to troubleshoot your deploy and get answers to frequently asked questions
 ---
 
@@ -100,7 +100,7 @@ You can also use npm modules to profile your memory usage and pinpoint erratic m
 
 While Galaxy does not officially support the use of specific third-party modules, the community has found these memory-profiling npm modules to be helpful, though you may prefer to use others. Check the <a href="https://github.com/">GitHub page</a> of your module for more information.
 
-<h2 id="continuing-issues">Continuing issues</h2>
+<h2 id="else">If none of the above worked</h2>
 
 First, confirm that you're able to run your app locally. If possible, try to duplicate the issues that you see in your app. This may involve running your app for locally for longer than usual and even simulating traffic, to recreate the same conditions.
 

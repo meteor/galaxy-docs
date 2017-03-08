@@ -23,7 +23,6 @@ sidebar_categories:
     - environment-variables
     - mongodb
     - container-environment
-    - deploy-troubleshooting
     - base-image-packages
     - deploy-region
   Setup:
@@ -35,6 +34,7 @@ sidebar_categories:
     - containers
     - logs
   Manage:
+    - deploy-troubleshooting
     - scaling
     - high-availability
     - seo

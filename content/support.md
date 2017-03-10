@@ -14,11 +14,11 @@ Galaxy's support hours cover all business days (American holidays excepted) from
 
 Galaxy support is dedicated to resolving Galaxy-specific issues and troubleshooting cases where Galaxy's performance may be at fault. If you surface a bug in Meteor or Galaxy that prevents deployment, or uncover a problem or performance issue with Galaxy as a whole, Galaxy support will work to resolve this.
 
-While we strive for "best effort" with regard to non-deployment questions pertaining to Meteor, third-party packages and other topics, they are not an officially supported Galaxy subject matter area. Note that Galaxy support does not provide code-level review.
+While we strive for "best effort" with regard to non-deployment questions pertaining to Meteor, third-party packages and other topics, they are not an officially supported Galaxy subject matter area. Galaxy support does not provide code-level review.
 
 If you would like expert assistance with your Meteor question, consider a subscription to [Meteor Developer Support](#developer).
 
-Alternatively, you may also want to consider using <a href="http://github.com/meteor/meteor/issues/">GitHub</a> or the <a href="https://forums.meteor.com/">forums</a>. GitHub is excellent for tracking issues, while the forums are provided for community use concerning any kind of issue.
+Alternatively, consider using <a href="http://github.com/meteor/meteor/issues/">GitHub</a> or the <a href="https://forums.meteor.com/">forums</a>. GitHub is excellent for tracking issues, while the forums are provided for community use concerning any kind of issue.
 
 <h3 id="Enhanced Galaxy Support Options">Enhanced Galaxy Support Options</h3>
 

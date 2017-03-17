@@ -10,7 +10,9 @@ Billing is based on Galaxy container usage, pro-rated to the second. Your metere
 
 Billing begins when you deploy and stops when you stop or delete your app. With the current pricing, it will cost you less than $0.17 to run a compact container for 4 hours.
 
-If you want to stop billing, stop your app; billing will stop from that point onwards, even though the app is still visible in the UI and can be restarted at any time. Billing from the beginning of the month until the point when you stopped your app will be billed at the beginning of the following month.
+If you want to stop billing, stop your app; billing will stop from that point onwards, even though the app is still visible in the UI and can be restarted at any time.
+
+Billing from the beginning to the end of the month will be billed at the beginning of the following month. If you stopped or deleted your app during the month, you'll only be billed for your usage until the point when you stopped or deleted your app.
 
 Container usage pricing:
 

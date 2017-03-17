@@ -6,9 +6,11 @@ description: Learn how Galaxy bills per container
 
 <h2 id="billing-usage">Pay for what you use</h2>
 
-Billing is based on Galaxy container usage, pro-rated to the second. Billing begins when you deploy and stops when you stop or delete your app. With the current pricing, it will cost you less than $0.17 to run a compact container for 4 hours.
+Billing is based on Galaxy container usage, pro-rated to the second. Your metered pricing varies with the quantity and size of containers used to run your apps.
 
-Your metered pricing varies with the quantity and size of containers used to run your apps. If you want to stop billing, stop your app; billing will stop even though the app is still visible in the UI and can be restarted at any time.
+Billing begins when you deploy and stops when you stop or delete your app. With the current pricing, it will cost you less than $0.17 to run a compact container for 4 hours.
+
+If you want to stop billing, stop your app; billing will stop from that point onwards, even though the app is still visible in the UI and can be restarted at any time. Billing from the beginning of the month until the point when you stopped your app will be billed at the beginning of the following month.
 
 Container usage pricing:
 
@@ -46,8 +48,10 @@ Every month a statement is emailed for your total monthly usage. Statements show
 
 While you can't stop charges for resources used in the past, you can stop charges, going forward, by stopping or deleting your apps.
 
-At a minimum, you must stop your containers in every region where they are running. To check both regions, add your account name to the end of https://galaxy.meteor.com/ and https://eu-west-1.galaxy.meteor.com/. Every app listed in your account will have a gray circle next to it, if it's containers have been stopped. Alternatively, if you're sure that you'll never reuse the containers in an app, you can delete the app to permanently remove it.
+At a minimum, you must stop your containers in every region where they are running. To check both regions, add your account name to the end of https://galaxy.meteor.com/ and https://eu-west-1.galaxy.meteor.com/.
 
-Either method stops new charges from accruing. There is no charge to maintain an account on Galaxy, if none of your containers are running.
+Every app listed in your account will have a gray circle next to it, if its containers have been stopped.  If you're sure that you'll never reuse the containers in an app, you can delete the app to permanently remove it. There is no cost difference between deleting or stopping your app.
+
+There is no charge to maintain an account on Galaxy, if none of your containers are running. If you leave your account open, you can return at any time.
 
 

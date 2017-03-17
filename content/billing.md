@@ -12,7 +12,7 @@ Billing begins when you deploy and stops when you stop or delete your app. With 
 
 If you want to stop billing, stop your app; billing will stop from that point onwards, even though the app is still visible in the UI and can be restarted at any time.
 
-Billing from the beginning to the end of the month will be billed at the beginning of the following month. If you stopped or deleted your app during the month, you'll only be billed for your usage until the point when you stopped or deleted your app.
+Billing from the beginning to the end of the month will be billed at the beginning of the following month. If you stop or delete your app during the month, you'll only be billed for your usage until the point when you stop or delete your app.
 
 Container usage pricing:
 

@@ -38,7 +38,7 @@ Unsupported issues would include a conflict between a third-party npm package an
 
 To get support for debugging Meteor application code and architecture issues, consider signing up for  [Meteor Developer Support](#meteor-developer-support).
 
-Alternatively, every Galaxy user is welcome to follow up on <a href="http://github.com/meteor/meteor/issues/">GitHub</a> or the <a href="https://forums.meteor.com/">forums</a>. GitHub is excellent for tracking issues, while the forums are provided for community use concerning any kind of issue.
+Every Galaxy user is also welcome to follow up on <a href="http://github.com/meteor/meteor/issues/">GitHub</a> or the <a href="https://forums.meteor.com/">forums</a>. GitHub is excellent for tracking issues, while the forums are provided for community use concerning any kind of issue.
 
 <h3 id="Holidays">Company Holidays</h3>
 

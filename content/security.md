@@ -58,8 +58,3 @@ All company employees are trained to understand that customer data privacy and c
 
 Access is routinely evaluated to ensure those rights are retained only when necessary by job function. Galaxy maintains a policy and operational checklist for removing access for employees that are no longer associated with its operations.
 
-<h3 id="secure-erasure">Secure erasure on Account termination</h3>
-
-Terminated account data is securely erased from production systems at the time of account, database, or deployment removal. Backup data for terminated accounts remains in archive for a short period to allow for recovery from accidental deletion.
-
-Immediate purging of backup data is available upon request.

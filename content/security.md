@@ -52,7 +52,7 @@ Galaxy captures and stores Application Logs in an off-site database. This databa
 
 <h3 id="policy-operational">Operational Policies</h3>
 
-Galaxy employees do not access customer data or customer environments as part of Galaxy's day-to-day operations. When customers need support, authorized employees are able to view customer when specifically requested.
+Galaxy employees do not access customer data or customer environments as part of day-to-day operations. When customers need support, authorized employees are able to view customer data when specifically requested.
 
 All company employees are trained to understand that customer data privacy and confidentiality is paramount. Under no circumstances is customer data ever disclosed to a third-party. Only a limited subset of employees have the ability to view customer environments and stored data.
 

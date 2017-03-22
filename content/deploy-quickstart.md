@@ -22,11 +22,12 @@ The value of DEPLOY_HOSTNAME will depend on which region you are deploying to:
 
 On the command line, within your app's directory, type:
 ```
-DEPLOY_HOSTNAME=galaxy.meteor.com meteor deploy [hostname] --settings path-to-settings.json
+DEPLOY_HOSTNAME=[region] meteor deploy [hostname] --settings [filepath.json]
 ```
 
+- `region` is 'galaxy.meteor.com' for US East and 'eu-west-1.galaxy.meteor.com' for EU West.
 - `hostname` is the fully qualified domain name where you're planning to host your application (for example, 'www.facebook.com').
-- `path-to-settings.json` is the path to your settings file (for example, './settings.json').
+- `filepath.json` is the path to your settings file (for example, './settings.json').
 
 
 
@@ -34,7 +35,7 @@ DEPLOY_HOSTNAME=galaxy.meteor.com meteor deploy [hostname] --settings path-to-se
 
 If you are using Windows, the commands to deploy are slightly different. You need to set the environment variable first, then run the deployment command second (the syntax is the same as everything you'd put for meteor deploy).
 
-The commands will look like this, for the example case of US East:
+In the case of US East, the commands would be:
 
 ```
 $ SET DEPLOY_HOSTNAME=galaxy.meteor.com

@@ -36,7 +36,7 @@ Because of the wide surface area involved with Galaxy, a number of issues periph
 
 Unsupported issues would include a conflict between a third-party npm package and Galaxy that prevents deployment, a database issue on a Galaxy-hosted app, or a question about a logged error that needs to be resolved at the Meteor code level. If you write in to support about an out of scope issue, Galaxy support will explain its status and decline to continue investigating the issue. 
 
-If  an enhanced support experience that does cover these use cases is essential for your app, consider signing up for [Meteor Developer Support](#meteor-developer-support) or [Enhanced Galaxy Support](#enhanced-galaxy-support).
+To get support for debugging Meteor application code and architecture issues, consider signing up for  [Meteor Developer Support](#meteor-developer-support).
 
 Alternatively, every Galaxy user is welcome to follow up on <a href="http://github.com/meteor/meteor/issues/">GitHub</a> or the <a href="https://forums.meteor.com/">forums</a>. GitHub is excellent for tracking issues, while the forums are provided for community use concerning any kind of issue.
 

@@ -16,7 +16,7 @@ Galaxy consists of Platform services built and run on top of Amazon's Elastic Co
 
 Galaxy utilizes Amazon EC2 virtual machine and Docker isolation mechanisms. Each application instance is run in it's own Docker container on an Amazon EC2 virtual machine.
 
-<h3 id="risk-assessments">Risk Assessments</h3>
+<h3 id="risk-assessments">Risk Assessment</h3>
 
 Amazon continually manages risk and undergoes recurring assessments to ensure compliance with industry standards.
 
@@ -26,7 +26,7 @@ Amazon's data center operations have been accredited under:
 - FISMA Moderate
 - Sarbanes-Oxley (SOX)
 
-<h3 id="policy-security-updates">Policy around software security updates</h3>
+<h3 id="policy-security-updates">Policy around Software Security Updates</h3>
 
 System configuration and consistency is maintained through standard images, configuration management software, and the replacement of select  systems with updated deployments.
 
@@ -40,7 +40,7 @@ Customer application certificates and keys are stored in encrypted form in the G
 
 Access to private information is protected using Docker isolation in the application container.
 
-<h3 id="application-data">Application data</h3>
+<h3 id="application-data">Application Data</h3>
 
 Galaxy provides SSL encryption to protect data transmission over the wire from external entities to the Galaxy Proxy layer. Internally in Galaxy, Amazon EC2 virtual machine and Docker container network isolation is utilized to protect data transmission over the wire.
 

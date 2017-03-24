@@ -9,7 +9,8 @@ description: Learn how to troubleshoot your deploy and get answers to frequently
 Check these items if you're having trouble with uptime, performance or deployment.
 * Your Meteor version. More current versions may resolve issues found in older Meteor versions. While the reverse is rare and generally shouldn't happen, if you're recently upgraded Meteor versions and start having difficulties, consider reverting to your last Meteor version.
 * Your container's memory and CPU usage. If your app is running out of memory, you may need to switch to a larger container, use more containers, or refactor your app to use less memory. In the short term, the only guaranteed solution is to scale up and use enough Galaxy resources to exceed your app's memory needs.
-* Your app's logs. While 'All' shows all output, consider breaking it down by tab. If your app is running and struggling before failing, check the 'App' tab. If your app fails when Galaxy tries to build it into a container image, check the 'Service' tab. Note that both can happen simultaneously: the earlier version of your app may be throwing errors, while the recent version created to fix the problem may have a code issue preventing deployment. 
+* Your app's logs. While 'All' shows all output, consider breaking it down by tab. If your app is running and struggling before failing, check the 'App' tab. If your app fails when Galaxy tries to build it into a container image, check the 'Service' tab. Note that both can happen simultaneously: the earlier version of your app may be throwing errors, while the recent version created to fix the problem may have a code issue preventing deployment.
+* Consider using  [meteor logout](/commands.html) and [meteor login](/commands.html), if your username should be able to deploy but cannot.
 * Check <a href="http://github.com/meteor/meteor/issues/">GitHub</a> to see if any related Meteor issue lists workarounds or solutions.
 * Check the <a href="https://forums.meteor.com/">forums</a> for related issues and solutions. 
 * Consider running more than 1 container, or 3 containers to qualify for high-availability status. If you run only one container, that makes the machine your container is running on a single point of failure. In the event of a hardware failure, your app will be down until Galaxy starts it on a new machine.
@@ -27,7 +28,10 @@ This often happens because your backend wasn't able to respond, when communicati
 
 Your app may throw a 503 error and show `Service Unavailable: No healthy endpoints to handle the request` when you try to visit your URL.  This means no healthy containers are currently available to serve your app.
 
-There are several potential reasons for this. One example is that all containers are unhealthy, because they are all stuck in a CPU loop. Another reason is that none are running, because they all recently crashed (especially if the total number of your containers is 1, and it hasn't had time to restart). Another reason is because your build failed, if this is the first time you're deploying a container for that app or if the only other available containers built successfully but are unhealthy.
+Potential reasons for this include:
+- all containers are unhealthy, because they are all stuck in a CPU loop
+- no containers are running, because they are stopped or because every container crashed (especially if the total number of your containers is 1, and your app hasn't had time to restart)
+- your build failed, if this is the first time you're deploying a container for that app or if the only other available containers built successfully but are unhealthy
 
 The most common cause of the 503 error is a problem in your code that prevents deployment - a [deployment failure](#deployment-failure).
 
@@ -47,9 +51,13 @@ If you recently changed your DNS settings, you may need to wait for the new reco
 
 <h2 id="deployment-failure">Deployment failures</h2>
 
-A deployment failure means your system couldn't build a container to deploy your app. When this happens, it is noted in the logs.
+A deployment failure means that you or your system cannot build a container to deploy your app.
 
-Begin by checking the logs tab to see if your app is crashing. The 'Service' tab may show you important build errors, in addition to the stopping and starting of containers.
+If you should be able to deploy but cannot, try using the [commands](/commands.html) `meteor logout` and `meteor login`.
+
+If our system tried to build a container to deploy your app but failed, the failure will be noted in your logs.
+
+Check the Logs tab to see if your app is crashing. The 'Service' tab may show you important build errors, in addition to the stopping and starting of containers.
 
 Most of the time, the key to a solution will be found in the exception or error messages. Keep iterating on code fixes and deployments until the error goes away, a new error appears, or your app deploys successfully.
 
@@ -92,13 +100,13 @@ If you are uncertain if this matches your situation, you can use [this test app]
 
 Memory issues are frequently indicated in your logs. The log message `The container has run out of memory. A new container will be started to replace it.` means that the container running your application tried to get more memory than was allocated to it. Containers in this state are automatically killed.
 
-You can see memory utilization in the [container view](/containers.html) of your app. If you see memory spiking to 90% or more, that is almost certainly the problem.
+If you continue to run your app as is, the only way to prevent it from dying is to allocate resources with more than enough memory. A working solution may include more containers, bigger containers, or both.
 
-If your container is running out of memory, you may need to [scale up](/scaling.html) to fix this. You can always scale back down after refactoring your app to consume less memory. If you continue to run your app as is, the only way to prevent it from dying is to allocate resources with more than enough memory. A working solution may include more containers, bigger containers, or both.
+You can see memory utilization in the [container view](/containers.html) of your app. If you see memory spiking to 90% or more, that is almost certainly the problem. Your app may be experiencing memory issues even if your metrics never reach this level, if your container is running out of memory and crashing before our metrics can register the increase.
 
-You can also use npm modules to profile your memory usage and pinpoint erratic memory usage. The <a href="https://www.npmjs.com/package/heapdump">heapdump</a> npm module is one such module, though you'll need to transfer the file it creates to a place like S3 for download and closer examination. Another such module is <a href="https://www.npmjs.com/package/memwatch-next">memwatch-next</a>.
+You can also use npm modules to profile your memory usage and pinpoint erratic memory usage. The <a href="https://www.npmjs.com/package/heapdump">heapdump</a> npm module is one such module, though you'll need to transfer the file it creates to a place like S3 for download and closer examination. Another such module is <a href="https://www.npmjs.com/package/memwatch-next">memwatch-next</a>. While Galaxy does not officially support specific third-party modules, the community has found the use of modules of this type to be helpful.
 
-While Galaxy does not officially support the use of specific third-party modules, the community has found these memory-profiling npm modules to be helpful, though you may prefer to use others. Check the <a href="https://github.com/">GitHub page</a> of your module for more information.
+In the short term, you may need to [scale up](/scaling.html). You can always scale back down after refactoring your app to consume less memory.
 
 <h2 id="else">If none of the above worked</h2>
 

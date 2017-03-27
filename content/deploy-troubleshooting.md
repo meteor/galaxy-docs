@@ -18,13 +18,13 @@ Check these items if you're having trouble with uptime, performance or deploymen
 
 Note that code-level review lies outside the scope of Galaxy's support. If this is important to you, consider [Meteor Development Support](/support.html).
 
-<h2 id="502-errors">502 errors</h2>
+<h2 id="five-hundred-two-errors">502 errors</h2>
 
 You may see a 502 error with the message `Registered endpoints failed to handle the request` when you try to visit your URL. This means that the request failed, despite the fact that our system thought there was a healthy container at the beginning of the request.
 
 This often happens because your backend wasn't able to respond, when communicating with our proxy servers. You may need to profile your app to determine the cause of this error.
 
-<h2 id="503-errors">503 errors</h2>
+<h2 id="five-hundred-three-errors">503 errors</h2>
 
 Your app may throw a 503 error and show `Service Unavailable: No healthy endpoints to handle the request` when you try to visit your URL.  This means no healthy containers are currently available to serve your app.
 

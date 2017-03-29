@@ -8,7 +8,7 @@ description: Learn about support options available in Galaxy
 
 You can submit tickets to Galaxy support at [galaxy.meteor.com/support](https://galaxy.meteor.com/support). You can also access the ticketing page from the left-hand dropdown menu within your Galaxy account.
 
-All Galaxy customers can submit support cases from within Galaxy and receive a 1 business day Support SLA.
+All Galaxy customers can submit support cases from within Galaxy and receive a 1 business day Support SLA. Galaxy support is email-only.
 
 Galaxy's support hours cover all business days (American holidays excepted) from Monday-Friday, 9AM-6PM Pacific time. Our commitment to you is to respond within the span of one business day from the time of your message's arrival. If you write in outside business hours, your message's arrival time, for SLA purposes, will be counted as the next earliest business hour.
 

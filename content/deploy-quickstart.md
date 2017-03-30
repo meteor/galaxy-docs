@@ -18,6 +18,8 @@ The value of DEPLOY_HOSTNAME will depend on which region you are deploying to:
 
 - To deploy to EU West: DEPLOY_HOSTNAME=eu-west-1.galaxy.meteor.com
 
+- To deploy to Asia-Pacific: DEPLOY_HOSTNAME=ap-southeast-2.galaxy.meteor.com
+
 <h3 id="deploy-mac">Mac and Linux</h3>
 
 On the command line, within your app's directory, type:
@@ -25,7 +27,7 @@ On the command line, within your app's directory, type:
 DEPLOY_HOSTNAME=[region] meteor deploy [hostname] --settings [filepath.json]
 ```
 
-- `region` is 'galaxy.meteor.com' for US East and 'eu-west-1.galaxy.meteor.com' for EU West.
+- `region` is 'galaxy.meteor.com' for US East, 'eu-west-1.galaxy.meteor.com' for EU West, and 'ap-southeast-2.galaxy.meteor.com' for Asia-Pacific
 - `hostname` is the fully qualified domain name where you're planning to host your application (for example, 'www.facebook.com').
 - `filepath.json` is the path to your settings file (for example, './settings.json').
 
@@ -46,9 +48,9 @@ $ meteor deploy [hostname] --settings path-to-settings.json
 
 <h2 id="configure-app">Configure your app</h2>
 
-Once your app is successfully deployed, head on over to the [US East](http://galaxy.meteor.com) dashboard or the [EU West](http://eu-west-1.galaxy.meteor.com) dashboard to configure your app by adding a custom domain name and enabling SSL encryption.
+Once your app is successfully deployed, head on over to the [US East](http://galaxy.meteor.com) dashboard; [EU West](http://eu-west-1.galaxy.meteor.com) dashboard or [Asia-Pacific](http://ap-southeast-2.galaxy.meteor.com) dashboard to configure your app by adding a custom domain name and enabling SSL encryption.
 
-Add a domain in your app’s settings and point your DNS to `galaxy-ingress.meteor.com` for the US East region, or `eu-west-1.galaxy-ingress.meteor.com` for the EU West region.
+Add a domain in your app’s settings and point your DNS to `galaxy-ingress.meteor.com` for the US East region, `eu-west-1.galaxy-ingress.meteor.com` for the EU West region, or `ap-southeast-2.galaxy-ingress.meteor.com` for the Asia-Pacific region.
 
 <img src="images/email-add-domain.png" style="">
 

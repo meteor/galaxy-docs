@@ -16,7 +16,7 @@ The full command is:
 
 `DEPLOY_HOSTNAME=[region] meteor deploy [hostname] --settings [path-to-settings-file]`
 
-- `region` should be us-east-1.galaxy.meteor.com for the US region and eu-west-1.galaxy.meteor.com for the EU region
+- `region` should be us-east-1.galaxy.meteor.com for the US region, eu-west-1.galaxy.meteor.com for the EU region or ap-southeast-2.galaxy.meteor.com for the Asia-Pacific region.
 - `hostname` is the fully qualified domain name where you’re planning to host your application (for example, ‘www.facebook.com’).
 - `path-to-settings-file` is the path to your JSON settings file (for example, ‘./settings.json’).
 
@@ -79,5 +79,3 @@ This token will be good for 90 days from the time of generation.
 `meteor update` allows you to update your Meteor version. You can use the `--release` flag to specify a version.
 
 This can resolve issues involving deployment and application uptime, especially if the Meteor version used to deploy your app significantly predates the most recent Meteor version.
-
-

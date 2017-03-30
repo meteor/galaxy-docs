@@ -24,6 +24,8 @@ For US East, use https://galaxy.meteor.com/.
 
 For EU West, use https://eu-west-1.galaxy.meteor.com/.
 
+For Asia-Pacific, use https://ap-southeast-2.galaxy.meteor.com/.
+
 <h2 id="mongo-configure">Configure your MongoDB database</h2>
 
 If your Meteor application has a package that requires Mongo, then you'll need a Mongo database configured for your application. If you want to use a hosted database provider, we recommend that you provision it from one of these providers: [mLab](https://www.mlab.com), [compose](https://www.compose.io) or [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
@@ -78,7 +80,9 @@ For a detailed example of the settings.json file, see [Environment Variables](/e
 
 <h2 id="select-hostname">Select a hostname</h2>
 
-Choose a hostname that the public can use to access your application. You can use a custom domain or you can use the included *.meteorapp.com domain. If you are using the included domain, use <hostname>.meteorapp.com for apps deployed to the US East region or <hostname>.eu.meteorapp.com for apps deployed to the EU West region.
+Choose a hostname that the public can use to access your application. You can use a custom domain or you can use the included *.meteorapp.com domain.
+
+If you are using the included domain, use <hostname>.meteorapp.com for apps deployed to the US East region, <hostname>.eu.meteorapp.com for apps deployed to the EU West region or <hostname>.au.meteorapp.com for apps deployed to the Asia-Pacific region.
 
 If you have a custom domain name, then you need to point your DNS (in your registrar’s dashboard) to galaxy-ingress.meteor.com. More instructions on DNS configuration can be found [here](/dns.html).
 
@@ -91,6 +95,8 @@ The value of DEPLOY_HOSTNAME will depend on which region you are deploying to:
 - To deploy to US East: DEPLOY_HOSTNAME=galaxy.meteor.com
 
 - To deploy to EU West: DEPLOY_HOSTNAME=eu-west-1.galaxy.meteor.com
+
+- To deploy to Asia-Pacific: DEPLOY_HOSTNAME=ap-southeast-2.galaxy.meteor.com
 
 <h3 id="deploy-mac">Mac and Linux</h3>
 
@@ -143,7 +149,9 @@ Add a domain in your application’s settings and point your DNS to:
 
 - `galaxy-ingress.meteor.com` for applications in the US East region.
 
-- `eu-west-1.galaxy-ingress.meteor.com` for applications in the EU West region.  
+- `eu-west-1.galaxy-ingress.meteor.com` for applications in the EU West region.
+
+- `ap-southeast-2.galaxy-ingress.meteor.com` for applications in the Asia-Pacific region.  
 
 If you are deploying to a root domain (for example mydomain.com), then follow the advanced instructions [here](/dns.html).
 

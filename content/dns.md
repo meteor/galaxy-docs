@@ -6,7 +6,7 @@ description: Learn how to configure DNS to point to Galaxy
 
 Before users can access your application, you must configure your DNS records to point to Galaxy. While the process will be specific to your DNS provider, the general method is the same. Please note that Galaxy is not a DNS provider and you’ll need to use your existing DNS provider to set DNS records.
 
-<h2 id="meteorapp">meteorapp.com and eu.meteorapp.com</h2>
+<h2 id="meteorapp">Included *.meteorapp.com</h2>
 
 You are free to use Galaxy's built-in domain names. SSL is enabled on these domains by default.
 
@@ -14,17 +14,21 @@ If you're in the US region (galaxy.meteor.com), deploy your example app to examp
 
 If you're in the EU region (eu-west-1.galaxy.meteor.com), deploy your example app to example.eu.meteorapp.com.
 
+If you're in the Asia-Pacific region (ap-southeast-2.galaxy.meteor.com), deploy your example app to example.au.meteorapp.com.
+
 Substitute in the actual name of your app for 'example'. Beyond that, no DNS configuration is necessary; Galaxy handles all of this for you.
 
-*Note:* example.meteor.com is not available. You cannot deploy to meteor.com domains. 
+*Note:* example.meteor.com is not available. You cannot deploy to meteor.com domains.
 
 <h2 id="subdomain">Hosting on a subdomain with CNAME</h2>
 
 If your app is deployed at a subdomain such as `www.mycompany.com` or `app.mycompany.com`, simply add a CNAME record to your DNS provider pointing to:
 
-- `us-east-1.galaxy-ingress.meteor.com` for applications in the US East region. 
+- `us-east-1.galaxy-ingress.meteor.com` for applications in the US East region.
 
-- `eu-west-1.galaxy-ingress.meteor.com` for applications in the EU West region.  
+- `eu-west-1.galaxy-ingress.meteor.com` for applications in the EU West region.
+
+- `ap-southeast-2.galaxy-ingress.meteor.com` for applications in the Asia-Pacific region.  
 
 Ensure the hostname you [deployed to](deploy-quickstart.html) matches the [fully qualified domain name](https://en.wikipedia.org/wiki/Fully_qualified_domain_name) of your app (i.e `app.mycompany.com`).
 
@@ -45,7 +49,7 @@ Because another service is hosting the redirect page, you'll need to set up SSL 
 
 In this scenario, you do want to emphasize a short URL like mycompany.com. While hosting on a root domain [can introduce complications](http://www.yes-www.org/why-use-www/), it's possible to do by using an ALIAS (also called an ANAME record).
 
-First, you'll need to either deploy your app to the root domain (e.g `myapp.com`) or add the root domain as an [additional domain for your app](custom-domains.html#add-domain). Next, you will need to add an ALIAS record to your DNS provider that points your root domain to `galaxy-ingress.meteor.com`. 
+First, you'll need to either deploy your app to the root domain (e.g `myapp.com`) or add the root domain as an [additional domain for your app](custom-domains.html#add-domain). Next, you will need to add an ALIAS record to your DNS provider that points your root domain to `galaxy-ingress.meteor.com`.
 
 Not all DNS providers support this feature and the implementation is usually very specific to each provider. Providers we know and recommend are:
 
@@ -78,4 +82,3 @@ Add a line to `/etc/hosts` (Windows: `c:\windows\system32\drivers\etc\hosts`) th
 ```
 
 To ensure your changes take effect, you can reset your computer's local DNS cache with `sudo dscacheutil -flushcache` (Mac; see [other OSes](https://www.whatsmydns.net/flush-dns.html)) after making your changes.
-

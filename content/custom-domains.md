@@ -4,7 +4,7 @@ order: 20
 description: Learn how to make an application accessible via a custom domain name
 ---
 
-You can specify one or more hostnames for an application. Galaxy will make the app available on those hostnames. These hostnames can be on a custom domain, or can use the Galaxy-provided .meteorapp.com and eu.meteorapp.com domains, for the US East and EU West regions, respectively.
+You can specify one or more hostnames for an application. Galaxy will make the app available on those hostnames. These hostnames can be on a custom domain, or can use the Galaxy-provided .meteorapp.com, eu.meteorapp.com domains and au.meteorapp.com; for the US East, EU West and Asia-Pacific regions, respectively.
 
 <h2 id="command-line">When first deploying</h2>
 
@@ -25,6 +25,8 @@ Galaxy allows subdomains on .meteorapp.com for use by any app deployed to Galaxy
 For apps deployed to Galaxy's US East  region, deploy to `<custom.subdomain>.meteorapp.com`.
 
 For apps deployed to Galaxy's EU West region, deploy to `<custom.subdomain>.eu.meteorapp.com`.
+
+For apps deployed to Galaxy's Asia-Pacific region, deploy to `<custom.subdomain>.au.meteorapp.com`.
 
 <h2 id="add-domain">Adding additional custom domains</h2>
 

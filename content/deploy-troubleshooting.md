@@ -12,7 +12,7 @@ Check these items if you're having trouble with uptime, performance or deploymen
 * Your app's logs. While 'All' shows all output, consider breaking it down by tab. If your app is running and struggling before failing, check the 'App' tab. If your app fails when Galaxy tries to build it into a container image, check the 'Service' tab. Note that both can happen simultaneously: the earlier version of your app may be throwing errors, while the recent version created to fix the problem may have a code issue preventing deployment.
 * Consider using  [meteor logout](/commands.html) and [meteor login](/commands.html), if your username should be able to deploy but cannot.
 * Check <a href="http://github.com/meteor/meteor/issues/">GitHub</a> to see if any related Meteor issue lists workarounds or solutions.
-* Check the <a href="https://forums.meteor.com/">forums</a> for related issues and solutions. 
+* Check the <a href="https://forums.meteor.com/">forums</a> for related issues and solutions.
 * Consider running more than 1 container, or 3 containers to qualify for high-availability status. If you run only one container, that makes the machine your container is running on a single point of failure. In the event of a hardware failure, your app will be down until Galaxy starts it on a new machine.
 * Email <a href="mailto:support@meteor.com">support</a>. To minimize the back-and-forth, please send in the name of the affected app, the conditions that trigger the issue (confirmed or suspected), steps to reproduce, and relevant logs. Try to resolve errors listed in the logs before writing in. If your app's container is running with the error, please try to leave it in the running state for our team to examine.
 
@@ -44,8 +44,9 @@ If you believe your `MONGO_URL` is set correctly, try the following:
 
 * Check the app dashboard and verify the app status is green (healthy).
 * Run `dig +show [your app's domain]` in the terminal and verify that its CNAME points to Galaxy. You can learn how to set up DNS [here](/dns.html).
-  * If you are in the US region, your CNAME should point to `us-east-1.galaxy-ingress.meteor.com`.
-  * If you are in the EU region, your CNAME should point to `eu-west-1.galaxy-ingress.meteor.com.` 
+  * If you are in the US region, your CNAME should point to `us-east-1.galaxy-ingress.meteor.com`
+  * If you are in the EU region, your CNAME should point to `eu-west-1.galaxy-ingress.meteor.com`
+  * If you are in the Asia-Pacific region, your CNAME should point to `ap-southeast-2.galaxy-ingress.meteor.com` 
 
 If you recently changed your DNS settings, you may need to wait for the new records to propagate. DNS changes often propagate within 30 minutes (depending on the TTL configured for the record set), but in some cases it can take up to 24 hours. Contact your DNS provider if you think there is a problem.
 
@@ -64,7 +65,7 @@ Most of the time, the key to a solution will be found in the exception or error 
 <h2 id="package-error">Module missing or npm error</h2>
 
 This usually indicates that the module or package working locally in your application is not working after deployment. While we don't offer support for the use of specific third-party packages, an explanation may help you to troubleshoot.
- 
+
 When you deploy an app, we bundle node_modules into it; npm packages that are required on the client side get built into the bundle uploaded to Galaxy. Galaxy doesn't need to run `npm install` for client side bundling to work.
 
 Note that dynamic requires may cause issues. An example would be using `require(variable)` instead of `require("fixed-name")`. To avoid this, put `require("react/package.json")` somewhere in your app's code to ensure it gets bundled.
@@ -115,6 +116,3 @@ First, confirm that you're able to run your app locally. If possible, try to dup
 Next, consider adding more exception handlers, as an uncaught exception may cause your app to crash.
 
 Finally, try printing more information to your logs. If you can't spot any error messages or warnings in your app's current form, printing more information may help you to troubleshoot. Any minor changes you make to your code to enable this can always be disabled, once you've diagnosed the issue.
-
-
-

@@ -31,4 +31,6 @@ Add these IP addresses to your whitelist:
 - For the us-east-1 cluster: 34.197.187.203, 34.197.229.75, 34.197.156.92, 34.197.222.74
 - For the eu-west-1 cluster: 34.248.186.245, 34.248.14.239, 34.248.124.59
 
+IP whitelisting is currently not supported for apps in the Asia-Pacific (ap-southeast-2) region.
+
 If your software wants you to specify your whitelist as a list of [CIDRs](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing) rather than a list of IP addresses, just add the three characters `/32` to the end of each IP address.

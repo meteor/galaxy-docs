@@ -25,6 +25,7 @@ sidebar_categories:
     - container-environment
     - base-image-packages
     - deploy-region
+    - migrate-app
   Setup:
     - custom-domains
     - dns

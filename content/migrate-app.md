@@ -39,7 +39,7 @@ For a full explanation and a more detailed example of the `settings.json` file, 
 
 <h2 id="migrate-select-hostname">Select a hostname</h2>
 
-For this initial deployment of your app, use a hostname from one of the [Galaxy-included](/custom-domains.html#meteorapp-subdomain) `<your_app_name>.meteorapp.com` subdomains.
+For this initial deployment of your app, use a hostname from one of the [Galaxy-included](/custom-domains.html#meteorapp-subdomain) `.meteorapp.com` subdomains.
 
 For apps deployed to Galaxy’s US East region, deploy to `<your_app_name>.meteorapp.com`.
 
@@ -67,7 +67,7 @@ DEPLOY_HOSTNAME=[region] meteor deploy [hostname] --settings [filepath.json]
 ```
 
 - `region` is 'galaxy.meteor.com' for US East, 'eu-west-1.galaxy.meteor.com' for EU West, and 'ap-southeast-2.galaxy.meteor.com' for Asia-Pacific.
-- `hostname` is the fully qualified domain name where you're planning to host your application (using the `meteorapp.com` format, in this example).
+- `hostname` is the fully qualified domain name where you're planning to host your application (using `<your_app_name>` in the `.meteorapp.com` hostname format, in this example).
 - `filepath.json` is the path to your settings file (for example, './settings.json').
 
 <h3 id="deploy-windows">Windows</h3>
@@ -85,7 +85,7 @@ $ meteor deploy [hostname] --settings path-to-settings.json
 
 <h2 id="migrate-verify-app">Verify your app deployment</h2>
 
-Verify that the deployment was successful. Check to see if the application is accessible by navigating to your configured URL, which should be using the `meteorapp.com`  format. Then check the application logs in Galaxy to see if there are any errors that are affecting the deployment.
+Verify that the deployment was successful. Check to see if the application is accessible by navigating to your configured URL, which should be using the `.meteorapp.com`  format. Then check the application logs in Galaxy to see if there are any errors that are affecting the deployment.
 
 The location of your application logs will depend on your region. If your app is named `example`, the logs will be found at the following URLs:
 

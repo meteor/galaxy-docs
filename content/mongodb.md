@@ -4,7 +4,7 @@ order: 13
 description: Learn how to configure your MongoDB provider for Galaxy
 ---
 
-Since Galaxy doesn’t provide a MongoDB cluster, you will need to host one yourself. We recommend using a dedicated database hosting service such as [mLab](https://mongolab.com/), [Compose](https://www.compose.io/) or [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
+Since Galaxy doesn’t provide a MongoDB cluster, you will need to host one yourself. We recommend using a dedicated database hosting service such as [mLab](https://mlab.com/), [Compose](https://www.compose.io/) or [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
 
 To configure MongoDB for your Meteor application, see the detailed steps in the [Deployment guide](/deploy-guide.html#mongo-configure).
 

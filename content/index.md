@@ -16,7 +16,7 @@ Galaxy is the simplest way to deploy, scale, and manage your Meteor apps.
 
 - **Simple management**: Use a unified interface to manage, understand usage characteristics, and adjust settings for all your Meteor apps
 
-- **Integration APM**: Use Meteor APM to optimize performance of your production application.
+- **Integrated Meteor APM**: Use Meteor APM to optimize the performance of your production application.
 
 <h3 id="quickstart">Get Started</h3>
 

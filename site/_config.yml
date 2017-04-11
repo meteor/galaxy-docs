@@ -45,6 +45,8 @@ sidebar_categories:
     - commands
   Meteor APM:
     - apm-getting-started
+    - apm-make-your-app-faster
+    - apm-reducing-pubsub-data-usage
   Accounts:
     - billing
     - collaborators

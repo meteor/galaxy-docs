@@ -15,7 +15,7 @@ Creating observers results in higher CPU and RAM usage because they are one of t
 
 ## Monitoring observers
 
-With Meteor APM, you can monitor observers and find out which publications are responsible for creating them. You can  detect observer leaks, especially if you are working with advance publications and [reactive joins](https://hub.kadira.io/posts/GhzxhT2GdsMiL2xrT).
+With Meteor APM, you can monitor observers and find out which publications are responsible for creating them. You can  detect observer leaks, especially if you are working with advance publications and reactive joins.
 
 Let’s discuss how to use Observer Monitoring to detect performance issues. We’re going to use a sample app which has several observers related performance issues.
 
@@ -53,8 +53,4 @@ see follow video:
 <iframe width="640" height="480" src="https://www.youtube.com/embed/bDLszm_sw8E" frameborder="0" allowfullscreen="1">
 </iframe>
 
-You can learn how to improve Observer Reuse by following [this article](https://kadira.io/academy/improve-cpu-and-network-usage/).
-
-Observer Monitoring is a [paid](https://kadira.io/pricing.html) feature of Kadira and is available on all paid plans. More information is available in the Observer Info documentation.
-
-> You need to have `meteorhacks:kadira` version 2.14.0 or higher installed on your app to activate these features.
+You can learn how to improve Observer Reuse by following [this article](/apm-improve-cpu-and-network-usage.html).

@@ -56,7 +56,7 @@ In your app, you might be using many Meteor Methods. You may need to improve all
 * Click on a method name in the Methods Breakdown.
 * In the [Recommendations](http://support.kadira.io/knowledgebase/articles/347445-method-recommendations) section, you will see the impact you can have if you improve the selected method.
 * Click on the Response Time Graph and find a trace.
-* Analyze it with this [guide](https://kadira.io/academy/make-your-app-faster/) and improve your method if possible.
+* Analyze it with this [article](/apm-make-your-app-faster.html) and improve your method if possible.
 * Do the same for all methods.
 
 <iframe width="640" height="480" src="https://www.youtube.com/embed/REUrBU7x6GU" frameborder="0" allowfullscreen="1">

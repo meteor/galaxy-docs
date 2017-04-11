@@ -22,11 +22,9 @@ Let's say I have a simple **blog** running with Meteor. When a user simply visit
 * a subscription to get categories
 
 Now, Meteor loads all these DDP messages in a sequence by default. So, categories will be executed at the end and the result will be delayed!
-You can easily see this behaviour by analyzing a Kadira trace for the categories method:
+You can easily see this behaviour by analyzing a Meteor APM trace for the categories method:
 
 ![Showing Meteor WaitTime](https://cldup.com/CBdwsq8BYo.png)
-
-[See Complete Trace](https://ui.kadira.io/pt/d6235716-ab27-4f09-a876-503e5934b228)
 
 You can clearly see it has a waitTime of **6415** milliseconds.
 
@@ -61,8 +59,6 @@ Now we've added the necessary optimizations. Let's run the app and see what's ha
 
 ![Meteor WaitTime fixed](https://cldup.com/Zt3IGxMD0n.png)
 
-[See Complete Trace](https://ui.kadira.io/pt/1ad4420f-0282-456c-b95e-a29a6ea11df9)
-
 Wow, that's great. We've reduced the initial subscription load time from **6415 to 360** milliseconds. That's a huge achievement.
 
 If you carefully look at the above trace, we still have the waitList because the `blogPost` subscription is a blocking one. But you can clearly see that other messages don't block the execution.
@@ -70,5 +66,3 @@ If you carefully look at the above trace, we still have the waitList because the
 ## Unblock Carefully
 
 So, `this.unblock` cannot be enabled for all methods and subscriptions by default since it might give you some [unexpected behaviors](https://meteorhacks.com/understanding-meteor-wait-time-and-this-unblock.html#why-thisunblock-does-not-always-work). But, if your methods and subscriptions don't depend on others, there is a good chance you can unblock them and reduce the waitTime. But finally, it all depends on your app.
-
-If you need to ask a specific question related to your app, please post it on [**Kadira Hub**](https://hub.kadira.io) and let's carry on the discussion.

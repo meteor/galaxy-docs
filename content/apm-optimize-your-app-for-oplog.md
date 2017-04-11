@@ -11,8 +11,6 @@ Meteor supports most of the queries with oplog, but there are some edge cases wh
 
 Therefore, some of the queries in your app may fail to use oplog even if you've integrated oplog support into your app. I will show what those unsupported queries are and how to identify them easily.
 
-> Meteor has completed adding major features to its oplog integration in Meteor version 0.7.2. Thus, this article applies if you are using Meteor version 0.7.2 or higher.
-
 ## When You can't Use Oplog
 
 Let me show you those edge cases in which oplog support cannot be enabled.
@@ -60,10 +58,8 @@ Because it is using `$natural`, it won't be able to get the oplog support.
 
 Now you clearly know why some of your observers cannot use oplog support. But it is really hard to find the reason for such queries in production, especially with invalid selectors.
 
-From the very beginning, [Kadira](https://kadira.io) shows you whether oplog is enabled or not for your observers via its [tracing](http://support.kadira.io/knowledgebase/articles/347453-response-time-with-traces) support. But it doesn't tell you why. From today onward, you'll be to see the reason and the potential fix for your query.
+From the very beginning, Meteor APM shows you whether oplog is enabled or not for your observers via its [tracing](http://support.kadira.io/knowledgebase/articles/347453-response-time-with-traces) support. But it doesn't tell you why. From today onward, you'll be to see the reason and the potential fix for your query.
 
-![Oplog Debugging Support in Kadira](https://i.cloudup.com/FA2NrHshgj.png)
+![Oplog Debugging Support in Meteor APM](https://i.cloudup.com/FA2NrHshgj.png)
 
-> You need to update your [kadira](https://atmospherejs.com/package/kadira) smart package to the latest version (2.4.3 or higher) in order to receive this feature.
-
-Now you know how to optimize your app for Meteor’s oplog integration and find out whether oplog support is enabled for your individual observers. If it is not, Kadira will help you to determine the reason and fix it.
+Now you know how to optimize your app for Meteor’s oplog integration and find out whether oplog support is enabled for your individual observers. If it is not, Meteor APM will help you to determine the reason and fix it.

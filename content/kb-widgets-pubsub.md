@@ -82,9 +82,7 @@ Additionally, if you like to inspect a trace of a method call at a particular po
 
 **How do we track traces?**
 
-﻿It is impossible to send all the subscription traces processed on your app into Kadira. Instead we pick outliers and send them. We send all the collected traces (if exists) once a minute.
-
-﻿Currently, there is no way to alter how we collect traces in your app. But we will provide an API allow you decide how to collect traces and decide when to send them.
+﻿It is impossible to send all the subscription traces processed on your app into Meteor APM. Instead we pick outliers and send them. We send all the collected traces (if exists) once a minute.
 
 ﻿This is how a trace looks like:
 

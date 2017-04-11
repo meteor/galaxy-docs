@@ -43,6 +43,8 @@ sidebar_categories:
     - file-storage
     - transfer-apps
     - commands
+  Meteor APM:
+    - apm-getting-started
   Accounts:
     - billing
     - collaborators

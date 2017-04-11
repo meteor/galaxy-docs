@@ -1,9 +1,9 @@
 ---
-navTitle: 
-navSubTitle: Make Your App Faster
 title: Make Your App Faster
-enableComments: true
+order: 52
 ---
+
+_Note: This content originally appeared on https://kadira.io/academy/meteor-performance-101 ._
 
 This guide will help you to speed up your methods and publications by following a few simple techniques. First let's try to speed up methods; later on I'll show you how to apply these techniques for publications as well.
 

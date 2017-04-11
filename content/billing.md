@@ -1,6 +1,6 @@
 ---
 title: Billing
-order: 50
+order: 70
 description: Learn how Galaxy bills per container
 ---
 
@@ -18,7 +18,7 @@ Container usage pricing:
 
 - Galaxy (all regions): $0.08 per GB/hour
 
-Customers who signed up prior to August 2016 may belong to a legacy Galaxy plan where pricing varies by plan, support tier selected, containers used, and container size. 
+Customers who signed up prior to August 2016 may belong to a legacy Galaxy plan where pricing varies by plan, support tier selected, containers used, and container size.
 
 Pricing is impacted by:
 - Number of running containers
@@ -32,9 +32,9 @@ Pricing is **not** impacted by:
 
 <h2 id="reserved-pricing">Prepaid Pricing</h2>
 
-Galaxy Prepaid Pricing guarantees a specific amount of container capacity at a discounted price compared to pay-as-you-go pricing. 
+Galaxy Prepaid Pricing guarantees a specific amount of container capacity at a discounted price compared to pay-as-you-go pricing.
 
-By paying upfront for container capacity, you’ll receive ~20% off the equivalent pay-as-you-go rates. Galaxy Prepaid Pricing currently costs $45 USD per GB RAM month (available in 1 GB increments only, billed annually). 
+By paying upfront for container capacity, you’ll receive ~20% off the equivalent pay-as-you-go rates. Galaxy Prepaid Pricing currently costs $45 USD per GB RAM month (available in 1 GB increments only, billed annually).
 
 Any usage during the month beyond the reserved base capacity will be billed at normal metered rates. To add Prepaid Pricing to your account, simply log a support ticket from within Galaxy and let us know how many GB's you want to reserve.
 
@@ -55,5 +55,3 @@ At a minimum, you must stop your containers in every region where they are runni
 Every app listed in your account will have a gray circle next to it, if its containers have been stopped.  If you're sure that you'll never reuse the containers in an app, you can delete the app to permanently remove it. There is no cost difference between deleting or stopping your app.
 
 There is no charge to maintain an account on Galaxy, if none of your containers are running. If you leave your account open, you can return at any time.
-
-

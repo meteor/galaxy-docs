@@ -1,6 +1,6 @@
 ---
 title: Getting Started with APM
-order: 47
+order: 51
 description: Learn how to start with Meteor APM
 ---
 
@@ -28,7 +28,7 @@ You should not need extra help to become familiar with the Dashboard. However, i
 
 ## How to Use Meteor APM
 
-There is no right or wrong way to use Kadira but I will suggest two simple ways to get started.
+There is no right or wrong way to use Meteor APM but I will suggest two simple ways to get started.
 
 ### Finding Bottlenecks in Meteor Methods and Fixing Them
 

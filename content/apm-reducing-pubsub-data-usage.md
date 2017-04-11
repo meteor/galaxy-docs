@@ -1,9 +1,9 @@
 ---
-navTitle: 
-navSubTitle: Reducing PubSub Data Usage
 title: Reducing PubSub Data Usage
-enableComments: true
+order: 53
 ---
+
+_Note: This content originally appeared on https://kadira.io/academy/meteor-performance-101 ._
 
 Publications are the main place where your app sends data to the client when a client subscribes to it. Meteor caches a copy of each client's data in the server's memory. For example, let's say a single client has  approximately 2MB of subscription data. If you have 1000 concurrent clients connecting to your app, Meteor caches approximately 2GB (2MB * 1000) of client data in the server's memory.
 
@@ -59,7 +59,7 @@ You can create a summary when you are creating and editing the blog post and ass
 
 ## Counting On The Server Side
 
-Sometimes, specially when you are building dashboard and charts, you might need to count the number of documents for some queries. For that, you should not send documents to the client and do the counts on the client side. 
+Sometimes, specially when you are building dashboard and charts, you might need to count the number of documents for some queries. For that, you should not send documents to the client and do the counts on the client side.
 
 Best way is to count them in the server side using a package like [publish-counts](https://github.com/percolatestudio/publish-counts/). Concept behind publish-counts is explained in [this](http://stackoverflow.com/questions/14656567/meteor-subscribe-to-a-count) stack overflow question.
 

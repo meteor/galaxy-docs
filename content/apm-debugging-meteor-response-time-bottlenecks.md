@@ -7,7 +7,7 @@ _Note: This content originally appeared on https://kadira.io/academy/meteor-perf
 
 We all want to build faster Meteor apps. Improving the server-side response time is an important factor in building fast apps.
 
-In Kadira, we have few tools to help you to debug response time bottlenecks in your app. I will show you how to use them.
+In Meteor APM, we have few tools to help you to debug response time bottlenecks in your app. I will show you how to use them.
 
 <hr />
 
@@ -46,4 +46,4 @@ On looking at a trace, it seems like there is a waitTime issue. Actually, this h
 > We can also look at the **login** method at that time and find out what's really happened for that as well.
 
 
-This is how you can use Kadira to debug a response time issue in your app. Depending on your app and the case, the individual steps could change slightly, but this is the process you can use.
+This is how you can use Meteor APM to debug a response time issue in your app. Depending on your app and the case, the individual steps could change slightly, but this is the process you can use.

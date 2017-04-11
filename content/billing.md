@@ -16,11 +16,13 @@ Billing from the beginning to the end of the month will be billed at the beginni
 
 Container usage pricing:
 
-- Galaxy (all regions): $0.08 per GB/hour
+- Galaxy Essentials (all regions): $0.08 per GB/hour
+- Galaxy Professional (all regions): $0.11 per GB/hour
 
 Customers who signed up prior to August 2016 may belong to a legacy Galaxy plan where pricing varies by plan, support tier selected, containers used, and container size.
 
 Pricing is impacted by:
+- Type of running containers
 - Number of running containers
 - Size of running containers
 
@@ -29,6 +31,12 @@ Pricing is **not** impacted by:
 - Memory or CPU usage of your app
 - Number of connected clients/traffic
 - Number of deploys or users
+
+<h2 id="galaxy-professional">Galaxy Professional</h2>
+
+Galaxy Professional includes Meteor APM, IP whitelisting, and prioritized support to help developers deploy and manage production apps with confidence. You can turn on Galaxy Professional containers with a single click for any of your apps on Galaxy.
+
+You can select Essentials or Professional containers to run specific apps in your Galaxy account.
 
 <h2 id="reserved-pricing">Prepaid Pricing</h2>
 

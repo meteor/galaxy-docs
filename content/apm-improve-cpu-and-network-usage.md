@@ -3,6 +3,8 @@ title: Improve CPU and Network usage
 order: 60
 ---
 
+_Note: This content originally appeared on https://kadira.io/academy/meteor-performance-101 ._
+
 Before we start, I'd like to explain a bit about some Meteor Internals that might help you to understand this topic better. To make it easier to understand, I won't be using the exact terms Meteor uses internally.
 
 ## How Observers are Handled in Meteor
@@ -33,9 +35,9 @@ In order to create identical observers, you need to create cursors with:
 
 ## How to Identify Whether Observers are Reusing or Not
 
-Simply plug Kadira into your app. Play with your app for a while. Make sure there are multiple users using your app. Otherwise, the data won’t be realistic. In fact, if you can try this with a set of real users, you'll be getting the most realistic values.
+Simply plug Meteor APM into your app. Play with your app for a while. Make sure there are multiple users using your app. Otherwise, the data won’t be realistic. In fact, if you can try this with a set of real users, you'll be getting the most realistic values.
 
-Now visit the Kadira Dashboard and switch into the PubSub Detailed View section. There you will find a metric called "Observer Reuse", which tells you the percentage of Observer Reuse.
+Now visit the Meteor APM Dashboard and switch into the PubSub Detailed View section. There you will find a metric called "Observer Reuse", which tells you the percentage of Observer Reuse.
 
 ![Observer Reuse Percentage](https://i.cloudup.com/1EJla1jrNd.png)
 

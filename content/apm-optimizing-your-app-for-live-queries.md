@@ -3,6 +3,8 @@ title: Optimizing Your Meteor App for Live Queries
 order: 59
 ---
 
+_Note: This content originally appeared on https://kadira.io/academy/meteor-performance-101 ._
+
 Live Query support is one of the major competencies in Meteor. Normally, a new Live Query is created when you return a cursor from a publication. Then it’ll reactively watch the query and send changes to the client.
 
 In order to detect these changes, Live Queries do some amazing work behind the scenes. To do this, they need to spend some CPU cycles. Therefore, Live Queries are a major factor affecting your app’s CPU usage.

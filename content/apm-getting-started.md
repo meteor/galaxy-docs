@@ -4,7 +4,7 @@ order: 51
 description: Learn how to start with Meteor APM
 ---
 
-This guide will help you get started with Meteor APM to identify how your app behaves and help you take necessary actions.
+This guide will help you get started with Meteor APM, to better understand how your app behaves and identify areas for improvement.
 
 ## Install and Configure Meteor APM
 
@@ -16,7 +16,7 @@ Now your app will send information to Meteor APM. Visit [Galaxy](https://galaxy.
 - In the *Performance* area on the App Overview & Containers pages.
 - In the *Galaxy Professional* area on the App Settings page.
 
-Wait up to one minute and then data should begin appearing.
+After a minute, data should begin appearing.
 
 ## Meteor APM Dashboard
 
@@ -24,15 +24,15 @@ This is the overview of the Meteor APM Dashboard.
 
 ![Meteor APM Dashboard](https://i.cloudup.com/M_FD_KuKWq.png)
 
-You should not need extra help to become familiar with the Dashboard. However, if you do need clarification, watch our [Onboarding video](https://www.youtube.com/watch?v=GDkG2Wq3mLo).
+The dashboard is meant to be self-explanatory, but if you'd like more information, watch our [Onboarding video](https://www.youtube.com/watch?v=GDkG2Wq3mLo).
 
 ## How to Use Meteor APM
 
-There is no right or wrong way to use Meteor APM but I will suggest two simple ways to get started.
+While there is no right or wrong way to use Meteor APM, here are some common use cases.
 
 ### Finding Bottlenecks in Meteor Methods and Fixing Them
 
-Normally, for a typical Meteor application, the Average [Response Time](http://support.kadira.io/knowledgebase/articles/347424-response-time) of a Meteor Method should not be more than 200ms. If it is more than this, in many cases there are ways to improve performance.
+Normally, for a typical Meteor application, the Average [Response Time](http://support.kadira.io/knowledgebase/articles/347424-response-time) of a Meteor Method should not be more than 200ms. If it exceeds this, you may be able to improve performance.
 
 * First click on **Methods** on the Main Menu and look at the Response Time.
 * Also look at the Response Time graph for any spikes.
@@ -49,7 +49,7 @@ Normally, for a typical Meteor application, the Average [Response Time](http://s
 
 ### Finding Methods You Need to Improve
 
-In your app, you might be using many Meteor Methods. You may need to improve all of them. It is a good idea to start, though, with the ones that have more impact. We’ve identified that if you can improve a method with higher Throughput, it will impact more on the total performance gain. To do this, follow these steps:
+In your app, you might be using many Meteor Methods. While you may need to improve all of them, it's good to start with the ones that have the most impact. We’ve determined that, if you can improve a method with higher Throughput, it will result in a total performance gain. To continue, follow these steps:
 
 * Click on the **Detailed View** of Methods.
 * Sort the Methods Breakdown by [Throughput](http://support.kadira.io/knowledgebase/articles/347444-throughput) (the default sort criteria).

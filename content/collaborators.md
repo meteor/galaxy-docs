@@ -1,10 +1,10 @@
 ---
 title: Collaborators
-order: 51
+order: 71
 description: Learn how to add collaborators to your app
 ---
 
-You can add collaborators to an app by creating a Galaxy account that is owned by a Meteor organization and transferring the app to that organization account. 
+You can add collaborators to an app by creating a Galaxy account that is owned by a Meteor organization and transferring the app to that organization account.
 
 Galaxy organizations accounts allow you to deploy, scale, and monitor apps with a team of developers.
 
@@ -12,7 +12,7 @@ Galaxy organizations accounts allow you to deploy, scale, and monitor apps with 
 
 1. Create a new organization at [Meteor account settings](https://www.meteor.com/account-settings/organizations)
 2. Add your collaborator[s] to the new organization
-3. [Create a new Galaxy account](https://www.meteor.com/galaxy/signup) with the organization as the owner. 
+3. [Create a new Galaxy account](https://www.meteor.com/galaxy/signup) with the organization as the owner.
 4. Sign in to [Galaxy](https://galaxy.meteor.com)  with your individual Meteor Developer Account
 5. Access your organization by toggling the Galaxy menu
 <img src="/images/galaxy-menu.png" style="width: 150px; margin: 1em;"/>

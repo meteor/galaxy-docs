@@ -1,6 +1,6 @@
 ---
 title: Security & Systems Policy
-order: 53
+order: 73
 description: Learn about Galaxy's Security and Systems Policy
 ---
 
@@ -57,4 +57,3 @@ Galaxy employees do not access customer data or customer environments as part of
 All company employees are trained to understand that customer data privacy and confidentiality is paramount. Under no circumstances is customer data ever disclosed to a third-party. Only a limited subset of employees have the ability to view customer environments and stored data.
 
 Access is routinely evaluated to ensure those rights are retained only when necessary by job function. Galaxy maintains a policy and operational checklist for removing access for employees that are no longer associated with its operations.
-

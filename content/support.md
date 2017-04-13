@@ -1,6 +1,6 @@
 ---
 title: Support
-order: 52
+order: 72
 description: Learn about support options available in Galaxy
 ---
 
@@ -34,7 +34,7 @@ Please fill out our <a name="developer"/>[Developer Support](https://www.meteor.
 
 Because of the wide surface area involved with Galaxy, a number of issues peripherally connected to Galaxy may be classified as out of scope. Questions about an app's performance, stability and implementation are separate from, and different than, supported questions targeting Galaxy's uptime, health, and general deployment capabilities.
 
-Unsupported issues would include a conflict between a third-party npm package and Galaxy that prevents deployment, a database issue on a Galaxy-hosted app, or a question about a logged error that needs to be resolved at the Meteor code level. If you write in to support about an out of scope issue, Galaxy support will explain its status and decline to continue investigating the issue. 
+Unsupported issues would include a conflict between a third-party npm package and Galaxy that prevents deployment, a database issue on a Galaxy-hosted app, or a question about a logged error that needs to be resolved at the Meteor code level. If you write in to support about an out of scope issue, Galaxy support will explain its status and decline to continue investigating the issue.
 
 To get support for debugging Meteor application code and architecture issues, consider signing up for  [Meteor Developer Support](#meteor-developer-support).
 

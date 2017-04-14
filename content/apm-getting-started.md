@@ -22,7 +22,7 @@ After a minute, data should begin appearing.
 
 This is the overview of the Meteor APM Dashboard.
 
-![Meteor APM Dashboard](https://i.cloudup.com/M_FD_KuKWq.png)
+<img src="images/apm.dashboard.explain.png" style="width: 600px;">
 
 The dashboard is meant to be self-explanatory, but if you'd like more information, watch our [Onboarding video](https://www.youtube.com/watch?v=GDkG2Wq3mLo).
 

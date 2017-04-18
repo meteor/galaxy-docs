@@ -20,6 +20,8 @@ Galaxy forwards HTTP connections (port 80) on your app's configured [domains](/c
 
 <h3 id="network-outgoing">Outgoing connections and IP whitelisting</h3>
 
+_Note: IP whitelisting is only available for apps deployed on Galaxy Professional containers going forward. If you have been already using IP whitelisting as part of your application, please email [support@meteor.com](mailto:support@meteor.com) and let us know — we’ll work on a migration plan with you._
+
 When your app connects to other services like your database, those services' connections will always appear to come from one of a fixed set of IP addresses.  These IP addresses are not the IP addresses of the individual machines your container runs on, so don't be surprised if they don't match.  (These addresses are also distinct from the addresses that our "ingress" DNS address points to --- don't point your DNS at these IP addresses!)
 
 Some services can be configured to only allow access from a list of IP addresses. For an extra layer of security, you can use these IP addresses in a "whitelist" on that service. Whitelisting is especially common for databases, and may be required by your database provider.

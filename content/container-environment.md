@@ -20,19 +20,14 @@ Galaxy forwards HTTP connections (port 80) on your app's configured [domains](/c
 
 <h3 id="network-outgoing">Outgoing connections and IP whitelisting</h3>
 
-_Note: IP whitelisting is only available for apps deployed on Galaxy Professional containers going forward. If you have been already using IP whitelisting as part of your application, please email [support@meteor.com](mailto:support@meteor.com) and let us know — we’ll work on a migration plan with you._
+When your app connects to other services like your database, those services' connections will always appear to come from one of a fixed set of IP addresses.  These IP addresses are not the IP addresses of the individual machines your container runs on, so don't be surprised if they don't match.  (These addresses are distinct from the addresses that our "ingress" DNS address points to --- don't point your DNS there!)
 
-When your app connects to other services like your database, those services' connections will always appear to come from one of a fixed set of IP addresses.  These IP addresses are not the IP addresses of the individual machines your container runs on, so don't be surprised if they don't match.  (These addresses are also distinct from the addresses that our "ingress" DNS address points to --- don't point your DNS at these IP addresses!)
+Some services can be configured to only allow access from a list of IP addresses. For an extra layer of security, Galaxy Professional customers can use these IP addresses in a "whitelist" on that service. Whitelisting is especially common for databases, and may be required by your database provider.
 
-Some services can be configured to only allow access from a list of IP addresses. For an extra layer of security, you can use these IP addresses in a "whitelist" on that service. Whitelisting is especially common for databases, and may be required by your database provider.
+Note that whitelisted IP addresses are shared between all Galaxy Professional customers. While whitelisting is meant to protect your app from non-targeted attacks, you should still control access to your services by other means. 
 
-Note that whitelisted IP addresses are shared between all Galaxy customers, so you should still control access to your services by other means. Whitelisting is meant to protect your app from non-targeted attacks.
-
-Add these IP addresses to your whitelist:
-
-- For the us-east-1 cluster: 34.197.187.203, 34.197.229.75, 34.197.156.92, 34.197.222.74
-- For the eu-west-1 cluster: 34.248.186.245, 34.248.14.239, 34.248.124.59
-
-IP whitelisting is currently not supported for apps in the Asia-Pacific (ap-southeast-2) region.
+To find the IP addresses you should be using, go to your app's Settings page and copy down the IP addresses shown there (you may need to enable Galaxy Professional service at this point). Please note that IP whitelisting is currently supported in the US and EU regions, but is not supported for apps in the Asia-Pacific (ap-southeast-2) region.
 
 If your software wants you to specify your whitelist as a list of [CIDRs](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing) rather than a list of IP addresses, just add the three characters `/32` to the end of each IP address.
+
+If whitelisting should be present but is not available for your app, please email <a href="mailto:support@meteor.com"> support@meteor.com</a> for assistance.

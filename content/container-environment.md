@@ -30,4 +30,4 @@ To find the IP addresses you should be using, go to your app's Settings page and
 
 If your software wants you to specify your whitelist as a list of [CIDRs](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing) rather than a list of IP addresses, just add the three characters `/32` to the end of each IP address.
 
-If whitelisting should be present but is not available for your app, please email <a href="mailto:support@meteor.com"> support@meteor.com</a> for assistance.
+If whitelisting should be availabe on your plan but cannot be found, email <a href="mailto:support@meteor.com"> support@meteor.com</a> for assistance.

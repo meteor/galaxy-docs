@@ -11,21 +11,13 @@ Pubsub Summary is a set of important performance metrics related to your publica
 
 - Response Time - Average time taken to process your publications in the server
 - Sub Rate - Rate of new subscriptions
-- Network Latency - Time spent to send your initial publication data set to the client. Click here to learn more about how we calculate Network Latency.
-- Update Ratio - Update ratio is the percentage of updated data against the total data sent to the client. See how we calculate this metric.
-- Observer Reuse - Observer Reuse is the percentage of observers reused in your publication. See how we calculate this metric. ﻿
+- Active Subs (Average)
 
 ## Sub Rate and Unsub Rate
 
 <img src="/images/apm-sub-rate.png" style="width: 500px"/>
 
 This chart shows the rate of subscriptions and unsubscriptions per minute. We can see how busy our application is in terms of new subscriptions and unsubscriptions.
-
-## Average Response Time
-
-<img src="/images/apm-average-response-time.png" style="width: 500px"/>
-
-This chart shows the average response time for sending the initial data set for  subscriptions. We calculate this metric when we detect this.ready() for a publication. This chart shows you whether your subscriptions are slow to process initially. ﻿
 
 ## Network Latency
 

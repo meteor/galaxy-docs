@@ -8,13 +8,13 @@ Scaling and sizing your application is specific to the architecture and performa
 
 Scaling with Galaxy happens without downtime; your users will not experience service interruption, as long as you maintain at least one continuously running container at all times.
 
-<h3 id="what-to-look-for">What to look for</h3>
+<h2 id="what-to-look-for">What to look for</h2>
 
 We recommend that you scale when your app’s container usage exceeds either 70% memory, 80% CPU, or consistently spikes to 100% CPU. Use Galaxy’s performance graphs to track your resource usage over time. 
 
 <img src="images/email-galaxy-performance-graphs-600x468.jpg" style="">
 
-<h3 id="how-to">How to scale</h3>
+<h2 id="how-to">How to scale</h2>
 
 By default, new applications are deployed to Compact containers. Compact containers are appropriate for small apps. For large codebases, we recommend that you run your app on Standard containers.
 
@@ -39,7 +39,7 @@ A good rule of thumb is to use the smallest container size that can handle a sin
 
 Horizontal scaling does not restart your containers.
 
-<h3 id="garbage-collection">Garbage collection</h3>
+<h2 id="garbage-collection">Garbage collection</h2>
 
 You may need to change Node's garbage collection settings for optimal performance. Garbage collection, in this context, refers to automatic memory management. Memory occupied by objects that are no longer in use by your code will be freed up for general use within your container, though the required checks can come at a performance cost.
 

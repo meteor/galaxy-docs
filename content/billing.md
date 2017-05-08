@@ -19,7 +19,7 @@ Container usage pricing:
 - Galaxy Essentials (all regions): $0.08 per GB/hour
 - Galaxy Professional (all regions): $0.11 per GB/hour
 
-Customers who signed up prior to August 2016 may belong to a legacy Galaxy plan where pricing varies by plan, support tier selected, containers used, and container size.
+Customers who signed up prior to August 2016 may belong to a legacy Galaxy plan where pricing varies by plan, support tier selected, containers used, and container size. Please note there is no free tier on Galaxy.
 
 Pricing is impacted by:
 - Type of running containers

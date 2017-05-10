@@ -82,3 +82,9 @@ Add a line to `/etc/hosts` (Windows: `c:\windows\system32\drivers\etc\hosts`) th
 ```
 
 To ensure your changes take effect, you can reset your computer's local DNS cache with `sudo dscacheutil -flushcache` (Mac; see [other OSes](https://www.whatsmydns.net/flush-dns.html)) after making your changes.
+
+<h2 id="other-issues">Other issues</h2>
+
+Galaxy is not a DNS record provider. Our support is focused on configuring your settings to work with Galaxy apps, as described in the sections above.
+
+If you have additional issues which reach beyond the scope of this article, you may need to contact your DNS record provider to resolve them. 

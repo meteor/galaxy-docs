@@ -113,8 +113,10 @@ In the short term, you may need to [scale up](/scaling.html). You can always sca
 
 <h2 id="else">If none of the above worked</h2>
 
-First, confirm that you're able to run your app locally. If possible, try to duplicate the issues that you see in your app. This may involve running your app for locally for longer than usual and even simulating traffic, to recreate the same conditions.
+Consider if [Meteor APM](/apm-getting-started.html) might help you to identify your issue.
 
-Next, consider adding more exception handlers, as an uncaught exception may cause your app to crash.
+Confirm you're able to run your app locally. If possible, try to duplicate the issues in your app. This may involve running your app locally for longer than usual and simulating traffic, to recreate real-world conditions.
 
-Finally, try printing more information to your logs. If you can't spot any error messages or warnings in your app's current form, printing more information may help you to troubleshoot. Any minor changes you make to your code to enable this can always be disabled, once you've diagnosed the issue.
+Try adding more exception handlers, as an uncaught exception may cause your app to crash.
+
+Finally, try printing more information to your logs. If you can't spot any error messages or warnings in your app's current form, printing more information may help you to troubleshoot. Any minor changes to your code to enable can always be disabled once you've diagnosed the issue.

@@ -40,6 +40,8 @@ To get support for debugging Meteor application code and architecture issues, co
 
 Every Galaxy user is also welcome to follow up on <a href="http://github.com/meteor/meteor/issues/">GitHub</a> or the <a href="https://forums.meteor.com/">forums</a>. GitHub is excellent for tracking issues, while the forums are provided for community use concerning any kind of issue.
 
+If you believe your issue is related to Meteor, you can [file a bug](https://github.com/meteor/meteor/blob/devel/Contributing.md#reporting-a-bug-in-meteor) or add a comment to an existing bug to pursue resolution. Consider searching [Stack Overflow](http://stackoverflow.com/questions/tagged/meteor) for a solution, if applicable.
+
 <h3 id="Holidays">Company Holidays</h3>
 
 Non-business days in 2017 include:

@@ -9,9 +9,9 @@ order: 63
 
 This is the number of documents fetched from MongoDB via [observers](apm-glossary). Meteor fetches documents from MongoDB in a few different cases. Here are some of them:
 
-When a new observer is created (for the initial dataset)
-Every 10 seconds, if this observer is not using the oplog
-When the observer’s internal buffer becomes empty (with oplog observers only)
+- When a new observer is created (for the initial dataset)
+- Every 10 seconds, if this observer is not using the oplog
+- When the observer’s internal buffer becomes empty (with oplog observers only)
 
 ## Observer Changes
 

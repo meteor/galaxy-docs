@@ -14,19 +14,10 @@ Here is a list of the metrics shown in the widget:
 - Mean Res. Time - The mean response time per method. It is shown in milliseconds.
 - Throughput  - The number of method calls received per minute. This is an average metric.
 - Total Methods  - Total number of method calls received, including errors.
-- Error Rate  - Percentage of errors, calculated using the following equation:
-(total number of calls with errors/total number of calls for the method)* 100
-- Total Errors -  Total number of method calls with errors received.
-
-## Average Response Time
-
-<img src="/images/apm-average-response-time-ms.png" style="width: 500px"/>
-
-The chart above shows response time for method calls for the selected date range. The X-axis contains the date and the Y-axis contains the response time in milliseconds.
 
 ## Throughput (Requests Per Minute)
 
-<img src="/images/apm-throughput.png" style="width: 500px"/>
+<img src="/images/apm-throughput-requests-per-minute.png" style="width: 500px"/>
 
 This chart shows throughput for method calls for the selected date range. The X-axis contains the date and the Y-axis contains the requests (method calls) per minute.
 

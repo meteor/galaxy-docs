@@ -15,6 +15,8 @@ Pubsub Summary is a set of important performance metrics related to your publica
 
 ## Sub Rate and Unsub Rate
 
+<!-- Sub Rate (Subscriptions Per Minute) -->
+
 <img src="/images/apm-sub-rate.png" style="width: 500px"/>
 
 This chart shows the rate of subscriptions and unsubscriptions per minute. We can see how busy our application is in terms of new subscriptions and unsubscriptions.

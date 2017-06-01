@@ -26,7 +26,7 @@ Some services can be configured to only allow access from a list of IP addresses
 
 Note that whitelisted IP addresses are shared between all Galaxy Professional customers. While whitelisting is meant to protect your app from non-targeted attacks, you should still control access to your services by other means. 
 
-To find the IP addresses you should be using, go to your app's Settings page and copy down the IP addresses shown there (you may need to enable Galaxy Professional service at this point). Please note that IP whitelisting is currently supported in the US and EU regions, but is not supported for apps in the Asia-Pacific (ap-southeast-2) region.
+To find the IP addresses you should be using, go to your app's Settings page and copy down the IP addresses shown there (you may need to enable Galaxy Professional service at this point).
 
 If your software wants you to specify your whitelist as a list of [CIDRs](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing) rather than a list of IP addresses, just add the three characters `/32` to the end of each IP address.
 

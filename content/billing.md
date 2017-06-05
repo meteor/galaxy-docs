@@ -56,7 +56,7 @@ Every month a statement is emailed for your total monthly usage. Statements show
 
 <h2 id="stopping-charges">Stopping Charges</h2>
 
-While you can't stop charges for resources used in the past, you can stop charges, going forward, by stopping or deleting your apps.
+While you can't stop charges for resources used in the past, you can stop charges, going forward, by stopping or deleting your apps. Please note that, if you stop your app during the month, you won't be charged for usage until after the end of the billing period, typically the end of the month.
 
 At a minimum, you must stop your containers in every region where they are running. To check both regions, add your account name to the end of https://galaxy.meteor.com/ and https://eu-west-1.galaxy.meteor.com/.
 

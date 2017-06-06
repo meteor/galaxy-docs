@@ -26,6 +26,8 @@ Amazon's data center operations have been accredited under:
 - FISMA Moderate
 - Sarbanes-Oxley (SOX)
 
+Galaxy itself has not pursued independent certifications.
+
 <h3 id="policy-security-updates">Policy around Software Security Updates</h3>
 
 System configuration and consistency is maintained through standard images, configuration management software, and the replacement of select  systems with updated deployments.

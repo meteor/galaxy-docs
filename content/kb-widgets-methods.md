@@ -21,24 +21,6 @@ Here is a list of the metrics shown in the widget:
 
 This chart shows throughput for method calls for the selected date range. The X-axis contains the date and the Y-axis contains the requests (method calls) per minute.
 
-## Time Breakdown
-
-<img src="/images/apm-time-breakdown.png" style="width: 500px"/>
-
-This pie chart shows what your method spent time doing during the selected date range. It groups time into following categories:
-- db  - Time spent on database activities, including read and write operations.
-- http - Time spent on processing HTTP requests (accessed with Meteor's HTTP package)
-- compute - Time spent on CPU-intensive tasks inside a method (e.g. time spent sorting and calculating some value).
-- async - Time spent on async activities, especially with NPM modules.
-- email  - Time spent sending emails.
-- wait - Time the method spent waiting to be processed. This metric is important because methods from a single client are processed sequentially, and so a method can sometimes idle in the queue waiting to be processed.
-
-## Error Rate and Errors
-
-<img src="/images/apm-error-rate-and-errors.png" style="width: 500px"/>
-
-This chart shows errors (in methods) for the selected date range. At the bottom of the chart, a list of common errors is shown. The X-axis contains the date and the Y-axis contains the requests (method calls with errors) per minute.
-
 ## Method Breakdown
 
 <img src="/images/apm-method-breadown-1.png" style="width: 300px"/>

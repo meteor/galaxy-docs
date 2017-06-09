@@ -24,19 +24,6 @@ Once an observer is created, it’ll trigger events in a few different scenarios
 - Updated - If there is a change to an already added document, then the observer will trigger this event with the changes.
 - Removed - If an existing document does not satisfy the query, then the observer will trigger this event with that document’s ID.
 
-## Total/Reused Observer Handlers
-
-<img src="/images/apm-total-reused-observer-handles.png" style="width: 500px"/>
-
-When a new Live Query is created, it’ll create a new observer that watches the DB for changes. If there is an observer already created for the query, Live Query won’t create a new observer. Instead, it’ll reuse an existing observer.
-
-There is always a handler that sits between the Live Query and the observer.
-
-- Total Observer Handlers refer to the total number of handlers.
-- Reused Observer Handlers refer to handler sites between the Live Query and an already created observer.
-
-If the reused count is close to total count, that means Live Queries have created a fewer number of actual observers, which is the ideal case.
-
 ## Oplog Notifications
 
 <img src="/images/apm-oplog-notifications.png" style="width: 500px"/>

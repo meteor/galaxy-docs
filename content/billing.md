@@ -42,11 +42,11 @@ You can select Essentials or Professional containers to run specific apps in you
 
 Galaxy Prepaid Pricing guarantees a specific amount of container capacity at a discounted price compared to pay-as-you-go pricing.
 
-By paying upfront for container capacity, you’ll receive ~20% off the equivalent pay-as-you-go rates. Galaxy Prepaid Pricing currently costs $45 USD per GB RAM month (available in 1 GB increments only, billed annually).
+By paying upfront for container capacity, you’ll receive ~20% off the equivalent pay-as-you-go rates. Galaxy Prepaid Pricing is available for Galaxy Essentials and Professional container types (available in 1 GB increments only, billed annually). Prepaid capacity is not transferable between container types.
 
-Any usage during the month beyond the reserved base capacity will be billed at normal metered rates. To add Prepaid Pricing to your account, simply log a support ticket from within Galaxy and let us know how many GB's you want to reserve.
+Any usage during the month beyond the prepaid capacity will be billed at normal metered rates for that container type. To add Prepaid Pricing to your account, simply log a support ticket from within Galaxy and let us know which container type (Essentials or Pro) and how many GB's you need.
 
-Contact <a href="mailto:galaxysales@meteor.com">galaxysales@meteor.com</a> if you'd like to add this to your account.
+Contact <a href="mailto:galaxysales@meteor.com">galaxysales@meteor.com</a> if you'd like to add prepaid capacity to your account.
 
 <h2 id="billing-update">Payment and statements</h2>
 

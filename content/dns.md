@@ -45,6 +45,8 @@ This is done by setting up URL redirection from `mycompany.com` to `www.mycompan
 
 Because another service is hosting the redirect page, you'll need to set up SSL using their methods, which will most likely involve a certificate upload.
 
+If you'd like to host on Galaxy on the naked domain with HTTPS, or would like to serve a redirect from Amazon S3 via Amazon CloudFront (which supports custom certs), [this guide](https://simonecarletti.com/blog/2016/08/redirect-domain-https-amazon-cloudfront/), from a member of the DNSimple team, may be helpful.
+
 <h2 id="hosting-root-domain">Hosting on a root domain using ALIAS</h2>
 
 In this scenario, you do want to emphasize a short URL like mycompany.com. While hosting on a root domain [can introduce complications](http://www.yes-www.org/why-use-www/), it's possible to do by using an ALIAS (also called an ANAME record).

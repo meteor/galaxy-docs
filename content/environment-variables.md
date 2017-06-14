@@ -17,6 +17,8 @@ The following environment variable are commonly set for Galaxy apps:
 
 If you're using MongoDB, you'll have to configure a database and a user account with rights to access that database with your database provider.
 
+You can find a walkthrough showing the use of environment variables [here](https://themeteorchef.com/tutorials/deploying-with-meteor-galaxy#tmc-settings-json).
+
 <h3 id="settings-example">settings.json example</h3>
 
 ```json

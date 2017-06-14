@@ -32,6 +32,8 @@ Pricing is **not** impacted by:
 - Number of connected clients/traffic
 - Number of deploys or users
 
+If you'd like to economize, consider using a prepaid pricing plan, or stopping your app during low volume or low traffic periods throughout the month.
+
 <h2 id="galaxy-professional">Galaxy Professional</h2>
 
 Galaxy Professional includes Meteor APM, IP whitelisting, and prioritized support to help developers deploy and manage production apps with confidence. You can turn on Galaxy Professional containers with a single click for any of your apps on Galaxy.

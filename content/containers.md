@@ -47,8 +47,8 @@ Containers may be restarted for several reasons, such as:
 
 1. A bug in an app caused memory to spike, which caused its container to be killed and then restarted. 
 2. The app was working correctly, but it was overwhelmed by the number of connections or the load placed on it. Consequently, its container ran out of memory, was killed and restarted. 
-3. Our system underwent an upgrade, and as part of that, all containers were restarted.
+3. Our system underwent an upgrade, and as part of the upgrade, all containers were restarted.
 
-If constant uptime is a core requirement, we recommend running your app on more than 1 container. That way, traffic can be routed elsewhere when a single container becomes temporarily unresponsive.
+If constant uptime is a core requirement, we recommend running your app on more than 1 container. Since periodic system updates and container restarts can be expected on Galaxy, this can help prevent unwanted downtime. When an app runs on multiple containers, traffic can be routed elsewhere when a single container becomes unresponsive.
 
-Since periodic system updates and container restarts can be expected on Galaxy, this practice can help prevent unwanted downtime. Please note that, if you do choose to run a 1 container app, downtime will be unavoidable in the event of a container restart. Due to the need for system maintenance, we cannot guarantee that containers will not be restarted.
+Please note that, if you do choose to run a 1 container app, downtime will be unavoidable in the event of a container restart. Due to the need for system maintenance, we cannot guarantee that containers will not be restarted.

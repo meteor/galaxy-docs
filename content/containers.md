@@ -6,13 +6,13 @@ description: Learn how to monitor and manage containers
 
 Galaxy containers are packaged environments that are optimized to run Meteor. Each container runs one copy of an app.
 
-<h3 id="usage">Usage</h3>
+<h2 id="usage">Usage</h2>
 
 Each container has CPU and Memory allowance. Galaxy combines the pooled resources of all containers to track overall app performance. You can dive into individual container performance using the graphs on the app's containers page.
 
 <img src="/images/container-item.png" style="margin: 1em 0;"/>
 
-<h4 id="usage">Container sizes</h4>
+<h3 id="usage">Container sizes</h3>
 
 Since every app has unique architecture and performance characteristics, adjusting the container size helps you meet the specific resource needs of your app.
 

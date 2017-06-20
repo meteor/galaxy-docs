@@ -20,6 +20,8 @@ The value of DEPLOY_HOSTNAME will depend on which region you are deploying to:
 
 - To deploy to Asia-Pacific: DEPLOY_HOSTNAME=ap-southeast-2.galaxy.meteor.com
 
+The region you deploy to will affect the URL of your dashboard. If your username is devname, you'll see your US East apps at https://galaxy.meteor.com/devname, your EU West apps at https://eu-west-1.galaxy.meteor.com/devname, and your Asia-Pacific apps at https://ap-southeast-2.galaxy.meteor.com/devname. 
+
 <h3 id="deploy-mac">Mac and Linux</h3>
 
 On the command line, within your app's directory, type:

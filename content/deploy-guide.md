@@ -26,6 +26,8 @@ For EU West, use https://eu-west-1.galaxy.meteor.com/.
 
 For Asia-Pacific, use https://ap-southeast-2.galaxy.meteor.com/.
 
+The region you deploy to will affect the URL of your dashboard. If your username is devname, you'll see your US East apps at https://galaxy.meteor.com/devname, your EU West apps at https://eu-west-1.galaxy.meteor.com/devname, and your Asia-Pacific apps at https://ap-southeast-2.galaxy.meteor.com/devname. 
+
 <h2 id="mongo-configure">Configure your MongoDB database</h2>
 
 If your Meteor application has a package that requires Mongo, then you'll need a Mongo database configured for your application. If you want to use a hosted database provider, we recommend that you provision it from one of these providers: [mLab](https://www.mlab.com), [compose](https://www.compose.io) or [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).

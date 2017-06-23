@@ -22,6 +22,23 @@ You can check to see if your changes took hold by running the <a href="https://c
 
 Confirm that the output contains the text that your site shows once the JS is run. If you only see a header and a reference to a script file, you may need to troubleshoot.
 
+<h4 id="testing">Testing</h4>
+
+It's easy to run a test prerender server on your machine to check for errors. [As descibed at prerender](https://prerender.io/documentation/test-it), first run these commands:
+
+```
+git clone https://github.com/prerender/prerender.git
+cd prerender
+npm install
+node server.js
+```
+
+If your site is named example.com, then open another shell and use the command:
+
+`curl 'http://localhost:3000/https://example.com'`
+
+You should then see any relevant error messages, if you're experiencing an issue.
+
 <h4 id="prerender-details">Administration and settings</h4>
 
 The prerendering service offered by Galaxy is designed to provide a shared service across all apps in Galaxy, with pre-determined caching policies and no need for per app management or administration through the service.

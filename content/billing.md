@@ -30,7 +30,9 @@ Pricing is **not** impacted by:
 
 - Memory or CPU usage of your app
 - Number of connected clients/traffic
-- Number of deploys or users
+- Number of deployments
+- Number of users
+- Environment (Development, Testing, Staging or Production)
 
 If you'd like to economize, consider using a prepaid pricing plan, or stopping your app during low volume or low traffic periods throughout the month.
 

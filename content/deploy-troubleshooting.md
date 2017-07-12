@@ -22,7 +22,7 @@ Note that code-level review lies outside the scope of Galaxy's support. If this 
 
 You may see a 502 error with the message `Registered endpoints failed to handle the request` when you try to visit your URL. This means that the request failed, despite the fact that our system thought there was a healthy container at the beginning of the request.
 
-This often happens because your backend wasn't able to respond, when communicating with our proxy servers. You may need to profile your app to determine the cause of this error.
+This often happens because your backend wasn't able to respond, when communicating with our proxy servers. You may need to profile your app to determine the cause of this error. Check the Logs tab to potentially find out more information about the issue.
 
 <h2 id="five-hundred-three-errors">503 errors</h2>
 
@@ -33,7 +33,7 @@ Potential reasons for this include:
 - no containers are running, because they are stopped or because every container crashed (especially if the total number of your containers is 1, and your app hasn't had time to restart)
 - your build failed, if this is the first time you're deploying a container for that app or if the only other available containers built successfully but are unhealthy
 
-The most common cause of the 503 error is a problem in your code that prevents deployment - a [deployment failure](#deployment-failure).
+The most common cause of the 503 error is a problem in your code that prevents deployment - a [deployment failure](#deployment-failure). Check the Logs tab to potentially find out more information about the issue.
 
 A common reason that your app may be crashing on startup is that your `MONGO_URL` variable is missing or is set incorrectly. You can verify what `MONGO_URL` Galaxy is using by going to the app's dashboard and choosing the settings tab. To learn how to set it correctly, check the following resources:
 

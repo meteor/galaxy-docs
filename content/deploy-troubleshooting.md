@@ -9,7 +9,7 @@ description: Learn how to troubleshoot your deploy and get answers to frequently
 Check these items if you're having trouble with uptime, performance or deployment.
 * Your Meteor version. More current versions may resolve issues found in older Meteor versions. While the reverse is rare and generally shouldn't happen, if you're recently upgraded Meteor versions and start having difficulties, consider reverting to your last Meteor version.
 * Your container's memory and CPU usage. If your app is running out of memory, you may need to switch to a larger container, use more containers, or refactor your app to use less memory. In the short term, the only guaranteed solution is to scale up and use enough Galaxy resources to exceed your app's memory needs.
-* Your app's logs. While 'All' shows all output, consider breaking it down by tab. If your app is running and struggling before failing, check the 'App' tab. If your app fails when Galaxy tries to build it into a container image, check the 'Service' tab. Note that both can happen simultaneously: the earlier version of your app may be throwing errors, while the recent version created to fix the problem may have a code issue preventing deployment.
+* Your app's [logs](/logs.html). While 'All' shows all output, consider breaking it down by tab. If your app is running and struggling before failing, check the 'App' tab. If your app fails when Galaxy tries to build it into a container image, check the 'Service' tab. Note that both can happen simultaneously: the earlier version of your app may be throwing errors, while the recent version created to fix the problem may have a code issue preventing deployment.
 * Consider using  [meteor logout](/commands.html) and [meteor login](/commands.html), if your username should be able to deploy but cannot.
 * Check <a href="http://github.com/meteor/meteor/issues/">GitHub</a> to see if any related Meteor issue lists workarounds or solutions.
 * Check the <a href="https://forums.meteor.com/">forums</a> for related issues and solutions.
@@ -22,7 +22,7 @@ Note that code-level review lies outside the scope of Galaxy's support. If this 
 
 You may see a 502 error with the message `Registered endpoints failed to handle the request` when you try to visit your URL. This means that the request failed, despite the fact that our system thought there was a healthy container at the beginning of the request.
 
-This often happens because your backend wasn't able to respond, when communicating with our proxy servers. You may need to profile your app to determine the cause of this error. Check the Logs tab to potentially find out more information about the issue.
+This often happens because your backend wasn't able to respond, when communicating with our proxy servers. You may need to profile your app to determine the cause of this error. Check the [Logs](/logs.html) tab to potentially find out more information about the issue.
 
 <h2 id="five-hundred-three-errors">503 errors</h2>
 
@@ -33,7 +33,7 @@ Potential reasons for this include:
 - no containers are running, because they are stopped or because every container crashed (especially if the total number of your containers is 1, and your app hasn't had time to restart)
 - your build failed, if this is the first time you're deploying a container for that app or if the only other available containers built successfully but are unhealthy
 
-The most common cause of the 503 error is a problem in your code that prevents deployment - a [deployment failure](#deployment-failure). Check the Logs tab to potentially find out more information about the issue.
+The most common cause of the 503 error is a problem in your code that prevents deployment - a [deployment failure](#deployment-failure). Check the [Logs](/logs.html) tab to potentially find out more information about the issue.
 
 A common reason that your app may be crashing on startup is that your `MONGO_URL` variable is missing or is set incorrectly. You can verify what `MONGO_URL` Galaxy is using by going to the app's dashboard and choosing the settings tab. To learn how to set it correctly, check the following resources:
 
@@ -58,7 +58,7 @@ If you should be able to deploy but cannot, try using the [commands](/commands.h
 
 If our system tried to build a container to deploy your app but failed, the failure will be noted in your logs.
 
-Check the Logs tab to see if your app is crashing. The 'Service' tab may show you important build errors, in addition to the stopping and starting of containers.
+Check the [Logs](/logs.html) tab to see if your app is crashing. The 'Service' tab may show you important build errors, in addition to the stopping and starting of containers.
 
 Most of the time, the key to a solution will be found in the exception or error messages. Keep iterating on code fixes and deployments until the error goes away, a new error appears, or your app deploys successfully.
 

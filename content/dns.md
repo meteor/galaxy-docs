@@ -4,7 +4,7 @@ order: 21
 description: Learn how to configure DNS to point to Galaxy
 ---
 
-Before users can access your application, you must configure your DNS records to point to Galaxy. While the process will be specific to your DNS provider, the general method is the same. Please note that Galaxy is not a DNS provider and you’ll need to use your existing DNS provider to set DNS records.
+Before users can access your application, you must configure your DNS records to point to Galaxy. Galaxy is not a DNS provider and you’ll need to use your existing DNS provider to set DNS records. While the process will be specific to your DNS provider, the general method is the same. 
 
 <h2 id="meteorapp">Included *.meteorapp.com</h2>
 

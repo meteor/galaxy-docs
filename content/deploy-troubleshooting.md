@@ -99,7 +99,9 @@ If you are uncertain if this matches your situation, you can use [this test app]
 
 <h2 id="memory-issues">Memory issues or Out-of-Memory errors</h2>
 
-Memory issues are frequently indicated in your [logs](/logs.html). The log message `The container has run out of memory. A new container will be started to replace it.` means that the container running your application tried to get more memory than was allocated to it. Containers in this state are automatically killed.
+Memory issues are frequently indicated in your [logs](/logs.html). Check your logs for clues about the source of the issue.
+
+If you see the log message `The container has run out of memory. A new container will be started to replace it,` this means that the container running your application tried to get more memory than was allocated to it. Containers in this state are automatically killed.
 
 If you continue to run your app as is, the only way to prevent it from dying is to allocate resources with more than enough memory. A working solution may include more containers, bigger containers, or both.
 

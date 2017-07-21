@@ -1,5 +1,5 @@
 ---
-title: Troubleshooting
+title: Memory Issues
 order: 39
 description: Learn how to troubleshoot your deploy and get answers to frequently asked questions
 ---

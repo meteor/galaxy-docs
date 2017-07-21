@@ -1,7 +1,7 @@
 ---
 title: Error Types
 order: 38
-description: Learn how to deal with common error types.
+description: Learn how to deal with common error types
 ---
 
 <h2 id="five-hundred-two-errors">502 errors</h2>

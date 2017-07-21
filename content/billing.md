@@ -85,4 +85,7 @@ As long as your account is suspended, you won't be able to deploy, start or run 
 
 Once the invoiced amount is successfully paid, your full account functionality will be restored. 
 
-To avoid service interruptions for billing-related reasons, make sure you have an email address that you regularly check for notifications. Ensure you have a current and working payment method at all times; if yours is deactivated, update your billing information accordingly.
+To avoid service interruptions for billing-related reasons, make sure you have an email address that you regularly check for notifications. Ensure you have a current and working payment method at all times. 
+
+If your invoice is past due, update your payment information at the earliest possible opportunity to prevent any interruptions in service.  
+

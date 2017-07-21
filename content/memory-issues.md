@@ -1,7 +1,7 @@
 ---
 title: Memory Issues
 order: 39
-description: Learn how to troubleshoot your deploy and get answers to frequently asked questions
+description: Learn how to troubleshoot memory issues
 ---
 
 <h2 id="memory-issues">Memory issues or Out-of-Memory errors</h2>

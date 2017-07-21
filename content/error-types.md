@@ -1,22 +1,8 @@
 ---
-title: Troubleshooting
-order: 37
-description: Learn how to troubleshoot your deploy and get answers to frequently asked questions
+title: Error Types
+order: 38
+description: Learn how to deal with common error types.
 ---
-
-<h2 id="general-advice">General Advice</h2>
-
-Check these items if you're having trouble with uptime, performance or deployment.
-* Your Meteor version. More current versions may resolve issues found in older Meteor versions. While the reverse is rare and generally shouldn't happen, if you're recently upgraded Meteor versions and start having difficulties, consider reverting to your last Meteor version.
-* Your container's memory and CPU usage. If your app is running out of memory, you may need to switch to a larger container, use more containers, or refactor your app to use less memory. In the short term, the only guaranteed solution is to scale up and use enough Galaxy resources to exceed your app's memory needs.
-* Your app's [logs](/logs.html). While 'All' shows all output, consider breaking it down by tab. If your app is running and struggling before failing, check the 'App' tab. If your app fails when Galaxy tries to build it into a container image, check the 'Service' tab. Note that both can happen simultaneously: the earlier version of your app may be throwing errors, while the recent version created to fix the problem may have a code issue preventing deployment.
-* Consider using  [meteor logout](/commands.html) and [meteor login](/commands.html), if your username should be able to deploy but cannot.
-* Check <a href="http://github.com/meteor/meteor/issues/">GitHub</a> to see if any related Meteor issue lists workarounds or solutions.
-* Check the <a href="https://forums.meteor.com/">forums</a> for related issues and solutions.
-* Consider running more than 1 container, or 3 containers to qualify for high-availability status. If you run only one container, that makes the machine your container is running on a single point of failure. In the event of a hardware failure, your app will be down until Galaxy starts it on a new machine.
-* Email <a href="mailto:support@meteor.com">support</a>. To minimize the back-and-forth, please send in the name of the affected app, the conditions that trigger the issue (confirmed or suspected), steps to reproduce, and relevant logs. Try to resolve errors listed in the logs before writing in. If your app's container is running with the error, please try to leave it in the running state for our team to examine.
-
-Note that code-level review lies outside the scope of Galaxy's support. If this is important to you, consider [Meteor Development Support](/support.html).
 
 <h2 id="five-hundred-two-errors">502 errors</h2>
 
@@ -49,18 +35,6 @@ If you believe your `MONGO_URL` is set correctly, try the following:
   * If you are in the Asia-Pacific region, your CNAME should point to `ap-southeast-2.galaxy-ingress.meteor.com` 
 
 If you recently changed your DNS settings, you may need to wait for the new records to propagate. DNS changes often propagate within 30 minutes (depending on the TTL configured for the record set), but in some cases it can take up to 24 hours. Contact your DNS provider if you think there is a problem.
-
-<h2 id="deployment-failure">Deployment failures</h2>
-
-A deployment failure means that you or your system cannot build a container to deploy your app.
-
-If you should be able to deploy but cannot, try using the [commands](/commands.html) `meteor logout` and `meteor login`.
-
-If our system tried to build a container to deploy your app but failed, the failure will be noted in your logs.
-
-Check the [Logs](/logs.html) tab to see if your app is crashing. The 'Service' tab may show you important build errors, in addition to the stopping and starting of containers.
-
-Most of the time, the key to a solution will be found in the exception or error messages. Keep iterating on code fixes and deployments until the error goes away, a new error appears, or your app deploys successfully.
 
 <h2 id="package-error">Module missing or npm error</h2>
 
@@ -97,14 +71,3 @@ Version 1.2.1 of Meteor (and higher) provides the `METEOR_BINARY_DEP_WORKAROUND`
 
 If you are uncertain if this matches your situation, you can use [this test app](https://github.com/zol/meteor-bignum-test) to reproduce the error and confirm a fix.
 
-<h2 id="else">If none of the above worked</h2>
-
-Consider if [Meteor APM](/apm-getting-started.html) might help you to identify your issue.
-
-Confirm you're able to run your app locally. If possible, try to duplicate the issues in your app. This may involve running your app locally for longer than usual and simulating traffic, to recreate real-world conditions.
-
-Try adding more exception handlers, as an uncaught exception may cause your app to crash.
-
-Finally, try printing more information to your [logs](/logs.html). If you can't spot any error messages or warnings in your app's current form, printing more information may help you to troubleshoot. Any minor changes to your code to enable can always be disabled once you've diagnosed the issue.
-
-If you believe your issue is related to Meteor, you can [file a bug](https://github.com/meteor/meteor/blob/devel/Contributing.md#reporting-a-bug-in-meteor) or add a comment to an existing bug to pursue resolution. Consider searching [Stack Overflow](https://stackoverflow.com/questions/tagged/meteor) for a solution, if applicable.

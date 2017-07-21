@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting
-order: 38
+order: 37
 description: Learn how to troubleshoot your deploy and get answers to frequently asked questions
 ---
 

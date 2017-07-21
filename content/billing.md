@@ -72,7 +72,7 @@ There is no charge to maintain an account on Galaxy, if none of your containers 
 
 If Galaxy is unable to charge your account, the account address you have on file will be emailed a warning. Whenever a payment fails, Galaxy will send your account an email notification.
 
-If, after a warning or multiple warnings, the charge remains unpaid, your account may be suspended. Since Galaxy charges for services already rendered, this prevents unpaid charges from growing larger. 
+If, after receiving a warning or multiple warnings, the charge remains unpaid, your account may be suspended. Since Galaxy charges for services already rendered, this prevents unpaid charges from growing larger. 
 
 Typical reasons for account suspension include:
 - your payment information is out of date
@@ -81,7 +81,7 @@ Typical reasons for account suspension include:
 
 If you need to change your payment information, or have talked to your bank to enable your card to be charged, contact support for assistance.
 
-As long as your account is suspended, you will not be able to deploy, start or run containers on your account.
+As long as your account is suspended, you won't be able to deploy, start or run containers on your account.
 
 Once the invoiced amount is successfully paid, your full account functionality will be restored. 
 

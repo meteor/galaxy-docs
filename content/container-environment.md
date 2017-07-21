@@ -18,6 +18,14 @@ Galaxy runs your app containers in a firewalled network environment.  Only one p
 
 Galaxy forwards HTTP connections (port 80) on your app's configured [domains](/custom-domains.html) to the port exposed for external connections. HTTPS connections (port 443) are also forwarded to this port if you've [configured encryption](/encryption.html).  You cannot serve connections on any other ports.
 
+<h3 id="load-balancing">Load Balancing</h3>
+
+New client connections are routed to "least loaded" containers. "Least loaded" is defined as the container with the fewest existing client connections.
+
+If a container grows its memory or CPU usage, the existing client connections won't be re-routed, unless that container fails a health check. Failing a health check happens when that container doesn't respond to HTTP health check pings.
+
+If a container crashes, new users will be routed to a healthy container.
+
 <h3 id="network-outgoing">Outgoing connections and IP whitelisting</h3>
 
 When your app connects to other services like your database, those services' connections will always appear to come from one of a fixed set of IP addresses.  These IP addresses are not the IP addresses of the individual machines your container runs on, so don't be surprised if they don't match.  (These addresses are distinct from the addresses that our "ingress" DNS address points to --- don't point your DNS there!)

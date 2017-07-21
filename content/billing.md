@@ -67,3 +67,22 @@ At a minimum, you must stop your containers in every region where they are runni
 Every app listed in your account will have a full gray circle next to it, if its containers have been stopped.  If you're sure that you'll never reuse the containers in an app, you can delete the app to permanently remove it. There is no cost difference between deleting or stopping your app.
 
 There is no charge to maintain an account on Galaxy, if none of your containers are running. If you leave your account open, you can return at any time.
+
+<h2 id="preventing-interruptions">Preventing Service Interruptions</h2>
+
+If Galaxy is unable to charge your account, the account address you have on file will be emailed a warning (usually several). Whenever a payment fails, Galaxy will send your account an email notification.
+
+If, after receiving a warning, the charge remains unpaid, your account may be suspended. We do this to prevent unpaid charges from growing larger, since Galaxy charges for services already rendered.
+
+Typical reasons for account suspension include:
+- your payment information is out of date
+- your bank will be not allow the charge to go through
+- your bank requires your permission before the card can be charged by Galaxy
+
+If you need to change your payment information, or have talked to your bank to enable your card to be charged, contact support for assistance.
+
+As long as your account is suspended, you will not be able to deploy or run any containers on your account.
+
+Once the invoiced amount is successfully paid, your account will be restored to its normal functionality. 
+
+To avoid service interruptions for billing-related reasons, make sure you have an email address that you regularly check for notifications. Ensure you have a current and working credit card at all times; if your card is deactivated, update your billing information appropriately.

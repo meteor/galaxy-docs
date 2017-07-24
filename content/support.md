@@ -6,7 +6,7 @@ description: Learn about support options available in Galaxy
 
 <h2 id="galaxy-support">Galaxy Support</h2>
 
-You can submit tickets to Galaxy support at [galaxy.meteor.com/support](https://galaxy.meteor.com/support). You can also access the ticketing page from the left-hand dropdown menu within your Galaxy account. If you'd rather use email, you can create a ticket by emailing <a href="mailto:support@meteor.com"> support@meteor.com</a>. 
+You can submit tickets to Galaxy support at [galaxy.meteor.com/support](https://galaxy.meteor.com/support). You can also access the ticketing page from the left-hand dropdown menu within your Galaxy account. If you'd rather use email, you can open a case by emailing <a href="mailto:support@meteor.com"> support@meteor.com</a>. 
 
 All inquiries end up in the same queue and will be responded to by our support team. Galaxy's support response is email-only.
 

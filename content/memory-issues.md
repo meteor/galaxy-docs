@@ -6,7 +6,7 @@ description: Learn how to troubleshoot memory issues
 
 <h2 id="memory-issues">Memory issues or Out-of-Memory errors</h2>
 
-Memory issues are a common but often poorly understood problem, for apps running in production. In order to effectively resolve them, you may need to profile your app and iterate on your code in order to improve memory usage.
+Memory issues are a common but often poorly understood problem. In order to effectively resolve them, you may need to profile your app and iterate on your code in order to improve memory usage.
 
 Memory issues are frequently indicated in your [logs](/logs.html). Check your logs for clues about the source of the issue.
 

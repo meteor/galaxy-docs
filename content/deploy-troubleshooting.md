@@ -46,6 +46,6 @@ Confirm you're able to run your app locally. If possible, try to duplicate the i
 
 Try adding more exception handlers, as an uncaught exception may cause your app to crash.
 
-Finally, try printing more information to your [logs](/logs.html). If you can't spot any error messages or warnings in your app's current form, printing more information may help you to troubleshoot. Any minor changes to your code to enable can always be disabled once you've diagnosed the issue.
+Finally, try printing more information to your [logs](/logs.html). If you can't spot any error messages or warnings in your app's current form, printing more information may help you to troubleshoot. Any minor changes to your code to enable can always be disabled once you've diagnosed the issue. You can look up specific error types in our [error types](/error-types.html) article. 
 
 If you believe your issue is related to Meteor, you can [file a bug](https://github.com/meteor/meteor/blob/devel/Contributing.md#reporting-a-bug-in-meteor) or add a comment to an existing bug to pursue resolution. Consider searching [Stack Overflow](https://stackoverflow.com/questions/tagged/meteor) for a solution, if applicable.

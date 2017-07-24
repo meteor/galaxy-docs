@@ -64,9 +64,11 @@ While you can't stop charges for resources used in the past, you can stop charge
 
 At a minimum, you must stop your containers in every region where they are running. To check your regions, add your account name to the end of https://galaxy.meteor.com/, https://eu-west-1.galaxy.meteor.com/ and https://ap-southeast-2.galaxy.meteor.com/ and make sure you have no running apps.
 
-Every app listed in your account will have a full gray circle next to it, if its containers have been stopped.  If you're sure that you'll never reuse the containers in an app, you can delete the app to permanently remove it. There is no cost difference between deleting or stopping your app.
+Every app listed in your account will have a full gray circle next to it, if its containers have been stopped.  If you're sure that you'll never reuse the containers in an app, you can delete the app to permanently remove it. 
 
-There is no charge to maintain an account on Galaxy, if none of your containers are running. If you leave your account open, you can return at any time.
+There is no cost difference between deleting or stopping your apps. You won't save any money by deleting your apps, assuming you never restart your stopped apps again.
+
+There is no charge to maintain an account on Galaxy if no containers are running. If you leave your account open, you can return at any time.
 
 <h2 id="preventing-interruptions">Preventing Service Interruptions</h2>
 

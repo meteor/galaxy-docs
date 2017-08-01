@@ -14,10 +14,12 @@ Support collaborates with the Engineering team to make sure the status page is u
 
 <h3 id="subscribe">Subscribe</h3>
 
-Subscribe to our status page to find out about updates in real time. You'll receive an email whenever the status page is updating, meaning you'll find out about issues potentially affecting your app from the moment the team records work on them. Even if you've already contacted support, the status page update will generally come first.
+Subscribe to our status page to find out about updates in real time. You can select email, SMS, webhook or RSS feed status update notifications, depending on your preference.
+
+By selecting a notification method, you'll find out about issues potentially affecting your app from the moment the team records work on them. Even if you've already contacted support, the status page update will generally come first.
 
 <h3 id="potential-issues">Potential issues</h3>
 
 If you believe you may have discovered a Galaxy issue, or are currently experiencing one that is not noted on the status page, contact [support](/support.html). While our SLA is within 1 business day from the time of your message's arrival, support will usually update more frequently in the event of a service interruption. 
 
-When reporting an issue, please include any contextual information that will help our team dive in (normal container startup time vs. current container startup time, app name, etc.). This will shorten the troubleshooting cycle and generally reduce the time to resolution.
+When reporting an issue, please include any contextual information that will help our team dive in (normal container startup time vs. current container startup time, app name, etc.). This will shorten the troubleshooting cycle and generally reduce the time to resolution. 

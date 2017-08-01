@@ -18,6 +18,6 @@ Subscribe to our status page to find out about updates in real time. You'll rece
 
 <h3 id="potential-issues">Potential issues</h3>
 
-If you believe you may have discovered a Galaxy issue, or are currently experiencing one that is not noted on the status page, contact [support](/support.html) about this. While our SLA is within 1 business day from the time of your message's arrival, support will usually update more frequently than this in the event of a service interruption. 
+If you believe you may have discovered a Galaxy issue, or are currently experiencing one that is not noted on the status page, contact [support](/support.html). While our SLA is within 1 business day from the time of your message's arrival, support will usually update more frequently in the event of a service interruption. 
 
-When reporting an issue, please include any contextual information (normal container startup time vs. current container startup time, app name, etc.) that will help our team dive in. This will shorten the troubleshooting cycle and generally speed up the time to resolution.
+When reporting an issue, please include any contextual information that will help our team dive in (normal container startup time vs. current container startup time, app name, etc.). This will shorten the troubleshooting cycle and generally reduce the time to resolution.

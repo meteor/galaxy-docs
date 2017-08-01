@@ -4,7 +4,7 @@ order: 33
 description: Learn how to check and follow Galaxy's status
 ---
 
-Galaxy's status is available from the status page at [status.meteor.com](https://status.meteor.com/). All Galaxy issues are posted to the page, once confirmed.
+Galaxy's status is available from the status page at [status.meteor.com](http://status.meteor.com/). All Galaxy issues are posted to the page, once confirmed.
 
 <h2 id="usage">Usage</h2>
 

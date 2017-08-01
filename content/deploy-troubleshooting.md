@@ -17,7 +17,7 @@ Check these items if you're having trouble with uptime, performance or deploymen
 * Consider running more than 1 container, or 3 containers to qualify for [high-availability](/high-availability.html) status. If you run only one container, that makes the machine your container is running on a single point of failure. In the event of a hardware failure, your app will be down until Galaxy starts it on a new machine.
 * Contact [support](/support.html#galaxy-support). To minimize the back-and-forth, please send in the name of the affected app, the conditions that trigger the issue (confirmed or suspected), steps to reproduce, and relevant logs. Try to resolve errors listed in the logs before writing in. If your app's container is running with the error, please try to leave it in the running state for our team to examine.
 
-Note that code-level review lies outside the scope of Galaxy's support. If this is important to you, consider [Meteor Development Support](/support.html).
+Note that code-level review lies outside the [scope](/support.html#scope) of Galaxy's support. If this is important to you, consider [Meteor Development Support](/support.html).
 
 <h2 id="five-hundred-two-errors">502 errors</h2>
 

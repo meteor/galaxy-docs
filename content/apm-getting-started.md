@@ -8,9 +8,8 @@ This guide will help you get started with Meteor APM, to better understand how y
 
 ## Install and Configure Meteor APM
 
-1. Upgrade your app to Galaxy Professional. If you haven't yet, navigate to your app's Settings page, and click the "Upgrade to Professional" button.
-2. Run `meteor add mdg:meteor-apm-agent` inside your Meteor project.
-3. Once you have deployed your app, enable "Galaxy Professional" from the app settings page.
+1. Run `meteor add mdg:meteor-apm-agent` inside your Meteor project.
+2. Once you have deployed your app, enable "Galaxy Professional" from the app settings page.
 
 Now your app will send information to Meteor APM. Visit [Galaxy](https://galaxy.meteor.com) to find links to your APM dashboard.  Links can be found in the following places:
 

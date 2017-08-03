@@ -43,10 +43,14 @@ Most of the time, the key to a solution will be found in the exception or error 
 
 Consider if [Meteor APM](/apm-getting-started.html) might help you to identify your issue.
 
+Try adding more exception handlers, as an uncaught exception may be causing your app to crash.
+
 Confirm you're able to run your app locally. If possible, try to duplicate the issues in your app. This may involve running your app locally for longer than usual and simulating traffic, to recreate real-world conditions.
 
-Try adding more exception handlers, as an uncaught exception may cause your app to crash.
+A recommended method for emulating Galaxy is to run locally with --production. The way node_modules are pulled in is different on a remote deployment to a server (including Galaxy) than when building locally. The --production setting will minimize and concatenate all the JS into one file.
 
-Finally, try printing more information to your [logs](/logs.html). If you can't spot any error messages or warnings in your app's current form, printing more information may help you to troubleshoot. Any minor changes to your code to enable can always be disabled once you've diagnosed the issue. You can look up specific error types in our [error types](/error-types.html) article. 
+Finally, try printing more information to your [logs](/logs.html). If you can't spot any error messages or warnings in your app's current form, printing more information may help you to troubleshoot. Any minor changes to your code to enable can always be disabled once you've diagnosed the issue. You can find specific error types in our [error types](/error-types.html) article. 
 
-If you believe your issue is related to Meteor, you can [file a bug](https://github.com/meteor/meteor/blob/devel/Contributing.md#reporting-a-bug-in-meteor) or add a comment to an existing bug to pursue resolution. Consider searching [Stack Overflow](https://stackoverflow.com/questions/tagged/meteor) for a solution, if applicable.
+If you believe your issue is related to Meteor, you can [file a bug](https://github.com/meteor/meteor/blob/devel/Contributing.md#reporting-a-bug-in-meteor) or add a comment to an existing bug to pursue resolution. 
+
+Search [Stack Overflow](https://stackoverflow.com/questions/tagged/meteor) for a solution, if applicable.

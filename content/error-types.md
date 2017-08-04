@@ -56,7 +56,9 @@ This means that this package failed to install, using that version. A long term 
 
 If you happen to be using an older version of Meteor, consider updating to a more recent version, as that has been known to resolve issues in the past.
 
-If neither of those solutions work, try removing the package entirely, and making any necessary adjustments to your app to accommodate this change.
+If you've been using `npm`, consider using `meteor npm` instead, as you may run into conflicts in the former case.
+
+If neither of these solutions work, try removing the package entirely, and making any necessary adjustments to your app to accommodate this change.
 
 A recommended method for emulating Galaxy is to run locally with `--production`. The way node_modules are pulled in is different on a remote deployment to a server (including Galaxy) than when building locally. The `--production` setting will minimize and concatenate all the JS into one file.
 

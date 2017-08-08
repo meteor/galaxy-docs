@@ -40,6 +40,7 @@ Unsupported issues would include but are not limited to:
 - a database issue on a Galaxy-hosted app
 - a question centering on Meteor code or Meteor code snippets
 - a DNS issue involving MX records
+- a Kadira issue (as opposed to Meteor APM)
 
 If you write in to support about an out of scope issue, Galaxy support will explain its status and decline to continue investigating the issue. 
 

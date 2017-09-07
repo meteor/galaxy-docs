@@ -55,7 +55,5 @@ If you believe your issue is related to Meteor, you can [file a bug](https://git
 <h2 id="holidays">Company Holidays</h2>
 
 Non-business days in 2017 include:
-- 5/29/17 - Memorial Day
-- 7/4/17 - Independence Day
 - 11/23/17 - Thanksgiving
 - 12/25/17 - Christmas Day

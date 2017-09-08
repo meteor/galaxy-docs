@@ -50,3 +50,16 @@ If you need to trigger your recaches for specific pages, or need to recache more
 <h2 id="prerender-alternative">Using your own Prerender service</h2>
 
 You can use your own Prerender service by configuring it in the application settings file (settings.json). If Galaxy finds a pre-configured Prerender service, then Galaxy will not configure the application to use Galaxy's integrated Prerender.io service.
+
+The token and service URL can be configured via your application's settings.json like so:
+```
+{
+  "PrerenderIO": {
+    "serviceUrl": "https://service.prerender.io",
+    "token": "yourtoken"
+  }
+}
+```
+If you intend to continue using Prerender's hosted service with your own token, we recommend setting the `serviceUrl` as above explicitly because the npm package supporting prerender defaults to a non-secure `http` url.
+
+Refer to the [package documentation](https://github.com/dferber90/meteor-prerender/) for more information

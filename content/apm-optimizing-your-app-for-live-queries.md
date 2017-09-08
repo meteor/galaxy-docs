@@ -43,7 +43,7 @@ To be a similar query, both the query and the options passed to `Collection.find
 * Then, check their Observer Reuse value.
 * If that’s low, then we can optimize.
 
-There are few simple things you can do to increase your observer reuse ratio. Take a look at this guide: https://goo.gl/LfzM7t
+There are few simple things you can do to increase your observer reuse ratio. Take a look at this guide: [How to Reuse Observers](http://galaxy-guide.meteor.com/apm-improve-cpu-and-network-usage.html#How-to-Reuse-Observer)
 
 ### Optimize busy Live Queries
 

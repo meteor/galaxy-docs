@@ -52,7 +52,7 @@ Every Galaxy user is also welcome to follow up on <a href="http://github.com/met
 
 If you believe your issue is related to Meteor, you can [file a bug](https://github.com/meteor/meteor/blob/devel/Contributing.md#reporting-a-bug-in-meteor) or add a comment to an existing bug to pursue resolution. Consider searching [Stack Overflow](http://stackoverflow.com/questions/tagged/meteor) for a solution, if applicable.
 
-If you'd like for a dedicated contractor to review your app or work on your issue, consider [weworkmeteor](https://www.weworkmeteor.com/) or, for the more general case, [Toptal](https://www.toptal.com/).
+If you'd like for a dedicated contractor to review your app or work on your issue, consider [weworkmeteor](https://www.weworkmeteor.com/) or, more generally, [Toptal](https://www.toptal.com/).
 
 <h2 id="holidays">Company Holidays</h2>
 

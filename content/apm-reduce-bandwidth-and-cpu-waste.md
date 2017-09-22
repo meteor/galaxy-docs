@@ -3,8 +3,6 @@ title: Reduce Bandwidth and CPU Waste
 order: 54
 ---
 
-_Note: This content originally appeared on https://kadira.io/academy/meteor-performance-101 ._
-
 Iron Router normally unsubscribes all previous subscriptions when entering into a new route.
 
 Actually, this is not an Iron Router issue. It's a feature of Meteor's Deps package. Read [this article](http://meteorhacks.com/meteor-subscription-optimizations.html) to learn more about this.

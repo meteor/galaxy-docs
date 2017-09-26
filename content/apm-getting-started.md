@@ -32,7 +32,7 @@ While there is no right or wrong way to use Meteor APM, here are some common use
 
 ### Finding Bottlenecks in Meteor Methods and Fixing Them
 
-Normally, for a typical Meteor application, the Average [Response Time](http://support.kadira.io/knowledgebase/articles/347424-response-time) of a Meteor Method should not be more than 200ms. If it exceeds this, you may be able to improve performance.
+Normally, for a typical Meteor application, the Average Response Time of a Meteor Method should not be more than 200ms. If it exceeds this, you may be able to improve performance.
 
 * First click on **Methods** on the Main Menu and look at the Response Time.
 * Also look at the Response Time graph for any spikes.
@@ -52,11 +52,10 @@ Normally, for a typical Meteor application, the Average [Response Time](http://s
 In your app, you might be using many Meteor Methods. While you may need to improve all of them, it's good to start with the ones that have the most impact. We’ve determined that, if you can improve a method with higher Throughput, it will result in a total performance gain. To continue, follow these steps:
 
 * Click on the **Detailed View** of Methods.
-* Sort the Methods Breakdown by [Throughput](http://support.kadira.io/knowledgebase/articles/347444-throughput) (the default sort criteria).
-* Click on a method name in the Methods Breakdown.
-* In the [Recommendations](http://support.kadira.io/knowledgebase/articles/347445-method-recommendations) section, you will see the impact you can have if you improve the selected method.
+* Sort the Methods Breakdown by Throughput (the default sort criteria).
+* Click on a method name in the Methods Breakdown. Assess the impact if you improve the selected method.
 * Click on the Response Time Graph and find a trace.
-* Analyze it with this [article](/apm-make-your-app-faster.html) and improve your method if possible.
+* Try to make your app [faster](/apm-make-your-app-faster.html) and improve your method if possible.
 * Do the same for all methods.
 
 <iframe width="640" height="480" src="https://www.youtube.com/embed/REUrBU7x6GU" frameborder="0" allowfullscreen="1">

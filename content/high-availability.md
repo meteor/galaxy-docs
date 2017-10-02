@@ -4,7 +4,9 @@ order: 41
 description: Learn how to make your app fault tolerant by enabling high-availability
 ---
 
-High-availability increases the likelihood that your app stays up in the event of unforeseen container, machine, or availability zone failures. We recommend high-availability for all business critical and production apps. Galaxy supports high-availability by default.  Just run three or more Standard containers to enable it for your app.
+High-availability increases the likelihood that your app stays up in the event of unforeseen container, machine, or availability zone failures. We recommend high-availability for all business critical and production apps. Galaxy supports high-availability by default.  
+
+Just run three or more Standard containers to enable it for your app. You'll see "HA" in a golden box next to any apps where high-availability is enabled.
 
 <h3 id="turn-on">Turn high-availability on</h3>
 

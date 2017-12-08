@@ -28,7 +28,7 @@ This is the rule of thumb you can apply for any app. But you can’t decide whic
 
 Now you can see a set of publications sorted by the number of documents they fetched from MongoDB. Here are some optimizations you can apply to them:
 
-* If the "Observer Reuse Ratio" is low, try to reduce it. We’ll talk more about this in a second.
+* If the "Observer Reuse Ratio" is low, try to increase it. We’ll talk more about this in a second.
 * If possible, try to reduce the number of documents fetched by changing your code. For instance, You could use a limit when fetching data.
 
 ### Reuse observers as much as possible

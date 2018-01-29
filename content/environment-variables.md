@@ -15,6 +15,7 @@ The following environment variable are commonly set for Galaxy apps:
 - `ROOT_URL`: This is an optional environment variable. If you have any Meteor packages that need to generate a URL, then those packages will use `ROOT_URL` to identify the URL where the app is hosted. The default value for this is the primary hostname that your app is deployed to. This variable hooks up to the Meteor.absoluteUrl() API.
 - `MAIL_URL`: This is required if you have the `email`  package in your application. In order to send email from the application, the `MAIL_URL` environment variable needs to be set. An example format would be `"MAIL_URL": "smtp://postmaster%40your.mailserver.address.com:password@mailserver.smtp.address.com:587"`
 - `OPTICS_API_KEY`: This is an optional environment variable if you are using [Apollo Optics](https://www.apollodata.com/optics/) for your application. Read more [here](http://optics-docs.apollodata.com/) or in [this useful guide](https://dev-blog.apollodata.com/apollo-optics-is-now-free-for-small-projects-c23d70569913). An example format would be `"OPTICS_API_KEY": "service:Endpoint-Name:XXXXX-XXXXXXXXXXXXXXXX"`
+- `GALAXY_NODE_OPTIONS`: This is for any Node settings that can be controlled at the command line.
 
 If you're using MongoDB, you'll have to configure a database and a user account with rights to access that database with your database provider.
 

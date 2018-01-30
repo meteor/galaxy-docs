@@ -53,3 +53,117 @@ Logs are stored for the past week. If any errors or messages thrown by your app 
 
 If you'd like to explore more permanent log storage options, contact <a href="mailto:support@meteor.com">support@meteor.com</a>.
 
+<h3 id="custom-storage">Custom log storage</h3>
+
+If you would like access to older logs and more flexibility in how you access your logs, you can run your own [Elasticsearch](https://www.elastic.co/products/elasticsearch) server and configure Galaxy to send your app's logs to your own server.  You can then use any tools that support Elasticsearch to search and process your logs.  Several companies provide hosted Elasticsearch systems, including [Elastic Cloud](https://www.elastic.co/cloud) and [Amazon Web Services](https://aws.amazon.com/elasticsearch-service/).
+
+To use Galaxy's custom log storage support, set up your Elasticsearch server, and provide its URL as the `USER_LOG_DESTINATION` [environment variables](/environment-variables.html) in your app's `settings.json`.  Galaxy will send your app's standard output and standard error, as well as notifications of container start and exit events, to your Elasticsearch server.  Note that logs from building containers, as well as some other service logs from the Galaxy scheduler, are not at this time sent to your Elasticsearch server.
+
+You will still be able to view your last week of logs in the Galaxy dashboard.
+
+Logs are written to Elasticsearch indices with names that look like `app_logs-2018-01-29`. A new index is created for each day (in the UTC time zone). This lets you reclaim space on your server easily by deleting old indices.
+
+We recommend you create an [index template](https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-templates.html) to define the fields used by Galaxy's Elasticsearch integration. The index template tells Elasticsearch that the `@timestamp` field contains a date and time, and that several other fields which contain IDs such as container ID not be "analyzed": ie, they should be treated literally instead of broken into strings and lower-cased.
+
+Elasticsearch has changed some of its APIs in recent versions, so the exact index template depends on your version of Elasticsearch.
+
+<h4 id="index-template-es5">Setting up index templates for Elasticsearch 5 and earlier</h4>
+
+For versions of Elasticsearch earlier than v6, run the following code at your shell (substituting in your Elasticsearch server's credentials and address) to create the index template:
+
+```
+curl -X PUT 'https://username:password@your-elasticsearch-server.com/_template/app_logs?pretty' -H 'Content-Type: application/json' -d '
+{
+  "template": "app_logs-*",
+  "mappings": {
+    "line": {
+      "properties": {
+        "@timestamp": {
+          "type": "date",
+          "format": "dateOptionalTime"
+        },
+        "appId": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "containerId": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "stack": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "log": {
+          "type": "string"
+        },
+        "stream": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "rootUrl": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "appVersionId": {
+          "type": "string",
+          "index": "not_analyzed"
+        }
+      }
+    }
+  }
+}
+'
+```
+
+<h4 id="index-template-es6">Setting up index templates for Elasticsearch 6 and later</h4>
+
+For Elasticsearch v6, run the following code at your shell (substituting in your Elasticsearch server's credentials and address) to create the index template:
+
+```
+curl -X PUT 'https://username:password@your-elasticsearch-server.com/_template/app_logs?pretty' -H 'Content-Type: application/json' -d '
+{
+  "index_patterns": ["app_logs-*"],
+  "mappings": {
+    "line": {
+      "properties": {
+        "@timestamp": {
+          "type": "date",
+          "format": "dateOptionalTime"
+        },
+        "appId": {
+          "type": "keyword",
+          "index": true
+        },
+        "containerId": {
+          "type": "keyword",
+          "index": true
+        },
+        "stack": {
+          "type": "keyword",
+          "index": true
+        },
+        "log": {
+          "type": "text",
+          "index": true
+        },
+        "stream": {
+          "type": "keyword",
+          "index": true
+        },
+        "rootUrl": {
+          "type": "keyword",
+          "index": true
+        },
+        "appVersionId": {
+          "type": "keyword",
+          "index": true
+        }
+      }
+    }
+  }
+}
+'
+```
+
+In Elasticsearch 6, the `string` type is removed, and is replaced with `text` or `keyword` depending on whether or not you analyze it. (The new types were introduced in Elasticsearch 5, and `string` was removed in Elasticsearch 6.) Elasticsearch 6 also renames `template` to `index_patterns`.

@@ -16,6 +16,8 @@ Galaxy support is dedicated to resolving Galaxy-specific issues and troubleshoot
 
 While we strive for "best effort" with regard to non-deployment questions pertaining to Meteor, third-party packages and other topics, they are not an officially supported Galaxy subject matter area. Galaxy support does not provide code-level review.
 
+Our [terms of service](https://www.meteor.com/assets/content/Meteor-Terms-of-Service.pdf) explain our commitment to you in more detail.
+
 If you would like expert assistance with your Meteor question, consider a subscription to [Meteor Developer Support](#developer).
 
 <h2 id="enhanced-galaxy-support">Enhanced Galaxy Support Options</h2>

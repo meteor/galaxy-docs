@@ -61,4 +61,4 @@ In your app, you might be using many Meteor Methods. While you may need to impro
 <iframe width="640" height="480" src="https://www.youtube.com/embed/REUrBU7x6GU" frameborder="0" allowfullscreen="1">
 </iframe>
 
-> You can follow the [same process](https://www.youtube.com/watch?v=CTk0Qvj0n6Y&feature=youtu.be) for PubSub, but you will need to sort the Pub/Sub Breakdown by [SubRate](http://support.kadira.io/knowledgebase/articles/347439-subrate) instead of Throughput.
+> You can follow the [same process](https://www.youtube.com/watch?v=CTk0Qvj0n6Y&feature=youtu.be) for PubSub, but you will need to sort the Pub/Sub Breakdown by SubRate instead of Throughput.

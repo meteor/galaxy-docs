@@ -58,6 +58,8 @@ If you'd like for a dedicated contractor to review your app or work on your issu
 
 <h2 id="holidays">Company Holidays</h2>
 
-Non-business days in 2017 include:
-- 11/23/17 - Thanksgiving
-- 12/25/17 - Christmas Day
+Non-business days in 2018 include:
+- 5/28/18 - Memorial Day
+- 7/4/18 - Independence Day
+- 11/23/18 - Thanksgiving
+- 12/25/18 - Christmas Day

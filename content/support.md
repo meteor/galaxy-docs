@@ -46,6 +46,8 @@ If you write in to support about an out of scope issue, Galaxy support will expl
 
 To get support for debugging Meteor application code and architecture issues, consider signing up for  [Meteor Developer Support](#meteor-developer-support).
 
+Please familiarize yourself with our [Terms of Service](https://www.meteor.com/assets/content/Meteor-Terms-of-Service.pdf) and contact support if you have further questions.
+
 <h2 id="venues">Venues for Assistance</h2>
 
 Every Galaxy user is also welcome to follow up on <a href="http://github.com/meteor/meteor/issues/">GitHub</a> or the <a href="https://forums.meteor.com/">forums</a>. GitHub is excellent for tracking issues, while the forums are provided for community use concerning any kind of issue.

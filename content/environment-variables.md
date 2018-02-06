@@ -35,7 +35,7 @@ You can find a walkthrough showing the use of environment variables [here](https
 }
 ```
 
-You can contact support to obscure your settings.json file. Once this is done, all app settings will be hidden across your account. A user with access to any of your app's dashboards will not be able to view the information in your settings.json file from within the associated dashboard, after this feature is enabled. 
+You can contact support to obscure your settings.json file. Once this is done, all app settings will be hidden across your account. A user with access to any of your app's dashboards will not be able to view the information in your settings.json file from within the associated dashboard after this feature is enabled. 
 
 <h3 id="see-also">See also</h3>
 `Meteor.settings` in [Meteor docs](http://docs.meteor.com/#/full/meteor_settings).

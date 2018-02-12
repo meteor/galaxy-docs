@@ -51,4 +51,4 @@ Containers may be restarted for several reasons, such as:
 
 If constant uptime is a core requirement, we recommend running your app on more than 1 container. Since periodic system updates and container restarts can be expected on Galaxy, this can help prevent unwanted downtime. When an app runs on multiple containers, traffic can be routed elsewhere when a single container becomes unresponsive.
 
-Please note that, if you do choose to run a 1 container app, downtime will be unavoidable in the event of a container restart. Due to the need for system maintenance, we cannot guarantee that containers will not be restarted.
+Please note that, if you do choose to run a 1 container app, downtime will be unavoidable in the event of a container restart or a new deployment. Due to the need for system maintenance, we cannot guarantee that containers will not be restarted.

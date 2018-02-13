@@ -71,7 +71,7 @@ Elasticsearch has changed some of its APIs in recent versions, so the exact inde
 
 For versions of Elasticsearch earlier than v6, run the following code at your shell (substituting in your Elasticsearch server's credentials and address) to create the index template:
 
-```
+```sh
 curl -X PUT 'https://username:password@your-elasticsearch-server.com/_template/app_logs?pretty' -H 'Content-Type: application/json' -d '
 {
   "template": "app_logs-*",
@@ -120,7 +120,7 @@ curl -X PUT 'https://username:password@your-elasticsearch-server.com/_template/a
 
 For Elasticsearch v6, run the following code at your shell (substituting in your Elasticsearch server's credentials and address) to create the index template:
 
-```
+```sh
 curl -X PUT 'https://username:password@your-elasticsearch-server.com/_template/app_logs?pretty' -H 'Content-Type: application/json' -d '
 {
   "index_patterns": ["app_logs-*"],

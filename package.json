@@ -23,8 +23,10 @@
     "hexo-s3-deploy": "meteor/hexo-s3-deploy#e36f6d046660040878bb5bedfc8422f526a78be6"
   },
   "scripts": {
-    "test":"hexo clean; hexo generate",
+    "build": "hexo generate",
+    "clean": "hexo clean",
+    "test":"npm run clean; npm run build",
     "deploy": "hexo-s3-deploy",
-    "start": "hexo serve"
+    "start": "npm run build && hexo server"
   }
 }

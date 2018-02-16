@@ -18,13 +18,15 @@
     "hexo-renderer-marked": "0.3.2",
     "hexo-renderer-stylus": "^0.3.0",
     "hexo-s3-deploy": "meteor/hexo-s3-deploy#e36f6d046660040878bb5bedfc8422f526a78be6",
-    "hexo-server": "^0.2.0"
+    "hexo-server": "^0.2.0",
+    "meteor-hexo-config": "^1.0.5",
+    "meteor-theme-hexo": "^1.0.1"
   },
   "scripts": {
-    "build": "hexo generate",
+    "build": "hexo generate --config ./node_modules/meteor-hexo-config/_config.yml,./_config.yml",
     "clean": "hexo clean",
     "test": "npm run clean; npm run build",
     "deploy": "hexo-s3-deploy",
-    "start": "npm run build && hexo server"
+    "start": "npm run build && hexo server --config ./node_modules/meteor-hexo-config/_config.yml,./_config.yml"
   }
 }

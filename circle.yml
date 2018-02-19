@@ -2,12 +2,6 @@ machine:
   node:
     version: 8
 
-dependencies:
-  cache_directories:
-    - "node_modules"
-  override:
-    - npm install
-
 deployment:
   s3:
     branch: /^(master|version-.*)/

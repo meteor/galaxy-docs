@@ -62,7 +62,7 @@ If your software wants you to specify your whitelist as a list of [CIDRs](https:
 
 <h2 id="load-balancing">Health checking and load balancing</h2>
 
-Galaxy expects that your container will provide an HTTP server listening on the port given in the `$PORT` environment variable. Galaxy expects that the HTTP server will respond to a `GET /` request with a well-formed HTTP response within 5 seconds. (Galaxy currently only validates that the response is a well-formed HTTP response, but it is a good idea to ensure that this response does not have a 5xx status code, as we may refine our definition of "healthy" in the future.)  If your container does not have a functional HTTP server listening on the given port, Galaxy will consider that container to be "unhealthy".
+Galaxy expects that your container will provide an HTTP server listening on the port given in the `$PORT` environment variable. Galaxy expects that the HTTP server will respond to a `GET /` request with a well-formed HTTP response within 5 seconds. The health check sets a `User-Agent` header containing the string `Galaxybot/`. (Galaxy currently only validates that the response is a well-formed HTTP response, but it is a good idea to ensure that this response does not have a 5xx status code, as we may refine our definition of "healthy" in the future.)  If your container does not have a functional HTTP server listening on the given port, Galaxy will consider that container to be "unhealthy".
 
 New client connections are routed to "least loaded" healthy containers. "Least loaded" is defined as the container with the fewest existing client connections.
 

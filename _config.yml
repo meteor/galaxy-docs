@@ -1,0 +1,76 @@
+# Hexo Configuration
+## Docs: http://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: Galaxy Docs
+subtitle: Galaxy Docs
+apis:
+  segment: G21NW9GGR3lY3f37qLk9Ym1fH6EjfJFB
+versions:
+  - '1'
+github_repo: meteor/galaxy-docs
+sidebar_categories:
+  null:
+    - index
+  Deploy:
+    - deploy-quickstart
+    - deploy-guide
+    - environment-variables
+    - mongodb
+    - container-environment
+    - base-image-packages
+    - custom-base-images
+    - deploy-region
+    - migrate-app
+  Setup:
+    - custom-domains
+    - dns
+    - encryption
+  Monitor:
+    - app
+    - containers
+    - logs
+    - status
+  Manage:
+    - deploy-troubleshooting
+    - error-types
+    - memory-issues
+    - scaling
+    - high-availability
+    - seo
+    - cdn
+    - file-storage
+    - transfer-apps
+    - commands
+  Meteor APM:
+    - apm-getting-started
+    - apm-make-your-app-faster
+    - apm-reducing-pubsub-data-usage
+    - apm-reduce-bandwidth-and-cpu-waste
+    - apm-optimize-your-app-for-oplog
+    - apm-managing-waittime
+    - apm-know-your-observers
+    - apm-debugging-meteor-response-time-bottlenecks
+    - apm-optimizing-your-app-for-live-queries
+    - apm-improve-cpu-and-network-usage
+    - kb-widgets-dashboard
+    - kb-widgets-pubsub
+    - kb-widgets-live-queries
+    - kb-widgets-methods
+    - kb-error-tracking
+  Accounts:
+    - billing
+    - collaborators
+    - support
+    - security
+
+logo:
+  url: 'http://www.meteor.com/hosting'
+  title: 'Meteor Galaxy Docs'
+  subtitle: 'Galaxy Docs'
+
+nav_links:
+  'Meteor.com': 'https://www.meteor.com'
+
+url: http://galaxy-guide.meteor.com/

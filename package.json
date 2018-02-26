@@ -17,7 +17,7 @@
     "hexo-renderer-marked": "0.3.2",
     "hexo-renderer-stylus": "0.3.3",
     "hexo-server": "0.3.1",
-    "meteor-hexo-config": "1.0.5",
+    "meteor-hexo-config": "1.0.6",
     "meteor-theme-hexo": "1.0.1"
   },
   "scripts": {

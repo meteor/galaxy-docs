@@ -52,7 +52,7 @@ Please familiarize yourself with our [Terms of Service](https://www.meteor.com/a
 
 Every Galaxy user is also welcome to follow up on <a href="http://github.com/meteor/meteor/issues/">GitHub</a> or the <a href="https://forums.meteor.com/">forums</a>. GitHub is excellent for tracking issues, while the forums are provided for community use concerning any kind of issue.
 
-If you believe your issue is related to Meteor, you can [file a bug](https://github.com/meteor/meteor/blob/devel/Contributing.md#reporting-a-bug-in-meteor) or add a comment to an existing bug to pursue resolution. Consider searching [Stack Overflow](http://stackoverflow.com/questions/tagged/meteor) for a solution, if applicable.
+If you believe your issue is related to Meteor, you can [file a bug](https://github.com/meteor/meteor/blob/6d4412f6a91e9f6270e70f1f6443ee3ae95dab7d/CONTRIBUTING.md) or add a comment to an existing bug to pursue resolution. Consider searching [Stack Overflow](http://stackoverflow.com/questions/tagged/meteor) for a solution, if applicable.
 
 If you'd like for a dedicated contractor to review your app or work on your issue, consider [weworkmeteor](https://www.weworkmeteor.com/) or, more generally, [Toptal](https://www.toptal.com/).
 

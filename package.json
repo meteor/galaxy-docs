@@ -25,5 +25,10 @@
     "clean": "hexo clean",
     "test": "npm run clean; npm run build",
     "start": "npm run build && chexo meteor-hexo-config -- server"
+  },
+  "renovate": {
+    "extends": [
+      "apollo-docs"
+    ]
   }
 }

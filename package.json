@@ -6,6 +6,7 @@
     "version": "3.5.0"
   },
   "devDependencies": {
+    "chexo": "1.0.4",
     "hexo": "3.6.0",
     "hexo-autoprefixer": "1.0.0",
     "hexo-generator-archive": "0.1.5",
@@ -15,15 +16,19 @@
     "hexo-renderer-ejs": "0.3.1",
     "hexo-renderer-less": "0.2.0",
     "hexo-renderer-marked": "0.3.2",
-    "hexo-renderer-stylus": "0.3.3",
     "hexo-server": "0.3.1",
     "meteor-hexo-config": "1.0.6",
     "meteor-theme-hexo": "1.0.2"
   },
   "scripts": {
-    "build": "hexo generate --config ./node_modules/meteor-hexo-config/_config.yml,./_config.yml",
+    "build": "chexo meteor-hexo-config -- generate",
     "clean": "hexo clean",
     "test": "npm run clean; npm run build",
-    "start": "npm run build && hexo server --config ./node_modules/meteor-hexo-config/_config.yml,./_config.yml"
+    "start": "npm run build && chexo meteor-hexo-config -- server"
+  },
+  "renovate": {
+    "extends": [
+      "apollo-docs"
+    ]
   }
 }

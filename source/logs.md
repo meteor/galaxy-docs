@@ -49,9 +49,7 @@ Errors will be shown in this tab. Check to see if there are any outstanding erro
 
 <h3 id="storage">Storage</h3>
 
-Logs are stored for the past week. If any errors or messages thrown by your app are older than 1 week, they won't appear in your logs.
-
-If you'd like to explore more permanent log storage options, contact <a href="mailto:support@meteor.com">support@meteor.com</a>.
+If any errors or messages thrown by your app are older than 1 week, they won't appear in your logs. For more permanent log storage options, contact <a href="mailto:support@meteor.com">support@meteor.com</a>.
 
 <h3 id="custom-storage">Custom log storage</h3>
 

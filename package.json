@@ -28,7 +28,7 @@
   },
   "renovate": {
     "extends": [
-      "apollo-docs"
+      "meteor-docs"
     ]
   }
 }

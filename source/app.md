@@ -10,6 +10,8 @@ Get a snapshot of the realtime status of your app and resource usage over time o
 
 <img src="/images/galaxy-app-overview.png" style="width: 600px"/>
 
+You may also want to consider using [Meteor APM](/apm-getting-started.html) for more insight.
+
 <h3 id="usage">Usage</h3>
 
 Your app's resource usage is determined by the size and number of containers. Galaxy combines the resources of all containers to determine the resources available to your app. Customers can view app resource usage on the app overview page.

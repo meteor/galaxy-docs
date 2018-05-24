@@ -20,7 +20,7 @@ Your app's resource usage is determined by the size and number of containers. Ga
 
 <h2 id="containers">Containers</h2>
 
-Galaxy containers are packaged environments for Meteor apps. Dive into individual container performance metrics on the container page. Read more in the [containers](/container.html) and [container environment](/container-environment.html) articles.
+Galaxy containers are packaged environments for Meteor apps. Dive into individual container performance metrics on the container page. Read more in the [containers](/containers.html) and [container environment](/container-environment.html) articles.
 
 <img src="/images/galaxy-app-container.png" style="width: 600px"/>
 

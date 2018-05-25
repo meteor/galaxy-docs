@@ -59,6 +59,7 @@ sidebar_categories:
     - collaborators
     - support
     - security
+    - gdpr
 
 logo:
   url: 'http://www.meteor.com/hosting'

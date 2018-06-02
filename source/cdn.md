@@ -6,7 +6,7 @@ description: Learn how to configure a CDN with Galaxy
 
 Configuring a CDN with Galaxy is largely the same as [using a CDN with Meteor in any context](http://guide.meteor.com/deployment.html#cdn).
 
-In general, you don’t want to forward cookies from your CDN, as it leads to overcaching. Specifically, you should not forward the `galaxy-sticky` cookie, as it will result in caching one copy of every asset per container that you application runs. However, you do want to configure your CDN to forward query string parameters.
+In general, you don’t want to forward cookies from your CDN, as it leads to overcaching. Specifically, you should not forward the `galaxy-sticky` cookie, as it will result in caching one copy of every asset per container that your application runs. However, you do want to configure your CDN to forward query string parameters.
 
 Once you’ve set up the CDN with your application as its origin (for example, a [CloudFront](https://aws.amazon.com/cloudfront/) distribution named d12345678.cloudfront.net which proxies for www.exampleapp.com), you can tell Meteor to serve static JS and CSS assets from the CDN with
 

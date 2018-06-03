@@ -95,7 +95,7 @@ You can refer to the following videos extracted from the [MongoDB for DBAs] cour
 * [Part 2](https://www.youtube.com/watch?v=5ApeWrsjOJY)
 
 To learn more about MongoDB and related concepts you can access the Online Course Catalog
-here (https://university.mongodb.com/courses/catalog).
+[here](https://university.mongodb.com/courses/catalog).
 
 ### Reduce wait time
 

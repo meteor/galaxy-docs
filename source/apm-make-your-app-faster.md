@@ -87,10 +87,15 @@ var result = Posts.aggregate([
 ~~~
 
 
-Refer to the MongoDB aggregation [documentation](http://docs.mongodb.org/manual/applications/aggregation/) for more information. Also refer to the following videos extracted from the [MongoDB for DBAs](https://university.mongodb.com/courses/10gen/M102/2014_July/about) course :
+Refer to the MongoDB aggregation [documentation](http://docs.mongodb.org/manual/applications/aggregation/) for more information.
+
+You can refer to the following videos extracted from the [MongoDB for DBAs] course:
 
 * [Part 1](https://www.youtube.com/watch?v=OOciY22Eqpc)
 * [Part 2](https://www.youtube.com/watch?v=5ApeWrsjOJY)
+
+To learn more about MongoDB and related concepts you can access the Online Course Catalog
+here (https://university.mongodb.com/courses/catalog).
 
 ### Reduce wait time
 

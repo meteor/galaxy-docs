@@ -6,6 +6,8 @@ description: Learn how to adjust Galaxy environment variables using your app's s
 
 Environment variables in Galaxy are managed using your app's `settings.json` file. Galaxy interprets key/value pairs found in the `{"galaxy.meteor.com": {"env": { ... }}` section of your settings as environment variables.
 
+Note that your entire `settings.json` file has a size limit of approximately 32KB.  If your settings file is larger than this, your containers will not run successfully. Unfortunately, there will be no clear error message in this case pointing at the root cause of the problem.
+
 <h3 id="common-env-variables">Commonly used environment variables</h3>
 
 The following environment variable are commonly set for Galaxy apps:

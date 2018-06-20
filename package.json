@@ -14,7 +14,7 @@
     "hexo-renderer-marked": "0.3.2",
     "hexo-server": "0.3.2",
     "meteor-hexo-config": "1.0.8",
-    "meteor-theme-hexo": "1.0.14"
+    "meteor-theme-hexo": "1.0.15"
   },
   "scripts": {
     "build": "chexo meteor-hexo-config -- generate",

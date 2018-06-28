@@ -75,7 +75,7 @@ Sometimes you'll receive a lot of data for the method and do some calculations i
 Install the following package.
 
 ~~~shell
-meteor add meteorhacks:aggregate
+meteor add sakulstra:aggregate
 ~~~
 
 Use this code.

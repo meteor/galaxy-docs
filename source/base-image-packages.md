@@ -10,9 +10,7 @@ A base image is a [Docker](https://www.docker.com/) image.  The default base ima
 
 <h2 id="packages">Installed packages</h2>
 
-The current Galaxy default base image runs Ubuntu 14.04 LTS and comes with a set of packages pre-installed. Please note that package versions are not frozen and may be updated at any time.
-
-Now that [custom base images](/custom-base-images.html) are available, we may remove some of these packages from the default base image, with appropriate warning.  While it's convenient to have these packages available, users don't have precise control over their versions; custom base images are a more powerful mechanism for installing packages like these ones.
+The current Galaxy default base image runs Ubuntu 14.04 LTS and comes with a set of packages pre-installed. Please note that in theory the package versions are not frozen and may be updated at any time. However, in practice, we know that many of our users may implicitly rely on the (increasingly outdated) versions of packages in the default base image. As of now, we plan to continue our implicit policy of never upgrading the Ubuntu packages on the default base image. Users who want newer versions of these packages should create a [custom base image](/custom-base-images.html) instead.
 
 Packages useful as part of the build process:
 - [build-essential](http://packages.ubuntu.com/trusty/build-essential)

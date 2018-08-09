@@ -55,11 +55,9 @@ The token and service URL can be configured via your application's settings.json
 ```
 {
   "PrerenderIO": {
-    "serviceUrl": "https://service.prerender.io",
     "token": "yourtoken"
   }
 }
 ```
-If you intend to continue using Prerender's hosted service with your own token, we recommend setting the `serviceUrl` as above explicitly, because the npm package supporting prerender defaults to a non-secure `http` url.
 
-Refer to the [package documentation](https://github.com/dferber90/meteor-prerender/) for more information.
+Refer to the [package documentation](https://github.com/meteor/galaxy-seo-package) for more information.

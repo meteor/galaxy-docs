@@ -1,4 +1,0 @@
-checkout:
-  post:
-    # Use the node version declared in .nvmrc
-    - nvm install && nvm alias default $(nvm current)

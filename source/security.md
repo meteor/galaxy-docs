@@ -14,7 +14,7 @@ Galaxy's physical infrastructure is hosted and managed within Amazon's secure da
 
 Galaxy consists of Platform services built and run on top of Amazon's Elastic Container Service and Amazon Web Services.
 
-Galaxy utilizes Amazon EC2 virtual machine and Docker isolation mechanisms. Each application instance is run in it's own Docker container on an Amazon EC2 virtual machine.
+Galaxy utilizes Amazon EC2 virtual machine and Docker isolation mechanisms. Each application instance is run in its own Docker container on an Amazon EC2 virtual machine.
 
 <h3 id="risk-assessments">Risk Assessment</h3>
 

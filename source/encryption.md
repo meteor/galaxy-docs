@@ -16,7 +16,7 @@ To enable encryption painlessly, we recommend generating a free [Let's Encrypt](
 
 <img src="images/email-enable-ssl.png" style="width: 500px;">
 
-Let's Encrypt certificates are not available for wildcard (*.) domains.
+Galaxy does not support auto-renewing Let's Encrypt certificates for wildcard (*.) domains, because the mechanism for obtaining those certificates would require you to delegate DNS management for your domain to Galaxy.
 
 <h2 id="Custom certificate">Custom certificate</h2>
 

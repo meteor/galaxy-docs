@@ -47,10 +47,12 @@ You can kill a container by going to the designated container on your app's cont
 
 Containers may be restarted for several reasons, such as:
 
-1. A bug in an app caused memory to spike, which caused its container to be killed and then restarted. 
-2. The app was working correctly, but it was overwhelmed by the number of connections or the load placed on it. Consequently, its container ran out of memory, was killed and restarted. 
-3. Our system underwent an upgrade, and as part of the upgrade, all containers were restarted.
+1. A bug in an app caused memory to spike, which caused its container to be killed and then restarted.
+2. The app was working correctly, but it was overwhelmed by the number of connections or the load placed on it. Consequently, its container ran out of memory, was killed and restarted.
+3. Your app exited.
+4. An unavoidable hardware or network problem spontaneously caused the underlying machine to break.  (This is rare but impossible to avoid 100% of the time.)
+5. Galaxy had a need to replace the underlying machine on which your container is runnning (for security upgrades or to maintain cluster size).
 
-If constant uptime is a core requirement, we recommend running your app on more than 1 container. Since periodic system updates and container restarts can be expected on Galaxy, this can help prevent unwanted downtime. When an app runs on multiple containers, traffic can be routed elsewhere when a single container becomes unresponsive.
+If constant uptime is a core requirement, we recommend running your app on more than 1 container. This will protect your uptime against your app crashing or spontaneous hardware/network failures. When an app runs on multiple containers, traffic can be routed elsewhere when a single container fails or becomes unresponsive.  (Automated machine replacements generally do not cause downtime, as we will start a new instance of your container on a new machine and wait for it to become healthy before stopping your existing container.)
 
-Please note that, if you do choose to run a 1 container app, downtime will be unavoidable in the event of a container restart or a new deployment. Due to the need for system maintenance, we cannot guarantee that containers will not be restarted.
+Please note that, if you do choose to run a 1 container app, downtime will be unavoidable in the event of a container crash or a machine failure. Single container apps are not appropriate for apps with strong uptime requirements.

@@ -40,7 +40,7 @@ Normally, for a typical Meteor application, the Average Response Time of a Meteo
 * Then find the Response Time and click on the spike in the graph.
 * This will show a set of traced methods at that time.
 * Click on a trace to see exactly what has happened on that method at that time.
-* Follow this [article](/apm-make-your-app-faster.md) to understand the traced data and improve your method accordingly.
+* Follow this [article](/apm-make-your-app-faster.html) to understand the traced data and improve your method accordingly.
 
 <iframe width="640" height="480" src="https://www.youtube.com/embed/4vt2M7-bsDQ" frameborder="0" allowfullscreen="1">
 </iframe>

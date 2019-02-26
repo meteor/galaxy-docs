@@ -15,7 +15,7 @@ You'll need a Galaxy account that your Meteor Development Account has deploy aut
 
 <h2 id="migrate-mongo-configure">Configure your MongoDB database</h2>
 
-If your Meteor application has a package that requires Mongo, then you'll need a Mongo database configured for your application. If you want to use a hosted database provider, we recommend using a dedicated database hosting service such as [mLab](https://www.mlab.com), [compose](https://www.compose.io) or [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
+If your Meteor application has a package that requires Mongo, then you'll need a Mongo database configured for your application. If you want to use a hosted database provider, we recommend using a dedicated database hosting service such as [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
 
 For optimum performance, we recommend that you setup a database in the same AWS region as your app deployment.
 

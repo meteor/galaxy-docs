@@ -4,7 +4,7 @@ order: 13
 description: Learn how to configure your MongoDB provider for Galaxy
 ---
 
-Since Galaxy doesn’t provide a MongoDB cluster, you will need to host one yourself. We recommend using a dedicated database hosting service such as [mLab](https://mlab.com/), [Compose](https://www.compose.io/) or [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
+Since Galaxy doesn’t provide a MongoDB cluster, you will need to host one yourself. We recommend using a dedicated database hosting service such as [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
 
 To configure MongoDB for your Meteor application, see the detailed steps in the [Deployment guide](/deploy-guide.html#mongo-configure).
 
@@ -14,7 +14,7 @@ For optimum performance, please ensure your database is running in the same regi
 
 Meteor can get real time updates from MongoDB by using [oplog tailing](https://github.com/meteor/meteor/wiki/Oplog-Observe-Driver). Oplog tailing involves reading the the MongoDB 'operations log' - a special Mongo collection that records all the write operations as they are applied to your database.
 
-To use Oplog tailing, the database must be a Replica set enabled database. The sandbox database from mLab does not support Oplog tailing.
+To use Oplog tailing, the database must be a Replica set enabled database.
 
 <h2 id="configuration">Configuring the app settings file</h2>
 

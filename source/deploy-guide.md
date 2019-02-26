@@ -30,37 +30,9 @@ The region you deploy to will affect the URL of your dashboard. If your username
 
 <h2 id="mongo-configure">Configure your MongoDB database</h2>
 
-If your Meteor application has a package that requires Mongo, then you'll need a Mongo database configured for your application. If you want to use a hosted database provider, we recommend that you provision it from one of these providers: [mLab](https://www.mlab.com), [compose](https://www.compose.io) or [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
+If your Meteor application has a package that requires Mongo, then you'll need a Mongo database configured for your application. Most users will want to use a hosted database provider instead of running it yourselves, such as [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
 
 For optimum performance, we recommend that you setup a database in the same AWS region as your app deployment.
-
-<h3 id="">Configure a free Sandbox MongoDB database</h3>
-
-mLab offers a free sandbox MongoDB database. The sandbox is a single node database that is good for non-production workloads.
-
-This sub-section will walk through creating a new sandbox database.  
-
-Create an account on mLab. Within your mLab account, go to https://mlab.com/create and select the Sandbox option in the Single-node plan.
-
-<img>
-<img src="images/mlab-create-account.png" style="">
-<img src="images/mlab-create-new-db.png" style="">
-
-Provide a name for the database and create the deployment.
-
-<img src="images/mlab-set-db-name.png" style="">
-
-The newly created database will be listed in your account. Select the database.
-
-<img src="images/mlab-view-databases.png" style="">
-
-Create a database user that will be used by your Meteor application to access the database. Do not select the option 'Read-only' for the user.
-
-<img src="images/mlab-create-db-user.png" style="">
-
-Note the MongoDB URI shown on the database page. You will use this URI with the username and password later to configure the connection to the database.
-
-<img src="images/mlab-view-db-details.png" style="">
 
 <h2 id="settings-create">Create a settings file for Galaxy</h2>
 

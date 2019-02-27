@@ -7,8 +7,9 @@ description: Learn how to transfer an app to another account
 You can deploy an application to one Galaxy account at a time. Galaxy utilizes the following policy to select the account to deploy your app to:
 
 1. If an application with the specified hostname already exists in an account, Galaxy deploys to the same account.
-2. If it is a new application, Galaxy chooses the individual user account if it exists.
-3. If it is a new application, and individual user account does not exist, Galaxy chooses the first Galaxy organization account that you are a member of.
+2. Otherwise, if you specify `--owner someorganization`, Galaxy chooses the given orgainzation.
+3. Otherwise, if your individual user account is registered for Galaxy hosting, Galaxy chooses it.
+4. Otherwise, Galaxy chooses the first Galaxy organization account that you are a member of.
 
 If you are a member of two or more accounts, you can then transfer the application to a different account.
 

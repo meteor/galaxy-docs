@@ -34,6 +34,8 @@ If your Meteor application has a package that requires Mongo, then you'll need a
 
 For optimum performance, we recommend that you setup a database in the same AWS region as your app deployment.
 
+Many MongoDB providers expect you to tell them what IP addresses your app will be connecting from and forbids all connections from outside those addresses. To accomplish this on Galaxy, you'll need to [run your app in IP whitelisting mode](/container-environment.html#network-outgoing).
+
 <h2 id="settings-create">Create a settings file for Galaxy</h2>
 
 Create a Meteor settings file that will define the set of configurations needed for your application to deploy and run on Galaxy. At a minimum, the settings file needs to contain the connection URL to the MongoDB database.

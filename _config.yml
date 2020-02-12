@@ -54,6 +54,7 @@ sidebar_categories:
     - kb-widgets-live-queries
     - kb-widgets-methods
     - kb-error-tracking
+    - apm-data-retention
   Accounts:
     - billing
     - collaborators

@@ -10,7 +10,7 @@ You can submit tickets to Galaxy support at [galaxy.meteor.com/support](https://
 
 Galaxy's support response is email-only. All Galaxy customers who submit support cases are eligible to receive our 1 business day Support SLA. 
 
-Galaxy's support hours cover all business days (American holidays excepted) from Monday-Friday, 9AM-6PM Pacific time. Our commitment to you is to respond within the span of one business day from the time of your message's arrival. If you write in outside business hours, your message's arrival time, for SLA purposes, will be counted as the next earliest business hour.
+Galaxy's support hours cover all business days (holidays excepted) from Monday-Friday, 9AM-5PM Eastern Time. Our commitment to you is to respond within the span of one business day from the time of your message's arrival. If you write in outside business hours, your message's arrival time, for SLA purposes, will be counted as the next earliest business hour.
 
 Galaxy support is dedicated to resolving Galaxy-specific issues and troubleshooting cases where Galaxy's performance may be at fault. If you surface a bug in Meteor or Galaxy that prevents deployment, or uncover a problem or performance issue with Galaxy as a whole, Galaxy support will work to resolve this.
 
@@ -44,8 +44,6 @@ Unsupported issues would include but are not limited to:
 
 If you write in to support about an out of scope issue, Galaxy support will explain its status and decline to continue investigating the issue. 
 
-To get support for debugging Meteor application code and architecture issues, consider signing up for  [Meteor Developer Support](#meteor-developer-support).
-
 Please familiarize yourself with our [Terms of Service](https://www.meteor.com/assets/content/Meteor-Terms-of-Service.pdf) and contact support if you have further questions.
 
 <h2 id="venues">Venues for Assistance</h2>
@@ -58,8 +56,9 @@ If you'd like for a dedicated contractor to review your app or work on your issu
 
 <h2 id="holidays">Company Holidays</h2>
 
-Non-business days in 2018 include:
-- 5/28/18 - Memorial Day
-- 7/4/18 - Independence Day
-- 11/23/18 - Thanksgiving
-- 12/25/18 - Christmas Day
+Non-business days include:
+- 01/01 - New Year's Day
+- 7/4 - Independence Day
+- Last Monday of May - Memorial Day
+- Last Thursday of November - Thanksgiving
+- 12/25 - Christmas Day

@@ -4,38 +4,39 @@ order: 70
 description: Learn how Galaxy bills per container
 ---
 
-<h2 id="billing-usage">Pay for what you use</h2>
+<h2 id="billing-usage">Flexible Payment Options</h2>
 
-Billing is based on Galaxy container usage, pro-rated to the second. Your metered pricing varies with the quantity and size of containers used to run your apps.
+Billing is based on Galaxy container usage, pro-rated to the second. Your pricing varies with the quantity and size of containers used to run your apps.
 
-Billing begins when you deploy and stops when you stop or delete your app. With the current pricing, it will cost you less than $0.17 to run a compact container for 4 hours.
+All accounts begin with a 30 day free trial. After your 30 days, your account will be charged depending on your container size, with a minimum monthly charge of $7 USD (annual pricing, $9 if charged monthly) for the Tiny Container. 
 
-If you want to stop billing, stop your app; billing will stop from that point onwards, even though the app is still visible in the UI and can be restarted at any time.
+If you want to stop billing, stop your app and delete your account by reaching out to support@meteor.com; billing will stop from that point onwards, even though the app is still visible in the UI and can be restarted at any time.
 
-Billing from the beginning to the end of the month will be billed at the beginning of the following month. If you stop or delete your app during the month, you'll only be billed for your usage until the point when you stop or delete your app.
+After the termination of your free trial, billing from the beginning to the end of the month will be billed at the beginning of the following month. If you stop or delete your app during the month, you’ll only be billed for your usage until the point when you stop or delete your app. 
 
-Container usage pricing:
+Container usage pricing (monthly). Please see our [pricing page](https://www.meteor.com/hosting#pricing) for annual pricing options: 
+- Tiny: 256MB RAM, 0.3 ECU. Essentials: $9 / month: Professional:  $18 / month
+- Compact: 512MB RAM, 0.5 ECU. Essentials: $29 / month. Professional:  $40 / month
+- Standard: 1GB RAM, 1 ECU. Essentials: $58 / month. Professional: $79 / month
+- Double: 2GB RAM, 2 ECU. Essentials: $115 / month. Professional: $158 / month
+- Quad: 4GB RAM, 4 ECU. Essentials $230 / month. Professional: $317 / month
+ 
+Please note that prices are estimated for a container running 30 days (billed by hour).
 
-- Galaxy Essentials (all regions): $0.08 per GB/hour
-- Galaxy Professional (all regions): $0.11 per GB/hour
-
-Customers who signed up prior to August 2016 may belong to a legacy Galaxy plan where pricing varies by plan, support tier selected, containers used, and container size. Please note there is no free tier on Galaxy.
+Customers who signed up prior to January 2020 may belong to a legacy Galaxy plan where pricing varies by plan, support tier selected, containers used, and container size. 
 
 Pricing is impacted by:
 - Type of running containers
 - Number of running containers
 - Size of running containers
 
-Pricing is **not** impacted by:
-
-- Memory or CPU usage of your app
+Pricing is not impacted by:
 - Number of connected clients/traffic
 - Number of deployments
 - Number of users
 - Environment (Development, Testing, Staging or Production)
 
-If you'd like to economize, consider using a prepaid pricing plan, or stopping your app during low volume or low traffic periods throughout the month.
-
+If you’d like to economize, consider using a prepaid pricing plan, or your app down during low volume or low traffic periods throughout the month in order to only get charged for the Tiny Container option
 <h2 id="galaxy-professional">Galaxy Professional</h2>
 
 Galaxy Professional includes Meteor APM, IP whitelisting, and prioritized support to help developers deploy and manage production apps with confidence. You can turn on Galaxy Professional containers with a single click for any of your apps on Galaxy.
@@ -60,15 +61,13 @@ Every month a statement is emailed for your total monthly usage. Statements show
 
 <h2 id="stopping-charges">Stopping Charges</h2>
 
-While you can't stop charges for resources used in the past, you can stop charges, going forward, by stopping or deleting your apps. Please note that, if you stop your app during the month, you won't be charged for usage until after the end of the billing period, typically the end of the month.
+While you can’t change charges for resources used in the past, you can minimize charges, going forward, by stopping your apps or deleting your account. Please note that, if you stop your app during the month, you won’t be charged for usage until after the end of the billing period, typically the end of the month. All live accounts will be charged the minimum Tiny Container size, unless the account is deleted entirely.
 
-At a minimum, you must stop your containers in every region where they are running. To check your regions, add your account name to the end of https://galaxy.meteor.com/, https://eu-west-1.galaxy.meteor.com/ and https://ap-southeast-2.galaxy.meteor.com/ and make sure you have no running apps.
+To be charged the minimum fees, you must reduce your containers in every region where they are running to the Tiny Container option. To check your regions, add your account name to the end of https://galaxy.meteor.com/, https://eu-west-1.galaxy.meteor.com/ and https://ap-southeast-2.galaxy.meteor.com/ and make sure you have no running apps.
 
 Every app listed in your account will have a full gray circle next to it, if its containers have been stopped.  If you're sure that you'll never reuse the containers in an app, you can delete the app to permanently remove it. 
 
-There is no cost difference between deleting or stopping your apps. You won't save any money by deleting your apps, assuming you never restart your stopped apps again.
-
-There is no charge to maintain an account on Galaxy if no containers are running. If you leave your account open, you can return at any time.
+There is no cost difference between deleting or stopping your apps. To remove charges completely, you must delete your Galaxy account. 
 
 <h2 id="preventing-interruptions">Preventing Service Interruptions</h2>
 

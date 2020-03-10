@@ -44,7 +44,7 @@ Unsupported issues would include but are not limited to:
 
 If you write in to support about an out of scope issue, Galaxy support will explain its status and decline to continue investigating the issue. 
 
-Please familiarize yourself with our [Terms of Service](https://www.meteor.com/assets/content/Meteor-Terms-of-Service.pdf) and contact support if you have further questions.
+Please familiarize yourself with our [Terms of Service](https://com-meteor-public-assets.s3.amazonaws.com/meteor-terms.pdf) and contact support if you have further questions.
 
 <h2 id="venues">Venues for Assistance</h2>
 

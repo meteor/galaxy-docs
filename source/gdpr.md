@@ -36,4 +36,4 @@ The legal terms and policies that apply to MDG's corporate websites and customer
 
 <h3 id="more">Where can I get more help?</h3>
 
-If you have any questions (including interest in a Data Processing Addendum (DPA)), or encounter any issues, please reach out to [support](/support.html).
+If you have any questions or encounter any issues, please reach out to [support](/support.html).

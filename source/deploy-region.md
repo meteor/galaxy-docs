@@ -28,8 +28,11 @@ Galaxy management interface URL: [eu-west-1.galaxy.meteor.com](https://eu-west-1
 DEPLOY_HOSTNAME: `eu-west-1.galaxy.meteor.com`
 Ingress URL for custom domain CNAME: `eu-west-1.galaxy-ingress.meteor.com`
 
-<h2 id="us-east">Asia-Pacific Region</h2>
+<h2 id="ap-southeast">Asia-Pacific Region</h2>
 
 Galaxy management interface URL: [ap-southeast-2.galaxy.meteor.com](https://ap-southeast-2.galaxy.meteor.com)
 DEPLOY_HOSTNAME: `ap-southeast-2.galaxy.meteor.com`
 Ingress URL for custom domain CNAME: `ap-southeast-2.galaxy-ingress.meteor.com`
+
+<h2 id="new_regions">New Regions</h2>
+Not seeing the region you’re looking for? <a href="https://forms.gle/kPmMraMLxKgSYzyEA" target="_blank" class="link">Submit a request</a> for a new region!

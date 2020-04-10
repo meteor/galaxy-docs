@@ -35,4 +35,4 @@ If it still isn't working, you may want to check <a href="http://github.com/mete
 **Learn more**
 
 - Read this [compose.io article](https://www.compose.io/articles/meteors-new-galaxy-and-the-perfectly-composed-companion/) to use Compose.io databases with your Meteor app
-- Read this [OK GROW! article](https://www.okgrow.com/posts/mongodb-atlas-setup) to connect your Meteor app to MongoDB Atlas with Oplog tailing
+- Read this [OK GROW! article](https://github.com/meteor/guide/files/4450467/okgrow-oplog.tailing.pdf) to connect your Meteor app to MongoDB Atlas with Oplog tailing

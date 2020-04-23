@@ -98,7 +98,7 @@ Add a line to `/etc/hosts` (Windows: `c:\windows\system32\drivers\etc\hosts`) th
 
 To ensure your changes take effect, you can reset your computer's local DNS cache with `sudo dscacheutil -flushcache` (Mac; see [other OSes](https://www.whatsmydns.net/flush-dns.html)) after making your changes.
 
-<h2 id="other-options-redirect">Other options for redirecting the root domain</h3>
+<h2 id="other-options-redirect">Other options for redirecting the root domain</h2>
 While the way to do this varies by DNS provider, these are common methods:
 
 * [URL Record at DNSimple](https://support.dnsimple.com/articles/url-record/)

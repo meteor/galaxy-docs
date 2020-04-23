@@ -8,13 +8,11 @@ Before users can access your application, you must configure your DNS records to
 
 We also provide a [free subdomain](#free-subdomain) option if you don't need to have your own domain.
 
-The standard DNS setup for Galaxy is to use a subdomain with a CNAME record to point to Galaxy and redirect your root (naked or apex) domain to this subdomain. In the next sections we will guide you on how to do this.
+The standard DNS setup for Galaxy is to use a subdomain with a CNAME record to point to Galaxy and redirect your root (also called the naked or apex domain) domain to this subdomain. In the next sections we will guide you on how to do this.
 
 <h2 id="subdomain">Hosting on a subdomain with CNAME</h2>
 
 Configure your subdomain, for example, `www.mycompany.com` or `app.mycompany.com` adding a CNAME record to your DNS provider. 
-
-> If you don't know where to configure this we recommend that you use Route 53 as your DNS provider, follow the steps [here](#aws-route-53). 
  
 Galaxy provides different regions around the world, fill your CNAME record value for your subdomain with the region that you are using:
 
@@ -24,15 +22,15 @@ Galaxy provides different regions around the world, fill your CNAME record value
 
 - Asia-Pacific: `ap-southeast-2.galaxy-ingress.meteor.com`.  
 
+> If you don't know where to configure this we recommend that you use Route 53 as your DNS provider, follow the steps [here](#aws-route-53). 
+
 Ensure the hostname you [deployed to](deploy-quickstart.html) matches the [fully qualified domain name](https://en.wikipedia.org/wiki/Fully_qualified_domain_name) of your app (i.e `app.mycompany.com`).
 
 [We recommend you use SSL](encryption.html) as a best practice. You can either enable LetsEncrypt using our integration or upload your own certificate.
 
-<h2 id="root-domain">Redirecting the root domain</h2>
+<h2 id="root-domain">Redirecting the root domain</h2> 
 
-The root domain (mycompany.com) is also called the naked or apex domain. 
-
-A common scenario is when your app is hosted at `www.mycompany.com` or `app.mycompany.com`) and you'd like `mycompany.com` to redirect to the same app running in your subdomain. 
+A common scenario is when your app is hosted at `www.mycompany.com` or `app.mycompany.com` and you'd like `mycompany.com` to redirect to the same app running in your subdomain. 
 
 > Galaxy does not support A record configuration using an IP but you can redirect your root domain (mycompany.com) to your app subdomain and the result will be pretty much the same, follow the next steps to learn how to do it.
 

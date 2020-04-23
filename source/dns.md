@@ -61,13 +61,13 @@ ns-1485.awsdns-57.org.
 ```
 but don't copy these hosts from here, copy from your AWS Route 53 record because they are probably different.
 
-Go to the service where you bought your domain and replace your Name Server to use Route 53 pasting the name servers that you have copied from AWS Route 53.
+Go to the service where you bought your domain and replace your Name Server, sometimes called DNS Servers or DNS Provider, to use Route 53 pasting the name servers that you have copied from AWS Route 53.
 
-From now on every change in your DNS should be done in Route 53 as it is now your Name Server. 
+From now on every change in your DNS should be done in Route 53 as it is now your DNS Provider. 
 
-Every service that sells domains, like GoDaddy, have a different place to set the Name Server but it is usually very easy to do this, if you have any questions about this contact your domain seller support.
+Every service that sells domains, like GoDaddy, have a different way to set the Name Servers (DNS Provider) but it is usually very easy to find it, if you have any questions about this contact your domain seller support.
 
-Now that you are using AWS Route 53 as your Name Server you can point your subdomain (you must use a subdomain, app.mycompany.com or www.mycompany.com) to Galaxy following the steps [here](#subdomain). After you complete your subdomain setup return to the next step.
+Now that you are using AWS Route 53 as your DNS Provider you can point your subdomain (app.mycompany.com or www.mycompany.com) to Galaxy following the steps [here](#subdomain). After you complete your subdomain setup return to the next step below to redirect your root domain.
 
 <h4 id="aws-s3">AWS S3</h4>
 

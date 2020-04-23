@@ -34,7 +34,7 @@ A common scenario is when your app is hosted at `www.mycompany.com` or `app.myco
 
 > Galaxy does not support A record configuration using an IP but you can redirect your root domain (mycompany.com) to your app subdomain and the result will be pretty much the same, follow the next steps to learn how to do it.
 
-Here we are going to explain step-by-step how to redirect your root domain using AWS S3 and AWS Route53 services.
+Here we are going to explain step-by-step how to redirect your root domain using AWS S3 and AWS Route 53 services.
 
 > You can do this configuration in other providers, we are explaining AWS here in details because it is the most popular one.
 
@@ -65,13 +65,13 @@ From now on every change in your DNS should be done in Route 53 as it is now you
 
 Every service that sells domains, like GoDaddy, have a different way to set the Name Servers (DNS Provider) but it is usually very easy to find it, if you have any questions about this contact your domain seller support.
 
-Now that you are using AWS Route 53 as your DNS Provider you can point your subdomain (app.mycompany.com or www.mycompany.com) to Galaxy following the steps [here](#subdomain). After you complete your subdomain setup return to the next step below to redirect your root domain.
+Now that you are using AWS Route 53 as your DNS Provider you can point your subdomain (`app.mycompany.com` or `www.mycompany.com`) to Galaxy following the steps [here](#subdomain). After you complete your subdomain setup return to the next step below to redirect your root domain.
 
 <h4 id="aws-s3">AWS S3</h4>
 
 Now we are ready to start the setup to make your root domain to redirect automatically to your subdomain. Go to [S3](https://s3.console.aws.amazon.com/s3/home) Dashboard. Click on `Create bucket`, fill your bucket name with your root domain (mycompany.com), uncheck `Block all public access`, check `I acknowledge that the current settings might result in this bucket and the objects within becoming public.` and click on `Create bucket`.
 
-Access your newly created bucket (mycompany.com) and go to `Properties` tab, click on `Static website hosting` box, check `Redirect requests` in the field `Target bucket or domain` fill your subdomain (www.mycompany.com or app.mycompany.com) and fill protocol as `https`, click on `Save`.
+Access your newly created bucket (mycompany.com) and go to `Properties` tab, click on `Static website hosting` box, check `Redirect requests` in the field `Target bucket or domain` fill your subdomain (`www.mycompany.com` or `app.mycompany.com`) and fill protocol as `https`, click on `Save`.
 
 <h2 id="free-subdomain">Included *.meteorapp.com</h2>
 

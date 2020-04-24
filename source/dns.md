@@ -73,6 +73,8 @@ Now we are ready to start the setup to make your root domain to redirect automat
 
 Access your newly created bucket (mycompany.com) and go to `Properties` tab, click on `Static website hosting` box, check `Redirect requests` in the field `Target bucket or domain` fill your subdomain (`www.mycompany.com` or `app.mycompany.com`) and fill protocol as `https`, click on `Save`.
 
+Now you need to return to [Route 53](https://console.aws.amazon.com/route53/home) create or change a record set type `A` for `mycompany.com` and select `Yes` for `Alias` and select your bucket on `Alias Target`, it will be under `S3 website endpoints` category. Ready, now your root domain will redirect to your subdomain.
+
 <h2 id="free-subdomain">Included *.meteorapp.com</h2>
 
 You are free to use Galaxy's built-in domain names. SSL is enabled on these domains by default.

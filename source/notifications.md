@@ -51,7 +51,7 @@ You can go ahead and paste your URL in the <b>Slack Incoming WebHooks URL</b> fi
 
 <img src="/images/notifications-slack-settings.png" style="max-width: 80%"/>
 
-After setting everything up, just hit the save button and all will be done!
+After setting everything up, just hit the save button.
 
 <h3 id="app-settings">App Settings</h3>
 
@@ -59,6 +59,6 @@ The settings above will be applied to every app in your account but you can cust
 
 On you account, choose an app that you want to have a custom notification settings. Then go to settings and, bellow DOMAINS & ENCRYPTION you'll see NOTIFICATIONS. When you click on CHANGE the button ENABLE CUSTOM APP NOTIFICATIONS will appear, once you click in this button, the same options from your account's notification setting will be displayed. From now on every notification for this app will behave respecting the app settings and not the account settings.
 
-Now, for example, if you click on ENABLE CUSTOM APP NOTIFICATIONS, keeping the Email and Slack options disabled, and hit SAVE, you will be disabling the notifications for that app. That means you fine control over the notifications on each app, if you want. Each application configuration is independent, you can customize everything in the app level.
+Now, for example, if you click on ENABLE CUSTOM APP NOTIFICATIONS, keeping the Email and Slack options disabled, and hit SAVE, you will be disabling the notifications for that app. That means you have fine control over the notifications on each app. Each application configuration is independent, you can customize everything in the app level.
 
 The way to set up the Email and Slack option here is the same from <b>Account Settings</b>.

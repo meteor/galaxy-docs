@@ -10,7 +10,7 @@ Galaxy's notifications is the best way to receive news about your apps running o
 
 The notifications are sent when you have new activities in your apps.
 
-<img src="/images/notifications-activities.png" />
+<img src="/images/notifications-activities.png" style="max-width: 40%"/>
 
 We believe you should at least activate the notifications for:
 - Deploy failed
@@ -21,7 +21,7 @@ We believe you should at least activate the notifications for:
 - App unavailable
 - Certificate generation error
 
-So Galaxy will reach you out as soon as these activites happen.
+So Galaxy will reach you out as soon as these activities happen.
 
 <h2 id="usage">Usage</h2>
 
@@ -49,11 +49,11 @@ Once you got your URL (that will be something like this: https://hooks.slack.com
 
 You can go ahead and paste your URL in the <b>Slack Incoming WebHooks URL</b> field. In the table bellow this field you can choose which activities do you want to receive notifications, and you also can fill the <b>Custom Slack Channel</b> with a name of an existing channel that you have in you slack account. With this, you can have different activity notifications to different channels. If you don't fill this field, we will send the notification to the channel that you first used to install the Incoming WebHooks app in your Slack.
 
-<img src="/images/slack-notifications-example.png" style="width: 775px"/>
+<img src="/images/notifications-slack-settings.png" style="max-width: 80%"/>
 
 After setting everything up, just hit the save button and all will be done!
 
-<h3 id="app-settings">App Settings</h2>
+<h3 id="app-settings">App Settings</h3>
 
 The settings above will be applied to every app in your account but you can customize these settings for each app.
 

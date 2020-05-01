@@ -27,6 +27,7 @@ sidebar_categories:
     - containers
     - logs
     - status
+    - notifications
   Manage:
     - deploy-troubleshooting
     - error-types

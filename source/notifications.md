@@ -4,17 +4,34 @@ order: 33
 description: Learn how to set Galaxy's notification to your account and apps
 ---
 
-<h2 id="what-it-does">What it does</h2>
+Galaxy's notifications is the best way to receive news about your apps running on Galaxy. We support notifications via Slack and Email.
 
-With the notifications on, you will be able to receive notification through either your Slack or email.
+<h2 id="activity-types">Activity Types</h2>
 
-<h2 id="account-settigs">Account settings</h2>
+The notifications are sent when you have new activities in your apps.
+
+<img src="/images/notifications-activities.png" />
+
+We believe you should at least activate the notifications for:
+- Deploy failed
+- Build failed temporarily
+- Build failed permanently
+- App automatically stopped
+- Container unhealthy
+- App unavailable
+- Certificate generation error
+
+So Galaxy will reach you out as soon as these activites happen.
+
+<h2 id="usage">Usage</h2>
+
+<h3 id="account-settigs">Account settings</h3>
 
 Let's begin configuring your account settings. Go to your Galaxy dashboard and click in the Settings tab of your account, bellow the section PLAN, you will see the section NOTIFICATIONS.
 
 When you click on CHANGE, if your account was created before Notifications existed on Galaxy everything will be disabled. If your account was created when Notifications were already on Galaxy so the email option will be enabled with some type of activities already checked.
 
-<h3 id="email-settings">Email Settings</h3>
+<h4 id="email-settings">Email Settings</h4>
 
 To enable the email is pretty straightforward. You just need to click on ENABLE EMAIL NOTIFICATIONS and choose which types of activity you want to receive an email about and click on the SAVE in the end of the section. 
 
@@ -24,7 +41,7 @@ You can do this going to your Galaxy dashboard and clicking in the MEMBERS tab, 
 
 Now it is done! All chosen members will receive the notifications by email.
 
-<h3 id="slack-settings">Slack Settings</h3>
+<h4 id="slack-settings">Slack Settings</h4>
 
 Fist of all, you will need to add an Incoming WebHooks to a channel in your Slack. You can see how to do this [here](https://slack.com/intl/en-br/help/articles/202035138-Add-an-app-to-your-workspace). 
 
@@ -36,7 +53,7 @@ You can go ahead and paste your URL in the <b>Slack Incoming WebHooks URL</b> fi
 
 After setting everything up, just hit the save button and all will be done!
 
-<h2 id="app-settings">App Settings</h2>
+<h3 id="app-settings">App Settings</h2>
 
 The settings above will be applied to every app in your account but you can customize these settings for each app.
 

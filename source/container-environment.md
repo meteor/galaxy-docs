@@ -72,3 +72,21 @@ New client connections are routed to "least loaded" healthy containers. "Least l
 If a container grows its memory or CPU usage, the existing client connections won't be re-routed, unless that container is marked as unhealthy. That is to say: Galaxy currently does not actively rebalance existing clients between healthy containers. If a container crashes or is marked unhealthy, its users will be routed to a healthy container.
 
 If a new container stays unhealthy for 10 minutes, or a container that was once healthy becomes unhealthy and stays in that state for 5 minutes, Galaxy will replace it with a new container. Additionally, Galaxy will wait at least 10 minutes (longer for apps with many containers) for all containers of a newly deployed app version to become healthy before declaring the deploy a success, and will return to the previous active version on failure. You may disable all of the behaviors in this paragraph under "Unhealthy container replacement" on your app's settings page.
+
+<h2 id="unhealthy">Unhealthy Containers</h2>
+
+Your containers can be considered unhealthy if they don't respond Galaxy health check as expected ([read more here](#load-balancing)).
+
+Since May 1st, 2020 Galaxy started to display in the activity list in the right side of your Galaxy dashboard when one of your containers is unhealty, Galaxy also started to log this activity in the services tab.
+
+You can also enable Notifications for this activity type. It's important to understand that unhealthy containers are not a problem on Galaxy servers or unavailability of Galaxy. Unhealthy containers mean that your container is not able to respond to Galaxy health checks and this usually happens when your container is running with 100% CPU (or close to that) or using 100% of Memory (RAM), in both cases your container is not responding to Galaxy health check.
+
+Many reasons can cause your containers to use all the available CPU or memory, sometimes the nature of the task that you are performing is just too heavy for the container size that you are using, so you need to increase your container size. Other times it's because your code is not capable of handle the quantity of connections that your app is receiving at the moment, in this case you need to increase the quantity of containers running.
+
+Also keep in mind that your code could also be improved to increase the capacity of your containers, in terms of CPU and also Memory (RAM). It's very hard to estimate how much exactly each container size can handle because it depends more on your app code than of Node.js or Meteor itself.
+
+One important tool to identify bootlenecks is the [Meteor APM](/apm-getting-started.html) as it shows you the Methods and Publications running. Specially in cases where you have spikes in CPU usage keep an eye as well in background jobs, maybe they are consuming all your CPU and then your container becomes unhealthy.
+
+If you expect your container to be using all the 100% CPU a few times a day due to a heavy process or any other kind of process that cause your container to be unhealthy you can ignore this activity in the right side and also disable the `Unhealthy container replacement` and notifications about it.
+
+Galaxy will also consider your app as unavailable if all your containers are unhealthy.

@@ -28,6 +28,7 @@ sidebar_categories:
     - logs
     - status
     - notifications
+    - api
   Manage:
     - deploy-troubleshooting
     - error-types

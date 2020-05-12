@@ -1,10 +1,12 @@
 ---
-title: API
+title: API (beta)
 order: 35
 description: Learn how to use Galaxy's public API
 ---
 
 Galaxy's public API is a GraphQL endpoint that enables you to monitor your apps running on Galaxy and change their configurations.
+
+>  Beta: maybe we will have to change somethings in next versions causing breaking changes.
 
 <h2 id="endpoint">Configuration</h2>
 

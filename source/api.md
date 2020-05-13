@@ -8,17 +8,21 @@ Galaxy's public API is a GraphQL endpoint that enables you to monitor your apps 
 
 >  Beta: maybe we will have to change somethings in next versions causing breaking changes.
 
-<h2 id="endpoint">Configuration</h2>
+<h2 id="endpoint">Access</h2>
 
 Each Galaxy region has a different URL and so each region also has a different endpoint.
 
-They are the same as the dashboard URL appending `/graphql` in the end.
+- US East: `https://api.meteor.com/`.
 
-- US East: `https://galaxy.meteor.com/graphql`.
+- EU West: `https://eu-west-1.api.meteor.com/`.
 
-- EU West: `https://eu-west-1.galaxy.meteor.com/graphql`.
+- Asia-Pacific: `https://ap-southeast-2.api.meteor.com/`.  
 
-- Asia-Pacific: `https://ap-southeast-2.galaxy.meteor.com/graphql`.  
+To access the GraphQL http endpoint you need to append `/graphql` to these URLs, for example, US East GraphQL endpoint is `https://api.meteor.com/graphql`.
+
+You can also access the Explorer (GraphiQL) appending `/explorer`, for example, US East Explorer endpoint is `https://api.meteor.com/explorer`. Last but not least you can also connect Apollo DevTools if you open your browser in the API base URL.
+
+<h2 id="endpoint">Authorization</h2>
 
 To authorize your requests you need to provide a header in your HTTP post requests to these endpoints. Each Galaxy region is independent and so you will have a different API Key for each region.
 
@@ -38,5 +42,10 @@ curl \
     -H "Content-Type: application/json" \
     -H "galaxy-api-key: YOUR_API_KEY" \
     --data '{ "query": "{ user(username:\"YOUR_USERNAME\"){ _id username runningAppCount }}" }' \
-    https://galaxy.meteor.com/graphql
+    https://api.meteor.com/graphql
 ```
+
+You can also provide your key as a variable called `galaxyApiKey` in your GraphQL requests, this can be useful in DevTools or if you have limitations in how to set a header in your http requests.
+
+<h2 id="endpoint">Examples</h2>
+

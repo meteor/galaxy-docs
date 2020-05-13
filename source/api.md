@@ -18,7 +18,7 @@ Each Galaxy region has a different URL and so each region also has a different e
 
 - Asia-Pacific: `https://ap-southeast-2.api.meteor.com/`.  
 
-To access the GraphQL http endpoint you need to append `/graphql` to these URLs, for example, US East GraphQL endpoint is `https://api.meteor.com/graphql`.
+To access the GraphQL HTTP endpoint you need to append `/graphql` to these URLs, for example, US East GraphQL endpoint is `https://api.meteor.com/graphql`.
 
 You can also access the Explorer (GraphiQL) appending `/explorer`, for example, US East Explorer endpoint is `https://api.meteor.com/explorer`. Last but not least you can also connect Apollo DevTools if you open your browser in the API base URL.
 
@@ -48,4 +48,8 @@ curl \
 You can also provide your key as a variable called `galaxyApiKey` in your GraphQL requests, this can be useful in DevTools or if you have limitations in how to set a header in your http requests.
 
 <h2 id="endpoint">Examples</h2>
+
+Check this open-source version of Auto-scale on Galaxy to see a few examples of usage:
+
+[meteor-galaxy-auto-scaling](https://github.com/quavedev/meteor-galaxy-auto-scaling/)
 

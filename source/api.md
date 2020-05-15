@@ -30,7 +30,7 @@ Each account (organization or individual) can have one API Key to access the API
 
 You can generate your key in the Settings tab of your account on Galaxy dashboard.
 
-> You need to have at least one professional app running on Galaxy to be able to access our public API
+> API is only available for professional apps
 
 Once you generate your API Key you use our API providing this key in the header `galaxy-api-key`. See one example using cURL and Galaxy US.
 

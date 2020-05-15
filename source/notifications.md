@@ -1,6 +1,6 @@
 ---
 title: Notifications
-order: 33
+order: 34
 description: Learn how to set Galaxy's notification to your account and apps
 ---
 

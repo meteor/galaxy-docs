@@ -51,7 +51,7 @@ You can also provide your key as a variable called `galaxyApiKey` in your GraphQ
 
 <h2 id="endpoint">Examples</h2>
 
-Check this open-source version of Auto-scale on Galaxy to see a few examples of usage:
+Check this open-source version of interaction with Galaxy public API to see a few examples of usage:
 
-[meteor-galaxy-auto-scaling](https://github.com/quavedev/meteor-galaxy-auto-scaling/)
+[@quave/galaxy-bot](https://github.com/quavedev/galaxy-bot/)
 

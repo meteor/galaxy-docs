@@ -27,6 +27,7 @@ sidebar_categories:
     - containers
     - logs
     - status
+    - triggers
     - notifications
     - api
   Manage:

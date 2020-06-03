@@ -20,6 +20,10 @@ We only charge the running hours of each container, so you can reduce the amount
 
 <h2 id="how-it-works">How it works</h2>
 
+If you prefer video, watch here
+
+[<img src="/images/triggers-07.png" />](https://www.youtube.com/watch?v=rwLoviLzG6s)
+
 Galaxy checks all the triggers every minute, you don't pay anything extra to run triggers, they run on Galaxy servers.
 
 Each trigger can perform a different action according to some rules. For a trigger to run the rules need to match, for each trigger you can choose if every rule needs to match (`AND`) or only one (`OR`) in order to proceed with the action. 

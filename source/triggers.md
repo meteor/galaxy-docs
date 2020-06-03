@@ -20,7 +20,7 @@ We only charge the running hours of each container, so you can reduce the amount
 
 <h2 id="how-it-works">How it works</h2>
 
-If you prefer video, watch here
+If you prefer video, [click here](https://www.youtube.com/watch?v=rwLoviLzG6s) to watch
 
 [<img src="/images/triggers-07.png" />](https://www.youtube.com/watch?v=rwLoviLzG6s)
 

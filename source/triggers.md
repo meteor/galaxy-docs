@@ -28,7 +28,9 @@ Galaxy checks all the triggers every minute, you don't pay anything extra to run
 
 Each trigger can perform a different action according to some rules. For a trigger to run the rules need to match, for each trigger you can choose if every rule needs to match (`AND`) or only one (`OR`) in order to proceed with the action. 
 
-You can also restrict your triggers to run only in specific days and/or specific times (interval between hours). It's also available the interval that you want to run your trigger, you can choose how often it will run in seconds (60 seconds is the minimum).
+You can also restrict your triggers to run only in specific days and/or specific times (interval between hours). The hours are both inclusive, for example, if you want a trigger running only at 1AM you can set `Start hour` and `End hour` to 1.
+
+It's also available the interval that you want to run your trigger, you can choose how often it will run in seconds (60 seconds is the minimum).
 
 <img src="/images/triggers-01.png" />
 

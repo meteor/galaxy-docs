@@ -8,6 +8,7 @@ github_repo: meteor/galaxy-docs
 sidebar_categories:
   null:
     - index
+    - changelog
   Deploy:
     - deploy-quickstart
     - deploy-guide

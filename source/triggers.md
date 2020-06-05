@@ -44,13 +44,15 @@ We expose Triggers in our Public [API](./api.html) as well, so you can change yo
 
 Triggers use metrics from your app to take decisions based on your rules. You can use the following metrics: CPU Usage (%), Memory Usage (%) and Number of Connections.
 
-We support three series of metrics: every 5 seconds, every 3 minutes and every hour so you can select the best frequency to check your app metrics. You also select how many metrics do you want to use, for instance, you can select 12 metrics of 5 seconds that means you are going to take decisions based on the last minute (last 60 seconds).
+We support three sample durations (`Sample duration`): 5 seconds, 3 minutes and hour so you can select the best duration to check your app metrics. You also select how many samples (`Sample quantity`) do you want to use, for instance, you can select 12 samples of 5 seconds that means you are going to take decisions based on the last minute (last 60 seconds).
 
-Every metric is extract from your containers, and then we calculate the simple average between all containers for every timestamp. For example, if you have 3 containers and you selected 3 metrics using 3 minutes series you are going to have 3 values that corresponds to the average of your containers 3 minutes ago, 6 minutes ago and 9 minutes ago.
+Every metric is extracted from your containers, and then we calculate the simple average between all containers for every sample from the same timestamp. For example, if you have 3 containers and you selected 3 samples using 3 minutes as sample duration you are going to have 3 values that corresponds to the average of your containers 3 minutes ago, 6 minutes ago and 9 minutes ago.
+
+These metrics are exactly the same you see in the graphs of your container in the Containers tab.
 
 <img src="/images/triggers-06.png" />
 
-Every rule will be compared with these metrics (the average of your metrics for each timestamp) to decide if your trigger action is going to be executed or not.
+Every rule will be compared with these metrics (the average of your samples for each timestamp) to decide if your trigger action is going to be executed or not.
 
 <h2 id="actions">Actions</h2>
 

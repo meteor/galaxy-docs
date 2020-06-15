@@ -85,7 +85,7 @@ Many reasons can cause your containers to use all the available CPU or memory, s
 
 Also keep in mind that your code could also be improved to increase the capacity of your containers, in terms of CPU and also Memory (RAM). It's very hard to estimate how much exactly each container size can handle because it depends more on your app code than of Node.js or Meteor itself.
 
-One important tool to identify bootlenecks is the [Meteor APM](/apm-getting-started.html) as it shows you the Methods and Publications running. Specially in cases where you have spikes in CPU usage keep an eye as well in background jobs, maybe they are consuming all your CPU and then your container becomes unhealthy.
+One important tool to identify bootlenecks is the [Meteor APM](/apm-getting-started.html) as it shows you the Methods and Publications running. Specially in cases where you have spikes in CPU usage keep an eye as well in background jobs, maybe they are consuming all your CPU and then your container becomes unhealthy. You can also profile your CPU as you would in any Node.js project, this [package](https://github.com/quavedev/profile) can help you to generate a profile and send it to S3.
 
 If you expect your container to be using all the 100% CPU a few times a day due to a heavy process or any other kind of process that cause your container to be unhealthy you can ignore this activity in the right side and also disable the `Unhealthy container replacement` and notifications about it.
 

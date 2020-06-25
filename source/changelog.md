@@ -3,6 +3,15 @@ title: Changelog
 description: List of changes on Galaxy
 ---
 
+# 2020/06/25
+
+- Notifications:
+  - Fixes link to Notifications doc
+  - Fixes the state of Notifications settings after save
+- Misc:
+  - Exposes all the states on invoices list in the account settings page
+
+
 # 2020/06/05
 
 - Triggers:

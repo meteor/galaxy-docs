@@ -3,6 +3,11 @@ title: Changelog
 description: List of changes on Galaxy
 ---
 
+# 2020/06/29
+
+- Activities:
+  - Hides container unhealthy activities from the right side bar
+  
 # 2020/06/25
 
 - Notifications:

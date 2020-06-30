@@ -62,3 +62,18 @@ In your app, you might be using many Meteor Methods. While you may need to impro
 </iframe>
 
 > You can follow the [same process](https://www.youtube.com/watch?v=CTk0Qvj0n6Y&feature=youtu.be) for PubSub, but you will need to sort the Pub/Sub Breakdown by SubRate instead of Throughput.
+
+### Disabling APM
+
+If you want, you can disable APM temporarily without having to remove the package. To do that, you need to add this in your `settings.json` file: 
+
+```json
+{
+  "packages": {
+    "mdg:meteor-apm-agent": {
+      "isDisabled": true
+    }
+  },
+  ...
+}
+```

@@ -73,7 +73,6 @@ If you want, you can disable APM temporarily without having to remove the packag
     "mdg:meteor-apm-agent": {
       "isDisabled": true
     }
-  },
-  ...
+  }
 }
 ```

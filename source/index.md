@@ -4,19 +4,23 @@ order: 0
 description: The guide for deploying, scaling, and managing Meteor apps on Galaxy
 ---
 
-This is the official documentation for Galaxy.
+This is the official documentation for Galaxy (Meteor hosting).
 
 <h3 id="what-is">What is Galaxy?</h3>
 
-Galaxy is the simplest way to deploy, scale, and manage your Meteor apps.
+Run your apps with confidence. Galaxy is easy to start, excellent to grow your app and full-featured to support your needs.
 
 - **One command deploy**: Deploy your Meteor app in one command
 
-- **Seamless scalability**: Customize the size and number of containers to meet your apps unique resource requirements
+- **Auto-scaling**: Customize the size and number of containers to meet your apps requirements and triggers to scale automatically
 
 - **Simple management**: Use a unified interface to manage, understand usage characteristics, and adjust settings for all your Meteor apps
 
-- **Integrated Meteor APM**: Use Meteor APM to optimize the performance of your production application.
+- **Notifications**: Receive in your Slack or Email what is happening in real-time
+
+- **Integrated Meteor APM**: Use Meteor APM to optimize the performance of your production application
+
+- **Meteor expert support**: Have answers to all your questions 
 
 <h3 id="quickstart">Get Started</h3>
 
@@ -26,4 +30,4 @@ Galaxy is the simplest way to deploy, scale, and manage your Meteor apps.
 
 <h3 id="contribute">Contribute</h3>
 
-Ongoing Galaxy documentation development takes place in the open on GitHub. We encourage pull requests and issues to discuss changes that can improve the clarity and quality of content.
+Ongoing Galaxy documentation development takes place in the [open on GitHub](https://github.com/meteor/galaxy-docs). We encourage pull requests and issues to discuss changes that can improve the clarity and quality of content.

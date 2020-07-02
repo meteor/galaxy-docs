@@ -3,6 +3,11 @@ title: Changelog
 description: List of changes on Galaxy
 ---
 
+# 2020/07/02
+
+- Activities:
+  - Hides app unavailable activities from the right side bar
+  
 # 2020/06/29
 
 - Activities:

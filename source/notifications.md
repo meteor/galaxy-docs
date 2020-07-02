@@ -21,7 +21,7 @@ We recommend activating notifications for at least these types:
 
 In order for you to ensure minimal disruption, should critical issues occur. 
 
-It could be also important to enable these types below if your app can consume too much CPU or Memory, then you can receive notifications when this starts to affect your users, these activities also produce logs in the service tab:
+It could be also important to enable these types below if your app can consume too much CPU or Memory, then you can receive notifications when this starts to affect your users, these activities also produce logs in the service tab but they are not displayed in the timeline of activities:
 - Container unhealthy
 - App unavailable
 

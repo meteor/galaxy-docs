@@ -12,16 +12,18 @@ Notifications are sent when actvitiy occurs in your account:
 
 <img src="/images/notifications-activities.png" style="max-width: 40%"/>
 
-We recommend activating notifications for:
+We recommend activating notifications for at least these types:
 - Deploy failed
 - Build failed temporarily
 - Build failed permanently
 - App automatically stopped
-- Container unhealthy
-- App unavailable
 - Certificate generation error
 
 In order for you to ensure minimal disruption, should critical issues occur. 
+
+It could be also important to enable these types below if your app can consume too much CPU or Memory, then you can receive notifications when this starts to affect your users, these activities also produce logs in the service tab:
+- Container unhealthy
+- App unavailable
 
 <h2 id="usage">Usage</h2>
 

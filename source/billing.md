@@ -8,7 +8,7 @@ description: Learn how Galaxy bills per container
 
 Billing is based on Galaxy container usage, pro-rated to the second. Your pricing varies with the quantity and size of containers used to run your apps.
 
-All accounts begin with a 30 day free trial. After your 30 days, your account will be charged depending on your container size, with a minimum monthly charge of $7 USD (annual pricing, $9 if charged monthly) for the Tiny Container. 
+All accounts begin with a 30 day free trial. After your 30 days, your account will be charged depending on your container size. Pay for only what you use. No minimum monthly charge. 
 
 If you want to stop billing, stop your app and delete your account by reaching out to support@meteor.com; billing will stop from that point onwards. If account is left live with inactive or deleted apps, you will be charged the Tiny Container price until account is deleted entirely. 
 
@@ -61,7 +61,7 @@ Every month a statement is emailed for your total monthly usage. Statements show
 
 <h2 id="stopping-charges">Stopping Charges</h2>
 
-While you can’t change charges for resources used in the past, you can minimize charges, going forward, by stopping your apps or deleting your account. Please note that, if you stop your app during the month, you won’t be charged for usage until after the end of the billing period, typically the end of the month. All live accounts will be charged the minimum Tiny Container size, unless the account is deleted entirely.
+While you can’t change charges for resources used in the past, you can minimize charges, going forward, by stopping your apps or deleting your account. Please note that, if you stop your app during the month, you won’t be charged for usage until after the end of the billing period, typically the end of the month.
 
 To be charged the minimum fees, you must reduce your containers in every region where they are running to the Tiny Container option. To check your regions, add your account name to the end of https://galaxy.meteor.com/, https://eu-west-1.galaxy.meteor.com/ and https://ap-southeast-2.galaxy.meteor.com/ and make sure you have no running apps.
 

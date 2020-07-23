@@ -36,7 +36,7 @@ Pricing is not impacted by:
 - Number of users
 - Environment (Development, Testing, Staging or Production)
 
-If you’d like to economize, consider using a prepaid pricing plan, or your app down during low volume or low traffic periods throughout the month in order to only get charged for the Tiny Container option
+If you’d like to economize, consider using a prepaid pricing plan.
 <h2 id="galaxy-professional">Galaxy Professional</h2>
 
 Galaxy Professional includes Meteor APM, IP whitelisting, and prioritized support to help developers deploy and manage production apps with confidence. You can turn on Galaxy Professional containers with a single click for any of your apps on Galaxy.

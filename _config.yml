@@ -31,6 +31,7 @@ sidebar_categories:
     - triggers
     - notifications
     - api
+    - protection
   Manage:
     - deploy-troubleshooting
     - error-types

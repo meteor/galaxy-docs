@@ -1,7 +1,7 @@
 ---
-title: Protection
+title: App Protection
 order: 36
-description: App Protection
+description: Learn how Galaxy protect your app
 ---
 
 Galaxy's Network layer has a custom proxy tailored to work with Meteor apps.
@@ -10,7 +10,7 @@ Our proxy servers handle the HTTP and WebSocket requests to your app always sele
 
 It also allows you to use multiple domains in our apps.
 
-<h2 id="app-protection">App Protection</h2>
+<h2 id="attacks">Attacks</h2>
 
 DoS and DDoS attacks are attempts to make your app overloaded and unavailable for legitimate requests.
 

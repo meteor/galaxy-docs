@@ -1,7 +1,7 @@
 ---
 title: App Protection
 order: 36
-description: Learn how Galaxy protect your app
+description: Learn how Galaxy protects your app
 ---
 
 Galaxy's Network layer has a custom proxy tailored to work with Meteor apps.

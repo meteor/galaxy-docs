@@ -93,6 +93,20 @@ $ SET DEPLOY_HOSTNAME=galaxy.meteor.com
 $ meteor deploy [hostname] --settings path-to-settings.json
 ```
 
+<h3 id="cache-build">Cache your build</h3>
+
+You can use the option `--cache-build` to reuse your build in multiple deploys.
+
+This is useful if you want to deploy the same bundle to different environments and also if your upload is failing so you can just upload again without a new build.
+
+The cache checks the current git commit of your repository so if you are using Git you can use this safely all the time.
+
+```
+DEPLOY_HOSTNAME=galaxy.meteor.com meteor deploy [hostname] --settings path-to-settings.json --cache-build
+```
+
+> This was introduced on Meteor 1.11
+
 <h3 id="account-selection">Specify an account to deploy</h3>
 
 Galaxy utilizes the following policy to select the account to deploy your application to:

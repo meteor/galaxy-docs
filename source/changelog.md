@@ -3,6 +3,20 @@ title: Changelog
 description: List of changes on Galaxy
 ---
 
+# 2020/07/13
+- API:
+  - Adds a new mutation to Galaxy GraphQL API that enables the upsert of domains with automatic certificate generation. For more details, please refer to the graphql docs API on [API Explorer](https://us-east-1.api.meteor.com/explorer) - saveDomain(domain: DomainInput!): Domain. 
+
+# 2020/07/07
+- Logs:
+  - Adds option to go back in date with a date picker
+  - Improves performance for long logs listing by virtualization
+  - Adds a shortcut on the timestamp of a log to quickly jump to a date
+  - More details on the video below:
+  
+  [![](http://img.youtube.com/vi/WPYyHeWM21Q/0.jpg)](http://www.youtube.com/watch?v=WPYyHeWM21Q "")
+
+  
 # 2020/07/02
 
 - Activities:

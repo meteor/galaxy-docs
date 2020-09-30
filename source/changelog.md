@@ -3,11 +3,50 @@ title: Changelog
 description: List of changes on Galaxy
 ---
 
-# 2020/07/13
-- API:
-  - Adds a new mutation to Galaxy GraphQL API that enables the upsert of domains with automatic certificate generation. For more details, please refer to the graphql docs API on [API Explorer](https://us-east-1.api.meteor.com/explorer) - saveDomain(domain: DomainInput!): Domain. 
+# 2020/09/30
 
-# 2020/07/07
+- UI:
+  - Search by container id on containers tab inside your app
+  - See your app ID in the tooltip of app status green circle
+- Containers:
+  - New container sizes: Octa (8 ECUs and 8 GBs of RAM) and Dozen (12 ECUs and 12 GBs of RAM)
+
+# 2020/09/27
+
+- API:
+  - Support custom certificates
+
+# 2020/09/17
+
+- UI:
+  - Bug fix on loops with notifications resulting in a better performance in the UI as well.
+- Deploys:
+  - Better performance
+  - Timeouts were increased as well
+  - Build cache support (Meteor 1.11)
+  
+# 2020/09/08
+
+- UI:
+  - Support for private cluster in the UI, now clients with private clusters can move their apps back and forth to the public clusters using the UI
+  
+# 2020/08/26
+
+- Logs:
+  - Better performance when loading the logs
+
+# 2020/08/20
+
+- Domains:
+  - Enable unicode domains on galaxy - change regexp for turkish characters
+  
+# 2020/08/13
+
+- API:
+  - Domains: Adds a new mutation to Galaxy GraphQL API that enables the upsert of domains with automatic certificate generation. For more details, please refer to the graphql docs API on [API Explorer](https://us-east-1.api.meteor.com/explorer) - saveDomain(domain: DomainInput!): Domain. 
+
+# 2020/08/07
+
 - Logs:
   - Adds option to go back in date with a date picker
   - Improves performance for long logs listing by virtualization
@@ -16,6 +55,16 @@ description: List of changes on Galaxy
   
   [![](http://img.youtube.com/vi/WPYyHeWM21Q/0.jpg)](http://www.youtube.com/watch?v=WPYyHeWM21Q "")
 
+# 2020/07/30
+
+- Security:
+  - 2FA
+  - App Protection
+
+# 2020/07/16
+
+- Triggers:
+  - Kill container trigger
   
 # 2020/07/02
 

@@ -7,6 +7,8 @@ description: List of changes on Galaxy
 
 - UI:
   - Search by container id on containers tab inside your app
+  <img src="/images/galaxy-container-filter.png" />
+  
   - See your app ID in the tooltip of app status green circle
 - Containers:
   - New container sizes: Octa (8 ECUs and 8 GBs of RAM) and Dozen (12 ECUs and 12 GBs of RAM)

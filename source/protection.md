@@ -14,7 +14,7 @@ It also allows you to use multiple domains in our apps.
 
 DoS and DDoS attacks are attempts to make your app overloaded and unavailable for legitimate requests.
 
-Galaxy proxy servers are in front of every request going to your app. This is a very important seucrity measure, as our proxy servers can isolate eventual attack attempts on your apps. We call this "App Protection", and it is automatically enabled for all Galaxy clients.
+Galaxy proxy servers are in front of every request going to your app. This is a very important security measure, as our proxy servers can isolate eventual attack attempts on your apps. We call this "App Protection", and it is automatically enabled for all Galaxy clients.
 
 Galaxy provides out-of-the-box protection against attacks by analyzing all requests that are coming to our servers, aggregating the data across all servers, then making decisions about which type of requests are over our expected limits.
 

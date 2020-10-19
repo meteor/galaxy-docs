@@ -8,9 +8,7 @@ description: Learn how Galaxy bills per container
 
 Billing is based on Galaxy container usage, pro-rated to the second. Your pricing varies with the quantity and size of containers used to run your apps.
 
-All accounts begin with a 30 day free trial. After your 30 days, your account will be charged depending on your container size. Pay for only what you use. No minimum monthly charge. 
-
-If you want to stop billing, stop your app and delete your account by reaching out to support@meteor.com; billing will stop from that point onwards. If account is left live with inactive or deleted apps, you will be charged the Tiny Container price until account is deleted entirely. 
+All accounts begin with a 30 days free trial. After your 30 days, your account will be charged depending on your container size, and you pay just for your use. If stop or delete all your running app, you will be charged nothing.
 
 After the termination of your free trial, billing from the beginning to the end of the month will be billed at the beginning of the following month. If you stop or delete your app during the month, you’ll only be billed for your usage until the point when you stop or delete your app. 
 

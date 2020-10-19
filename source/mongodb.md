@@ -12,7 +12,7 @@ For optimum performance, please ensure your database is running in the same regi
 
 <h2 id="configure-oplog">Configuring Oplog Tailing</h2>
 
-Meteor can get real time updates from MongoDB by using [oplog tailing](https://github.com/meteor/meteor/wiki/Oplog-Observe-Driver). Oplog tailing involves reading the the MongoDB 'operations log' - a special Mongo collection that records all the write operations as they are applied to your database.
+Meteor can get real time updates from MongoDB by using [oplog tailing](https://github.com/meteor/meteor/wiki/Oplog-Observe-Driver). Oplog tailing involves reading the MongoDB 'operations log' - a special Mongo collection that records all the write operations as they are applied to your database.
 
 To use Oplog tailing, the database must be a Replica set enabled database.
 

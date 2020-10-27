@@ -77,7 +77,7 @@ If a new container stays unhealthy for 10 minutes, or a container that was once 
 
 Your containers can be considered unhealthy if they don't respond Galaxy health check as expected ([read more here](#load-balancing)).
 
-Since May 1st, 2020 Galaxy started to log in the service logs when one of your containers is unhealty, Galaxy also provides [notifications](./notifications.md) for these events.
+Since May 1st, 2020 Galaxy started to log in the service logs when one of your containers is unhealty, Galaxy also provides [notifications](./notifications.html) for these events.
 
 It's important to understand that unhealthy containers are not a problem on Galaxy servers or unavailability of Galaxy. Unhealthy containers mean that your container is not able to respond to Galaxy health checks and this usually happens when your container is running with 100% CPU (or close to that) or using 100% of Memory (RAM), in both cases your container is not responding to Galaxy health check.
 

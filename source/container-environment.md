@@ -46,8 +46,14 @@ Galaxy runs your app containers in a firewalled network environment.  Only one p
 
 Galaxy forwards HTTP connections (port 80) on your app's configured [domains](/custom-domains.html) to the port exposed for external connections. HTTPS connections (port 443) are also forwarded to this port if you've [configured encryption](/encryption.html).  You cannot serve connections on any other ports.
 
-Galaxy does its best to stay up to date with current security protocol best practices, while still allowing our users to provide access to their sites to users with older browsers. We do currently support TLS 1.0 connections, which do have some known flaws. However, to the best our our knowledge, the main flaw in TLS 1.0 (the BEAST attack) can be thwarted with a proper server implementation, and our server implementation (based on the Go TLS library) [does so](https://github.com/golang/go/blob/5dc053b9/src/crypto/tls/conn.go#L895-L913). Dropping support for TLS 1.0 would break all users of MS Internet Explorer versions older than 11, which is a decision we're not ready to make for all of Galaxy's users. If you cannot allow TLS 1.0 connections even with the Go BEAST mitigation, we can offer a private ingress tier; contact support to learn more about pricing for private ingress tiers.
+Galaxy does its best to stay up to date with current security protocol best practices, while still allowing our users to provide access to their sites to users with older browsers. We do currently support TLS 1.0 connections, which do have some known flaws. However, to the best our our knowledge, the main flaw in TLS 1.0 (the BEAST attack) can be thwarted with a proper server implementation, and our server implementation (based on the Go TLS library) [does so](https://github.com/golang/go/blob/5dc053b9/src/crypto/tls/conn.go#L895-L913). Dropping support for TLS 1.0 would break all users of MS Internet Explorer versions older than 11, which is a decision we're not ready to make for all of Galaxy's users.
 
+If you cannot allow TLS 1.0 connections even with the Go BEAST mitigation, we do offer the option to configure it in an app-base manner:
+
+- Go to Settings -> Security
+- Select "Minimum 1.2" inside the "SSL TLS Protocol support" section
+
+With this we will block every connection with TLS < 1.2.
 
 <h3 id="network-outgoing">Outgoing connections and IP whitelisting</h3>
 

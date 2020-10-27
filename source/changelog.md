@@ -3,6 +3,15 @@ title: Changelog
 description: List of changes on Galaxy
 ---
 
+# 2020/10/27
+
+- UI:
+  - It's now possible to set the minimum supported version of TLS on each app by going to:
+  Settings -> Security -> SSL TLS Protocol support
+- Proxy:
+  - The proxy layer now blocks requests based on TLS app security configuration.
+
+
 # 2020/09/30
 
 - UI:

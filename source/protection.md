@@ -14,7 +14,7 @@ It also allows you to use multiple domains in our apps.
 
 DoS and DDoS attacks are attempts to make your app overloaded and unavailable for legitimate requests.
 
-Galaxy proxy servers are in front of every request going to your app. This is a very important seucrity measure, as our proxy servers can isolate eventual attack attempts on your apps. We call this "App Protection", and it is automatically enabled for all Galaxy clients.
+Galaxy proxy servers are in front of every request going to your app. This is a very important security measure, as our proxy servers can isolate eventual attack attempts on your apps. We call this "App Protection", and it is automatically enabled for all Galaxy clients.
 
 Galaxy provides out-of-the-box protection against attacks by analyzing all requests that are coming to our servers, aggregating the data across all servers, then making decisions about which type of requests are over our expected limits.
 
@@ -24,7 +24,7 @@ When a type of request is classified as abusive we stop sending these requests t
 
 We also have some rules to define for how long this type of request will be blocked. If you have specific use cases that may need different limits please reach out to (support@meteor.com).
 
-We are not going to explain here in details how we identify abusive requests and what are our rules are, as it may make it easier for attackers to workaround them. We are will improve our App Protection feature every time we identify new opportunities for protection.
+We are not going to explain here in details how we identify abusive requests and what are our rules are, as it may make it easier for attackers to workaround them. We will improve our App Protection feature every time we identify new opportunities for protection.
 
 If you are going to perform load testing, please contact us at least 2 business days in advance explaining how you are doing so -- which IPs and targeting which hosts (domains).
 
@@ -33,3 +33,13 @@ If you are going to perform load testing, please contact us at least 2 business 
 You should configure your app as well to limit the messages received via WebSockets, as our proxy servers are only acting in the first connection and not in the WebSocket messages after the connection is established. 
 
 Meteor provides [rate limits](https://docs.meteor.com/api/methods.html#ddpratelimiter) so you can use it to protected your app further. 
+
+<h2 id="attacks">App protection settings</h2>
+
+On your app settings you can customize your app protection settings. You will be able to set a threshold of the maximum number of requests that you want to allow your app to receive in a window of 5 seconds.
+
+Once you enabled the custom app protection, you will also be able to see the list of IPs that are currently blocked, if any, and you will have the power to disable a block or even delete it.
+
+When you delete you eliminate this record completely, so it could be blocked again in the future. When it is disabled it's never going to be blocked again.
+
+<img src="/images/app-protection-custom-settings.png" />

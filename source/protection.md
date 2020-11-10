@@ -34,7 +34,7 @@ You should configure your app as well to limit the messages received via WebSock
 
 Meteor provides [rate limits](https://docs.meteor.com/api/methods.html#ddpratelimiter) so you can use it to protected your app further. 
 
-<h2 id="settings">App protection settings</h2>
+<h2 id="settings">Settings</h2>
 
 On your app settings you can customize your app protection settings. You will be able to set a threshold of the maximum number of requests that you want to allow your app to receive in a window of 5 seconds.
 

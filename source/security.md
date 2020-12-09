@@ -8,6 +8,9 @@ description: Learn about Galaxy's Security and Systems Policy
 
 Galaxy is committed to ensuring that  the application code and data stored in the Meteor Galaxy platform is accessible only by authorized individuals. Security best practices are employed consistently and evolve to meet the needs of our customers.
 
+When you sign up for a Galaxy Account you agree to our standard SLA, found [here](https://galaxy-sla.s3.amazonaws.com/Meteor%2BSoftware%2BLtd.%2B-%2BService%2BLevel%2BAgreement%2B(1).pdf). If you need a customized SLA for your account, please reach out to support@meteor.com. 
+
+
 <h2 id="platform-architecture">Platform Architecture</h2>
 
 Galaxy's physical infrastructure is hosted and managed within Amazon's secure data centers and utilize the Amazon Web Service (AWS) technology.

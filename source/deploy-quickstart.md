@@ -8,7 +8,14 @@ Galaxy makes it simple to deploy, scale, and monitor your Meteor app. This quick
 
 <h2 id="get-ready-for-deploy">Get your app ready</h2>
 
-Before you begin, [configure access to your MongoDB database](/mongodb.html) and set up any [environment variables](/environment-variables.html) your app depends on using your app’s settings.json file.
+The Free plan on Meteor Cloud allows you to get started and deploy applications on a pre-configured shared MongoDB instance. To deploy for free, simply enter this command in your terminal:
+```
+cd ./my-app meteor deploy my-app --free --mongo
+```
+
+**Please note, free plans are not recommended for production applications. For production apps, you will need to configure your own MongoDB Database, outlined below:**
+
+Before you begin deploying your app to production, [configure access to your MongoDB database](/mongodb.html) and set up any [environment variables](/environment-variables.html) your app depends on using your app’s settings.json file.
 
 <h2 id="deploy-app">Deploy your app</h2>
 

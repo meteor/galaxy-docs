@@ -5,6 +5,11 @@ apis:
 versions:
   - '1'
 github_repo: meteor/galaxy-docs
+
+logo:
+  title:
+  subtitle: Galaxy
+
 sidebar_categories:
   null:
     - index
@@ -67,11 +72,6 @@ sidebar_categories:
     - security
     - gdpr
     - dpa
-
-logo:
-  url: 'http://www.meteor.com/hosting'
-  title: 'Meteor Galaxy Docs'
-  subtitle: 'Galaxy Docs'
 
 nav_links:
   'Meteor.com': 'https://www.meteor.com'

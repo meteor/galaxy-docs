@@ -13,12 +13,12 @@ This guide will cover:
 - Using the Meteor CLI tool to deploy the application
 - Configuring domains and SSL Encryption for the application
 
-<h2 id="sign-up">Sign up for Galaxy</h2>
-You will need a Galaxy account that your Meteor Development Account has deploy authorization to use.
+<h2 id="sign-up">Sign up for Meteor Cloud</h2>
+You will need a Meteor Cloud in order to access and deploy to Galaxy Hosting. 
 
-[Sign up](https://www.meteor.com/galaxy/signup) here for a new Galaxy Account.
+[Sign up](https://accounts.meteor.com/) here for a new Meteor Cloud Account.
 
-Once you have created your account, sign in to Galaxy. Depending on the region you want to deploy your apps to, go to the URL and sign in with your username and password.
+Once you have created your account, you automatically have access to Galaxy. Depending on the region you want to deploy your apps to, go to the URL and sign in with your username and password.
 
 For US East, use https://galaxy.meteor.com/.
 
@@ -27,6 +27,10 @@ For EU West, use https://eu-west-1.galaxy.meteor.com/.
 For Asia-Pacific, use https://ap-southeast-2.galaxy.meteor.com/.
 
 The region you deploy to will affect the URL of your dashboard. If your username is devname, you'll see your US East apps at https://galaxy.meteor.com/devname, your EU West apps at https://eu-west-1.galaxy.meteor.com/devname, and your Asia-Pacific apps at https://ap-southeast-2.galaxy.meteor.com/devname. 
+
+You may also use the Free plan on Meteor Cloud to deploy your app (You must have Meteor 2.0 installed). There are no costs associated with this plan and it comes with a [free pre-configured shared MongoDB instance](/commandline.html#meteordeploy). However there are some important limitations: Free plans are limited to 1 Tiny Container, must use a Meteor domain name: .meteorapp.com to US region, .au.meteorapp.com to Asia region, or .eu.meteorapp.com to Europe region and have cold start enabled. 
+
+For more information on deploying for free, please see our [Meteor Deploy site docs](/commandline.html#meteordeploy). **We do not recommend deploying production applications to the Free plan**. 
 
 <h2 id="mongo-configure">Configure your MongoDB database</h2>
 

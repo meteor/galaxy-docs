@@ -14,7 +14,7 @@ This guide will cover:
 - Configuring domains and SSL Encryption for the application
 
 <h2 id="sign-up">Sign up for Meteor Cloud</h2>
-You will need a Meteor Cloud in order to access and deploy to Galaxy Hosting. 
+You will need a Meteor Cloud in order to access and deploy to Galaxy Hosting.
 
 [Sign up](https://accounts.meteor.com/) here for a new Meteor Cloud Account.
 
@@ -26,11 +26,11 @@ For EU West, use https://eu-west-1.galaxy.meteor.com/.
 
 For Asia-Pacific, use https://ap-southeast-2.galaxy.meteor.com/.
 
-The region you deploy to will affect the URL of your dashboard. If your username is devname, you'll see your US East apps at https://galaxy.meteor.com/devname, your EU West apps at https://eu-west-1.galaxy.meteor.com/devname, and your Asia-Pacific apps at https://ap-southeast-2.galaxy.meteor.com/devname. 
+The region you deploy to will affect the URL of your dashboard. If your username is devname, you'll see your US East apps at https://galaxy.meteor.com/devname, your EU West apps at https://eu-west-1.galaxy.meteor.com/devname, and your Asia-Pacific apps at https://ap-southeast-2.galaxy.meteor.com/devname.
 
-You may also use the Free plan on Meteor Cloud to deploy your app (You must have Meteor 2.0 installed). There are no costs associated with this plan and it comes with a [free pre-configured shared MongoDB instance](/commandline.html#meteordeploy). However there are some important limitations: Free plans are limited to 1 Tiny Container, must use a Meteor domain name: .meteorapp.com to US region, .au.meteorapp.com to Asia region, or .eu.meteorapp.com to Europe region and have cold start enabled. 
+You may also use the Free plan on Meteor Cloud to deploy your app (You must have Meteor 2.0 installed). There are no costs associated with this plan and it comes with a [free pre-configured shared MongoDB instance](/commands.html#meteordeploy). However there are some important limitations: Free plans are limited to 1 Tiny Container, must use a Meteor domain name: .meteorapp.com to US region, .au.meteorapp.com to Asia region, or .eu.meteorapp.com to Europe region and have cold start enabled.
 
-For more information on deploying for free, please see our [Meteor Deploy site docs](/commandline.html#meteordeploy). **We do not recommend deploying production applications to the Free plan**. 
+For more information on deploying for free, please see our [Meteor Deploy site docs](/commands.html#meteordeploy). **We do not recommend deploying production applications to the Free plan**.
 
 <h2 id="mongo-configure">Configure your MongoDB database</h2>
 
@@ -145,7 +145,7 @@ Add a domain in your application’s settings and point your DNS to:
 
 - `eu-west-1.galaxy-ingress.meteor.com` for applications in the EU West region.
 
-- `ap-southeast-2.galaxy-ingress.meteor.com` for applications in the Asia-Pacific region.  
+- `ap-southeast-2.galaxy-ingress.meteor.com` for applications in the Asia-Pacific region.
 
 If you are deploying to a root domain (for example mydomain.com), then follow the advanced instructions [here](/dns.html).
 

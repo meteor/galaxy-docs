@@ -54,9 +54,9 @@ Your command is expected to run a server that listens on the port specified by t
 Your container continues to run until its specified command completes or Galaxy stops it.
 
 
-<h2 id="build">Puppeteer [(meteor/galaxy-puppeteer)](https://github.com/meteor/galaxy-images/tree/master/galaxy-puppeteer) </h2>
+<h2 id="build">Puppeteer</h2>
 
-This image bundles every library puppeteer needs to be able to run. You can use it by doing the follow on your settings.json:
+This image [(meteor/galaxy-puppeteer)](https://github.com/meteor/galaxy-images/tree/master/galaxy-puppeteer) bundles every library puppeteer needs to be able to run. You can use it by doing the follow on your settings.json:
 
 ```json
 {

@@ -52,3 +52,33 @@ To run your app, Galaxy invokes whatever command is specified in your Dockerfile
 Your command is expected to run a server that listens on the port specified by the `$PORT` environment variable.  Even if you are using Galaxy to run code that isn't a traditional web server (for example, some sort of helper process for your main app), Galaxy expects to see a functioning web server in order to consider your app to be healthy.  If you choose to deploy software on Galaxy which does not have a web server, you should disable unhealthy container replacement on your app's settings page.  However, we recommend you expose a web server so that you can tell if your container is healthy or not.
 
 Your container continues to run until its specified command completes or Galaxy stops it.
+
+
+<h2 id="build">Puppeteer [(meteor/galaxy-puppeteer)](https://github.com/meteor/galaxy-images/tree/master/galaxy-puppeteer) </h2>
+
+This image bundles every library puppeteer needs to be able to run. You can use it by doing the follow on your settings.json:
+
+```json
+{
+  "galaxy.meteor.com": {
+    "env": { "MONGO_URL": "mongodb://..." },
+    "baseImage": {
+      "repository": "meteor/galaxy-puppeteer",
+      "tag": "latest"
+    }
+  }
+}
+```
+It's also expected that your usage of puppeteer uses the following flags:
+
+```js
+const browser = await puppeteer.launch({
+    args: [
+    '--no-sandbox',
+    '--disable-setuid-sandbox',
+    '--disable-dev-shm-usage'
+    ]
+});
+const page = await browser.newPage();
+await page.goto("https://www.google.com");
+```

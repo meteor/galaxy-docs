@@ -21,6 +21,7 @@ sidebar_categories:
     - mongodb
     - container-environment
     - base-image-packages
+    - alternate-base-image
     - custom-base-images
     - deploy-region
     - migrate-app

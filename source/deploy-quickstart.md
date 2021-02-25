@@ -10,7 +10,7 @@ Galaxy makes it simple to deploy, scale, and monitor your Meteor app. This quick
 
 The Free plan on Meteor Cloud allows you to get started and deploy applications on a pre-configured shared MongoDB instance. To deploy for free, simply enter this command in your terminal:
 ```
-cd ./my-app meteor deploy my-app --free --mongo
+meteor deploy my-app --free --mongo
 ```
 
 **Please note, free plans are not recommended for production applications. For production apps, you will need to configure your own MongoDB Database, outlined below:**

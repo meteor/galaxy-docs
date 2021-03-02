@@ -34,7 +34,7 @@ For more information on deploying for free, please see our [Meteor Deploy site d
 
 <h2 id="mongo-configure">Configure your MongoDB database</h2>
 
-If your Meteor application has a package that requires Mongo, then you'll need a Mongo database configured for your application. Most users will want to use a hosted database provider instead of running it yourselves, such as [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
+If your Meteor application has a package that requires Mongo, then you'll need a Mongo database configured for your application. Most users will want to use a hosted database provider instead of running it yourselves, such as [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) or [ScaleGrid](https://console.scalegrid.io/users/register?partnerID=meteor.com).
 
 For optimum performance, we recommend that you setup a database in the same AWS region as your app deployment.
 

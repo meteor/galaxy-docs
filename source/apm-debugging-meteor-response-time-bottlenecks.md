@@ -3,8 +3,6 @@ title: Debugging Response Time Bottlenecks
 order: 58
 ---
 
-_Note: This content originally appeared on https://kadira.io/academy/meteor-performance-101 ._
-
 We all want to build faster Meteor apps. Improving the server-side response time is an important factor in building fast apps.
 
 In Meteor APM, we have few tools to help you to debug response time bottlenecks in your app. I will show you how to use them.
@@ -21,7 +19,7 @@ So, we can clicked on that spike. Then we'll get a response time distribution li
 
 ![](https://cldup.com/YwbuYeoXxu.png)
 
-This is the response time histogram for that time. It also shows summary measurements, like median and percentiles.  
+This is the response time histogram for that time. It also shows summary measurements, like median and percentiles.
 
 > If you want to refresh your knowledge about [mean, histograms and percentiles](/blog/other/mean-histogram-and-percentiles), read [this](/blog/other/mean-histogram-and-percentiles) article.
 

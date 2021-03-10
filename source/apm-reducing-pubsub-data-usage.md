@@ -3,8 +3,6 @@ title: Reducing PubSub Data Usage
 order: 53
 ---
 
-_Note: This content originally appeared on https://kadira.io/academy/meteor-performance-101 ._
-
 Publications are the main place where your app sends data to the client when a client subscribes to it. Meteor caches a copy of each client's data in the server's memory. For example, let's say a single client has  approximately 2MB of subscription data. If you have 1000 concurrent clients connecting to your app, Meteor caches approximately 2GB (2MB * 1000) of client data in the server's memory.
 
 If your app sends a large amount of data, it will take a considerable amount of time for it to reach the client (especially when utilizing mobile networks). So it is very important to reduce the amount of data your app sends to clients. Let’s see what we can do about it.
@@ -65,4 +63,4 @@ Best way is to count them in the server side using a package like [publish-count
 
 You may also consider using [MongoDB aggregation techniques](https://atmospherejs.com/?q=aggregate) to get a summery of data and send them to the client.
 
-These are only some of the tips you can use to save subscription data, save server memory usage, and reduce latency. Try applying some of these; you can verify the results from the [Network Latency](http://support.kadira.io/knowledgebase/articles/372869-network-latency) metric in the Kadira.
+These are only some of the tips you can use to save subscription data, save server memory usage, and reduce latency. Try applying some of these; you can verify the results from the Network Latency metric in the Meteor APM.

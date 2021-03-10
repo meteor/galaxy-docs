@@ -3,8 +3,6 @@ title: Optimize Your Meteor App for Oplog Integration
 order: 55
 ---
 
-_Note: This content originally appeared on https://kadira.io/academy/meteor-performance-101 ._
-
 [Oplog integration](https://github.com/meteor/meteor/wiki/Oplog-Observe-Driver) gives a huge performance boost for Meteor apps, and it's recommend to use oplog with every production Meteor app. MongoHQ makes it super easy with their affordable MongoDB elastic scaling service.
 
 Meteor supports most of the queries with oplog, but there are some edge cases where observers will fall back into an inefficient poll and diff implementation. It's very hard to implement oplog support for those queries unless MongoDB supports built-in observing functionality.
@@ -58,7 +56,7 @@ Because it is using `$natural`, it won't be able to get the oplog support.
 
 Now you clearly know why some of your observers cannot use oplog support. But it is really hard to find the reason for such queries in production, especially with invalid selectors.
 
-From the very beginning, Meteor APM shows you whether oplog is enabled or not for your observers via its [tracing](http://support.kadira.io/knowledgebase/articles/347453-response-time-with-traces) support. But it doesn't tell you why. From today onward, you'll be to see the reason and the potential fix for your query.
+From the very beginning, Meteor APM shows you whether oplog is enabled or not for your observers via its tracing support. But it doesn't tell you why. From today onward, you'll be to see the reason and the potential fix for your query.
 
 ![Oplog Debugging Support in Meteor APM](https://i.cloudup.com/FA2NrHshgj.png)
 

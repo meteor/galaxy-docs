@@ -3,8 +3,6 @@ title: Managing Wait Time
 order: 56
 ---
 
-_Note: This content originally appeared on https://kadira.io/academy/meteor-performance-101 ._
-
  In this article, I'll explain to you about the waitTime and how you can manage it. waitTime is not something evil, but you need to learn how to manage it.
 
 ## What is wait time?
@@ -47,7 +45,7 @@ Meteor.methods({
 });
 ~~~
 
-We need the blogPost subscription to load before the others but the other subscriptions may execute in parallel. So, we can add this.unblock inside blogPost publications as well.  
+We need the blogPost subscription to load before the others but the other subscriptions may execute in parallel. So, we can add this.unblock inside blogPost publications as well.
 
 But, unfortunately, this.unblock is available only inside methods and we can't use it inside publications.
 

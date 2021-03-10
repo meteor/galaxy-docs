@@ -3,15 +3,13 @@ title: Know Your Observers
 order: 57
 ---
 
-_Note: This content originally appeared on https://kadira.io/academy/meteor-performance-101 ._
-
 Observers are among the key components of Meteor. They take care of observing documents on MongoDB and they notify changes. We usually create observers inside publications. Here are a few common ways to create observers.
 
 * When we return cursors from a publication
 * When we create an advanced publication using `cursor.observeChanges`
 * When we use one of the packages which permits reactive joins.
 
-Creating observers results in higher CPU and RAM usage because they are one of the core components of Meteor. Fortunately, meteor doesn't create new observers for identical cursors that have the same query selector, fields and sort specifiers. This is normally knows as ["observer reuse"](http://support.kadira.io/knowledgebase/articles/372870-observer-reuse) and you can check it out using the PubSub dashboard.
+Creating observers results in higher CPU and RAM usage because they are one of the core components of Meteor. Fortunately, meteor doesn't create new observers for identical cursors that have the same query selector, fields and sort specifiers. This is normally knows as "observer reuse" and you can check it out using the PubSub dashboard.
 
 ## Monitoring observers
 

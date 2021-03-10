@@ -3,8 +3,6 @@ title: Make Your App Faster
 order: 52
 ---
 
-_Note: This content originally appeared on https://kadira.io/academy/meteor-performance-101 ._
-
 This guide will help you to speed up your methods and publications by following a few simple techniques. First let's try to speed up methods; later on I'll show you how to apply these techniques for publications as well.
 
 ## Throughput matters
@@ -50,7 +48,7 @@ All methods interacting with third party services take a considerable amount of 
 1. Other methods from the same client will have to wait for the completion of the current method.
 2. They will slow down the method itself.
 
-You can simply use `this.unblock()` to ask Meteor not to wait on this method. Sometimes it is not wise to use `this.unblock()`. Refer our article on [Managing WaitTime](https://kadira.io/academy/managing-waittime/) to learn more about `this.unblock()`
+You can simply use `this.unblock()` to ask Meteor not to wait on this method. Sometimes it is not wise to use `this.unblock()`.
 
 For emails, you also can use `Meteor.defer`, as shown below:
 

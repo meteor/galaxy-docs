@@ -3,8 +3,6 @@ title: Improve CPU and Network usage
 order: 60
 ---
 
-_Note: This content originally appeared on https://kadira.io/academy/meteor-performance-101 ._
-
 Before we start, I'd like to explain a bit about some Meteor Internals that might help you to understand this topic better. To make it easier to understand, I won't be using the exact terms Meteor uses internally.
 
 ## How Observers are Handled in Meteor

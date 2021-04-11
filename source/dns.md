@@ -71,9 +71,9 @@ Now that you are using AWS Route 53 as your DNS Provider you can point your subd
 
 Now we are ready to start the setup to make your root domain to redirect automatically to your subdomain. Go to [S3](https://s3.console.aws.amazon.com/s3/home) Dashboard. Click on `Create bucket`, fill your bucket name with your root domain (mycompany.com), uncheck `Block all public access`, check `I acknowledge that the current settings might result in this bucket and the objects within becoming public.` and click on `Create bucket`.
 
-Access your newly created bucket (mycompany.com) and go to `Properties` tab, click on `Static website hosting` box, check `Redirect requests` in the field `Target bucket or domain` fill your subdomain (`www.mycompany.com` or `app.mycompany.com`) and fill protocol as `https`, click on `Save`.
+Access your newly created bucket (mycompany.com) and go to `Properties` tab, scroll down to `Static website hosting` section, click on `Edit`. Enable it and check the `Hosting type` as `Redirect requests for an object` in the field `Host name` fill your subdomain (`www.mycompany.com` or `app.mycompany.com`) and select the protocol `https`, click on `Save`.
 
-Now you need to return to [Route 53](https://console.aws.amazon.com/route53/home) create or change a record set type `A` for `mycompany.com` and select `Yes` for `Alias` and select your bucket on `Alias Target`, it will be under `S3 website endpoints` category. Ready, now your root domain will redirect to your subdomain.
+Now you need to return to [Route 53](https://console.aws.amazon.com/route53/home) create or change a record set type `A` for `mycompany.com` and toggle the `Alias` to enable it and select `Alias to S3 website endpoint` in the options, choose the `region` of your bucket and then select your bucket. Click in `Create records`. Ready, now your root domain will redirect to your subdomain.
 
 <h2 id="free-subdomain">Included *.meteorapp.com</h2>
 

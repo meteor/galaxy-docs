@@ -28,7 +28,7 @@ By creating a Meteor Cloud account you get access to:
 
 
 
-<h2 id="what-is">What is Atmosphere?</h2> 
+<h2 id="what-is-atmosphere">What is Atmosphere?</h2> 
 
 [Atmosphere](https://atmospherejs.com/) is the directory of community built packages available for download, completely free and accessible through your Meteor Cloud account. Rather than start from scratch, the Meteor community has solved many problems for you (such as user login and data synchronization). We highly recommend you take advantage of their hard work!
 
@@ -36,13 +36,13 @@ To learn more about creating and publishing packages, please visit the [Meteor G
 
 
 
-<h2 id="what-is">What is Meteor APM?</h2> 
+<h2 id="what-is-apm">What is Meteor APM?</h2> 
 
 Meteor APM is the only app performance monitoring tool build specifically for Meteor applications. Meteor APM is available for apps on the [Meteor Cloud Professional plans](/billing.html). For more information on Meteor APM and how to get started, visit [Getting Started with APM](/apm-getting-started.html).
 
 
 
-<h2 id="what-is">What is Galaxy Hosting?</h2>
+<h2 id="what-is-galaxy">What is Galaxy Hosting?</h2>
 
 Run your apps with confidence. Galaxy is easy to start, excellent to grow your app and fully-featured to support your needs as you scale.
 

@@ -3,8 +3,7 @@ subtitle: Galaxy Docs
 apis:
   segment: G21NW9GGR3lY3f37qLk9Ym1fH6EjfJFB
 versions:
-  - '1'
-  - '2'
+  - '1.0'
 github_repo: meteor/galaxy-docs
 
 logo:

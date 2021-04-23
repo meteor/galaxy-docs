@@ -19,7 +19,7 @@ It includes a <b>major update to Ubuntu 20.04 Focal</b>, with a lot of security 
 - wkhtmltox was upgraded to v0.12.6-1
 - PhantomJS and poppler were both removed from the base image. If you depend on it, you have two options:
     - Use the previous fixed base image by changing your settings.json with this:
-    ```
+    ```json
         "galaxy.meteor.com": {
             "baseImage": {
                 "repository": "meteor/galaxy-app",
@@ -29,8 +29,9 @@ It includes a <b>major update to Ubuntu 20.04 Focal</b>, with a lot of security 
     ```
     Be careful, you are opting out from new updates!
     -  Create a new custom image including the dependencies you need. For more info, read the docs here: https://cloud-guide.meteor.com/custom-base-images.html
+
 You can (and should) start testing the new base image in your staging environment right now! Just change your settings.json to include:
-    ```
+    ```json
     "galaxy.meteor.com": {
         "baseImage": {
             "repository": "meteor/galaxy-app",
@@ -38,12 +39,12 @@ You can (and should) start testing the new base image in your staging environmen
         }
     }
     ```
-    After deploying, you will be using the same image we will enforce on 30/April/21 for new deploys.
+After deploying, you will be using the same image we will enforce on 30/April/21 for new deploys.
 
 
 <h2 id="packages">Installed packages</h2>
 
-The current Galaxy default base image runs Ubuntu 14.04 LTS and comes with a set of packages pre-installed. Please note that in theory the package versions are not frozen and may be updated at any time. However, in practice, we know that many of our users may implicitly rely on the (increasingly outdated) versions of packages in the default base image. As of now, we plan to continue our implicit policy of never upgrading the Ubuntu packages on the default base image. Users who want newer versions of these packages should create a [custom base image](/custom-base-images.html) instead.
+The current Galaxy default base image runs Ubuntu 20.04 LTS and comes with a set of packages pre-installed. Please note that in theory the package versions are not frozen and may be updated at any time. However, in practice, we know that many of our users may implicitly rely on the (increasingly outdated) versions of packages in the default base image. As of now, we plan to continue our implicit policy of never upgrading the Ubuntu packages on the default base image. Users who want newer versions of these packages should create a [custom base image](/custom-base-images.html) instead.
 
 Packages useful as part of the build process:
 - [build-essential](http://packages.ubuntu.com/trusty/build-essential)

@@ -10,7 +10,7 @@ A base image is a [Docker](https://www.docker.com/) image.  The default base ima
 
 <h2 id="update">Base image Updates</h2>
 
-<h3 id="update-04232021>Update April/23/2021 - 20210423T151822Z_93d0399</h3>
+<h3 id="update-04232021">Update April/23/2021 - 20210423T151822Z_93d0399</h3>
 
 Galaxy base Docker image is going to be upgraded by default in all new deploys starting on 30/April/21.
 It includes a <b>major update to Ubuntu 20.04 Focal</b>, with a lot of security patches and improvements on stability and performance. If you can't update your app, check out the next section for a how to, but plan to do it soon!

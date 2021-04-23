@@ -1,10 +1,11 @@
 title: Galaxy Docs
 subtitle: Galaxy Docs
-apis:
-  segment: G21NW9GGR3lY3f37qLk9Ym1fH6EjfJFB
 versions:
   - '2.0'
   - '1.0'
+versioned-netlify-redirects:
+  netlify_site_id: galaxy-docs
+
 github_repo: meteor/galaxy-docs
 
 logo:
@@ -77,4 +78,4 @@ sidebar_categories:
 nav_links:
   'Meteor.com': 'https://www.meteor.com'
 
-url: http://galaxy-guide.meteor.com/
+url: https://cloud-guide.meteor.com/

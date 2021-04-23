@@ -10,27 +10,37 @@ A base image is a [Docker](https://www.docker.com/) image.  The default base ima
 
 <h2 id="update">Base image Updates</h2>
 
-<h3 id="update-04232021">Update April/23/2021 - 20210423T151822Z_93d0399</h3>
+<h3 id="v2.0">Ubuntu Upgrade</h3>
 
-Galaxy base Docker image is going to be upgraded by default in all new deploys starting on 30/April/21.
-It includes a <b>major update to Ubuntu 20.04 Focal</b>, with a lot of security patches and improvements on stability and performance. If you can't update your app, check out the next section for a how to, but plan to do it soon!
+Galaxy base Docker image is going to be upgraded by default in all new deploys starting on April 30th, 2021.
 
-<b>Breaking Changes</b>
-- wkhtmltox was upgraded to v0.12.6-1
-- PhantomJS and poppler were both removed from the base image. If you depend on it, you have two options:
-    - Use the previous fixed base image by changing your settings.json with this:
-    ```json
+It includes a <b>major update to `Ubuntu 20.04 Focal`</b>, with a lot of security patches and improvements on stability and performance. 
+
+If you can't update your app, check out the next section for a how to, but we recommend that you plan to do it soon!
+
+#### Breaking Changes
+
+If you don't use the libraries below in your code you don't need to worry about these breaking changes.
+
+- `wkhtmltox` was upgraded to `v0.12.6-1`
+  
+
+- `PhantomJS` and `poppler` were both removed from the base image. If you depend on it, you have two options:
+    1. Use the previous fixed base image (`20180509T213223Z_b6ad5bc`) by changing your settings.json with this:
+        ```json
         "galaxy.meteor.com": {
             "baseImage": {
                 "repository": "meteor/galaxy-app",
                     "tag":"20180509T213223Z_b6ad5bc"
             }
         }
-    ```
-    Be careful, you are opting out from new updates!
-    -  Create a new custom image including the dependencies you need. For more info, read the docs here: https://cloud-guide.meteor.com/custom-base-images.html
+        ```
+        Be careful, as you are opting out from new updates!
+    2. Create a new custom image including the dependencies you need. For more info, read the docs [here](./custom-base-images.html).
 
-You can (and should) start testing the new base image in your staging environment right now! Just change your settings.json to include:
+#### Migration Steps
+
+- We recommend that you test first your app with the new base image in your staging environment on Galaxy first! Just change your settings.json to include the `baseImage` (`20210423T151822Z_93d0399`):
     ```json
     "galaxy.meteor.com": {
         "baseImage": {
@@ -39,9 +49,16 @@ You can (and should) start testing the new base image in your staging environmen
         }
     }
     ```
-After deploying, you will be using the same image we will enforce on 30/April/21 for new deploys.
+    After deploying, you will be using the same image we are going to use as default starting on 30/April/21.
 
+- Don't change your baseImage property using Galaxy Edit Settings UI, it's not going to have any effect. It needs to be a new full deploy to force a new image creation.
 
+- If you don't deploy a new version of your app you will continue to use the previous base image.
+
+- After testing in a staging environment you have two options to apply this change to your production environment:
+  1. Keep this setting in your app and you are ready to go, this base image will be always used.
+  2. Starting from April 30th, 2021 you can remove this part of your settings as this base image is going to be the default.
+    
 <h2 id="packages">Installed packages</h2>
 
 The current Galaxy default base image runs Ubuntu 20.04 LTS and comes with a set of packages pre-installed. Please note that in theory the package versions are not frozen and may be updated at any time. However, in practice, we know that many of our users may implicitly rely on the (increasingly outdated) versions of packages in the default base image. As of now, we plan to continue our implicit policy of never upgrading the Ubuntu packages on the default base image. Users who want newer versions of these packages should create a [custom base image](/custom-base-images.html) instead.
@@ -66,7 +83,7 @@ Packages useful for popular npm packages (primarily image rendering):
 - [xfonts-base](http://packages.ubuntu.com/trusty/xfonts-base)
 - [xfonts-75dpi](http://packages.ubuntu.com/trusty/xfonts-75dpi)
 
-In addition, the default base image contains several popular versions of Node preinstalled in directories with names like `/node-v8.9.3-linux-x64`. (Including these versions makes the container build and start process more efficient.)  Galaxy uses the official binary distribution of Node from nodejs.org, not the Ubuntu package.
+In addition, the default base image contains several popular versions of Node preinstalled in directories with names like `/node-v12.22.0-linux-x64`. (Including these versions makes the container build and start process more efficient.)  Galaxy uses the official binary distribution of Node from nodejs.org, not the Ubuntu package.
 
 <h2 id="build">Build time behavior</h2>
 

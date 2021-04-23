@@ -10,7 +10,9 @@ A base image is a [Docker](https://www.docker.com/) image.  The default base ima
 
 <h2 id="update">Base image Updates</h2>
 
-<h3 id="v2.0">Ubuntu Upgrade</h3>
+<h3 id="v2.0">April 30th, 2021 - Ubuntu Upgrade</h3>
+
+
 
 Galaxy base Docker image is going to be upgraded by default in all new deploys starting on April 30th, 2021.
 

@@ -3,6 +3,11 @@ title: Changelog
 description: List of changes on Galaxy
 ---
 
+## v2.0 (2021/04/23)
+
+- Deploy:
+  - new Docker default base image. [read more](./base-image-packages.html#v2.0) 
+
 ## v1.22 (2021/04/23)
 
 - API:

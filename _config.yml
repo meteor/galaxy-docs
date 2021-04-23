@@ -5,7 +5,6 @@ versions:
   - '1.0'
 versioned-netlify-redirects:
   netlify_site_id: galaxy-docs
-
 github_repo: meteor/galaxy-docs
 
 logo:

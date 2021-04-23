@@ -3,6 +3,36 @@ title: Changelog
 description: List of changes on Galaxy
 ---
 
+# 2021/04/23
+
+- API:
+  - new `startApp` and `stopApp` mutations.
+  
+# 2021/02/17
+
+- Logs
+  - Filter logs between two dates
+
+# 2021/01/16
+
+- Cloud UI Update
+
+# 2020/11/12
+
+- Security:
+  - New app protection features, fine tune how many requests do you want to accept and control each block individually.
+
+# 2020/11/04
+
+- API:
+  - new `createdAt` field on Container type.
+
+# 2020/11/03
+
+- Core:
+  - Free deploy with Cold start (meteor deploy --free).
+  - MongoDB included (meteor deploy --mongo).
+
 # 2020/10/27
 
 - UI:

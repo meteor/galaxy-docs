@@ -16,24 +16,29 @@ Galaxy base Docker image is going to be upgraded by default in all new deploys s
 It includes a <b>major update to Ubuntu 20.04 Focal</b>, with a lot of security patches and improvements on stability and performance. If you can't update your app, check out the next section for a how to, but plan to do it soon!
 
 <b>Breaking Changes</b>
+- wkhtmltox was upgraded to v0.12.6-1
 - PhantomJS and poppler were both removed from the base image. If you depend on it, you have two options:
     - Use the previous fixed base image by changing your settings.json with this:
+    ```
         "galaxy.meteor.com": {
             "baseImage": {
                 "repository": "meteor/galaxy-app",
                     "tag":"20180509T213223Z_b6ad5bc"
             }
         }
+    ```
     Be careful, you are opting out from new updates!
     -  Create a new custom image including the dependencies you need. For more info, read the docs here: https://cloud-guide.meteor.com/custom-base-images.html
 You can (and should) start testing the new base image in your staging environment right now! Just change your settings.json to include:
+    ```
     "galaxy.meteor.com": {
         "baseImage": {
             "repository": "meteor/galaxy-app",
                 "tag":"20210423T151822Z_93d0399"
         }
     }
-After deploying, you will be using the same image we will enforce on 30/April/21 for new deploys.
+    ```
+    After deploying, you will be using the same image we will enforce on 30/April/21 for new deploys.
 
 
 <h2 id="packages">Installed packages</h2>

@@ -26,5 +26,8 @@
     "extends": [
       "meteor-docs"
     ]
+  },
+  "dependencies": {
+    "hexo-versioned-netlify-redirects": "^1.1.0"
   }
 }

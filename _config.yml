@@ -1,7 +1,6 @@
 title: Galaxy Docs
 subtitle: Galaxy Docs
 versions:
-  - '2.0'
   - '1.0'
 versioned-netlify-redirects:
   netlify_site_id: galaxy-docs

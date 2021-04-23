@@ -33,7 +33,7 @@ You can (and should) start testing the new base image in your staging environmen
                 "tag":"20210423T151822Z_93d0399"
         }
     }
-After deploying, you will be using the same image we will enforce on 28/April for new deploys.
+After deploying, you will be using the same image we will enforce on 30/April/21 for new deploys.
 
 
 <h2 id="packages">Installed packages</h2>

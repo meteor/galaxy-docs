@@ -3,7 +3,37 @@ title: Changelog
 description: List of changes on Galaxy
 ---
 
-# 2020/10/27
+## v1.22 (2021/04/23)
+
+- API:
+  - new `startApp` and `stopApp` mutations.
+
+## v1.21 (2021/02/17)
+
+- Logs
+  - Filter logs between two dates
+
+## v1.20 (2021/01/16)
+
+- Cloud UI Update
+
+## v1.19 (2020/11/12)
+
+- Security:
+  - New app protection features, fine tune how many requests do you want to accept and control each block individually.
+
+## v1.18 (2020/11/04)
+
+- API:
+  - new `createdAt` field on Container type.
+
+## v1.17 (2020/11/03)
+
+- Core:
+  - Free deploy with Cold start (meteor deploy --free).
+  - MongoDB included (meteor deploy --mongo).
+
+## v1.16 (2020/10/27)
 
 - UI:
   - It's now possible to set the minimum supported version of TLS on each app by going to:
@@ -12,7 +42,7 @@ description: List of changes on Galaxy
   - The proxy layer now blocks requests based on TLS app security configuration.
 
 
-# 2020/09/30
+## v1.15 (2020/09/30)
 
 - UI:
   - Search by container id on containers tab inside your app
@@ -22,12 +52,12 @@ description: List of changes on Galaxy
 - Containers:
   - New container sizes: Octa (8 ECUs and 8 GBs of RAM) and Dozen (12 ECUs and 12 GBs of RAM)
 
-# 2020/09/27
+## v1.14 (2020/09/27)
 
 - API:
   - Support custom certificates
 
-# 2020/09/17
+## v1.13 (2020/09/17)
 
 - UI:
   - Bug fix on loops with notifications resulting in a better performance in the UI as well.
@@ -35,28 +65,28 @@ description: List of changes on Galaxy
   - Better performance
   - Timeouts were increased as well
   - Build cache support (Meteor 1.11)
-  
-# 2020/09/08
+
+## v1.12 (2020/09/08)
 
 - UI:
   - Support for private cluster in the UI, now clients with private clusters can move their apps back and forth to the public clusters using the UI
-  
-# 2020/08/26
+
+## v1.11 (2020/08/26)
 
 - Logs:
   - Better performance when loading the logs
 
-# 2020/08/20
+## v1.10 (2020/08/20)
 
 - Domains:
   - Enable unicode domains on galaxy - change regexp for turkish characters
-  
-# 2020/08/13
+
+## v1.9 (2020/08/13)
 
 - API:
   - Domains: Adds a new mutation to Galaxy GraphQL API that enables the upsert of domains with automatic certificate generation. For more details, please refer to the graphql docs API on [API Explorer](https://us-east-1.api.meteor.com/explorer) - saveDomain(domain: DomainInput!): Domain. 
 
-# 2020/08/07
+## v1.8 (2020/08/07)
 
 - Logs:
   - Adds option to go back in date with a date picker
@@ -66,28 +96,28 @@ description: List of changes on Galaxy
   
   [![](http://img.youtube.com/vi/WPYyHeWM21Q/0.jpg)](http://www.youtube.com/watch?v=WPYyHeWM21Q "")
 
-# 2020/07/30
+## v1.7 (2020/07/30)
 
 - Security:
   - 2FA
   - App Protection
 
-# 2020/07/16
+## v1.6 (2020/07/16)
 
 - Triggers:
   - Kill container trigger
   
-# 2020/07/02
+## v1.5 (2020/07/02)
 
 - Activities:
   - Hides app unavailable activities from the right side bar
   
-# 2020/06/29
+## v1.4 (2020/06/29)
 
 - Activities:
   - Hides container unhealthy activities from the right side bar
   
-# 2020/06/25
+## v1.3 (2020/06/25)
 
 - Notifications:
   - Fixes link to Notifications doc
@@ -96,19 +126,23 @@ description: List of changes on Galaxy
   - Exposes all the states on invoices list in the account settings page
 
 
-# 2020/06/05
+## v1.2 (2020/06/05)
 
 - Triggers:
   - Labels changed: Series to Sample duration, Metrics quantity to Sample quantity and Seconds interval to Run every (seconds).
   - Fixed alignments and spacing.
   - Fixed validation between min and max containers.
 
-# 2020/06/04
+## v1.1 (2020/06/04)
 
 - Triggers:
   - Changed the color to indicate when a day of week is enabled.
   - Fixed validations on Advanced Settings and Rules.
 
-# 2020/06/03
+## v1.0 (2020/06/03)
 
 - Released [Triggers (Autoscaling)](./triggers.html)
+
+## v0.0
+
+- We started to use this change log at 2020/06/03.

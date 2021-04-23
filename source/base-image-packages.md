@@ -17,7 +17,7 @@ It includes a <b>major update to Ubuntu 20.04 Focal</b>, with a lot of security 
 
 <b>Breaking Changes</b>
 - PhantomJS and poppler were both removed from the base image. If you depend on it, you have two options:
-    . Use the previous fixed base image by changing your settings.json with this:
+    - Use the previous fixed base image by changing your settings.json with this:
         "galaxy.meteor.com": {
             "baseImage": {
                 "repository": "meteor/galaxy-app",
@@ -25,7 +25,7 @@ It includes a <b>major update to Ubuntu 20.04 Focal</b>, with a lot of security 
             }
         }
     Be careful, you are opting out from new updates!
-    . Create a new custom image including the dependencies you need. For more info, read the docs here: https://cloud-guide.meteor.com/custom-base-images.html
+    -  Create a new custom image including the dependencies you need. For more info, read the docs here: https://cloud-guide.meteor.com/custom-base-images.html
 You can (and should) start testing the new base image in your staging environment right now! Just change your settings.json to include:
     "galaxy.meteor.com": {
         "baseImage": {

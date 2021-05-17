@@ -45,11 +45,11 @@ If you believe your issue is related to Meteor, you can [file a bug](https://git
 <h2 id="holidays">Company Holidays</h2>
 
 Non-business days for technical support:
-January 1
-April 2, 4, 21
-May 1		
-September 7	
-October 12	
-November 2, 15	
-November 15	
-December 25
+- January 1
+- April 2, 4, 21
+- May 1		
+- September 7	
+- October 12	
+- November 2, 15	
+- November 15	
+- December 25

@@ -22,13 +22,7 @@ If you would like expert assistance with your Meteor question, consider a subscr
 
 Galaxy customers have the option to upgrade to higher levels of paid Galaxy support for guaranteed response times as short as 15-minutes with 24x7x365 coverage, including critical cases related to application downtime or degraded performance.
 
-Please contact [Galaxy Sales](mailto:galaxysales@meteor.com) for more details.
-
-<h2 id="meteor-developer-support">Meteor Developer Support</h2>
-
-Meteor Developer Support helps customers build production Meteor apps the right way, ensuring architectural best practices and timely responses to technical inquiries related to Meteor application development.
-
-Please fill out our <a name="developer"/>[Developer Support](https://www.meteor.com/developer-support)</a> form for more information.
+Please contact [Support](mailto:support@meteor.com) for more details.
 
 <h2 id="scope">Support Scope</h2>
 
@@ -52,13 +46,14 @@ Every Galaxy user is also welcome to follow up on <a href="http://github.com/met
 
 If you believe your issue is related to Meteor, you can [file a bug](https://github.com/meteor/meteor/blob/6d4412f6a91e9f6270e70f1f6443ee3ae95dab7d/CONTRIBUTING.md) or add a comment to an existing bug to pursue resolution. Consider searching [Stack Overflow](http://stackoverflow.com/questions/tagged/meteor) for a solution, if applicable.
 
-If you'd like for a dedicated contractor to review your app or work on your issue, consider [weworkmeteor](https://www.weworkmeteor.com/) or, more generally, [Toptal](https://www.toptal.com/).
-
 <h2 id="holidays">Company Holidays</h2>
 
-Non-business days include:
-- 01/01 - New Year's Day
-- 7/4 - Independence Day
-- Last Monday of May - Memorial Day
-- Last Thursday of November - Thanksgiving
-- 12/25 - Christmas Day
+Non-business days include for technical support:
+January 1
+April 2, 4, 21
+May 1		
+September 7	
+October 12	
+November 2, 15	
+November 15	
+December 25

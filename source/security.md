@@ -49,7 +49,9 @@ Access to private information is protected using Docker isolation in the applica
 
 Galaxy provides SSL encryption to protect data transmission over the wire from external entities to the Galaxy Proxy layer. Internally in Galaxy, Amazon EC2 virtual machine and Docker container network isolation is utilized to protect data transmission over the wire.
 
-Galaxy does not maintain databases that are utilized for application use. These databases are provisioned, configured and maintained by the customer.
+Galaxy does not maintain databases that are utilized for production application use. These databases are provisioned, configured and maintained by the customer.
+
+Galaxy free MongoDB databases are only available for hobby projects and open-source demos. 
 
 <h2 id="application-logs">Application Logs</h2>
 
@@ -69,6 +71,6 @@ Meteor Developer Accounts support Two-Factor Authentication, so we recommend tha
 
 You can check if all members of your organization have this enabled in your Members tab on your account page on Galaxy, you will see a lock icon on each member with Two-Factor Authentication enabled. 
 
-Each member can enable Two-Factor Authentication on <a href="https://www.meteor.com/account-settings" target="_blank">meteor.com/account-settings</a> in the Security section.
+Each member can enable Two-Factor Authentication on <a href="https://cloud.meteor.com/security" target="_blank">cloud.meteor.com/security</a> in the Security section.
 
 It's important to save the backup codes in a safe place as well.

@@ -103,13 +103,27 @@ You can use the option `--cache-build` to reuse your build in multiple deploys.
 
 This is useful if you want to deploy the same bundle to different environments and also if your upload is failing so you can just upload again without a new build.
 
-The cache checks the current git commit of your repository so if you are using Git you can use this safely all the time.
+The cache checks the current git commit of your repository so you need to be deploying from a folder that is a Git repository.
 
 ```
 DEPLOY_HOSTNAME=galaxy.meteor.com meteor deploy [hostname] --settings path-to-settings.json --cache-build
 ```
 
 > This was introduced on Meteor 1.11
+
+<h3 id="cache-only">Build Only</h3>
+
+You can use the option `--build-only` to stop the process after the build.
+
+This is useful if you want to deploy the same bundle to different environments but first you want to build without deploying the bundle yet.
+
+It's recommend to use this option with `--cache-build` so your bundle is not deleted after the process. If you want to just check if your build is working then you don't need to use `--cache-build`.
+
+```
+DEPLOY_HOSTNAME=galaxy.meteor.com meteor deploy --cache-build --build-only
+```
+
+> This was introduced on Meteor 2.3
 
 <h3 id="account-selection">Specify an account to deploy</h3>
 

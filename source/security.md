@@ -74,3 +74,7 @@ You can check if all members of your organization have this enabled in your Memb
 Each member can enable Two-Factor Authentication on <a href="https://cloud.meteor.com/security" target="_blank">cloud.meteor.com/security</a> in the Security section.
 
 It's important to save the backup codes in a safe place as well.
+
+<h2 id="dnssec">DNSSEC</h2>
+Starting from 22/June/2021, meteor.com is a domain with DNSSEC enabled. Check what DNSSEC is, and why it's important <a href="https://www.icann.org/resources/pages/dnssec-what-is-it-why-important-2019-03-05-en" target="_blank">here</a>. 
+

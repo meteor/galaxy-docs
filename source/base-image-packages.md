@@ -10,6 +10,50 @@ A base image is a [Docker](https://www.docker.com/) image.  The default base ima
 
 <h2 id="update">Base image Updates</h2>
 
+<h3 id="v3.0">August 04th, 2021</h3>
+
+Galaxy base Docker image is going to be upgraded by default in all new deploys starting on August 04th, 2021.
+
+It does include dependencies removal for minimizing the size and speed up deploys and scale ups.
+
+If you can’t update your app, check out the next section for a how to, but we recommend that you plan to do it soon!
+
+#### Breaking Changes
+
+If you don’t use the libraries below in your code you don’t need to worry about these breaking changes.
+
+The following libraries have been removed from the default base image:
+
+`libcairo2-dev imagemagick xfonts-base xfonts-75dpi graphicsmagick libjpeg-dev poppler-utils wkhtmltox`
+
+If you depend on it, you have two options:
+
+1. Use the previous fixed base image (20210423T151822Z_93d0399) by changing your settings.json with this:
+
+```json
+    "galaxy.meteor.com": {
+        "baseImage": {
+            "repository": "meteor/galaxy-app",
+                "tag":"20210423T151822Z_93d0399"
+        }
+    }
+```
+2. Create a new custom image including the dependencies you need. For more info, read the docs [here](https://cloud-guide.meteor.com/custom-base-images.html).
+
+#### Migration Steps
+We recommend that you test first your app with the new base image in your staging environment on Galaxy first! Just change your settings.json to include the baseImage (20210727T191118Z_088ba36):
+
+```json
+    "galaxy.meteor.com": {
+        "baseImage": {
+            "repository": "meteor/galaxy-app",
+                "tag":"20210727T191118Z_088ba36"
+        }
+    }
+```
+
+
+
 <h3 id="v2.0">April 30th, 2021 - Ubuntu Upgrade</h3>
 
 
@@ -73,17 +117,8 @@ Packages useful as part of the build process:
 - [git](http://packages.ubuntu.com/trusty/git)
 - [xz-utils](http://packages.ubuntu.com/trusty/xz-utils)
 - [ca-certificates](http://packages.ubuntu.com/trusty/ca-certificates)
-
-Packages useful for popular npm packages (primarily image rendering):
-- [imagemagick](http://packages.ubuntu.com/trusty/imagemagick)
-- [graphicsmagick](http://packages.ubuntu.com/trusty/graphicsmagick-dbg)
-- [libcairo2-dev](http://packages.ubuntu.com/trusty/libcairo2-dev)
-- [poppler-utils](http://packages.ubuntu.com/trusty/poppler-utils)
-- [libjpeg-dev](http://packages.ubuntu.com/trusty/libjpeg-dev)
-- [wkhtmltopdf](http://packages.ubuntu.com/trusty/wkhtmltopdf) (for HTML to PDF conversion including prerequisites)
 - [libssl-dev](http://packages.ubuntu.com/trusty/libssl-dev)
-- [xfonts-base](http://packages.ubuntu.com/trusty/xfonts-base)
-- [xfonts-75dpi](http://packages.ubuntu.com/trusty/xfonts-75dpi)
+
 
 In addition, the default base image contains several popular versions of Node preinstalled in directories with names like `/node-v12.22.0-linux-x64`. (Including these versions makes the container build and start process more efficient.)  Galaxy uses the official binary distribution of Node from nodejs.org, not the Ubuntu package.
 

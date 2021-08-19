@@ -3,6 +3,28 @@ title: Changelog
 description: List of changes on Galaxy
 ---
 
+## v2.4 (2021/08/19)
+
+- API:
+  - Always forcing HTTPs and generating LetsEncrypt certificate to a domain, by default, when deploying an app for the first time. 
+
+## v2.3 (2021/07/23)
+
+- API:
+  - Bug Fix - Avoid trigger Scale down during deploys
+
+## v2.2 (2021/06/18)
+
+- API:
+  - Increase Cold Start timeout to 30 minutes
+
+
+## v2.1 (2021/05/09)
+
+- API:
+  - Update PEM package for new openssl executable on ubuntu 20.04 
+
+
 ## v2.0 (2021/04/23)
 
 - Deploy:

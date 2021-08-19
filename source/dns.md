@@ -28,6 +28,9 @@ Ensure the hostname you [deployed to](deploy-quickstart.html) matches the [fully
 
 [We recommend you use SSL](encryption.html) as a best practice. You can either enable LetsEncrypt using our integration or upload your own certificate.
 
+
+By default, when deploy an app for the first time, Galaxy will always try to enable LetsEncrypt on your domain, as well as enable the SSL to force your domain redirect to the HTTPs protocol.
+
 <h2 id="root-domain">Redirecting the root domain</h2> 
 
 A common scenario is when your app is hosted at `www.mycompany.com` or `app.mycompany.com` and you'd like `mycompany.com` to redirect to the same app running in your subdomain. 

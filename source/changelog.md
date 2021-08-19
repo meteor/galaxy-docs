@@ -5,40 +5,38 @@ description: List of changes on Galaxy
 
 ## v2.4 (2021/08/19)
 
-- API:
+- Security
   - Always forcing HTTPs and generating LetsEncrypt certificate to a domain, by default, when deploying an app for the first time. 
 
 ## v2.3 (2021/07/23)
 
-- API:
-  - Bug Fix - Avoid trigger Scale down during deploys
+- Triggers
+  - Improve the triggers to avoid scaling down during deploys.
 
 ## v2.2 (2021/06/18)
 
-- API:
+- Free deploys
   - Increase Cold Start timeout to 30 minutes
-
 
 ## v2.1 (2021/05/09)
 
-- API:
-  - Update PEM package for new openssl executable on ubuntu 20.04 
-
+- Security
+  - Update PEM package for new openssl executable on Ubuntu 20.04 
 
 ## v2.0 (2021/04/23)
 
-- Deploy:
+- Deploy
   - new Docker default base image. [read more](./base-image-packages.html#v2.0) 
 
 ## v1.22 (2021/04/23)
 
-- API:
+- API
   - new `startApp` and `stopApp` mutations.
 
 ## v1.21 (2021/02/17)
 
 - Logs
-  - Filter logs between two dates
+  - Filter logs between two dates.
 
 ## v1.20 (2021/01/16)
 

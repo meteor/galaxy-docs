@@ -14,28 +14,22 @@ This guide will cover:
 - Configuring domains and SSL Encryption for the application
 
 <h2 id="sign-up">Sign up for Meteor Cloud</h2>
+
 You will need a Meteor Cloud in order to access and deploy to Galaxy Hosting.
 
-
 [Sign up](https://cloud.meteor.com/?isSignUp=true) here for a new Meteor Cloud Account.
-
 
 Once you have created your account, you automatically have access to Galaxy. 
 
 The region you deploy to will affect the URL of your dashboard on Galaxy but you can access all your apps directly from the [Cloud](https://cloud.meteor.com) dashboard. 
 
-
 You may also use the Free plan on Meteor Cloud to deploy your app (You must have Meteor 2.0 installed). 
-
 
 There are no costs associated with this plan and it comes with a [free pre-configured shared MongoDB instance](/commands.html#meteordeploy). 
 
-
 However there are some important limitations: Free plans are limited to 1 Tiny Container, must use a Meteor domain name: *.meteorapp.com to US region, *.au.meteorapp.com to Asia region, or *.eu.meteorapp.com to Europe region and have cold start enabled.
 
-
 For more information on deploying for free, please see our [Meteor Deploy site docs](/commands.html#meteordeploy).
-
 
 **We do not recommend deploying production applications to the Free plan**.
 

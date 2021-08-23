@@ -57,9 +57,9 @@ $ meteor deploy [hostname] --settings path-to-settings.json
 
 <h2 id="configure-app">Configure your app</h2>
 
-By default, when deploy an app for the first time, Galaxy will always try to enable LetsEncrypt on your domain, as well as enable the SSL to force your domain redirect to the HTTPs protocol.
+Once your app is deployed successfully, Galaxy will enable LetsEncrypt on your domain, as well as enable the SSL to force your domain redirect to the HTTPs protocol.
 
-If you want to add another domain, once your app is successfully deployed, head on over to the [US East](http://galaxy.meteor.com) dashboard; [EU West](http://eu-west-1.galaxy.meteor.com) dashboard or [Asia-Pacific](http://ap-southeast-2.galaxy.meteor.com) dashboard to configure your app by adding a custom domain name and enabling SSL encryption.
+If you want to add another domain, head on over to the [US East](http://galaxy.meteor.com) dashboard; [EU West](http://eu-west-1.galaxy.meteor.com) dashboard or [Asia-Pacific](http://ap-southeast-2.galaxy.meteor.com) dashboard to configure your app by adding a custom domain name and enabling SSL encryption.
 
 Add a domain in your app’s settings and point your DNS to `galaxy-ingress.meteor.com` for the US East region, `eu-west-1.galaxy-ingress.meteor.com` for the EU West region, or `ap-southeast-2.galaxy-ingress.meteor.com` for the Asia-Pacific region.
 

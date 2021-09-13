@@ -13,7 +13,9 @@ The Free plan on Meteor Cloud allows you to get started and deploy applications 
 meteor deploy <yourapp>.meteorapp.com --free --mongo
 ```
 
-**Please note, free plans are not recommended for production applications. For production apps, you will need to configure your own MongoDB Database, outlined below:**
+*Quick note: do not install "meteor" npm dependency in your project's package.json by any means, the npm library is only an installer. Adding it will produce errors in your deploy.*
+
+**Free plans are not recommended for production applications. For production apps, you will need to configure your own MongoDB Database, outlined below:**
 
 Before you begin deploying your app to production, [configure access to your MongoDB database](/mongodb.html) and set up any [environment variables](/environment-variables.html) your app depends on using your app’s settings.json file.
 

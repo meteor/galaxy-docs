@@ -78,37 +78,27 @@ It's important to save the backup codes in a safe place as well.
 <h2 id="dnssec">DNSSEC</h2>
 Starting from 22/June/2021, meteor.com is a domain with DNSSEC enabled. Check what DNSSEC is, and why it's important <a href="https://www.icann.org/resources/pages/dnssec-what-is-it-why-important-2019-03-05-en" target="_blank">here</a>. 
 
-<h2 id="upcoming-changes">Upcoming Changes</h2>
+<h2 id="changes">Changes</h2>
 
-Starting on 25/September/2021, Galaxy will implement the following changes to its infrastructure.
+<h3 id="sep-25-2021">Sep 25th, 2021</h2>
+
+Galaxy applied the following changes to its infrastructure.
 
 - Disable HTTP 1.0 protocol support
 - Galaxy Sticky cookie will have a secure flag for force-ssl enabled domains
 - HSTS will be sent for every force-ssl enabled domains
 - Removal of some supported ciphers. The updated list will only include the ciphers listed below:
+  - TLS_AES_128_GCM_SHA256
+  - TLS_AES_256_GCM_SHA384
+  - TLS_CHACHA20_POLY1305_SHA256
+  - TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+  - TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+  - TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+  - TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+  - TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256
+  - TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256
+  - TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+  - TLS_RSA_WITH_AES_128_GCM_SHA256
+  - TLS_RSA_WITH_AES_128_CBC_SHA
 
-TLS_AES_128_GCM_SHA256
-
-TLS_AES_256_GCM_SHA384
-
-TLS_CHACHA20_POLY1305_SHA256
-
-TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
-
-TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
-
-TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
-
-TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
-
-TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256
-
-TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256
-
-TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
-
-TLS_RSA_WITH_AES_128_GCM_SHA256
-
-TLS_RSA_WITH_AES_128_CBC_SHA
-
-If you rely on clients older than 5 years, please check if the client supported uses any of the above ciphers, or reach us out on support@meteor.com.
+This can affect clients older than 5 years, like old browsers.

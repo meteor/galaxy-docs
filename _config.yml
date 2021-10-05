@@ -49,6 +49,8 @@ sidebar_categories:
     - file-storage
     - transfer-apps
     - commands
+  Best Pratices:
+    - background-jobs
   Meteor APM:
     - apm-getting-started
     - apm-make-your-app-faster

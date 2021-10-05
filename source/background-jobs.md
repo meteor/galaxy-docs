@@ -77,6 +77,10 @@ Meteor.startup(() => {
 });
 ```
 
+In this example we are using `synced-cron` package to communicate between the apps using MongoDB. But you could use a different package or create your own solution.
+
+Another idea that you could use with this double app set up is to send data from one app to the other using DDP calls, some clients use this setup, so they can defer almost all the work for the jobs app, like processing an image, generating an Excel file, so everything that takes more than a few milliseconds is not going to cause slowness in the containers that are responding to user direct actions.
+
 <h2 id="deploying">Deploying apps</h2>
 
 Now that you have your code ready and also your settings ready we need to think about the deploy.
@@ -94,4 +98,36 @@ meteor deploy jobs.yourdomain.com --settings settings-jobs.json --cache-build
 meteor deploy app.yourdomain.com --settings settings-web.json --cache-build
 ```
 
+The second deploy command is going to skip the build part, it is just going to upload your bundle and deploy your second app much faster.
+
 See that they are two different apps on Meteor Cloud (Galaxy), which is really great as you can isolate them, use different [triggers](./triggers.html), analyze their performances in different APM dashboards, everything is isolated in runtime, except your database.
+
+The jobs app for example could be just a backend app, without any domain accessing it. You just leave it without a CNAME pointing to it in your DNS configurations.
+
+<h2 id="deploying">Monitoring</h2>
+
+As you have two different apps now it's simple to customize your app for a specific type of workload. 
+
+For example, if your jobs app is using Worker Threads you could use container sizes that will allow you to have more than one core. That would probably don't make a lot of sense in your web app if you are not using Worker Threads there.
+
+Another important aspect is to analyze APM, Galaxy Metrics and logs independently. Including Galaxy notifications, so you will receive specific notifications if something is happening in the app, for example, maybe you know that your jobs app is going to be unhealthy with heavy jobs and this is ok, you can even turn off this notification if you want.
+
+And of course, all Galaxy configurations will independent for each app, as such, triggers, app protection, grace period, unhealthy container replacement, etc.
+
+<h2 id="costs">Costs</h2>
+
+Running two different apps with the same load is not going to increase your costs. Actually it could reduce your costs as you can use different container sizes instead of the large possible for all workloads. You could also use different triggers and scale down more aggressively as you are going to have more control of the tasks that are running in which app.
+
+<h2 id="alternative">Alternative approaches</h2>
+
+- You could use different apps with different code bases, this is fine as well, as we explained above the only downside is that you need to manage two Meteor apps, two package.json, two of everything, so maybe it's more work. Also, you need to have a way to share packages what is fine but one more thing to be concerned about.
+
+- You could use `GALAXY_CONTAINER_ID` to try to control what is running in each container, but it's hard to manage your containers relying on Galaxy internals. Also, you would need to make sure you always have the container assigned to a specific job available. Another problem would be to avoid long-running task containers from user access as Galaxy proxy is managing the balance for you and that is what you want to avoid in the first place: mixing user requests and long-running tasks. The monitoring of our app will be harder as well you are going to have metrics from different work loads mixed up in the same app.
+
+<h2 id="example">Example</h2>
+
+To wrap up we also have an [example](https://github.com/meteor/examples/#double-app) app implementing this approach.
+
+We use this approach a lot internally as well, and we are sharing here as a best practice as we really believe it is a very effective way to solve this problem.
+
+Feel free to provide feedback about this approach at support@meteor.com.

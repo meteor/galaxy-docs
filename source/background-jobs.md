@@ -16,31 +16,32 @@ In a single-threaded environment like Node.js if you perform long-running tasks 
 > - The Node.js Event Loop: Not So Single Threaded - Bryan Hughes on [YouTube](https://www.youtube.com/watch?v=zphcsoSJMvM)
 > - Node's Event Loop From the Inside Out - Sam Roberts on [YouTube](https://www.youtube.com/watch?v=P9csgxBgaZ8)
 
-Let's focus now and how you could solve this competition in your Meteor app.
+Let's focus now on how you could solve this competition in your Meteor app.
 
 <h2 id="split">Split into multiple apps</h2>
 
 Every Meteor app has a settings file, the settings file is used in runtime, but it's not use at build time. This means that you have the opportunity to use the settings json file to change some behaviors of your system even if you have a single code base.
 
-The idea here is to use the same code to provide a different environment for long-running tasks (like background jobs) and another environment for your connected users, so you don't need to worry about shared dependencies, multiple apps to update Meteor packages, multiple apps to update npm dependencies and so on. 
+The idea here is to use the same code to provide a different environment for long-running tasks (like background jobs) and another environment for your connected users (web), so you don't need to worry about shared dependencies, multiple apps to update Meteor packages, multiple apps to update npm dependencies and so on. 
 
 > It is ok if you want to have two independent apps with some shared code but in most cases we believe using the same code is the most effective way.
 > 
 > But in some companies they already have many different apps so it makes sense to create an app just for long-running tasks.
 
-Here is how we would do, in our settings file we would have a boolean like `runJobs` and in settings for our connected users app we would use:
+Here is how we would do, in our settings file we would have a boolean like `runJobs` and in the settings for our connected users app (web) we would use (`settings-web.json`):
 ```json
 {
   "runJobs": false
 }
 ```
-In the app for running long tasks we would use:
+In the app for running long tasks we would use (`settings-jobs.json`):
 ```json
 {
   "runJobs": true
 }
 ```
-So in the file jobs file that is imported in your `server/main.js`:
+
+So we have enabled the jobs just in the jobs app. So in the file jobs file that is imported from your server `mainModule` you would have (`server/main.js`):
 
 ```js
 // server/main.js
@@ -77,3 +78,20 @@ Meteor.startup(() => {
 ```
 
 <h2 id="deploying">Deploying apps</h2>
+
+Now that you have your code ready and also your settings ready we need to think about the deploy.
+
+As you have the same code base you don't need to build twice, and this is possible using a deploy flag `--cache-build`.
+
+Here is how we would do it:
+```shell
+# deploy.sh
+
+# build and deploy the jobs app
+meteor deploy jobs.yourdomain.com --settings settings-jobs.json --cache-build
+
+# deploy the web app
+meteor deploy app.yourdomain.com --settings settings-web.json --cache-build
+```
+
+See that they are two different apps on Meteor Cloud (Galaxy), which is really great as you can isolate them, use different [triggers](./triggers.html), analyze their performances in different APM dashboards, everything is isolated in runtime, except your database.

@@ -45,13 +45,9 @@ Meteor.methods({
 });
 ~~~
 
-We need the blogPost subscription to load before the others but the other subscriptions may execute in parallel. So, we can add this.unblock inside blogPost publications as well.
+We need the blogPost subscription to load before the others but the other subscriptions may execute in parallel. So, we can add `this.unblock` inside blogPost publications as well.
 
-But, unfortunately, this.unblock is available only inside methods and we can't use it inside publications.
-
-> But there is a cure for this. We've created a package called meteorhacks:unblock, which allows you to use this.unblock inside a publication.
->
-> Simply install it using `meteor add meteorhacks:unblock` and use `this.unblock`
+> Since Meteor 2.3 `this.unblock` is also available for publications without additional packages.
 
 Now we've added the necessary optimizations. Let's run the app and see what's happening right now:
 

@@ -59,4 +59,4 @@ If you carefully look at the above trace, we still have the waitList because the
 
 ## Unblock Carefully
 
-So, `this.unblock` cannot be enabled for all methods and subscriptions by default since it might give you some [unexpected behaviors](https://meteorhacks.com/understanding-meteor-wait-time-and-this-unblock.html#why-thisunblock-does-not-always-work). But, if your methods and subscriptions don't depend on others, there is a good chance you can unblock them and reduce the waitTime. But finally, it all depends on your app.
+So, `this.unblock` cannot be enabled for all methods and subscriptions by default since it might give you some unexpected behaviors. But, if your methods and subscriptions don't depend on others, there is a good chance you can unblock them and reduce the waitTime. But finally, it all depends on your app.

@@ -51,6 +51,7 @@ sidebar_categories:
     - commands
   Best Pratices:
     - background-jobs
+    - app-scaling
   Meteor APM:
     - apm-getting-started
     - apm-make-your-app-faster

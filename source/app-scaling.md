@@ -20,7 +20,7 @@ This behavior affects how you scale your app. We will talk about two types of sc
 
 Vertical scaling refers to adding more resources (CPU/RAM/DISK) to your server as on demand. 
 
-The issue with this approach for Node.JS applications, like Meteor, is that even after adding more CPU there is a limit to the number of requests is can process.
+The issue with this approach for Node.JS applications, like Meteor, is that even after adding more CPU there is a limit to the number of requests it can process.
 
 <img src="/images/app-scaling-rps-cpu.png" />
 
@@ -32,7 +32,7 @@ Sometimes, if you have more CPU than node can use, you will get numbers like 40%
 
 <h3 id="vertical-tips">RAM when Vertical Scaling</h3>
 
-Node limits the heap size to 1400MB by default in 64bit, so if you are growing memory in your container to something more than 2GB remember to set the --max-old-space-size to > 1400MB.
+Node limits the heap size to 1400MB by default in 64bit, so if you are growing memory in your container to something more than 2GB remember to set the --max-old-space-size to be greater than 1400MB.
 
 
 <h2 id="horizontal-scaling">Horizontal scaling</h2>

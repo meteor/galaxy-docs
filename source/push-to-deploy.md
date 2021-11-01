@@ -1,7 +1,7 @@
 ---
 title: Push To Deploy (beta)
 order: 19
-description: Learn how to setup Push to Deploy on Cloud, so you can deploy changes to your apps just buy by performing a commit to a repository.
+description: Learn how to setup Push to Deploy, so you can update your app directly from your repository.
 ---
 
 With this feature, never was easier to create an app on Galaxy. All you need to do is follow three  simple steps, then you'll have a new app deployed.

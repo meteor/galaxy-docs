@@ -10,7 +10,7 @@ With this feature, never was easier to create an app on Galaxy. All you need to 
 
 Today we have our integration just with GitHub. In the future we'll add more Git providers.
 
-The only requirement you need today to start using this feature is to have a repository on GitHub with a Meteor project on it. And that's it.
+You need to have on GitHub a repository with a Meteor project on it. The following Meteor versions support this feature: `1.12.2`, `2.0.1`, ` 2.1.2`, `2.2.4`, `2.3.7`, and any version from `2.4.1` to the latest.
 
 <h2 id="deploying-a-new-app">Deploying a new app</h2>
 
@@ -40,6 +40,7 @@ You also have advanced options. Here is a description of each one:
 - **Root Directory**: Directory on your repository where the root of your Meteor app is.
 - **Pre Deploy Command**: This is the command that you run to install the apps dependencies, usually being `meteor npm install --production`.
 - **Deploy Arguments**: Some argument that you can provide to your [deploy command line](https://docs.meteor.com/commandline.html#meteordeploy). It shouldn't be necessary for most the cases.
+- *Memory amount on deploy*: This defines how much memory you want to use to deploy your app.
 - **Environment Variables**: Most common when deploying a Meteor app is `DEPLOY_HOSTNAME`, that you don't need to provide anymore.
 
 <img src="images/push-to-deploy-third-step-advanced-options.png" style="width: 780px;">
@@ -62,10 +63,24 @@ After all it's set up, you can edit it again buy clicking in button `CONFIGURE P
 
 <h2 id="editing-deploy-settings">Editing next deploy settings</h2>
 
-On Galaxy, in the app version screen, after configuring Push to Deploy to an app, you will find the field `Next Auto Deploy Settings`. Use this field to add [app settings](https://cloud-guide.meteor.com/deploy-guide.html#settings-create) for the next deploy. So when you do the commit to the branch that you configured, these are the settings that will be used.
+On Galaxy, in the app version tab, after configuring Push to Deploy to an app, you will find the field `Next Auto Deploy Settings`. Use this field to add [app settings](https://cloud-guide.meteor.com/deploy-guide.html#settings-create) for the next deploy. So when you do the commit to the branch that you configured, these are the settings that will be used. Once you use this field for the first time, the settings will be used every time for the next deploys. If you decide not to use it anymore you can just leave the field empty and save it. 
 
 <img src="images/push-to-deploy-next-app-settings.png" style="width: 780px;">
 
-<h2 id="after-set-up">After set up</h2>
+<h2 id="after-set-up">FAQ</h2>
 
-After you finish setting up everything, every commit you do to the chosen branch will trigger a new deploy. You can set up the same repository and branch to different apps, so you can have multiple apps being deployed just with one commit :)
+1 - **How to trigger new deploys?** 
+
+After you finish setting up everything, every commit you do to the chosen branch will trigger a new deploy.
+
+2 - **Can I use the repository and branch to different apps?**
+
+Yes, you can. So be careful when setting up your apps, so you don't deploy the wrong code to an app.
+
+3 - **What happens if a new commit is pushed before the previous deploy is completed?**
+
+The previous deploy will be canceled and the new one will start.
+
+4 - **What docker error 137 means?**
+
+This error means there was an Out Of Memory error. To solve this you should increase the amount of memory you us to deploy your app. You can do this on the third step of the Push to Deploy screen, on the section *Deploy options* > *Advanced options* > *Memory amount on deploy*.

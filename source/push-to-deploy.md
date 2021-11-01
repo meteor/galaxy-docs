@@ -6,7 +6,7 @@ description: Learn how to setup Push to Deploy on Cloud, so you can deploy chang
 
 With this feature, never was easier to create an app on Galaxy. All you need to do is follow three  simple steps, then you'll have a new app deployed.
 
-> BETA: we are still in beta, you can ask for access sending an email to support@meteor.com informing your Meteor account or organization.
+> BETA: we are still in beta, you can ask for access sending an email to support at meteor.com informing your Meteor account or organization.
 
 <h2 id="pre-requirements">Pre requirements</h2>
 

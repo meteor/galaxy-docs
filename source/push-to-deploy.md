@@ -1,10 +1,12 @@
 ---
-title: Push To Deploy
+title: Push To Deploy (beta)
 order: 19
 description: Learn how to setup Push to Deploy on Cloud, so you can deploy changes to your apps just buy by performing a commit to a repository.
 ---
 
 With this feature, never was easier to create an app on Galaxy. All you need to do is follow three  simple steps, then you'll have a new app deployed.
+
+> BETA: we are still in beta, you can ask for access sending an email to support@meteor.com informing your Meteor account or organization.
 
 <h2 id="pre-requirements">Pre requirements</h2>
 
@@ -88,4 +90,4 @@ You can't. At least for now the only way a deploy is cancelled is if a new commi
 
 5 - **What docker error 137 means?**
 
-This error means there was an Out Of Memory error. To solve this you should increase the amount of memory you us to deploy your app. You can do this on the third step of the Push to Deploy screen, on the section *Deploy options* > *Advanced options* > *Memory amount on deploy*.
+This error means there was an Out Of Memory error. To solve this you should increase the amount of memory you use to deploy your app. You can do this on the third step of the Push to Deploy screen, on the section *Deploy options* > *Advanced options* > *Memory amount on deploy*.

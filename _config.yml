@@ -25,6 +25,7 @@ sidebar_categories:
     - custom-base-images
     - deploy-region
     - migrate-app
+    - push-to-deploy
   Setup:
     - custom-domains
     - dns

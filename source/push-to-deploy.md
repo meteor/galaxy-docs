@@ -18,7 +18,7 @@ Start by going to your Cloud account [here](https://cloud.meteor.com/). Then go 
 
 <img src="images/push-to-deploy-first-step.png" style="width: 780px;">
 
-Go ahead and link your GitHub account to our app, just by clicking on the GitHub button.
+Go ahead and click on the GitHub button. An authentication popup, from GitHub, will show up. On this popup you can choose the individual account or organization that you want to give us access. You don't need to give access to all your repositories if you don't want to. Later you can go on GitHub and change your permissions to authorize more repositories.
 
 After connecting to your git provider you'll automatically go to second step. On the second step you need to chose your account from the git provider and then choose the repository where is the Meteor app that you want to deploy.
 
@@ -34,7 +34,7 @@ Then you get to select which *Plan*, *Container Size*, and *Region* your app wil
 
 On the **Deploy Options** section, you can choose which branch you'll use as your deploy branch. Every commit done on this branch will trigger a deploy. On this section you also can opt to user or not our shared [MongoDB Cluster](https://docs.meteor.com/commandline.html#meteordeploy).
 
-You also have advanced options. Here is a description of each one:
+You also have *Advanced Options*. Here is a description of each one:
 
 - **Meteor Settings**: You initial [app settings](https://cloud-guide.meteor.com/deploy-guide.html#settings-create) when deploying an app in a JSON format.
 - **Root Directory**: Directory on your repository where the root of your Meteor app is.
@@ -71,7 +71,7 @@ On Galaxy, in the app version tab, after configuring Push to Deploy to an app, y
 
 1 - **How to trigger new deploys?** 
 
-After you finish setting up everything, every commit you do to the chosen branch will trigger a new deploy.
+After you finish setting up everything, every commit you do to the chosen branch will trigger a new deploy. Also, every time you save the configuration a new deploy will be triggered.
 
 2 - **Can I use the repository and branch to different apps?**
 
@@ -81,6 +81,11 @@ Yes, you can. So be careful when setting up your apps, so you don't deploy the w
 
 The previous deploy will be canceled and the new one will start.
 
-4 - **What docker error 137 means?**
+
+4 - *How I cancel a deploy that is in progress?*
+
+You can't. At least for now the only way a deploy is cancelled is if a new commit arrives, or if the deploy fails.
+
+5 - **What docker error 137 means?**
 
 This error means there was an Out Of Memory error. To solve this you should increase the amount of memory you us to deploy your app. You can do this on the third step of the Push to Deploy screen, on the section *Deploy options* > *Advanced options* > *Memory amount on deploy*.

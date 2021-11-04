@@ -42,7 +42,7 @@ You also have *Advanced Options*. Here is a description of each one:
 - **Root Directory**: Directory on your repository where the root of your Meteor app is.
 - **Pre Deploy Command**: This is the command that you run to install the apps dependencies, usually being `meteor npm install --production`.
 - **Deploy Arguments**: Some argument that you can provide to your [deploy command line](https://docs.meteor.com/commandline.html#meteordeploy). It shouldn't be necessary for most the cases.
-- *Memory amount on deploy*: This defines how much memory you want to use to deploy your app.
+- *Build Container RAM*: This defines how much memory you want to use to deploy your app.
 - **Environment Variables**: Most common when deploying a Meteor app is `DEPLOY_HOSTNAME`, that you don't need to provide anymore.
 
 <img src="images/push-to-deploy-third-step-advanced-options.png" style="width: 780px;">
@@ -90,4 +90,4 @@ You can't. At least for now the only way a deploy is cancelled is if a new commi
 
 5 - **What docker error 137 means?**
 
-This error means there was an Out Of Memory error. To solve this you should increase the amount of memory you use to deploy your app. You can do this on the third step of the Push to Deploy screen, on the section *Deploy options* > *Advanced options* > *Memory amount on deploy*.
+This error means there was an Out Of Memory error. To solve this you should increase the amount of memory you use to deploy your app. You can do this on the third step of the Push to Deploy screen, on the section *Deploy options* > *Build Container RAM*.

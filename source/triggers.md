@@ -84,7 +84,7 @@ Usually you will configure it based on CPU Usage (%) or Number of Connections, f
 <h3 id="kill">Kill containers</h3>
 `kill containers` action will kill containers from your app when the rules return true (match). You can configure your trigger as you want.
 
-This action is the same as clicking manually in the "kill container" icon below each container in the dashboard.
+This action is the same as clicking manually in the `kill container` icon below each container in the dashboard.
 
 Usually you will configure it based on CPU Usage (%) or Number of Connections, for example, if you know that your app can provide good experience for your users until 80% of CPU then you can add a rule to kill containers when it reachs 80% or more of CPU usage. Of course, this action is not going to be enough if you don't have `add containers` action working properly as well in case you start to receive a lot of connections as your CPU usage on each container will continue to go up all the time.
 
@@ -92,6 +92,6 @@ This action is also helpful after a scale up event (`add containers` action) tha
 
 Another case is when you have different user profiles using your app and some profiles are causing more load than others (heavy users or admins), if you are unlucky you can get a lot heavy users in the same container, causing a huge load on a specific container, so killing this container is also going to cause these heavy users to be spread across containers and improve the experience for your users.
 
-This action doesn't change the number of running containers, it's just going to force the replacement of a specific container. The same as the "kill container" icon in the dashboard. We don't recommend using this action if you have less than 3 containers running in your app.
+This action doesn't change the number of running containers, it's just going to force the replacement of a specific container. The same as the `kill container` icon in the dashboard. We don't recommend using this action if you have less than 3 containers running in your app.
 
-Galaxy is going to redistribute your users (connections) to other containers after this action but if you want to check the behavior of your app in this case, we recommend that load your app in your browser, check in the Dev Tools of your browser the cookie "galaxy-sticky" (the value will be something like "!s6f3HQaHBwacbYAaK-seree"), after the dash you have your container name, then go to Galaxy dashboard and kill this container manually, you are going to see if your app is handling a reconnection properly as Galaxy is going to reconnect your app to another container. Even if you don't want to use this action it is recommended to see how your app behaves on reconnections as they can happen any time a container is replaced.
+Galaxy is going to redistribute your users (connections) to other containers after this action but if you want to check the behavior of your app in this case, we recommend that load your app in your browser, check in the Dev Tools of your browser the cookie `galaxy-sticky` (the value will be something like `!s6f3HQaHBwacbYAaK-seree`), after the dash you have your container name, then go to Galaxy dashboard and kill this container manually, you are going to see if your app is handling a reconnection properly as Galaxy is going to reconnect your app to another container. Even if you don't want to use this action it is recommended to see how your app behaves on reconnections as they can happen any time a container is replaced.

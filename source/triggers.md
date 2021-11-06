@@ -81,7 +81,7 @@ Usually you will configure it based on CPU Usage (%) or Number of Connections, f
 
 <img src="/images/triggers-04.png" />
 
-<h3 id="remove">Kill containers</h3>
+<h3 id="kill">Kill containers</h3>
 `kill containers` action will kill containers from your app when the rules return true (match). You can configure your trigger as you want.
 
 This action is the same as clicking manually in the "kill container" icon below each container in the dashboard.

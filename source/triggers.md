@@ -56,13 +56,13 @@ Every rule will be compared with these metrics (the average of your samples for 
 
 <h2 id="actions">Actions</h2>
 
-We support two actions at the moment, to add and remove containers. We are going to expand this in the next releases of Galaxy, if you have ideas for new actions please open a ticket (support@meteor.com).
+We support three actions at the moment, to add, remove, and to kill containers. If you have ideas for new actions please open a ticket (support@meteor.com).
 
-As these two actions change the quantity of running containers of your app we provide limits for you to set. You can select the minimum of containers that your app should have and the maximum. You can also choose how many containers will be added or removed if your trigger action is fired, this configuration is called step.
+As the actions to add and remove containers change the quantity of running containers of your app we provide limits for you to set. You can select the minimum of containers that your app should have and the maximum. You can also choose how many containers will be added or removed if your trigger action is fired, this configuration is called step.
 
 Important: `add containers` action will never remove containers and `remove containers` action will never add containers then make sure you always have both configured with proper maximum and minimum configurations, and they make sense together. Also minimum and maximum are checked before the rules and if they are not correctly this run will fix it.
 
-<h3 id="actions">Add containers</h3>
+<h3 id="add">Add containers</h3>
 
 `add containers` action as the name action name says will add more containers to your app when the rules return true (match). You can configure your trigger as you want.
 
@@ -74,9 +74,24 @@ It's important to turn on the [notification](./notifications.html) for the activ
 
 <img src="/images/triggers-05.png" />
 
-<h3 id="actions">Remove containers</h3>
+<h3 id="remove">Remove containers</h3>
 `remove containers` action as the name action name says will remove containers from your app when the rules return true (match). You can configure your trigger as you want.
 
 Usually you will configure it based on CPU Usage (%) or Number of Connections, for example, if you know that your app can provide good experience for your users until 70% of CPU then you can add a rule to remove containers when you reach 60% of CPU usage per container. It's recommended to use `AND` if you want to use more than one rule here, so if any rule is still more than expected you don't scale down your app.
 
 <img src="/images/triggers-04.png" />
+
+<h3 id="remove">Kill containers</h3>
+`kill containers` action will kill containers from your app when the rules return true (match). You can configure your trigger as you want.
+
+This action is the same as clicking manually in the "kill container" icon below each container in the dashboard.
+
+Usually you will configure it based on CPU Usage (%) or Number of Connections, for example, if you know that your app can provide good experience for your users until 80% of CPU then you can add a rule to kill containers when it reachs 80% or more of CPU usage. Of course, this action is not going to be enough if you don't have `add containers` action working properly as well in case you start to receive a lot of connections as your CPU usage on each container will continue to go up all the time.
+
+This action is also helpful after a scale up event (`add containers` action) that caused your older containers (containers that were running before the scale up event) to be handling more connections than they should. So this action would force a spread of these connections that were centralized in older containers. As you probably know Galaxy doesn't change existing connections to new containers unless the containers are not available anymore, Galaxy does this to avoid reconnections that could cause more load in your database due to reloading existing subscriptions. 
+
+Another case is when you have different user profiles using your app and some profiles are causing more load than others (heavy users or admins), if you are unlucky you can get a lot heavy users in the same container, causing a huge load on a specific container, so killing this container is also going to cause these heavy users to be spread across containers and improve the experience for your users.
+
+This action doesn't change the number of running containers, it's just going to force the replacement of a specific container. The same as the "kill container" icon in the dashboard. We don't recommend using this action if you have less than 3 containers running in your app.
+
+Galaxy is going to redistribute your users (connections) to other containers after this action but if you want to check the behavior of your app in this case, we recommend that load your app in your browser, check in the Dev Tools of your browser the cookie "galaxy-sticky" (the value will be something like "!s6f3HQaHBwacbYAaK-seree"), after the dash you have your container name, then go to Galaxy dashboard and kill this container manually, you are going to see if your app is handling a reconnection properly as Galaxy is going to reconnect your app to another container. Even if you don't want to use this action it is recommended to see how your app behaves on reconnections as they can happen any time a container is replaced.

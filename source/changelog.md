@@ -3,6 +3,12 @@ title: Changelog
 description: List of changes on Galaxy
 ---
 
+
+## v2.5 (2021/11/12)
+
+- Logs
+  - Download logs button now exports all the logs from your app. As we store 7 days of logs you can download them all in a single click. Before the same button was limited to download 10,000 lines of logs. 
+  
 ## v2.4 (2021/08/19)
 
 - Security

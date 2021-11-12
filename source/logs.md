@@ -21,6 +21,8 @@ There are several logging tabs you can click, below the "Logs" tab itself. These
 
 Breakdown by tab will be especially useful if you have multiple containers running, and are regularly deploying.
 
+There is also a button where you can download all the logs that are still available (we retain logs for 7 days).
+
 <h4 id="all">All</h4>
 
 Every message and error will be shown here.

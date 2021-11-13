@@ -77,6 +77,8 @@ It's important to save the backup codes in a safe place as well.
 
 Our two-factor authentication works via email, so you are going to receive an email when you authenticate with your confirmation code. 
 
+If you authenticate with GitHub the confirmation code is not going to be send as you should have two-factor on GitHub as well. So our two-factor is not going to do anything in the GitHub authentication. 
+
 <h2 id="dnssec">DNSSEC</h2>
 Starting from 22/June/2021, meteor.com is a domain with DNSSEC enabled. Check what DNSSEC is, and why it's important <a href="https://www.icann.org/resources/pages/dnssec-what-is-it-why-important-2019-03-05-en" target="_blank">here</a>. 
 

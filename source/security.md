@@ -84,7 +84,7 @@ Starting from 22/June/2021, meteor.com is a domain with DNSSEC enabled. Check wh
 
 <h2 id="changes">Changes</h2>
 
-<h3 id="sep-25-2021">Sep 25th, 2021</h2>
+<h3 id="sep-25-2021">Sep 25th, 2021</h3>
 
 Galaxy applied the following changes to its infrastructure.
 

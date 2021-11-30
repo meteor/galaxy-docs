@@ -172,6 +172,7 @@ In Elasticsearch 6, the `string` type is removed, and is replaced with `text` or
 
 For Elasticsearch v7, run the following command to create the index pattern:
 
+```sh
 curl -X PUT 'https://username:password@your-elasticsearch-server.com/_template/app_logs?pretty' -H 'Content-Type: application/json' -d '
 {
   "index_patterns": ["app_logs-*"],

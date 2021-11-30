@@ -116,7 +116,7 @@ curl -X PUT 'https://username:password@your-elasticsearch-server.com/_template/a
 '
 ```
 
-<h4 id="index-template-es6">Setting up index templates for Elasticsearch 6 and later</h4>
+<h4 id="index-template-es6">Setting up index templates for Elasticsearch 6</h4>
 
 For Elasticsearch v6, run the following code at your shell (substituting in your Elasticsearch server's credentials and address) to create the index template:
 
@@ -167,3 +167,47 @@ curl -X PUT 'https://username:password@your-elasticsearch-server.com/_template/a
 ```
 
 In Elasticsearch 6, the `string` type is removed, and is replaced with `text` or `keyword` depending on whether or not you analyze it. (The new types were introduced in Elasticsearch 5, and `string` was removed in Elasticsearch 6.) Elasticsearch 6 also renames `template` to `index_patterns`.
+
+<h4 id="index-template-es7">Setting up index templates for Elasticsearch 7 and later</h4>
+
+For Elasticsearch v7, run the following command to create the index pattern:
+
+curl -X PUT 'https://username:password@your-elasticsearch-server.com/_template/app_logs?pretty' -H 'Content-Type: application/json' -d '
+{
+  "index_patterns": ["app_logs-*"],
+  "template": {
+    "mappings": {
+        "line": {
+            "properties": {
+                "@timestamp": {
+                  "type": "date"
+                },
+                "appId": {
+                  "type": "text"
+                },
+                "containerId": {
+                  "type": "text"
+                },
+                "stack": {
+                  "type": "text"
+                },
+                "log": {
+                  "type": "text"
+                },
+                "stream": {
+                  "type": "text"
+                },
+                "rootUrl": {
+                  "type": "text"
+                },
+                "appVersionId": {
+                  "type": "text"
+                }
+            }
+        }
+    }
+  }
+}
+'
+```
+

@@ -13,6 +13,8 @@ This guide will cover:
 - Using the Meteor CLI tool to deploy the application
 - Configuring domains and SSL Encryption for the application
 
+If you desire to deploy your app using your machine, you can continue reading this. But we have an easier and faster way of deploying your app, which is by using the feature [Push To Deploy](/push-to-deploy.html), and if this is your first time deploying a Meteor application, this is what we'd recommend you to use.
+
 <h2 id="sign-up">Sign up for Meteor Cloud</h2>
 
 You will need a Meteor Cloud in order to access and deploy to Galaxy Hosting.

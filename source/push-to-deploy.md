@@ -1,5 +1,5 @@
 ---
-title: Push To Deploy (beta)
+title: Push To Deploy
 order: 19
 description: Learn how to setup Push to Deploy, so you can update your app directly from your repository.
 ---

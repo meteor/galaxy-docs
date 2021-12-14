@@ -1,18 +1,20 @@
 ---
-title: Push To Deploy
+title: Deploying an app
 order: 19
-description: Learn how to setup Push to Deploy, so you can update your app directly from your repository.
+description: Learn how to deploy on Galaxy by setting up Push to Deploy. The easiest and fastest way of deploying your Meteor app.
 ---
 
-With this feature, never was easier to create an app on Galaxy. All you need to do is follow three  simple steps, then you'll have a new app deployed.
+With the feature Push to Deploy, never was easier to create an app on Galaxy. All you need to do is follow three  simple steps, then you'll have a new app deployed.
 
-> BETA: we are still in beta, you can ask for access sending an email to support at meteor.com informing your Meteor username. It needs to be your username and not your organization.
+> Be aware that Push to Deploy isn't a completely free to use. You can see more [here](#push-to-deploy-cost). If you you want to use a free solution to deploy your apps, you can use the [command line](/deploy-quickstart.html).
 
 <h2 id="pre-requirements">Pre requirements</h2>
 
 Today we have our integration just with GitHub. In the future we'll add more Git providers.
 
 You need to have on GitHub a repository with a Meteor project on it. The following Meteor versions support this feature: `1.12.2`, `2.0.1`, ` 2.1.2`, `2.2.4`, `2.3.7`, and any version from `2.4.1` to the latest.
+
+If you don't fulfil the pre requirements you can still deploy your app by using the command line. [Click here to learn more](/deploy-quickstart.html). 
 
 <h2 id="deploying-a-new-app">Deploying a new app</h2>
 
@@ -69,6 +71,21 @@ On Galaxy, in the app version tab, after configuring Push to Deploy to an app, y
 
 <img src="images/push-to-deploy-next-app-settings.png" style="width: 780px;">
 
+<h2 id="push-to-deploy-cost">Push to Deploy cost</h2>
+
+For deploys on the Free plan there is no cost but there is a limit of 10 deploys per month.
+
+The cost for deploys on Essentials or Professional is the amount of **time deploying** x **amount of GBs** of memory x **$0.08** if *Essentials* or **$0.11** if *Professional*.
+
+So, for a quick example, last say this month you did 2 hours of deployments using 5GBs of memory for a Professional app. The amount cost added to your invoice would be: **2h** x **5GBs** x **$0.11** = **$1.10**.
+
+
+<h2 id="billing">How Billing Works for Apps Running</h2>
+
+You pay for each deploy you do but your apps are only billed when they're running. Keep running your app for as long as you want and pay-as-you-go at low metered rates. Simply “Stop” your app on the Settings page and billing will stop. Your app’s code and settings are preserved until you’re ready to run it again.
+
+You can see your bills in your account's Settings page and read more about billing in our [billing](http://galaxy-guide.meteor.com/billing.html) article.
+
 <h2 id="after-set-up">FAQ</h2>
 
 1 - **How to trigger new deploys?** 
@@ -84,7 +101,7 @@ Yes, you can. So be careful when setting up your apps, so you don't deploy the w
 The previous deploy will be canceled and the new one will start.
 
 
-4 - *How I cancel a deploy that is in progress?*
+4 - **How I cancel a deploy that is in progress?**
 
 You can't. At least for now the only way a deploy is cancelled is if a new commit arrives, or if the deploy fails.
 

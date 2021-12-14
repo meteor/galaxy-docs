@@ -1,12 +1,12 @@
 ---
-title: Deploy quickstart
+title: Deploy command line quickstart
 order: 10
 description: Learn how to quickly deploy an app to Galaxy with these step-by-step instructions.
 ---
 
 Galaxy makes it simple to deploy, scale, and monitor your Meteor app. This quickstart guide will walk new users through deploying your first app. It is the abridged version of the [comprehensive guide](/deploy-guide.html) aimed at developers who have experience deploying apps with remote databases.
 
-If you desire to deploy your app using your machine, you can continue reading this. But we have an easier and faster way of deploying your app, which is by using the feature [Push To Deploy](/push-to-deploy.html), and if this is your first time deploying a Meteor application, this is what we'd recommend you to use.
+Differently from using Push to Deploy, you will **not** be charged when deploying your app using the command line.
 
 <h2 id="get-ready-for-deploy">Get your app ready</h2>
 

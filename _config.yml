@@ -16,6 +16,7 @@ sidebar_categories:
     - index
     - changelog
   Deploy:
+    - deploying-an-app
     - deploy-quickstart
     - deploy-guide
     - environment-variables
@@ -25,7 +26,6 @@ sidebar_categories:
     - custom-base-images
     - deploy-region
     - migrate-app
-    - push-to-deploy
   Setup:
     - custom-domains
     - dns

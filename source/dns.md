@@ -24,7 +24,7 @@ Galaxy provides different regions around the world, fill your CNAME record value
 
 > If you don't know where to configure this we recommend that you use Route 53 as your DNS provider, follow the steps [here](#aws-route-53). 
 
-Ensure the hostname you [deployed to](deploy-quickstart.html) matches the [fully qualified domain name](https://en.wikipedia.org/wiki/Fully_qualified_domain_name) of your app (i.e `app.mycompany.com`).
+Ensure the hostname you [deployed to](deploying-an-app.html) matches the [fully qualified domain name](https://en.wikipedia.org/wiki/Fully_qualified_domain_name) of your app (i.e `app.mycompany.com`).
 
 [We recommend you use SSL](encryption.html) as a best practice. You can either enable LetsEncrypt using our integration or upload your own certificate.
 

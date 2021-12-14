@@ -1,5 +1,5 @@
 ---
-title: Deploy command line guide
+title: Deploy with command-line
 order: 11
 description: Learn how to deploy an application to Galaxy with these detailed step by step instructions.
 ---
@@ -173,6 +173,6 @@ If you are deploying to a root domain (for example mydomain.com), then follow th
 **Learn more**
 
 - Based on the [deploy guide](http://coderchronicles.org/2016/03/15/deploying-a-meteor-app-to-galaxy/) by Anders Ramsay
-- Read our [quickstart guide](/deploy-quickstart.html) for deploying applications
+- Read our [quickstart guide](/deploying-an-app.html) for deploying applications
 - Learn how to [deploy to a specific account](/deploy-guide.html#account-selection)
 - Learn how to [transfer apps](/transfer-apps.html) between accounts

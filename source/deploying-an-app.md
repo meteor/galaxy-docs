@@ -1,20 +1,12 @@
 ---
-title: Deploying an app
+title: Deploying
 order: 19
 description: Learn how to deploy on Galaxy by setting up Push to Deploy. The easiest and fastest way of deploying your Meteor app.
 ---
 
-With the feature Push to Deploy, never was easier to create an app on Galaxy. All you need to do is follow three  simple steps, then you'll have a new app deployed.
+Galaxy makes it simple to deploy, scale, and monitor your Meteor app. This quickstart guide will walk new users through deploying your apps. 
 
-> Be aware that Push to Deploy isn't a completely free to use. You can see more [here](#push-to-deploy-cost). If you you want to use a free solution to deploy your apps, you can use the [command line](/deploy-quickstart.html).
-
-<h2 id="pre-requirements">Pre requirements</h2>
-
-Today we have our integration just with GitHub. In the future we'll add more Git providers.
-
-You need to have on GitHub a repository with a Meteor project on it. The following Meteor versions support this feature: `1.12.2`, `2.0.1`, ` 2.1.2`, `2.2.4`, `2.3.7`, and any version from `2.4.1` to the latest.
-
-If you don't fulfil the pre requirements you can still deploy your app by using the command line. [Click here to learn more](/deploy-quickstart.html). 
+> You need to have on GitHub a repository with a Meteor project on it. The following Meteor versions support this feature: `1.12.2`, `2.0.1`, ` 2.1.2`, `2.2.4`, `2.3.7`, and any version from `2.4.1` to the latest.
 
 <h2 id="deploying-a-new-app">Deploying a new app</h2>
 
@@ -45,7 +37,7 @@ You also have *Advanced Options*. Here is a description of each one:
 - **Pre Deploy Command**: This is the command that you run to install the apps dependencies, usually being `meteor npm install --production`.
 - **Deploy Arguments**: Some argument that you can provide to your [deploy command line](https://docs.meteor.com/commandline.html#meteordeploy). It shouldn't be necessary for most the cases.
 - *Build Container RAM*: This defines how much memory you want to use to deploy your app.
-- **Environment Variables**: Most common when deploying a Meteor app is `DEPLOY_HOSTNAME`, that you don't need to provide anymore.
+- **Environment Variables**: Specify the region where your app will be deployed to.
 
 <img src="images/push-to-deploy-third-step-advanced-options.png" style="width: 780px;">
 
@@ -77,7 +69,9 @@ For deploys on the Free plan there is no cost but there is a limit of 10 deploys
 
 The cost for deploys on Essentials or Professional is the amount of **time deploying** x **amount of GBs** of memory x **$0.08** if *Essentials* or **$0.11** if *Professional*.
 
-So, for a quick example, last say this month you did 2 hours of deployments using 5GBs of memory for a Professional app. The amount cost added to your invoice would be: **2h** x **5GBs** x **$0.11** = **$1.10**.
+So, for a quick example, last say this month you did 15 minutes of deployments using 3GBs of memory for an Essential app. The amount cost added to your invoice would be: **0.25h** x **3GBs** x **$0.08** = **$0.06**.
+
+If you want to use a free solution to deploy your apps, you can use the [command line](/deploy-guide.html).
 
 
 <h2 id="billing">How Billing Works for Apps Running</h2>
@@ -108,3 +102,6 @@ You can't. At least for now the only way a deploy is cancelled is if a new commi
 5 - **What docker error 137 means?**
 
 This error means there was an Out Of Memory error. To solve this you should increase the amount of memory you use to deploy your app. You can do this on the third step of the Push to Deploy screen, on the section *Deploy options* > *Build Container RAM*.
+
+
+**Do you want to deploy from the command line? See the explanation [here](/deploy-guide.html).**

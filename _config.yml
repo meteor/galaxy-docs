@@ -17,7 +17,6 @@ sidebar_categories:
     - changelog
   Deploy:
     - deploying-an-app
-    - deploy-quickstart
     - deploy-guide
     - environment-variables
     - mongodb

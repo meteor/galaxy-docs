@@ -125,7 +125,7 @@ description: List of changes on Galaxy
   - Adds a shortcut on the timestamp of a log to quickly jump to a date
   - More details on the video below:
   
-  [![](http://img.youtube.com/vi/WPYyHeWM21Q/0.jpg)](http://www.youtube.com/watch?v=WPYyHeWM21Q "")
+  [![](https://img.youtube.com/vi/WPYyHeWM21Q/0.jpg)](http://www.youtube.com/watch?v=WPYyHeWM21Q "")
 
 ## v1.7 (2020/07/30)
 

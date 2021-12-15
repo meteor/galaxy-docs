@@ -16,8 +16,8 @@ sidebar_categories:
     - index
     - changelog
   Deploy:
-    - deploying-an-app
-    - deploy-guide
+    - deploy-quickstart
+    - deploy-setup
     - environment-variables
     - mongodb
     - container-environment
@@ -81,3 +81,7 @@ nav_links:
   'Meteor.com': 'https://www.meteor.com'
 
 url: https://cloud-guide.meteor.com/
+
+redirects:
+  /deploy-guide: 'deploy-setup'
+  /push-to-deploy: 'deploy-quickstart'

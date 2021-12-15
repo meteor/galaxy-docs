@@ -1,12 +1,10 @@
 ---
-title: Push To Deploy (beta)
+title: Push To Deploy
 order: 19
 description: Learn how to setup Push to Deploy, so you can update your app directly from your repository.
 ---
 
 With this feature, never was easier to create an app on Galaxy. All you need to do is follow three  simple steps, then you'll have a new app deployed.
-
-> BETA: we are still in beta, you can ask for access sending an email to support at meteor.com informing your Meteor username. It needs to be your username and not your organization.
 
 <h2 id="pre-requirements">Pre requirements</h2>
 

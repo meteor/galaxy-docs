@@ -1,12 +1,10 @@
 ---
-title: Push To Deploy (beta)
+title: Push To Deploy
 order: 19
 description: Learn how to setup Push to Deploy, so you can update your app directly from your repository.
 ---
 
 With this feature, never was easier to create an app on Galaxy. All you need to do is follow three  simple steps, then you'll have a new app deployed.
-
-> BETA: we are still in beta, you can ask for access sending an email to support at meteor.com informing your Meteor username. It needs to be your username and not your organization.
 
 <h2 id="pre-requirements">Pre requirements</h2>
 
@@ -68,6 +66,14 @@ After all it's set up, you can edit it again buy clicking in button `CONFIGURE P
 On Galaxy, in the app version tab, after configuring Push to Deploy to an app, you will find the field `Next Auto Deploy Settings`. Use this field to add [app settings](https://cloud-guide.meteor.com/deploy-guide.html#settings-create) for the next deploy. So when you do the commit to the branch that you configured, these are the settings that will be used. Once you use this field for the first time, the settings will be used every time for the next deploys. If you decide not to use it anymore you can just leave the field empty and save it. 
 
 <img src="images/push-to-deploy-next-app-settings.png" style="width: 780px;">
+
+<h2 id="push-to-deploy-cost">Cost</h2>
+
+For deploys on the Free plan there is no cost but there is a limit of 10 deploys per month.
+
+The cost for deploys on Essentials or Professional is the amount of **time deploying** x **amount of GBs** of memory x **$0.08** if *Essentials* or **$0.11** if *Professional*.
+
+So, for a quick example, last say this month you did 15 minutes of deployments using 3GBs of memory for an Essential app. The amount cost added to your invoice would be: **0.25h** x **3GBs** x **$0.08** = **$0.06**.
 
 <h2 id="after-set-up">FAQ</h2>
 

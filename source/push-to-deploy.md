@@ -67,6 +67,14 @@ On Galaxy, in the app version tab, after configuring Push to Deploy to an app, y
 
 <img src="images/push-to-deploy-next-app-settings.png" style="width: 780px;">
 
+<h2 id="push-to-deploy-cost">Push to Deploy cost</h2>
+
+For deploys on the Free plan there is no cost but there is a limit of 10 deploys per month.
+
+The cost for deploys on Essentials or Professional is the amount of **time deploying** x **amount of GBs** of memory x **$0.08** if *Essentials* or **$0.11** if *Professional*.
+
+So, for a quick example, last say this month you did 15 minutes of deployments using 3GBs of memory for an Essential app. The amount cost added to your invoice would be: **0.25h** x **3GBs** x **$0.08** = **$0.06**.
+
 <h2 id="after-set-up">FAQ</h2>
 
 1 - **How to trigger new deploys?** 

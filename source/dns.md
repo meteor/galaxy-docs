@@ -41,7 +41,7 @@ Here we are going to explain step-by-step how to redirect your root domain using
 
 > You can do this configuration in other providers, we are explaining AWS here in details because it is the most popular one.
 > 
-> If you prefer a simple solution you should check this [website](http://wwwizer.com/how-to-use).
+> If you prefer a simple solution you could check [redirect.pizza](https://redirect.pizza/). Make sure to [check](https://redirect.pizza/pricing) limitations and paid plans.
 
 <h3 id="aws-setup">AWS Setup</h3>
 

@@ -93,11 +93,11 @@ Still in the `Properties` tab, scroll down again to `Static website hosting` sec
 
 <h4 id="aws-certificate-manager">AWS Certificate Manager</h4>
 
-Now go to [AWS Certificate Manager](https://console.aws.amazon.com/acm/home) and click on `Request a new certificate`. Select `Request a public certificate`, then in the next step inform your root domain as the `Fully qualified domain name`, keep `DNA validation` checked and click on `Request`. Your certificate was requested but you still need to create the record in Route 53 to allow AWS to confirm your ownership of the domain. If you go inside your Certificate details you can click in the button `Create records in Route 53` and then AWS is going to create the necessary record for you. Now you need to wait AWS to validate your certificate. It can take up to 15 minutes. You should refresh the list of certificates until you see your new certificate as `Issued` in the Status column.
+Now go to [AWS Certificate Manager](https://console.aws.amazon.com/acm/home) and click on `Request a new certificate`. Select `Request a public certificate`, then in the next step inform your root domain AND(important!) the www one as well. As the `Fully qualified domain name`, keep `DNS validation` checked and click on `Request`. Your certificate was requested but you still need to create the record in Route 53 to allow AWS to confirm your ownership of the domain. If you go inside your Certificate details you can click in the button `Create records in Route 53` and then AWS is going to create the necessary record for you. Now you need to wait AWS to validate your certificate. It can take up to 15 minutes. You should refresh the list of certificates until you see your new certificate as `Issued` in the Status column.
 
 <h4 id="aws-cloudfront">AWS CloudFront</h4>
 
-Your certificate is ready so you can proceed to create your [CloudFront](https://console.aws.amazon.com/cloudfront/v3/home) Distribution. Click on `Create Distribution`, fill your domain name (mycompany.com) in the field `Origin domain` and fill a friendly name for your distribution in the field `Name`.
+Your certificate is ready so you can proceed to create your [CloudFront](https://console.aws.amazon.com/cloudfront/v3/home) Distribution. Click on `Create Distribution`, fill the field `Origin domain` with the `Bucket website endpoint` that we've copied in the previous section and fill a friendly name for your distribution in the field `Name`.
 
 Scroll down until you see `Default cache behavior`, for the `Viewer Protocol Policy` select `Redirect HTTP to HTTPS`.
 
@@ -105,7 +105,7 @@ For `Allowed HTTP methods` choose which suits your needs best, usually `GET, HEA
 
 For `Cache key and origin requests` select `Legacy cache settings` and don't change anything else.
 
-Scroll down to `Settings`, on `Alternative domain name (CNAME)` click on `Add item` and fill your root domain (mycompany.com). In `Custom SSL certificate` select the certificate that you created in the previous step.
+Scroll down to `Settings`, on `Alternative domain name (CNAME)` click on `Add item` and fill your root domain (mycompany.com) AND(important!) the www one as well(www.mycompany.com). In `Custom SSL certificate` select the certificate that you created in the previous step.
 
 Then click on `Create distribution`. It will take up to 15 minutes to be ready, make sure you check the distributions list until you see `Enabled` in the Status column.
 

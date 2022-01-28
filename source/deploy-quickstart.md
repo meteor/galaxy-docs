@@ -8,89 +8,90 @@ Meteor Cloud allows you to deploy Meteor apps with simple steps. This quickstart
 
 <h2 id="sign-up">Sign up for Meteor Cloud</h2>
 
-You will need a Meteor Cloud in order to deploy your app.
+You will need a Meteor Cloud account in order to deploy your app. You can [Sign up here](https://cloud.meteor.com/?isSignUp=true).
 
-[Sign up](https://cloud.meteor.com/?isSignUp=true) here for a new Meteor Cloud Account.
+<h2 id="deploy-a-new-app">Deploy a new app</h2>
 
-<h2 id="deploying-a-new-app">Deploying a new app</h2>
-
-Start by going to your Cloud account [here](https://cloud.meteor.com/). Then go to *apps* > *Deploy a new app*. Once there, you'll see this page:
+Start by going to your Meteor Cloud account [here](https://cloud.meteor.com/). Then go to *apps* > *Deploy a new app*. Once there, you'll see the configuration page:
 
 <img src="images/push-to-deploy-first-step.png" style="width: 780px;">
 
-Go ahead and click on the GitHub button. An authentication popup, from GitHub, will show up. On this popup you can choose the individual account or organization that you want to give us access. You don't need to give access to all your repositories if you don't want to. Later you can go on GitHub and change your permissions to authorize more repositories.
+Go ahead and click on the GitHub button. An authentication popup, from GitHub, will show up. On this popup, you can choose the individual account or organization that you want to give us access to. You don't need to give access to all your repositories if you don't want to. Later you can go on GitHub and change your permissions to authorize more repositories.
 
-> If you don't use GitHub, please let us know your favorite provider in the link below the GitHub button. 
+> If you don't use GitHub, please let us know your favorite Git provider in the link below the GitHub button. 
 
 After connecting to your git provider you'll automatically go to the second step. In the second step you need to chose your account from the git provider and then choose the repository where is the Meteor app that you want to deploy.
 
 <img src="images/push-to-deploy-second-step.png" style="width: 780px;">
 
-Now just click on *NEXT STEP* and you'll get on the third and last step.
+Now just click on *Next Step* and you'll get on the third and last step.
 
 <img src="images/push-to-deploy-third-step.png" style="width: 780px;">
 
-In the last step you'll just need to configure the last details, so you can have your app deployed. Starting by the *Account* which defines to which Cloud account your app will be deployed to.
+In this step you just need to configure the last details, so you can have your app deployed. Starting by the *Account* which defines to which Meteor Cloud account your app will be deployed to.
 
-Then you get to select which *Plan* you want to use. You can check everything about the plans in our [pricing page](https://www.meteor.com/cloud#pricing-section).
+Then you get to select which *Plan* you want to use. You can check everything about the plans on our [pricing page](https://www.meteor.com/cloud#pricing-section).
 
-**We do not recommend deploying production applications to the Free plan**.
+> We do not recommend deploying production applications to the Free plan as it provides only a limited container which is turned off when your app is not being used.
 
-The *Container Size* needs to be selected as well, for paid apps we recommend that you start from the Compact. You can change this anytime, just to go your app page on Galaxy and select a different size.
+The **Container Size** needs to be selected as well, for paid apps we recommend that you start from the Compact. You can change this at any time, just go to your app page on Galaxy and select a different size.
 
 You also need to select a *Region*. This is really important and your database should be in the same region to avoid latency and slowness in your app.
 
-Now is the time to choose your hostname, the domain of your app. If you are using the free plan you need to use Meteor app main domain and you can select just the subdomain. If you are using a paid plan you can use any domain you want. In this case you also need to set up your DNS, learn how [here](https://cloud-guide.meteor.com/dns.html). 
+Now is the time to choose your **hostname**, the domain of your app. If you are using the free plan you need to use `meteorapp.com` as the main domain, and you can choose only the subdomain. If you are using a paid plan you can use any domain you like. In this case, you also need to set up your DNS, learn how [here](https://cloud-guide.meteor.com/dns.html). 
 
 In the **Deploy Options** section, you can choose which branch you'll use as your deploy branch. Every commit done on this branch will trigger a new deployment. 
+In this section, you can also choose to use our shared [MongoDB Cluster](https://docs.meteor.com/commandline.html#meteordeploy). Make sure you are not using this shared database for production apps.
 
-In this section you also can opt to user or not our shared [MongoDB Cluster](https://docs.meteor.com/commandline.html#meteordeploy). Make sure you are not using this shared database for production apps.
+There is another section for **Advanced Options**, where you can configure these options:
 
-You also have *Advanced Options*. Here is a description of each one:
-
-- **Meteor Settings**: You initial [app settings](https://cloud-guide.meteor.com/deploy-guide.html#settings-create) when deploying an app in a JSON format.
+- **Build Container RAM**: It defines how much memory you want to use to deploy your app.
+- **Meteor Settings**: Your initial [app settings](https://cloud-guide.meteor.com/deploy-guide.html#settings-create) (in a JSON format) when deploying an app.
 - **Root Directory**: Directory on your repository where the root of your Meteor app is.
 - **Pre Deploy Command**: This is the command that you run to install the apps dependencies, usually being `meteor npm install --production`.
-- **Deploy Arguments**: Some argument that you can provide to your [deploy command line](https://docs.meteor.com/commandline.html#meteordeploy). It shouldn't be necessary for most the cases.
-- *Build Container RAM*: This defines how much memory you want to use to deploy your app.
-- **Environment Variables**: Specify the region where your app will be deployed to.
+- **Deploy Arguments**: Some argument that you can provide to your [deploy command line](https://docs.meteor.com/commandline.html#meteordeploy).
+- **Environment Variables**: You can, for example, specify the region where your app will be deployed to.
 
 <img src="images/push-to-deploy-third-step-advanced-options.png" style="width: 780px;">
 
-Now with all configured you just need to hit **DEPLOY APP** and the first version of your app will be deployed!
+With all configured you just need to hit *Deploy App* and the first version of your app will be deployed!
 
-> You need to have on GitHub a repository with a Meteor project on it. The following Meteor versions support this feature: `1.12.2`, `2.0.1`, ` 2.1.2`, `2.2.4`, `2.3.7`, and any version from `2.4.1` to the latest. Otherwise you are going to see an error in the logs of your app on Galaxy.
+> You need to have a GitHub repository with a Meteor project on it. The following Meteor versions are supported: `1.12.2`, `2.0.1`, ` 2.1.2`, `2.2.4`, `2.3.7`, and any version from `2.4.1` to the latest. Otherwise you are going to see an error in the logs of your app on Galaxy.
  
-<h2 id="setup-up-existing-app">Setting up Push To Deploy for existing app</h2>
+<h2 id="deploy-existing-app">Deploy an existing app</h2>
 
-On the app page details page you can click on the button `SET UP PUSH TO DEPLOY`.
+On the app details page you can click on the button *Set up push to deploy*.
 
 <img src="images/push-to-deploy-add-config-to-existing-app.png" style="width: 780px;">
 
-The first two steps on this case are the same. You will just have to connect your Git Provider, and then choose the repository. For the last step you will have fewer options to change. Basically all you need is to make sure everything is correct on the **Deploy Options** section. As the app is already deployed, all the other fields are already defined.
+The first two steps on this case are the same as deploying a new app. You will just have to connect your Git Provider, and then choose the repository.
+For the last step, all you need to do is to make sure that everything is correct on the **Deploy Options** section. As the app is already deployed, all the other fields are already defined.
 
 <img src="images/push-to-deploy-third-step-existing-app.png" style="width: 780px;">
 
-After all it's set up, you can edit it again buy clicking in button `CONFIGURE PUSH TO DEPLOY` in the app details page.
+After configuring everything, in case you need to edit it, you can click the _Set up push to deploy_ button on the app details page.
 
 <img src="images/push-to-deploy-add-config-to-existing-app.png" style="width: 780px;">
 
-<h2 id="editing-deploy-settings">Editing next deploy settings</h2>
+<h2 id="edit-deploy-settings">Edit next deploy settings</h2>
 
-On Galaxy, in the app version tab, after configuring Push to Deploy to an app, you will find the field `Next Auto Deploy Settings`. Use this field to add [app settings](https://cloud-guide.meteor.com/deploy-guide.html#settings-create) for the next deploy. So when you do the commit to the branch that you configured, these are the settings that will be used. Once you use this field for the first time, the settings will be used every time for the next deploys. If you decide not to use it anymore you can just leave the field empty and save it.
+After configuring Push to Deploy to an app, you can find in Galaxy, on the app version tab, the field `Next Auto Deploy Settings`. You can use this field to add [app settings](https://cloud-guide.meteor.com/deploy-guide.html#settings-create) for the next deploy.
+So when you commit to the branch that you configured, these settings will be used. After using this field for the first time, these settings will be used every time for the next deploys. If you decide not to use it anymore you can just leave the field empty and save it.
 
 <img src="images/push-to-deploy-next-app-settings.png" style="width: 780px;">
 
 <h2 id="push-to-deploy-cost">Push to Deploy cost</h2>
 
-For deploys on the Free plan there is no cost but there is a limit of 10 deploys per month.
+There is no cost for deploys on the **Free** plan, but it is limited to 10 deploys per month.
 
-The cost for deploys on Essentials or Professional is the amount of **time deploying** x **amount of GBs** of memory x **$0.08** if *Essentials* or **$0.11** if *Professional*.
+The cost for the **Essentials** plan, is the amount of **times deploying** x **amount of GBs** of memory x **$0.08**.
 
-So, for a quick example, last say this month you did 15 minutes of deployments using 3GBs of memory for an Essential app. The amount cost added to your invoice would be: **0.25h** x **3GBs** x **$0.08** = **$0.06**.
+The cost for the **Professional** plan, is the amount of **times deploying** x **amount of GBs** of memory x **$0.11**.
 
-If you want to use a free solution to deploy your apps, you can use the [command line](/deploy-guide.html).
+So, for example, if you spend 15 minutes of deployments using 3GBs of memory for an app in the Essential plan.
+The cost added to your invoice would be: **0.25h** x **3GBs** x **$0.08** = **$0.06**.
 
+If you want to use a free solution to deploy your apps, you can use the [command line](/deploy-setup.html).**
 
 <h2 id="billing">How Billing Works for Apps Running</h2>
 

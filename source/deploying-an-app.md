@@ -8,7 +8,7 @@ Galaxy makes it simple to deploy, scale, and monitor your Meteor app. This quick
 
 > You need to have on GitHub a repository with a Meteor project on it. The following Meteor versions support this feature: `1.12.2`, `2.0.1`, ` 2.1.2`, `2.2.4`, `2.3.7`, and any version from `2.4.1` to the latest.
 
-<h2 id="deploying-a-new-app">Deploying a new app</h2>
+<h2 id="deploy-a-new-app">Deploying a new app</h2>
 
 Start by going to your Cloud account [here](https://cloud.meteor.com/). Then go to *apps* > *Deploy a new app*. Once there, you'll see this page:
 
@@ -43,7 +43,7 @@ You also have *Advanced Options*. Here is a description of each one:
 
 Now with all configured you just need to hit **DEPLOY APP** and the first version of your app will be deployed!
 
-<h2 id="setup-up-existing-app">Setting up Push To Deploy for existing app</h2>
+<h2 id="deploy-existing-app">Setting up Push To Deploy for existing app</h2>
 
 On the app page details page you can click on the button `SET UP PUSH TO DEPLOY`.
 
@@ -57,7 +57,7 @@ After all it's set up, you can edit it again buy clicking in button `CONFIGURE P
 
 <img src="images/push-to-deploy-add-config-to-existing-app.png" style="width: 780px;">
 
-<h2 id="editing-deploy-settings">Editing next deploy settings</h2>
+<h2 id="edit-deploy-settings">Editing next deploy settings</h2>
 
 On Galaxy, in the app version tab, after configuring Push to Deploy to an app, you will find the field `Next Auto Deploy Settings`. Use this field to add [app settings](https://cloud-guide.meteor.com/deploy-guide.html#settings-create) for the next deploy. So when you do the commit to the branch that you configured, these are the settings that will be used. Once you use this field for the first time, the settings will be used every time for the next deploys. If you decide not to use it anymore you can just leave the field empty and save it. 
 
@@ -104,4 +104,4 @@ You can't. At least for now the only way a deploy is cancelled is if a new commi
 This error means there was an Out Of Memory error. To solve this you should increase the amount of memory you use to deploy your app. You can do this on the third step of the Push to Deploy screen, on the section *Deploy options* > *Build Container RAM*.
 
 
-**Do you want to deploy from the command line? See the explanation [here](/deploy-guide.html).**
+**Do you want to deploy from the command line? See the explanation [here](/deploy-setup.html).**

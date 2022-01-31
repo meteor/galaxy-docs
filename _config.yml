@@ -85,7 +85,3 @@ url: https://cloud-guide.meteor.com/
 redirects:
   /deploy-guide: 'deploy-setup'
   /push-to-deploy: 'deploy-quickstart'
-
-alias:
-  /push-to-deploy.html: /deploy-quickstart.html
-  /deploy-guide.html: /deploy-setup.html

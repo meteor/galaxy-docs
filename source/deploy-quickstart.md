@@ -2,6 +2,7 @@
 title: Deploy Quick Start
 order: 19
 description: Learn how to deploy on Galaxy.
+alias: /push-to-deploy.html
 ---
 
 Meteor Cloud allows you to deploy Meteor apps with simple steps. This quickstart guide will walk the basics of deploying your apps.

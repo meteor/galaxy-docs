@@ -2,7 +2,6 @@
 title: Deploy with command-line
 order: 11
 description: Learn how to deploy an application to Galaxy with these detailed step by step instructions.
-alias: /deploy-guide.html
 ---
 
 Galaxy makes it simple to deploy, scale, and monitor your Meteor application. This guide provides detailed step by step instructions for deploying your application to Galaxy.

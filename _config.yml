@@ -16,9 +16,9 @@ sidebar_categories:
     - index
     - changelog
   Deploy:
-    - deploy-quickstart
+    - deploy-to-galaxy
+    - deploy-command-line
     - deploy-setup
-    - environment-variables
     - mongodb
     - container-environment
     - base-image-packages

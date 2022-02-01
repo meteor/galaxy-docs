@@ -1,18 +1,18 @@
 ---
-title: Deploy Quick Start
+title: Deploy to Galaxy
 order: 19
-description: Learn how to deploy on Galaxy.
+description: Learn how to deploy on Galaxy by setting up Push to Deploy. The easiest and fastest way of deploying your Meteor app.
 ---
 
-Meteor Cloud allows you to deploy Meteor apps with simple steps. This quickstart guide will walk the basics of deploying your apps.
+Galaxy makes it simple to deploy, scale, and monitor your apps. This guide will walk new users through deploying Meteor apps.
 
 <h2 id="sign-up">Sign up for Meteor Cloud</h2>
 
-You will need a Meteor Cloud account in order to deploy your app. You can [Sign up here](https://cloud.meteor.com/?isSignUp=true).
+You need a Meteor Cloud account in order to deploy your apps. If you don't have one yet, you can [sign up here](https://cloud.meteor.com/?isSignUp=true).
 
 <h2 id="deploy-a-new-app">Deploy a new app</h2>
 
-Start by going to your Meteor Cloud account [here](https://cloud.meteor.com/). Then go to *apps* > *Deploy a new app*. Once there, you'll see the configuration page:
+Start by going to your [Meteor Cloud account](https://cloud.meteor.com/). Then go to *Apps* > *Deploy new app*. Once there, you'll see this configuration page:
 
 <img src="images/push-to-deploy-first-step.png" style="width: 780px;">
 
@@ -73,31 +73,23 @@ After configuring everything, in case you need to edit it, you can click the _Se
 
 <img src="images/push-to-deploy-add-config-to-existing-app.png" style="width: 780px;">
 
-<h2 id="edit-deploy-settings">Edit next deploy settings</h2>
+<h2 id="edit-deploy-settings">Next auto deploy settings</h2>
 
 After configuring Push to Deploy to an app, you can find in Galaxy, on the app version tab, the field `Next Auto Deploy Settings`. You can use this field to add [app settings](https://cloud-guide.meteor.com/deploy-guide.html#settings-create) for the next deploy.
 So when you commit to the branch that you configured, these settings will be used. After using this field for the first time, these settings will be used every time for the next deploys. If you decide not to use it anymore you can just leave the field empty and save it.
 
 <img src="images/push-to-deploy-next-app-settings.png" style="width: 780px;">
 
-<h2 id="push-to-deploy-cost">Push to Deploy cost</h2>
+<h2 id="deploy-cost">Cost</h2>
 
-There is no cost for deploys on the **Free** plan, but it is limited to 10 deploys per month.
+- **Free plan**: there is no cost for deploys, but it is limited to 10 deploys per month.
+- **Essentials plan**: the cost is the amount of **times deploying** x **amount of GBs** of memory x **$0.08**.
+- **Professional plan**: the cost is the amount of **times deploying** x **amount of GBs** of memory x **$0.11**.
 
-The cost for the **Essentials** plan, is the amount of **times deploying** x **amount of GBs** of memory x **$0.08**.
-
-The cost for the **Professional** plan, is the amount of **times deploying** x **amount of GBs** of memory x **$0.11**.
-
-So, for example, if you spend 15 minutes of deployments using 3GBs of memory for an app in the Essential plan.
+So, for example, if you spend 15 minutes on deployments using 3GBs of memory for an app in the Essential plan.
 The cost added to your invoice would be: **0.25h** x **3GBs** x **$0.08** = **$0.06**.
 
-If you want to use a free solution to deploy your apps, you can use the [command line](/deploy-setup.html).**
-
-<h2 id="billing">How Billing Works for Apps Running</h2>
-
-You pay for each deploy you do but your apps are only billed when they're running. Keep running your app for as long as you want and pay-as-you-go at low metered rates. Simply “Stop” your app on the Settings page and billing will stop. Your app’s code and settings are preserved until you’re ready to run it again.
-
-You can see your bills in your account's Settings page and read more about billing in our [billing](http://galaxy-guide.meteor.com/billing.html) article.
+> If you want to use your own machines to build and deploy your apps, you can use the [command line](/deploy-setup.html).
 
 <h2 id="after-set-up">FAQ</h2>
 

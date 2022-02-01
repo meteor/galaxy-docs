@@ -83,5 +83,5 @@ nav_links:
 url: https://cloud-guide.meteor.com/
 
 alias:
-  /deploy-guide.html: /deploy-setup.html
-  /push-to-deploy.html: /deploy-quickstart.html
+  deploy-guide.html: deploy-setup.html
+  push-to-deploy.html: deploy-quickstart.html

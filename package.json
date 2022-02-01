@@ -27,8 +27,5 @@
     "extends": [
       "meteor-docs"
     ]
-  },
-  "dependencies": {
-    "hexo-generator-alias": "^1.0.0"
   }
 }

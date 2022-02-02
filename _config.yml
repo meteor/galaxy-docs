@@ -20,11 +20,12 @@ sidebar_categories:
     - deploy-command-line
     - deploy-setup
     - mongodb
+    - deploy-region
+    - migrate-app
+  Docker:
     - container-environment
     - base-image-packages
     - custom-base-images
-    - deploy-region
-    - migrate-app
   Setup:
     - custom-domains
     - dns

@@ -46,7 +46,7 @@ In this section, you can also choose to use our shared [MongoDB Cluster](https:/
 There is another section for **Advanced Options**, where you can configure these options:
 
 - **Build Container RAM**: It defines how much memory you want to use to deploy your app.
-- **Meteor Settings**: Your initial [app settings](https://cloud-guide.meteor.com/deploy-guide.html#settings-create) (in a JSON format) when deploying an app.
+- **Meteor Settings**: Your initial app settings (in a JSON format) when deploying an app.
 - **Root Directory**: Directory on your repository where the root of your Meteor app is.
 - **Pre Deploy Command**: This is the command that you run to install the apps dependencies, usually being `meteor npm install --production`.
 - **Deploy Arguments**: Some argument that you can provide to your [deploy command line](https://docs.meteor.com/commandline.html#meteordeploy).
@@ -75,7 +75,7 @@ After configuring everything, in case you need to edit it, you can click the _Se
 
 <h2 id="edit-deploy-settings">Next auto deploy settings</h2>
 
-After configuring Push to Deploy to an app, you can find in Galaxy, on the app version tab, the field `Next Auto Deploy Settings`. You can use this field to add [app settings](https://cloud-guide.meteor.com/deploy-guide.html#settings-create) for the next deploy.
+After configuring Push to Deploy to an app, you can find in Galaxy, on the app version tab, the field `Next Auto Deploy Settings`. You can use this field to add app settings for the next deploy.
 So when you commit to the branch that you configured, these settings will be used. After using this field for the first time, these settings will be used every time for the next deploys. If you decide not to use it anymore you can just leave the field empty and save it.
 
 <img src="images/push-to-deploy-next-app-settings.png" style="width: 780px;">

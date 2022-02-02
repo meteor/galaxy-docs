@@ -1,5 +1,5 @@
 ---
-title: MongoDB
+title: MongoDB configurations
 order: 13
 description: Learn how to configure your MongoDB provider for Galaxy
 ---

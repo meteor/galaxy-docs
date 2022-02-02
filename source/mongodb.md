@@ -37,3 +37,4 @@ To use Oplog tailing, the database must be a Replica set enabled database. Refer
 - Learn how to [configure your apps](/deploy-setup.html) on Galaxy.
 - Read our main [guide for deploying applications](/deploy-to-galaxy.html)  on Galaxy.
 - Read this [OK GROW! article](https://github.com/meteor/guide/files/4450467/okgrow-oplog.tailing.pdf) to connect your Meteor app to MongoDB Atlas with Oplog tailing
+- Learn in what [environment Galaxy runs your app](/container-environment.html).

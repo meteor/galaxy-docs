@@ -22,7 +22,7 @@ sidebar_categories:
     - mongodb
     - deploy-region
     - migrate-app
-  Docker:
+  Containers:
     - container-environment
     - base-image-packages
     - custom-base-images

@@ -120,3 +120,4 @@ This error means there was an Out Of Memory error. To solve this you should incr
 
 - Learn how to [deploy applications with the command-line](/deploy-command-line.html).
 - Learn how to [configure applications](/deploy-setup.html) on Galaxy.
+- Learn in what [environment Galaxy runs your app](/container-environment.html).

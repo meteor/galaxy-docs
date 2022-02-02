@@ -45,6 +45,8 @@ $ SET DEPLOY_HOSTNAME=galaxy.meteor.com
 $ meteor deploy [hostname] --settings path-to-settings.json
 ```
 
+<h2 id="deployment-options">Deployment options</h2>
+
 <h3 id="cache-build">Cache your build</h3>
 
 You can use the option `--cache-build` to reuse your build in multiple deploys.
@@ -95,28 +97,7 @@ Galaxy can also accept deployment tokens, which are good for 90 days. You can pa
 
 You can use a deployment token as an alternative to typing in your username and password. You'll need to specify it both when running `meteor login` on your machine to generate the file, and when actually running `meteor deploy` in CI. Please note that your organization choice does not affect your deployment token.
 
-<h2 id="configure-app">Configure your application</h2>
+<h2 id="learn-more">Learn more</h2>
 
-The first thing you should do is verify that the deployment was successful. Check to see if the application is accessible by navigating to its URL. Then check the application logs in Galaxy at `galaxy.meteor.com/app/<app_name>/logs` to see if there are any errors that are affecting the deployment.
-
-Once your application is successfully deployed, head on over to your [Galaxy dashboard](http://galaxy.meteor.com) to configure your application by adding a custom domain name and enabling SSL encryption.
-
-Add a domain in your application’s settings and point your DNS to:
-
-- `galaxy-ingress.meteor.com` for applications in the US East region.
-
-- `eu-west-1.galaxy-ingress.meteor.com` for applications in the EU West region.
-
-- `ap-southeast-2.galaxy-ingress.meteor.com` for applications in the Asia-Pacific region.
-
-If you are deploying to a root domain (for example mydomain.com), then follow the advanced instructions [here](/dns.html).
-
-<img src="images/email-add-domain.png" style="">
-
-[Enable encryption](/encryption.html) to secure sensitive data by generating a free [Let’s Encrypt](https://letsencrypt.org) certificate or uploading your own custom certificate.
-
-<img src="images/email-enable-ssl.png" style="width: 300px;">
-
-**Learn more**
-- Read our [main guide](/deploy-to-galaxy.html) for deploying applications to Galaxy
-- Learn how to [transfer apps](/transfer-apps.html) between accounts
+- Learn how to [configure your apps](/deploy-setup.html) on Galaxy.
+- Read our main [guide for deploying applications](/deploy-to-galaxy.html) on Galaxy.

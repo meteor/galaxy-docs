@@ -4,7 +4,7 @@ order: 19
 description: Learn how to deploy on Galaxy by setting up Push to Deploy. The easiest and fastest way of deploying your Meteor app.
 ---
 
-Galaxy makes it simple to deploy, scale, and monitor your apps. This guide will walk new users through deploying Meteor apps.
+Galaxy makes it simple to deploy, scale, and monitor your apps. This guide will walk new users through deploying new and existing Meteor apps.
 
 <h2 id="sign-up">Sign up for Meteor Cloud</h2>
 
@@ -82,6 +82,8 @@ So when you commit to the branch that you configured, these settings will be use
 
 <h2 id="deploy-cost">Cost</h2>
 
+The cost for deployments varies depending on which plan you are using on Galaxy.
+
 - **Free plan**: there is no cost for deploys, but it is limited to 10 deploys per month.
 - **Essentials plan**: the cost is the amount of **times deploying** x **amount of GBs** of memory x **$0.08**.
 - **Professional plan**: the cost is the amount of **times deploying** x **amount of GBs** of memory x **$0.11**.
@@ -114,5 +116,7 @@ You can't. At least for now the only way a deploy is cancelled is if a new commi
 
 This error means there was an Out Of Memory error. To solve this you should increase the amount of memory you use to deploy your app. You can do this on the third step of the Push to Deploy screen, on the section *Deploy options* > *Build Container RAM*.
 
+<h2 id="learn-more">Learn More</h2>
 
-**Do you want to deploy from the command line? See the explanation [here](/deploy-guide.html).**
+- Learn how to [deploy applications with the command-line](/deploy-command-line.html).
+- Learn how to [configure applications](/deploy-setup.html) on Galaxy.

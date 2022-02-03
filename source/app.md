@@ -66,7 +66,7 @@ If necessary, you can check the Activity Log in your account's right-hand sideba
 
 <h3 id="stop">Meteor Settings</h3>
 
-View the meteor settings and environment variables in your app's `settings.json` file. Learn more in the [environment variables article](/environment-variables.html).
+View the meteor settings and environment variables in your app's `settings.json` file. Learn more in the [environment variables article](/deploy-setup.html#env-variables).
 
 <h3 id="stop">Domains and SSL</h3>
 

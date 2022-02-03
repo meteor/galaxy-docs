@@ -32,7 +32,7 @@ By creating a Meteor Cloud account you get access to:
 
 [Atmosphere](https://atmospherejs.com/) is the directory of community built packages available for download, completely free and accessible through your Meteor Cloud account. Rather than start from scratch, the Meteor community has solved many problems for you (such as user login and data synchronization). We highly recommend you take advantage of their hard work!
 
-To learn more about creating and publishing packages, please visit the [Meteor Guide](/writing-atmosphere-packages.html). 
+To learn more about creating and publishing packages, please visit the [Meteor Guide](https://guide.meteor.com/writing-atmosphere-packages.html). 
 
 
 

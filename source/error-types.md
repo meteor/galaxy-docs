@@ -23,7 +23,7 @@ The most common cause of the 503 error is a problem in your code that prevents d
 
 A common reason that your app may be crashing on startup is that your `MONGO_URL` variable is missing or is set incorrectly. You can verify what `MONGO_URL` Galaxy is using by going to the app's dashboard and choosing the settings tab. To learn how to set it correctly, check the following resources:
 
-* [Environment variables](/environment-variables.html) will show you how to set up your `settings.json` file.
+* [Environment variables](/deploy-setup.html#env-variables) will show you how to set up your `settings.json` file.
 * [This compose.io article](https://www.compose.io/articles/meteors-new-galaxy-and-the-perfectly-composed-companion/) explains the settings for `MONGO_URL` and `MONGO_OPLOG_URL` in detail.
 
 If you believe your `MONGO_URL` is set correctly, try the following:

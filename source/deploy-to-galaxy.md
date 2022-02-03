@@ -91,7 +91,7 @@ The cost for deployments varies depending on which plan you are using on Galaxy.
 So, for example, if you spend 15 minutes on deployments using 3GBs of memory for an app in the Essential plan.
 The cost added to your invoice would be: **0.25h** x **3GBs** x **$0.08** = **$0.06**.
 
-> If you want to use your own machines to build and deploy your apps, you can use the [command line](/deploy-setup.html).
+> If you want to use your own machines to build and deploy your apps, you can use the [command-line](/deploy-command-line.html).
 
 <h2 id="after-set-up">FAQ</h2>
 

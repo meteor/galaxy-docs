@@ -36,7 +36,7 @@ Galaxy runs your app with the following environment variables set:
 | `PORT` | Integer like `3000` | [Port on which your app should listen](#network-incoming). |
 | `ROOT_URL` | Your app's default hostname, prefixed with `http://` or `https://` depending on whether you use Force HTTPS | Used by [`Meteor.absoluteUrl()`](https://docs.meteor.com/api/core.html#Meteor-absoluteUrl) to generate links. |
 
-You can add your own environment variables and override any of these except for the container-specific ones (`GALAXY_CONTAINER_ID` and `KADIRA_OPTIONS_HOSTNAME`) and `GALAXY_LOGGER` [via your settings.json file](/environment-variables.html).
+You can add your own environment variables and override any of these except for the container-specific ones (`GALAXY_CONTAINER_ID` and `KADIRA_OPTIONS_HOSTNAME`) and `GALAXY_LOGGER` [via your settings.json file](/deploy-setup.html#env-variables).
 
 <h2 id="network">Network environment</h2>
 

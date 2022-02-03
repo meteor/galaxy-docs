@@ -1,7 +1,6 @@
 ---
 title: Setting environment variables
-order: 12
-description: Learn how to adjust Galaxy environment variables using your app's settings.json file
+description: Learn how to adjust Galaxy environment variables
 ---
 
-[//]: # (TODO)
+The content of this page was moved to this new [section page](/deploy-setup.html#env-variables).

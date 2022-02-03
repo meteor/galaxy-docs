@@ -33,7 +33,7 @@ On the command line, within your application's directory, type:
 DEPLOY_HOSTNAME=galaxy.meteor.com meteor deploy [hostname] --settings path-to-settings.json
 ```
 
-- `hostname` is the fully qualified domain name where you're planning to host your application (for example, 'www.facebook.com').
+- `hostname` is the fully qualified domain name where you're planning to host your application (for example, 'www.yourappname.com').
 - `path-to-settings.json` is the path to your settings file (for example, './settings.json').
 
 <h3 id="deploy-windows">Windows</h3>

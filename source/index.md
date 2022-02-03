@@ -63,7 +63,10 @@ Run your apps with confidence. Galaxy is easy to start, excellent to grow your a
 
 <h3 id="quickstart">Get Started</h3>
 
-- Use the [deploy guide](/deploy-to-galaxy.html) to deploy your app to Galaxy. It is recommended for developers who have experience deploying apps with remote databases.
+- Use the [deploy guide](/deploy-to-galaxy.html) to deploy your app to Galaxy.
+
+- Follow the [command-line guide](/deploy-command-line.html) for deploying your apps using your own machines.
+
 
 <h3 id="contribute">Contribute</h3>
 

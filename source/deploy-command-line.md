@@ -45,6 +45,11 @@ $ SET DEPLOY_HOSTNAME=galaxy.meteor.com
 $ meteor deploy [hostname] --settings path-to-settings.json
 ```
 
+<h2 id="deploy-cost">Cost</h2>
+
+There is no cost for using the command-line deployment. In this way, you are using your own machines to build and deploy your apps.
+If you want to use our push to deploy feature, read our [main deployment guide](/deploy-to-galaxy.html).
+
 <h2 id="deployment-options">Deployment options</h2>
 
 <h3 id="cache-build">Cache your build</h3>

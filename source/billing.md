@@ -18,8 +18,7 @@ All Meteor Cloud accounts start on the Free Plan. Once you have an app deployed,
 
 For all paid accounts, billing from the beginning to the end of the month will be billed at the beginning of the following month. If you stop or delete your app during the month, you’ll only be billed for your usage until the point when you stop or delete your app. 
 
-
-Container usage pricing (monthly). Please see our [pricing page](https://www.meteor.com/cloud#pricing) for annual pricing options
+Container usage pricing (monthly):
 
 Approximate costs, per container/plan 
 - Tiny: 256MB RAM, 0.3 ECU. Essential: $9 / month: Professional:  $18 / month
@@ -43,37 +42,33 @@ Plan costs:
  - Essential: 0.08 per hour
  
 Apps running Tiny Containers benefit from a cost reduction on both the Essential (0.01 per hour) and Professional (0.025 per hour) plans. 
- 
-Customers who signed up prior to January 2020 may belong to a legacy Galaxy plan where pricing varies by plan, support tier selected, containers used, and container size. 
 
 Pricing is impacted by:
 - Plan type (Free, Essential, Professional or Enterprise)
-- Type of running containers
 - Number of running containers
 - Size of running containers
 
 Pricing is not impacted by:
 - Number of connected clients/traffic
-- Number of deployments
+- Number of command line deployments
 - Number of users
 - Environment (Development, Testing, Staging or Production)
 
-If you’d like to economize, consider using a prepaid pricing plan.
-<h2 id="galaxy-professional">Meteor Cloud Professional</h2>
+Push to Deploy deploys are charged using the same cost per hour per GB as the plan of your app.
 
-Professional plans include Meteor APM, IP whitelisting, and prioritized support to help developers deploy and manage production apps with confidence. You can turn on Professional containers with a single click for any of your apps on Meteor Cloud.
+If you’d like to economize, consider using a savings plan. Contact support@meteor.com for more details.
 
-You can select Essentials or Professional plans for each application in your Meteor Cloud account. 
+<h2 id="cloud-plans">Meteor Cloud Plans</h2>
 
-<h2 id="reserved-pricing">Prepaid Pricing</h2>
+You can see the differences between our plans in our [website](https://www.meteor.com/cloud#pricing-section).
 
-Prepaid Pricing guarantees a specific amount of container capacity at a discounted price compared to pay-as-you-go pricing.
+<h2 id="savings-plan">Savings Plan</h2>
 
-By paying upfront for container capacity, you’ll receive ~20% off the equivalent pay-as-you-go rates. Meteor Cloud Prepaid Pricing is available for Essentials and Professional plans with any container size (available in 1 GB increments only, billed annually). Prepaid capacity is not transferable between container types.
+Savings plans are simple. All we need is an approximate forecast on what you might spend in the coming 12 months. This is usually an average of your monthly bill, and multiplied by 12 calendar months. From there, we can provide you with an accurate quote for your pre-payment, which allows you to save 20% overall on your costs. 
 
-Any usage during the month beyond the prepaid capacity will be billed at normal metered rates for that container type. To add Prepaid Pricing to your account, simply log a support ticket from within Meteor Cloud and let us know which container type (Essentials or Pro) and how many GB's you need.
+If you decide to move forward with pre-payment, but might grow in the next 6-12 months, we can also provide you with additional savings credits later on so you continue to save while you grow. 
 
-Contact <a href="mailto:galaxysales@meteor.com">galaxysales@meteor.com</a> if you'd like to add prepaid capacity to your account.
+Contact support@meteor.com if you'd like to add savings plan to your account.
 
 <h2 id="billing-update">Payment and statements</h2>
 
@@ -89,7 +84,7 @@ To be charged the minimum fees, you must reduce your containers in every region 
 
 Every app listed in your account will have a full gray circle next to it, if its containers have been stopped.  If you're sure that you'll never reuse the containers in an app, you can delete the app to permanently remove it. 
 
-There is no cost difference between deleting or stopping your apps. To remove charges completely, you must delete your Galaxy account. 
+There is no cost difference between deleting or stopping your apps.
 
 <h2 id="preventing-interruptions">Preventing Service Interruptions</h2>
 
@@ -102,7 +97,7 @@ Typical reasons for account suspension include:
 - your bank will not allow the charge to go through
 - your bank requires your express permission before Galaxy can charge it
 
-If you need to change your payment information, or have talked to your bank to enable your card to be charged, contact support for assistance.
+If you need to change your payment information, or have talked to your bank to enable your card to be charged, contact support@meteor.com for assistance.
 
 As long as your account is suspended, you won't be able to deploy, start or run containers on your account.
 

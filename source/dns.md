@@ -37,11 +37,24 @@ A common scenario is when your app is hosted at `www.mycompany.com` or `app.myco
 
 > Galaxy does not support A record configuration using an IP but you can redirect your root domain (mycompany.com) to your app subdomain and the result will be pretty much the same, follow the next steps to learn how to do it.
 
-Here we are going to explain step-by-step how to redirect your root domain using AWS S3 and AWS Route 53 services.
+Here we are going to explain step-by-step how to redirect your root domain using AWS S3, AWS CloudFront, AWS Certificate Manager and AWS Route 53 services.
 
 > You can do this configuration in other providers, we are explaining AWS here in details because it is the most popular one.
+> 
+> If you prefer a simple solution you could check [redirect.pizza](https://redirect.pizza/). Make sure to [check](https://redirect.pizza/pricing) limitations and paid plans.
 
 <h3 id="aws-setup">AWS Setup</h3>
+
+We are going to do the following steps:
+- Make sure your DNS is managed by AWS Route 53.
+- Create a bucket on AWS S3: it redirects the root domain to your app subdomain.
+- Create a Certificate on AWS Certificate Manager: it provides SSL Certificate to your app root domain.
+- Create a CloudFront distribution on AWS CloudFront: it provides an endpoint to be used in the A Record (your root domain).
+  - The bucket from the step above will be used here as the endpoint.
+  - The certificate from the step above will be used here as the certificate.
+- Create a new A Record providing an Alias between the root domain and the CloudFront distribution: it provides, finally, the redirect that we want from your root domain to your app subdomain.
+
+Let's see how to do this.
 
 <h4 id="aws-route-53">AWS Route 53</h4>
 
@@ -76,7 +89,29 @@ Now we are ready to start the setup to make your root domain to redirect automat
 
 Access your newly created bucket (mycompany.com) and go to `Properties` tab, scroll down to `Static website hosting` section, click on `Edit`. Enable it and check the `Hosting type` as `Redirect requests for an object` in the field `Host name` fill your subdomain (`www.mycompany.com` or `app.mycompany.com`) and select the protocol `https`, click on `Save`.
 
-Now you need to return to [Route 53](https://console.aws.amazon.com/route53/home) create or change a record set type `A` for `mycompany.com` and toggle the `Alias` to enable it and select `Alias to S3 website endpoint` in the options, choose the `region` of your bucket and then select your bucket. Click in `Create records`. Ready, now your root domain will redirect to your subdomain.
+Still in the `Properties` tab, scroll down again to `Static website hosting` section and copy the `Bucket website endpoint` it should look like `http://mycompany.com.s3-website-us-east-1.amazonaws.com`.
+
+<h4 id="aws-certificate-manager">AWS Certificate Manager</h4>
+
+Now go to [AWS Certificate Manager](https://console.aws.amazon.com/acm/home) and click on `Request a new certificate`. Select `Request a public certificate`, then in the next step inform your root domain AND(important!) the www one as well. As the `Fully qualified domain name`, keep `DNS validation` checked and click on `Request`. Your certificate was requested but you still need to create the record in Route 53 to allow AWS to confirm your ownership of the domain. If you go inside your Certificate details you can click in the button `Create records in Route 53` and then AWS is going to create the necessary record for you. Now you need to wait AWS to validate your certificate. It can take up to 15 minutes. You should refresh the list of certificates until you see your new certificate as `Issued` in the Status column.
+
+<h4 id="aws-cloudfront">AWS CloudFront</h4>
+
+Your certificate is ready so you can proceed to create your [CloudFront](https://console.aws.amazon.com/cloudfront/v3/home) Distribution. Click on `Create Distribution`, fill the field `Origin domain` with the `Bucket website endpoint` that we've copied in the previous section and fill a friendly name for your distribution in the field `Name`.
+
+Scroll down until you see `Default cache behavior`, for the `Viewer Protocol Policy` select `Redirect HTTP to HTTPS`.
+
+For `Allowed HTTP methods` choose which suits your needs best, usually `GET, HEAD, OPTIONS` should be enough.
+
+For `Cache key and origin requests` select `Legacy cache settings` and don't change anything else.
+
+Scroll down to `Settings`, on `Alternative domain name (CNAME)` click on `Add item` and fill your root domain (mycompany.com) AND(important!) the www one as well(www.mycompany.com). In `Custom SSL certificate` select the certificate that you created in the previous step.
+
+Then click on `Create distribution`. It will take up to 15 minutes to be ready, make sure you check the distributions list until you see `Enabled` in the Status column.
+
+<h4 id="aws-route-53-a-record">AWS Route 53 - A Record</h4>
+
+Now you need to return to [Route 53](https://console.aws.amazon.com/route53/home) to create a record set type `A` for `mycompany.com` and toggle the `Alias` to enable it and select `Alias to CloudFront distribution`, choose the CloudFont distribution that you created in the previous step. Then click on `Save`.
 
 <h2 id="free-subdomain">Included *.meteorapp.com</h2>
 

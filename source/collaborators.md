@@ -14,6 +14,6 @@ Meteor Cloud organization accounts allow you to deploy, scale, and monitor apps 
 2. Add your collaborator[s] to the new organization
 3. Access your organization by toggling the "organization tab" on your Meteor Cloud dashboard. Your dashboard view will change depending on the organization you select.
 6. Enter payment details for your organization by selecting the "billing" link for you [organization](https://cloud.meteor.com/organizations)
-7. [Deploy new apps](/deploy-guide.html#account-selection) or [transfer existing apps](/transfer-apps.html) to this organization.
+7. [Deploy new apps](/deploy-command-line.html#account-selection) or [transfer existing apps](/transfer-apps.html) to this organization.
 
 And you're done! 

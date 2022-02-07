@@ -146,4 +146,4 @@ This script adds the proper version of Node to `$PATH`, just like at [build time
 
 If the script `/app/bundle/run.sh` exists, then this script is executed with `bash`.  (Current versions of Meteor do not make it easy to include this file in your bundle.)
 
-Otherwise, the script runs `node $GALAXY_NODE_OPTIONS main.js` inside the `/app/bundle` directory. You can set `$GALAXY_NODE_OPTIONS` to a flag or space-separated series of flags [in your settings.json file](/environment-variables.html) if you need fine-grained control over how Node runs your server, such as setting [garbage collection flags](/scaling.html#garbage-collection).
+Otherwise, the script runs `node $GALAXY_NODE_OPTIONS main.js` inside the `/app/bundle` directory. You can set `$GALAXY_NODE_OPTIONS` to a flag or space-separated series of flags [in your settings.json file](/deploy-setup.html#env-variables) if you need fine-grained control over how Node runs your server, such as setting [garbage collection flags](/scaling.html#garbage-collection).

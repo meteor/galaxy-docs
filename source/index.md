@@ -16,15 +16,15 @@ Meteor Cloud is the only full service cloud offering to host, monitor and manage
 
 By creating a Meteor Cloud account you get access to:
 
-- **Atmosphere**: Immediately get access to the community library of open source packages built and used by thousands of Meteor Developers for almost a decade
+- **Meteor specific hosting**: Get access to premium hosting features like triggers and notifications, as well as advanced security measures like IP whitelisting, app protection and much more. [See more info on Plans and Pricing](/billing.html)
 
 - **Organizations**: Collaborate with fellow developers throughout the extensive Meteor Ecosystem
 
 - **Free deploy**: Deploy your application quickly for free using our Free plan and MongoDB auto-configuration. Great for staging environments and early iterating with Meteor
 
-- **Meteor specific hosting**: Get access to premium hosting features like triggers and notifications, as well as advanced security measures like IP whitelisting, app protection and much more. [See more info on Plans and Pricing](/billing.html) 
+- **Atmosphere**: Immediately get access to the community library of open source packages built and used by thousands of Meteor Developers for almost a decade
 
- - **Peace of mind**: Have the peace of mind that comes having experts in Meteor architecture supporting your application 
+- **Peace of mind**: Have the peace of mind that comes having experts in Meteor architecture supporting your application 
 
 
 
@@ -32,13 +32,16 @@ By creating a Meteor Cloud account you get access to:
 
 [Atmosphere](https://atmospherejs.com/) is the directory of community built packages available for download, completely free and accessible through your Meteor Cloud account. Rather than start from scratch, the Meteor community has solved many problems for you (such as user login and data synchronization). We highly recommend you take advantage of their hard work!
 
-To learn more about creating and publishing packages, please visit the [Meteor Guide](/writing-atmosphere-packages.html). 
+To learn more about creating and publishing packages, please visit the [Meteor Guide](https://guide.meteor.com/writing-atmosphere-packages.html). 
 
 
 
 <h2 id="what-is-apm">What is Meteor APM?</h2> 
 
-Meteor APM is the only app performance monitoring tool build specifically for Meteor applications. Meteor APM is available for apps on the [Meteor Cloud Professional plans](/billing.html). For more information on Meteor APM and how to get started, visit [Getting Started with APM](/apm-getting-started.html).
+Meteor APM is the only app performance monitoring tool build specifically for Meteor applications. 
+Meteor APM is available for apps on the [Meteor Cloud Professional plans](/billing.html).
+For more information on Meteor APM and how to get started, visit [Getting Started with APM](/apm-getting-started.html).
+We have plans to also make Meteor APM available as a standalone and separate service very soon.
 
 
 
@@ -46,7 +49,7 @@ Meteor APM is the only app performance monitoring tool build specifically for Me
 
 Run your apps with confidence. Galaxy is easy to start, excellent to grow your app and fully-featured to support your needs as you scale.
 
-- **One command deploy**: Deploy your Meteor app in one command
+- **Push To Deploy**: update your app directly from your Git repository
 
 - **Auto-scaling**: Customize the size and number of containers to meet your apps requirements and triggers to scale automatically
 
@@ -60,9 +63,9 @@ Run your apps with confidence. Galaxy is easy to start, excellent to grow your a
 
 <h3 id="quickstart">Get Started</h3>
 
-- Use the [deploy quickstart](/deploy-quickstart.html) to deploy your app to Galaxy. It is recommended for developers who have experience deploying apps with remote databases.
+- Use the [deploy guide](/deploy-to-galaxy.html) to learn how to deploy your apps to Galaxy.
 
-- Follow the [deploy guide](/deploy-guide.html) for a detailed step-by-step tutorial of deploying your app to Galaxy.
+- Follow the [command-line guide](/deploy-command-line.html) for deploying your apps using your own machines.
 
 
 <h3 id="contribute">Contribute</h3>

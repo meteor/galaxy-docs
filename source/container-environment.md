@@ -31,12 +31,12 @@ Galaxy runs your app with the following environment variables set:
 | `GALAXY_LOGGER` | `system` | For historical reasons, indicates to your container that log collection is handled by Galaxy. |
 | `HTTP_FORWARDED_COUNT` | `1` | Tells your app that it is running behind a proxy. |
 | `KADIRA_OPTIONS_HOSTNAME` | Short container ID, like `3n28` | For historical reasons, used to configure the third-party Kadira service on which Meteor APM is based. |
-| `METEOR_SETTINGS` | A JSON object, set [when you deploy your app](/deploy-guide.html#settings-create) | Available as [`Meteor.settings`](https://docs.meteor.com/api/core.html#Meteor-settings). Galaxy may add fields to your settings object to enable features such as [prerender](/seo.html), and may reformat the JSON object. |
+| `METEOR_SETTINGS` | A JSON object, set [when you deploy your app](/deploy-setup.html#settings-create) | Available as [`Meteor.settings`](https://docs.meteor.com/api/core.html#Meteor-settings). Galaxy may add fields to your settings object to enable features such as [prerender](/seo.html), and may reformat the JSON object. |
 | `METEOR_SIGTERM_GRACE_PERIOD_SECONDS` | `30` | The length of the [container termination grace period](#stopping-containers). |
 | `PORT` | Integer like `3000` | [Port on which your app should listen](#network-incoming). |
 | `ROOT_URL` | Your app's default hostname, prefixed with `http://` or `https://` depending on whether you use Force HTTPS | Used by [`Meteor.absoluteUrl()`](https://docs.meteor.com/api/core.html#Meteor-absoluteUrl) to generate links. |
 
-You can add your own environment variables and override any of these except for the container-specific ones (`GALAXY_CONTAINER_ID` and `KADIRA_OPTIONS_HOSTNAME`) and `GALAXY_LOGGER` [via your settings.json file](/environment-variables.html).
+You can add your own environment variables and override any of these except for the container-specific ones (`GALAXY_CONTAINER_ID` and `KADIRA_OPTIONS_HOSTNAME`) and `GALAXY_LOGGER` [via your settings.json file](/deploy-setup.html#env-variables).
 
 <h2 id="network">Network environment</h2>
 

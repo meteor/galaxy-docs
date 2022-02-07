@@ -57,7 +57,7 @@ If any errors or messages thrown by your app are older than 1 week, they won't a
 
 If you would like access to older logs and more flexibility in how you access your logs, you can run your own [Elasticsearch](https://www.elastic.co/products/elasticsearch) server and configure Galaxy to send your app's logs to your own server.  You can then use any tools that support Elasticsearch to search and process your logs.  Several companies provide hosted Elasticsearch systems, including [Elastic Cloud](https://www.elastic.co/cloud) and [Amazon Web Services](https://aws.amazon.com/elasticsearch-service/).
 
-To use Galaxy's custom log storage support, set up your Elasticsearch server, and provide its URL as the `USER_LOG_DESTINATION` [environment variables](/environment-variables.html) in your app's `settings.json`.  Galaxy will send your app's standard output and standard error, as well as notifications of container start and exit events, to your Elasticsearch server.  Note that logs from building containers, as well as some other service logs from the Galaxy scheduler, are not at this time sent to your Elasticsearch server.
+To use Galaxy's custom log storage support, set up your Elasticsearch server, and provide its URL as the `USER_LOG_DESTINATION` [environment variables](/deploy-setup.html#env-variables) in your app's `settings.json`.  Galaxy will send your app's standard output and standard error, as well as notifications of container start and exit events, to your Elasticsearch server.  Note that logs from building containers, as well as some other service logs from the Galaxy scheduler, are not at this time sent to your Elasticsearch server.
 
 You will still be able to view your last week of logs in the Galaxy dashboard.
 

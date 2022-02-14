@@ -41,5 +41,5 @@ Build and publish Meteor Mobile Native apps to App Store and Google Play
 [Read more](https://forums.meteor.com/t/2fa-otp-support-in-meteor-accounts-meteor-cloud/57248)
 
 ## Deploy from Git push
-Deploy directly from GitHub repositories
+[Read more](https://blog.meteor.com/introducing-push-to-deploy-6ea464ee5f33)
 

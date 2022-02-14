@@ -1,8 +1,19 @@
 ---
 title: Changelog
-description: List of changes on Galaxy
+description: List of changes on Meteor Cloud
 ---
 
+## v3.1
+
+- One Time Password on Meteor Accounts
+  - [Read more](https://forums.meteor.com/t/2fa-otp-support-in-meteor-accounts-meteor-cloud/57248)
+
+## v3.0 (2021/12/16)
+
+- Push to Deploy
+  - [Read more](https://blog.meteor.com/introducing-push-to-deploy-6ea464ee5f33). 
+- Improvements to Apps List page
+- Improvements to App Details page
 
 ## v2.5 (2021/11/12)
 

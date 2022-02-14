@@ -3,6 +3,11 @@ title: Changelog
 description: List of changes on Meteor Cloud
 ---
 
+## v3.1
+
+- One Time Password on Meteor Accounts
+  - [Read more](https://forums.meteor.com/t/2fa-otp-support-in-meteor-accounts-meteor-cloud/57248)
+
 ## v3.0 (2021/12/16)
 
 - Push to Deploy

@@ -103,7 +103,9 @@ With traces, you can find out the wait time and the methods and subscriptions fo
 
 Find those methods and subscriptions and reduce their Response Time by applying the above techniques.
 
-## A note on Publications
+## A note on Publications for earlier versions
+
+> Since Meteor 2.3 `this.unblock` is also available for publications without additional packages.
 
 You can follow the same process above for publications as well. However, instead of sorting with throughput, you need to sort with SubRate. You also can't use `this.unblock` inside publications by default.
 

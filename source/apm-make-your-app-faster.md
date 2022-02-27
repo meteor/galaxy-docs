@@ -105,6 +105,4 @@ Find those methods and subscriptions and reduce their Response Time by applying 
 
 ## A note on Publications
 
-You can follow the same process above for publications as well. However, instead of sorting with throughput, you need to sort with SubRate. You also can't use `this.unblock` inside publications by default.
-
-But we've a [solution](https://github.com/meteorhacks/unblock) for that.
+You can follow the same process above for publications as well. However, instead of sorting with throughput, you need to sort with SubRate. As of [v2.3](https://github.com/meteor/meteor/pull/11392) you can use `this.unblock` inside publications by default.

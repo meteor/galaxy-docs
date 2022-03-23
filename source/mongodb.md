@@ -4,7 +4,7 @@ order: 13
 description: Learn how to configure your MongoDB provider for Galaxy
 ---
 
-Since Galaxy doesn’t provide a MongoDB cluster for production usage, you will need to host one yourself. We recommend using a dedicated database hosting service such as [ScaleGrid](https://console.scalegrid.io/users/register?partnerID=meteor.com) or [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
+Although Galaxy provides a free MongoDB service, it is not suitable for production usage. Because of that, we advise you to host one yourself. We recommend using a dedicated database hosting service such as [ScaleGrid](https://console.scalegrid.io/users/register?partnerID=meteor.com) or [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
 
 To configure MongoDB for your Meteor application, see the detailed steps in the [Deployment guide](/deploy-setup.html#mongo-configure).
 

@@ -5,7 +5,7 @@ description: List of changes on Meteor Cloud
 
 ## v3.2
 
-- Update App Settings (previously Next auto deploy settings)
+- Update Override Meteor Settings (previously Next auto deploy settings)
 
 ## v3.1
 

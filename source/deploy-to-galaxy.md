@@ -79,7 +79,7 @@ After configuring everything, in case you need to edit it, you can click the _Se
 
 After configuring Push to Deploy to an app, you can find in Galaxy, on the settings tab, the title `Override Meteor Settings`. When you toggle the `Override Settings` and fill the field below, on the next deploy, its content will be used instead of the `settings.json` file. After this deployment, if you change the settings.json file from the app and deploy it again, the JSON file from the app will still be ignored, and Galaxy will continue using the value from the field. To read the settings from the JSON file, you must untoggle the `Override Settings`.
 
-<img src="images/push-to-deploy-next-app-settings-filled.png" style="width: 780px;">
+<img src="images/push-to-deploy-override-meteor-settings.png" style="width: 780px;">
 
 <h2 id="deploy-cost">Cost</h2>
 

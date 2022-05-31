@@ -3,6 +3,10 @@ title: Changelog
 description: List of changes on Meteor Cloud
 ---
 
+## v3.2
+
+- Update Override Meteor Settings (previously Next auto deploy settings)
+
 ## v3.1
 
 - One Time Password on Meteor Accounts
@@ -11,19 +15,19 @@ description: List of changes on Meteor Cloud
 ## v3.0 (2021/12/16)
 
 - Push to Deploy
-  - [Read more](https://blog.meteor.com/introducing-push-to-deploy-6ea464ee5f33). 
+  - [Read more](https://blog.meteor.com/introducing-push-to-deploy-6ea464ee5f33).
 - Improvements to Apps List page
 - Improvements to App Details page
 
 ## v2.5 (2021/11/12)
 
 - Logs
-  - Download logs button now exports all the logs from your app. As we store 7 days of logs you can download them all in a single click. Before the same button was limited to download 10,000 lines of logs. 
-  
+  - Download logs button now exports all the logs from your app. As we store 7 days of logs you can download them all in a single click. Before the same button was limited to download 10,000 lines of logs.
+
 ## v2.4 (2021/08/19)
 
 - Security
-  - Always forcing HTTPs and generating LetsEncrypt certificate to a domain, by default, when deploying an app for the first time. 
+  - Always forcing HTTPs and generating LetsEncrypt certificate to a domain, by default, when deploying an app for the first time.
 
 ## v2.3 (2021/07/23)
 
@@ -38,12 +42,12 @@ description: List of changes on Meteor Cloud
 ## v2.1 (2021/05/09)
 
 - Security
-  - Update PEM package for new openssl executable on Ubuntu 20.04 
+  - Update PEM package for new openssl executable on Ubuntu 20.04
 
 ## v2.0 (2021/04/23)
 
 - Deploy
-  - new Docker default base image. [read more](./base-image-packages.html#v2.0) 
+  - new Docker default base image. [read more](./base-image-packages.html#v2.0)
 
 ## v1.22 (2021/04/23)
 
@@ -79,18 +83,19 @@ description: List of changes on Meteor Cloud
 
 - UI:
   - It's now possible to set the minimum supported version of TLS on each app by going to:
-  Settings -> Security -> SSL TLS Protocol support
+    Settings -> Security -> SSL TLS Protocol support
 - Proxy:
   - The proxy layer now blocks requests based on TLS app security configuration.
-
 
 ## v1.15 (2020/09/30)
 
 - UI:
+
   - Search by container id on containers tab inside your app
-  <img src="/images/galaxy-container-filter.png" />
-  
+    <img src="/images/galaxy-container-filter.png" />
+
   - See your app ID in the tooltip of app status green circle
+
 - Containers:
   - New container sizes: Octa (8 ECUs and 8 GBs of RAM) and Dozen (12 ECUs and 12 GBs of RAM)
 
@@ -126,17 +131,18 @@ description: List of changes on Meteor Cloud
 ## v1.9 (2020/08/13)
 
 - API:
-  - Domains: Adds a new mutation to Galaxy GraphQL API that enables the upsert of domains with automatic certificate generation. For more details, please refer to the graphql docs API on [API Explorer](https://us-east-1.api.meteor.com/explorer) - saveDomain(domain: DomainInput!): Domain. 
+  - Domains: Adds a new mutation to Galaxy GraphQL API that enables the upsert of domains with automatic certificate generation. For more details, please refer to the graphql docs API on [API Explorer](https://us-east-1.api.meteor.com/explorer) - saveDomain(domain: DomainInput!): Domain.
 
 ## v1.8 (2020/08/07)
 
 - Logs:
+
   - Adds option to go back in date with a date picker
   - Improves performance for long logs listing by virtualization
   - Adds a shortcut on the timestamp of a log to quickly jump to a date
   - More details on the video below:
-  
-  [![](https://img.youtube.com/vi/WPYyHeWM21Q/0.jpg)](http://www.youtube.com/watch?v=WPYyHeWM21Q "")
+
+  [![](https://img.youtube.com/vi/WPYyHeWM21Q/0.jpg)](http://www.youtube.com/watch?v=WPYyHeWM21Q)
 
 ## v1.7 (2020/07/30)
 
@@ -148,17 +154,17 @@ description: List of changes on Meteor Cloud
 
 - Triggers:
   - Kill container trigger
-  
+
 ## v1.5 (2020/07/02)
 
 - Activities:
   - Hides app unavailable activities from the right side bar
-  
+
 ## v1.4 (2020/06/29)
 
 - Activities:
   - Hides container unhealthy activities from the right side bar
-  
+
 ## v1.3 (2020/06/25)
 
 - Notifications:
@@ -166,7 +172,6 @@ description: List of changes on Meteor Cloud
   - Fixes the state of Notifications settings after save
 - Misc:
   - Exposes all the states on invoices list in the account settings page
-
 
 ## v1.2 (2020/06/05)
 

@@ -12,35 +12,35 @@ You need a Meteor Cloud account in order to deploy your apps. If you don't have 
 
 <h2 id="deploy-a-new-app">Deploy a new app</h2>
 
-Start by going to your [Meteor Cloud account](https://cloud.meteor.com/). Then go to *Apps* > *Deploy new app*. Once there, you'll see this configuration page:
+Start by going to your [Meteor Cloud account](https://cloud.meteor.com/). Then go to _Apps_ > _Deploy new app_. Once there, you'll see this configuration page:
 
 <img src="images/push-to-deploy-first-step.png" style="width: 780px;">
 
 Go ahead and click on the GitHub button. An authentication popup, from GitHub, will show up. On this popup, you can choose the individual account or organization that you want to give us access to. You don't need to give access to all your repositories if you don't want to. Later you can go on GitHub and change your permissions to authorize more repositories.
 
-> If you don't use GitHub, please let us know your favorite Git provider in the link below the GitHub button. 
+> If you don't use GitHub, please let us know your favorite Git provider in the link below the GitHub button.
 
 After connecting to your git provider you'll automatically go to the second step. In the second step you need to chose your account from the git provider and then choose the repository where is the Meteor app that you want to deploy.
 
 <img src="images/push-to-deploy-second-step.png" style="width: 780px;">
 
-Now just click on *Next Step* and you'll get on the third and last step.
+Now just click on _Next Step_ and you'll get on the third and last step.
 
 <img src="images/push-to-deploy-third-step.png" style="width: 780px;">
 
-In this step you just need to configure the last details, so you can have your app deployed. Starting by the *Account* which defines to which Meteor Cloud account your app will be deployed to.
+In this step you just need to configure the last details, so you can have your app deployed. Starting by the _Account_ which defines to which Meteor Cloud account your app will be deployed to.
 
-Then you get to select which *Plan* you want to use. You can check everything about the plans on our [pricing page](https://www.meteor.com/cloud#pricing-section).
+Then you get to select which _Plan_ you want to use. You can check everything about the plans on our [pricing page](https://www.meteor.com/cloud#pricing-section).
 
 > We do not recommend deploying production applications to the Free plan as it provides only a limited container which is turned off when your app is not being used.
 
 The **Container Size** needs to be selected as well, for paid apps we recommend that you start from the Compact. You can change this at any time, just go to your app page on Galaxy and select a different size.
 
-You also need to select a *Region*. This is really important and your database should be in the same region to avoid latency and slowness in your app.
+You also need to select a _Region_. This is really important and your database should be in the same region to avoid latency and slowness in your app.
 
-Now is the time to choose your **hostname**, the domain of your app. If you are using the free plan you need to use `meteorapp.com` as the main domain, and you can choose only the subdomain. If you are using a paid plan you can use any domain you like. In this case, you also need to set up your DNS, learn how [here](https://cloud-guide.meteor.com/dns.html). 
+Now is the time to choose your **hostname**, the domain of your app. If you are using the free plan you need to use `meteorapp.com` as the main domain, and you can choose only the subdomain. If you are using a paid plan you can use any domain you like. In this case, you also need to set up your DNS, learn how [here](https://cloud-guide.meteor.com/dns.html).
 
-In the **Deploy Options** section, you can choose which branch you'll use as your deploy branch. Every commit done on this branch will trigger a new deployment. 
+In the **Deploy Options** section, you can choose which branch you'll use as your deploy branch. Every commit done on this branch will trigger a new deployment.
 In this section, you can also choose to use our shared [MongoDB Cluster](https://docs.meteor.com/commandline.html#meteordeploy). Make sure you are not using this shared database for production apps.
 
 There is another section for **Advanced Options**, where you can configure these options:
@@ -54,13 +54,13 @@ There is another section for **Advanced Options**, where you can configure these
 
 <img src="images/push-to-deploy-third-step-advanced-options.png" style="width: 780px;">
 
-With all configured you just need to hit *Deploy App* and the first version of your app will be deployed!
+With all configured you just need to hit _Deploy App_ and the first version of your app will be deployed!
 
 > You need to have a GitHub repository with a Meteor project on it. The following Meteor versions are supported: `1.12.2`, `2.0.1`, ` 2.1.2`, `2.2.4`, `2.3.7`, and any version from `2.4.1` to the latest. Otherwise you are going to see an error in the logs of your app on Galaxy.
- 
+
 <h2 id="deploy-existing-app">Deploy an existing app</h2>
 
-On the app details page you can click on the button *Set up push to deploy*.
+On the app details page you can click on the button _Set up push to deploy_.
 
 <img src="images/push-to-deploy-add-config-to-existing-app.png" style="width: 780px;">
 
@@ -73,12 +73,13 @@ After configuring everything, in case you need to edit it, you can click the _Se
 
 <img src="images/push-to-deploy-add-config-to-existing-app.png" style="width: 780px;">
 
-<h2 id="edit-deploy-settings">Next auto deploy settings</h2>
+<h2 id="edit-deploy-settings">Override Meteor Settings</h2>
 
-After configuring Push to Deploy to an app, you can find in Galaxy, on the app version tab, the field `Next Auto Deploy Settings`. You can use this field to add app settings for the next deploy.
-So when you commit to the branch that you configured, these settings will be used. After using this field for the first time, these settings will be used every time for the next deploys. If you decide not to use it anymore you can just leave the field empty and save it.
+> Previously called as `Next auto deploy settings`.
 
-<img src="images/push-to-deploy-next-app-settings.png" style="width: 780px;">
+After configuring Push to Deploy to an app, you can find in Galaxy, on the settings tab, the title `Override Meteor Settings`. When you toggle the `Override Settings` and fill the field below, on the next deploy, its content will be used instead of the `settings.json` file. After this deployment, if you change the settings.json file from the app and deploy it again, the JSON file from the app will still be ignored, and Galaxy will continue using the value from the field. To read the settings from the JSON file, you must untoggle the `Override Settings`.
+
+<img src="images/push-to-deploy-override-meteor-settings.png" style="width: 780px;">
 
 <h2 id="deploy-cost">Cost</h2>
 
@@ -107,14 +108,13 @@ Yes, you can. So be careful when setting up your apps, so you don't deploy the w
 
 The previous deploy will be canceled and the new one will start.
 
-
 4 - **How I cancel a deploy that is in progress?**
 
 You can't. At least for now the only way a deploy is cancelled is if a new commit arrives, or if the deploy fails.
 
 5 - **What docker error 137 means?**
 
-This error means there was an Out Of Memory error. To solve this you should increase the amount of memory you use to deploy your app. You can do this on the third step of the Push to Deploy screen, on the section *Deploy options* > *Build Container RAM*.
+This error means there was an Out Of Memory error. To solve this you should increase the amount of memory you use to deploy your app. You can do this on the third step of the Push to Deploy screen, on the section _Deploy options_ > _Build Container RAM_.
 
 <h2 id="learn-more">Learn More</h2>
 

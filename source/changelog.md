@@ -3,9 +3,13 @@ title: Changelog
 description: List of changes on Meteor Cloud
 ---
 
+## v3.2.1
+
+- Updated Whitelisting IPs. To find out more, go to your app settings.
+
 ## v3.2
 
-- Update Override Meteor Settings (previously Next auto deploy settings)
+- Updated Override Meteor Settings (previously Next auto deploy settings)
 
 ## v3.1
 

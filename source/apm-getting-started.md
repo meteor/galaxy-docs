@@ -18,7 +18,7 @@ Now your app will send information to Meteor APM. Visit [Galaxy](https://galaxy.
 
 After a minute, data should begin appearing.
 
-If the data haven't appeared after the above steps, you may need to log out of Galaxy and log in again using one of the links below based on the region your app is hosted:
+Permissions are handled by region, so if you are not able to see the APM data after the above steps, you may need to log out of Galaxy and log in again using one of the links below based on the region your app is hosted:
 
 - https://galaxy.meteor.com (if your app is in the US region)
 - https://eu-west-1.galaxy.meteor.com (if your app is in the Europe region)

@@ -64,8 +64,6 @@ You can see the differences between our plans in our [website](https://www.meteo
 
 <h2 id="savings-plan">Savings Plan</h2>
 
-### **What is Savings Plan?**
-
 The Savings Plan is a pricing model that offers a 20% discount in exchange for a one-year upfront payment. Once you sign up for a Savings Plan, your compute usage will automatically be billed using the credits you purchased at a discount, and any usage beyond your commitment will be billed at regular on-demand rates.
 
 ### **How do I get started with Savings Plans?**

@@ -64,11 +64,43 @@ You can see the differences between our plans in our [website](https://www.meteo
 
 <h2 id="savings-plan">Savings Plan</h2>
 
-Savings plans are simple. All we need is an approximate forecast on what you might spend in the coming 12 months. This is usually an average of your monthly bill, and multiplied by 12 calendar months. From there, we can provide you with an accurate quote for your pre-payment, which allows you to save 20% overall on your costs. 
+### **What is Savings Plan?**
 
-If you decide to move forward with pre-payment, but might grow in the next 6-12 months, we can also provide you with additional savings credits later on so you continue to save while you grow. 
+The Savings Plan is a pricing model that offers a 20% discount in exchange for a one-year upfront payment. Once you sign up for a Savings Plan, your compute usage will automatically be billed using the credits you purchased at a discount, and any usage beyond your commitment will be billed at regular on-demand rates.
 
-Contact support@meteor.com if you'd like to add savings plan to your account.
+### **How do I get started with Savings Plans?**
+
+All we need is a forecast of what you intend to spend over the next 12 months. This is usually an average of your monthly bill multiplied by 12 calendar months. From there, we can provide you with an accurate quote for your prepayment, allowing you to save 20% on your total costs.
+
+Contact [support@meteor.com](mailto:support@meteor.com) if you’d like to add a Savings Plan to your account.
+
+### **Renewing the Savings Plans for the next year**
+
+The Savings Plan is automatically renewed for the next year. If you want to change your upfront payment you can contact us by email.
+
+If you do not want to renew it, you must inform us to cancel it before the end of the one-year period. Ideally, at least one month before the end of the plan.
+
+### **Modifying a Savings Plan**
+
+You can increase your commitment by purchasing additional credits, to continue saving as you grow. For more information, contact [support@meteor.com](mailto:support@meteor.com).
+
+### **Canceling a Savings Plan**
+
+The Savings Plan cannot be canceled and we cannot make refunds of the prepaid amount.
+
+The exception to this is when your Savings plan has just been renewed (after the first year) a few days ago and you have decided not to continue with it.
+
+### **How the Savings Plan credit is used monthly?**
+
+Even though you make a one-year upfront payment, our billing system continues to calculate your costs on a monthly basis. Your credit is divided into 12 months and this amount is made available monthly.
+
+For example, after calculating your forecast, you decided to pay $6,000 upfront. Once you do that, your credits are split by month, so in that case, you have $500 to spend per month. If you spend less than $500, for example, $450, the difference won't carry over to the next month. The next month, you have exactly another $500 credit. If you spend more than $500, for example, $550, you will be charged $50 for additional usage.
+
+### **What should I consider before purchasing a Savings Plan?**
+
+The Savings Plan is a long-term contract (currently one year). Therefore, it is best practice to purchase the Savings Plan when you plan to commit to a consistent amount of long-term usage.
+
+It's also good practice to be conservative with your upfront payment and add additional credits once you know you're growing more than you expect.
 
 <h2 id="billing-update">Payment and statements</h2>
 

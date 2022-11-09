@@ -86,8 +86,8 @@ After configuring Push to Deploy to an app, you can find in Galaxy, on the setti
 The cost for deployments varies depending on which plan you are using on Galaxy.
 
 - **Free plan**: there is no cost for deploys, but it is limited to 10 deploys per month.
-- **Essentials plan**: the cost is the amount of **times deploying** x **amount of GBs** of memory x **$0.08**.
-- **Professional plan**: the cost is the amount of **times deploying** x **amount of GBs** of memory x **$0.11**.
+- **Essentials plan**: the cost is the amount of **time deploying** x **amount of GBs** of memory x **$0.08**.
+- **Professional plan**: the cost is the amount of **time deploying** x **amount of GBs** of memory x **$0.11**.
 
 So, for example, if you spend 15 minutes on deployments using 3GBs of memory for an app in the Essential plan.
 The cost added to your invoice would be: **0.25h** x **3GBs** x **$0.08** = **$0.06**.

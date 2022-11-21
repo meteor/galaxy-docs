@@ -3,7 +3,7 @@ title: Changelog
 description: List of changes on Meteor Cloud
 ---
 
-## New Changelog for Meteor Cloud (2022/11/21)
+## New Changelog (2022/11/21)
 
 Now you can follow our updates closely and stay informed about everything Meteor Cloud related!
 

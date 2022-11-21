@@ -7,7 +7,7 @@ description: List of changes on Meteor Cloud
 
 Now you can follow our updates closely and stay informed about everything Meteor Cloud related!
 
-Subscribe to our new Changelog on https://cloud-news.meteor.com and receive all the Meteor Clod news by email.
+Subscribe to our new Changelog on https://cloud-news.meteor.com and receive all the Meteor Cloud news by email.
 
 *This Changelog page will not receive new updates.*
 

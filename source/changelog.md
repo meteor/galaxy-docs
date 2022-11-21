@@ -3,6 +3,14 @@ title: Changelog
 description: List of changes on Meteor Cloud
 ---
 
+## New Changelog for Meteor Cloud (2022/11/21)
+
+Now you can follow our updates closely and stay informed about everything Meteor Cloud related!
+
+Subscribe to our new Changelog on https://cloud-news.meteor.com and receive all the Meteor Clod news by email.
+
+*This Changelog page will not receive new updates.*
+
 ## v3.2.1
 
 - Updated Whitelisting IPs. To find out more, go to your app settings.

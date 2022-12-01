@@ -14,6 +14,8 @@ Galaxy allows you to deploy your app to the following regions:
 
 - AWS `ap-southeast-2` in Sydney, Australia
 
+- AWS `af-south-1` in Cape Town, Africa
+
 View the [deployment guide](deploy-to-galaxy.html) for specific instructions on how to deploy to the region of your choice.
 
 <h2 id="us-east">US East Region</h2>

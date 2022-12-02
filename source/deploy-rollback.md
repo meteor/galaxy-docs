@@ -4,15 +4,15 @@ order: 37
 description: Learn how to roll back or restore to a previously deployed version
 ---
 
-For a variety of reasons you might need to recover from an incident in production — for example, due to a bug. In that case, Meteor Cloud allows you to restore your deployments and quickly revert back to a previously deployed production deployment.
+For a variety of reasons, you might need to recover from an incident in production — for example, due to a bug. In that case, Meteor Cloud allows you to restore your deployments and quickly revert back to a previously deployed production deployment.
 
 <h2 id="how-to-rollback">How to roll back deployments?</h2>
 
-1- From Galaxy, open the app which you'd like to restore a deployment version.
+1- From Galaxy, open the app to which you'd like to restore a deployment version.
 
 <img src="images/instant-rollback.png" style="width: 850px;">
 
-2- Go to the `Versions` tab. From there, you can see your Version History with the version number, when it was activated, by who this version was deployed, its status, and which is the current deployed version.
+2- Go to the `Versions` tab. From there, you can see your Version History with the version number, when it was activated, by who this version was deployed, its status, and which is the currently deployed version.
 
 <img src="images/instant-rollback.png" style="width: 850px;">
 

@@ -31,16 +31,8 @@ sidebar_categories:
     - custom-domains
     - dns
     - encryption
-  Monitor:
-    - app
-    - containers
-    - logs
-    - status
-    - triggers
-    - notifications
-    - api
-    - protection
   Manage:
+    - deploy-rollback
     - deploy-troubleshooting
     - error-types
     - memory-issues
@@ -51,6 +43,15 @@ sidebar_categories:
     - file-storage
     - transfer-apps
     - commands
+  Monitor:
+    - app
+    - containers
+    - logs
+    - status
+    - triggers
+    - notifications
+    - api
+    - protection
   Best Pratices:
     - background-jobs
     - app-scaling

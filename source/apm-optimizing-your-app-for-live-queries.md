@@ -55,7 +55,7 @@ Now that you know the busy publications in your app, try to see whether there is
 
 ### Prevent unwanted oplog notifications
 
-Meteor watches the MongoDB oplog to see changes happening in the MongoDB. If there is something happen in the DB, Meteor will receive it as a notification. The notification is attached to a collection. Then, Meteor will forward this notification to most of the observers created for that collection.
+Meteor watches the MongoDB oplog to see changes happening in the MongoDB. If something happens in the DB, Meteor will receive it as a notification. The notification is attached to a collection. Then, Meteor will forward this notification to most of the observers created for that collection.
 
 Now let’s try to see whether we are getting unwanted oplog notifications or not.
 

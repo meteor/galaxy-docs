@@ -100,3 +100,11 @@ You can also profile your CPU as you would in any Node.js project, this [package
 If you expect your container to be using all the 100% CPU a few times a day due to a heavy process or any other kind of process that cause your container to be unhealthy you can disable this notification. If your app can execute long tasks for more than 5 minutes you should also disable the `Unhealthy container replacement` otherwise Galaxy is going to replace the container.
 
 Galaxy will also consider your app as unavailable if all your containers are unhealthy as the health checks will be failing for all containers.
+
+<h3 id="unhealthy-replacement">Unhealthy Container Replacement</h3>
+
+When automatic replacement of unhealthy containers is enabled:
+
+- If a healthy container starts to fail health checks, it will be replaced after 5 minutes.
+- New containers are given 10 minutes to become healthy before being replaced.
+- Galaxy will wait at least 10 minutes (longer for apps with many containers) for all containers of a newly deployed app version to become healthy before declaring the deploy a success, and will return to the previous active version on failure.

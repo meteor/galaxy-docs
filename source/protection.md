@@ -1,5 +1,5 @@
 ---
-title: App Protection
+title: DDoS Mitigation
 order: 36
 description: Learn how Galaxy protects your app
 ---
@@ -14,11 +14,9 @@ It also allows you to use multiple domains in our apps.
 
 DoS and DDoS attacks are attempts to make your app overloaded and unavailable for legitimate requests.
 
-Galaxy proxy servers are in front of every request going to your app. This is a very important security measure, as our proxy servers can isolate eventual attack attempts on your apps. We call this "App Protection", and it is automatically enabled for all Galaxy clients.
+Galaxy proxy servers are in front of every request going to your app. This is a very important security measure, as our proxy servers can isolate eventual attack attempts on your apps. We call this "DDoS Mitigation", and it is automatically enabled for all Galaxy clients.
 
 Galaxy provides out-of-the-box protection against attacks by analyzing all requests that are coming to our servers, aggregating the data across all servers, then making decisions about which type of requests are over our expected limits.
-
-> App Protection was introduced in July 28th, 2020.
 
 When a type of request is classified as abusive we stop sending these requests to your app, and we start to return HTTP 429 (Too Many Requests).
 
@@ -36,9 +34,9 @@ Meteor provides [rate limits](https://docs.meteor.com/api/methods.html#ddprateli
 
 <h2 id="settings">Settings</h2>
 
-On your app settings you can customize your app protection settings. You will be able to set a threshold of the maximum number of requests that you want to allow your app to receive in a window of 5 seconds.
+On your app settings you can customize your DDoS Mitigation settings. You will be able to set a threshold of the maximum number of requests that you want to allow your app to receive in a window of 5 seconds.
 
-Once you enabled the custom app protection, you will also be able to see the list of IPs that are currently blocked, if any, and you will have the power to disable a block or even delete it.
+Once you enabled the custom DDoS Mitigation, you will also be able to see the list of IPs that are currently blocked, if any, and you will have the power to disable a block or even delete it.
 
 When you delete you eliminate this record completely, so it could be blocked again in the future. When it is disabled it's never going to be blocked again.
 

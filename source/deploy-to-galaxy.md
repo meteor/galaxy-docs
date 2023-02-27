@@ -16,9 +16,9 @@ Start by going to your [Meteor Cloud account](https://cloud.meteor.com/). Then g
 
 <img src="images/push-to-deploy-first-step.png" style="width: 780px;">
 
-Go ahead and click on the GitHub button. An authentication popup, from GitHub, will show up. On this popup, you can choose the individual account or organization that you want to give us access to. You don't need to give access to all your repositories if you don't want to. Later you can go on GitHub and change your permissions to authorize more repositories.
+Go ahead and click on the GitHub/Bitbucket button. An authentication popup, from GitHub/Bitbucket, will show up. On this popup, you can choose the individual account or organization that you want to give us access to. You don't need to give access to all your repositories if you don't want to. Later you can go on GitHub/Bitbucket and change your permissions to authorize more repositories.
 
-> If you don't use GitHub, please let us know your favorite Git provider in the link below the GitHub button.
+> If you don't use GitHub/Bitbucket, please let us know your favorite Git provider in the link below the git provider options button.
 
 After connecting to your git provider you'll automatically go to the second step. In the second step you need to chose your account from the git provider and then choose the repository where is the Meteor app that you want to deploy.
 
@@ -56,7 +56,7 @@ There is another section for **Advanced Options**, where you can configure these
 
 With all configured you just need to hit _Deploy App_ and the first version of your app will be deployed!
 
-> You need to have a GitHub repository with a Meteor project on it. The following Meteor versions are supported: `1.12.2`, `2.0.1`, ` 2.1.2`, `2.2.4`, `2.3.7`, and any version from `2.4.1` to the latest. Otherwise you are going to see an error in the logs of your app on Galaxy.
+> You need to have a GitHub/Bitbucket repository with a Meteor project on it. The following Meteor versions are supported: `1.12.2`, `2.0.1`, ` 2.1.2`, `2.2.4`, `2.3.7`, and any version from `2.4.1` to the latest. Otherwise you are going to see an error in the logs of your app on Galaxy.
 
 <h2 id="deploy-existing-app">Deploy an existing app</h2>
 

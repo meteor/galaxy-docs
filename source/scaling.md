@@ -26,18 +26,19 @@ Vertical scaling works best for one-time changes, when you won't need to change 
 
 Vertical scaling restarts all your containers. If you adjust the container size of a container, that container will restart.
 
-Note that larger containers may take slightly longer to restart.
+<img src="images/container-upsize.png" style="width: 780px;">
 
-<img src="images/container-upsize.gif" style="">
+> Note that larger containers may take slightly longer to restart.
 
-<img src="images/email-scale-up.gif" style="float:right">
-**Horizontal scaling** increases your app’s available resources by adding more containers. This is useful when sudden increases in usage or traffic cause your app to be less performant. 
+**Horizontal scaling** increases your app’s available resources by adding more containers. This is useful when sudden increases in usage or traffic cause your app to be less performant.
+
+<img src="images/email-scale-up.gif" >
 
 Horizontal scaling is recommended if you need to scale up and down, gradually and frequently.
 
 A good rule of thumb is to use the smallest container size that can handle a single user's load, and scale horizontally beyond this.
 
-Horizontal scaling does not restart your containers.
+> Horizontal scaling does not restart your containers.
 
 <h2 id="garbage-collection">Garbage collection</h2>
 

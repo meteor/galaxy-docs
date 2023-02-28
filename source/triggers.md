@@ -20,9 +20,7 @@ We only charge the running hours of each container, so you can reduce the amount
 
 <h2 id="how-it-works">How it works</h2>
 
-If you prefer video, [click here](https://www.youtube.com/watch?v=rwLoviLzG6s) to watch
-
-[<img src="/images/triggers-07.png" />](https://www.youtube.com/watch?v=rwLoviLzG6s)
+If you prefer video, you can [click here](https://www.youtube.com/watch?v=rwLoviLzG6s) to watch it.
 
 Galaxy checks all the triggers every minute, you don't pay anything extra to run triggers, they run on Galaxy servers.
 
@@ -64,15 +62,15 @@ Important: `add containers` action will never remove containers and `remove cont
 
 <h3 id="add">Add containers</h3>
 
-`add containers` action as the name action name says will add more containers to your app when the rules return true (match). You can configure your trigger as you want.
+The `add containers` action as the name action name says will add more containers to your app when the rules return true (match). You can configure your trigger as you want.
 
 Usually you will configure it based on CPU Usage (%) or Number of Connections, for example, if you know that your containers usually handle 500 connections you can add a rule to add more containers when you reach 450 connections per container. It's recommended to use `OR` if you want to use more than one rule here, so if any rule returns true you scale up your app.
 
-It's important to turn on the [notification](./notifications.html) for the activity `Trigger add containers limit error` so you know if your `add containers` action is not working because you have reached your account limit. You can always ask us to increase your container limit (support@meteor.com). You can check your current limit in your Account settings. 
+It's important to turn on the [notification](./notifications.html) for the activity `Trigger add containers limit error` so you know if your `add containers` action is not working because you have reached your account limit. You can always ask us to increase your container limit (support@meteor.com). You can check your current limit in your Account settings.
 
-> this activity was introduced with Triggers release so review your Notifications
+> This activity was introduced with Triggers release so review your Notifications.
 
-<img src="/images/triggers-05.png" />
+<img src="/images/triggers-01.png" />
 
 <h3 id="remove">Remove containers</h3>
 `remove containers` action as the name action name says will remove containers from your app when the rules return true (match). You can configure your trigger as you want.

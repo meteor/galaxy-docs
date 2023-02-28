@@ -19,7 +19,7 @@ In order for Galaxy to generate a certificate for your site, we need to be able 
 Specifically, we expect to be able to fetch the URL `http://example.com/.well-known/acme-challenge/_g_selfcheck_` and get a 200 with a certain random-looking body. You can see this working by looking at `http://www.meteor.com/.well-known/acme-challenge/_g_selfcheck_`. Galaxy serves this special URL automatically for you, so you need to ensure that any proxy layer you put in front of Galaxy passes requests starting with `/.well-known/acme-challenge` through to Galaxy.
 We do follow redirects. You can test that your site will pass the test by running `curl -i -L http://example.com/.well-known/acme-challenge/_g_selfcheck_` (substituting the name of your domain for `example.com`).
 
-<img src="images/email-enable-ssl.png" style="width: 500px;">
+<img src="images/email-enable-ssl.png" style="width: 780px;">
 
 Galaxy does not support auto-renewing Let's Encrypt certificates for wildcard (\*.) domains, because the mechanism for obtaining those certificates would require you to delegate DNS management for your domain to Galaxy.
 

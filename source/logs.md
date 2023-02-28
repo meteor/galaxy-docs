@@ -8,7 +8,7 @@ The logs should be your first stop when troubleshooting any Galaxy issue. When w
 
 You can reach the logs dashboard by clicking on your app, then clicking the "Logs" tab.
 
-<img src="/images/logs_section.png" style="margin: 1em 0;"/>
+<img src="/images/galaxy-app-logs.png" style="margin: 1em 0;"/>
 
 <h3 id="tabs">Tabs</h3>
 

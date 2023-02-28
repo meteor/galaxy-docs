@@ -32,7 +32,7 @@ For apps deployed to Galaxy's Asia-Pacific region, deploy to `<custom.subdomain>
 
 You can access the same app from multiple domains by adding custom domains. Practically speaking, this means you can add as many additional domain names as you want to an existing app.
 
-To do this, navigate to the **Domains & Encryption** section of your app's settings page and add new domains via the user interface.
+To do this, navigate to the **Domains & HTTPS** section of your app's settings page and add new domains via the user interface.
 
 The domain must be one of the following:
 * A fully qualified domain name such as foo.mydomain.com

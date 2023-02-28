@@ -22,11 +22,11 @@ Add a domain in your application’s settings and point your DNS to:
 
 If you are deploying to a root domain (for example mydomain.com), then follow the advanced instructions [here](/dns.html).
 
-<img src="images/email-add-domain.png" style="">
+<img src="images/email-add-domain.png" style="width: 780px;">
 
-[Enable encryption](/encryption.html) to secure sensitive data by generating a free [Let’s Encrypt](https://letsencrypt.org) certificate or uploading your own custom certificate.
+[Enable encryption](/encryption.html) to secure sensitive data by generating a free [Let’s Encrypt](https://letsencrypt.org) certificate by clicking on `Generate Certificate` or uploading your own custom certificate.
 
-<img src="images/email-enable-ssl.png" style="width: 300px;">
+<img src="images/email-enable-ssl.png" style="width: 780px;">
 
 <h2 id="mongo-configure">Configure your MongoDB</h2>
 

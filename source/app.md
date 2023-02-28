@@ -8,7 +8,7 @@ description: Learn how to monitor and manage your app
 
 Get a snapshot of the realtime status of your app and resource usage over time on the app overview page.
 
-<img src="/images/galaxy-app-overview.png" style="width: 600px"/>
+<img src="/images/galaxy-app-overview-1.png" style="width: 780px"/>
 
 You may also want to consider using [Meteor APM](/apm-getting-started.html) for more insight.
 
@@ -16,19 +16,19 @@ You may also want to consider using [Meteor APM](/apm-getting-started.html) for 
 
 Your app's resource usage is determined by the size and number of containers. Galaxy combines the resources of all containers to determine the resources available to your app. Customers can view app resource usage on the app overview page.
 
-<img src="/images/email-galaxy-performance-graphs-600x468.jpg" style="width: 300px"/>
+<img src="/images/email-galaxy-performance-graphs-600x468.jpg" style="width: 380px"/>
 
 <h2 id="containers">Containers</h2>
 
 Galaxy containers are packaged environments for Meteor apps. Dive into individual container performance metrics on the container page. Read more in the [containers](/containers.html) and [container environment](/container-environment.html) articles.
 
-<img src="/images/galaxy-app-container.png" style="width: 600px"/>
+<img src="/images/galaxy-app-container.png" style="width: 880px"/>
 
 <h2 id="logs">Logs</h2>
 
 Galaxy records the output of your app's logs in addition to printing operational logs for your deployment. Logs are aggregated from all containers in your app and ordered chronologically. Read more in the [logs](/logs.html) article.
 
-<img src="/images/galaxy-app-logs.png" style="width: 600px"/>
+<img src="/images/galaxy-app-logs.png" style="width: 780px"/>
 
 You can [filter logs from a specific container](/containers.html#connect-logs) on the app container page.
 

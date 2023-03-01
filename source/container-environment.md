@@ -69,13 +69,13 @@ To find the IP addresses you should be using, go to your app's Settings page and
 
 If your software wants you to specify your whitelist as a list of [CIDRs](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing) rather than a list of IP addresses, just add the three characters `/32` to the end of each IP address.
 
-<h3 id="ipv6-feature">Enable IPv6 for your apps</h3>
+<h3 id="ipv6-feature">IPv6 Support</h3>
 
 As the global pool of IPv4 space continues to shrink every day, organizations are deploying IPv6 at an ever-increasing pace. But sometimes it's just plain hard, especially when it requires a complete overhaul of your network.
 
 When using Galaxy, we make it extremely easy to enable IPv6 for your apps, we can provide you with an IPv6 address and you can configure "DNS Pointing" in your DNS provider. 
 
-Just go to your app settings and enable it as shown in the image below:
+IPV6 Support is only available for apps on the Professional Plan, just go to your app settings and enable it as shown in the image below:
 
 <img src="images/ipv6-feature.png" style="width: 780px;">
 

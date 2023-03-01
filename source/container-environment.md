@@ -69,6 +69,16 @@ To find the IP addresses you should be using, go to your app's Settings page and
 
 If your software wants you to specify your whitelist as a list of [CIDRs](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing) rather than a list of IP addresses, just add the three characters `/32` to the end of each IP address.
 
+<h3 id="ipv6-feature">IPv6 Support</h3>
+
+As the global pool of IPv4 space continues to shrink every day, organizations are deploying IPv6 at an ever-increasing pace. But sometimes it's just plain hard, especially when it requires a complete overhaul of your network.
+
+When using Galaxy, we make it extremely easy to enable IPv6 for your apps, we can provide you with an IPv6 address and you can configure "DNS Pointing" in your DNS provider. 
+
+IPv6 Support is only available for apps on the Professional Plan, just go to your app settings and enable it as shown in the image below:
+
+<img src="images/ipv6-feature.png" style="width: 780px;">
+
 <h2 id="load-balancing">Health checking and load balancing</h2>
 
 Galaxy expects that your container will provide an HTTP server listening on the port given in the `$PORT` environment variable. Galaxy expects that the HTTP server will respond to a `GET /` request with a well-formed HTTP response within 5 seconds. The health check sets a `User-Agent` header containing the string `Galaxybot/`. (Galaxy currently only validates that the response is a well-formed HTTP response, but it is a good idea to ensure that this response does not have a 5xx status code, as we may refine our definition of "healthy" in the future.)  If your container does not have a functional HTTP server listening on the given port, Galaxy will consider that container to be "unhealthy".

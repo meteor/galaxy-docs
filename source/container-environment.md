@@ -75,7 +75,7 @@ As the global pool of IPv4 space continues to shrink every day, organizations ar
 
 When using Galaxy, we make it extremely easy to enable IPv6 for your apps, we can provide you with an IPv6 address and you can configure "DNS Pointing" in your DNS provider. 
 
-IPV6 Support is only available for apps on the Professional Plan, just go to your app settings and enable it as shown in the image below:
+IPv6 Support is only available for apps on the Professional Plan, just go to your app settings and enable it as shown in the image below:
 
 <img src="images/ipv6-feature.png" style="width: 780px;">
 

@@ -10,9 +10,16 @@ You can reach the logs dashboard by clicking on your app, then clicking the "Log
 
 <img src="/images/galaxy-app-logs.png" style="margin: 1em 0;"/>
 
-<h3 id="tabs">Tabs</h3>
+<h2 id="filters">Log Filters</h2>
 
-There are several logging tabs you can click, below the "Logs" tab itself. These are:
+There are several logging filters you can click, below the "Logs" tab itself.
+
+The main options are to see logs in Real-time or filter By Date:
+
+- Real-time: this allows you to watch your logs in real-time. You can click on `View older` to see older logs, click on the bottom to `View new logs`, and set the logs to `Autoscrolling`.
+- By Date: this allows you to filter your logs by date and time. Even when you filter by date, we show logs paginated. You can still click on `View older` in case the logs you want to see are not shown.
+
+These are the options to filter logs by type:
 
 - All: for the combined view.
 - App: for application-specific messages and errors.
@@ -49,11 +56,19 @@ A working solution in such cases is usually to revert to an earlier version of t
 
 Errors will be shown in this tab. Check to see if there are any outstanding errors if your app is malfunctioning.
 
-<h3 id="storage">Storage</h3>
+<h3 id="storage">Older Logs</h3>
 
 If any errors or messages thrown by your app are older than 1 week, they won't appear in your logs. For more permanent log storage options, contact <a href="mailto:support@meteor.com">support@meteor.com</a>.
 
-<h3 id="custom-storage">Custom log storage</h3>
+<h2 id="download-logs">Download Logs</h2>
+
+Sometimes, you may prefer to download your logs to search through them or send the logs to someone without access to your Galaxy app. You can download your logs on the right side of the filter options.
+
+The default value is set to 1 day. You can select from 1 to 7 days. Galaxy will export your logs and send you by email as soon as they are ready.
+
+<img src="/images/galaxy-app-logs-download.png" style="margin: 1em 0;"/>
+
+<h2 id="custom-storage">Custom log storage</h2>
 
 If you would like access to older logs and more flexibility in how you access your logs, you can run your own [Elasticsearch](https://www.elastic.co/products/elasticsearch) server and configure Galaxy to send your app's logs to your own server.  You can then use any tools that support Elasticsearch to search and process your logs.  Several companies provide hosted Elasticsearch systems, including [Elastic Cloud](https://www.elastic.co/cloud) and [Amazon Web Services](https://aws.amazon.com/elasticsearch-service/).
 

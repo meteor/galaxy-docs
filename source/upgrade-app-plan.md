@@ -68,7 +68,7 @@ Considering you already have an app created in the `Essentials plan`, signin int
 
 <img src="images/upgrade-options.png" style="width: 850px;">
 
-5- Confirm your choice by clicking on `Continue`.
+4- Confirm your choice by clicking on `Continue`.
 
 <img src="images/upgrade-congrats-to-pro.png" style="width: 850px;">
 

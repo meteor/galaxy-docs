@@ -28,19 +28,15 @@ Considering you already have an app created in the `Free plan`, signin into your
 
 <img src="images/upgrade-dashboard.png" style="width: 850px;">
 
-2- Locate the app from the list and click on `More Details`. In this example, I'm selecting the `react-starter.meteorapp.com` that is on the Free plan. You can also click directly on `Upgrade` on this page and skip to step 4.
+2- Locate the app from the list and click on `Upgrade`, next to your `App plan`.
 
 <img src="images/upgrade-apps.png" style="width: 850px;">
 
-3- On this page, you can see your current plan and the features you will have access by upgrading from Free to Essentials Plan. Just click on `Upgrade Plan` to see the options available.
-
-<img src="images/upgrade-app.png" style="width: 850px;">
-
-4- See the plan details, and click on `Go to Essential` to upgrade your app from Free to the Essentials plan.
+3- See the plan details, and click on `Go to Essential` to upgrade your app from Free to the Essentials plan.
 
 <img src="images/upgrade-options.png" style="width: 850px;">
 
-5- Confirm your choice by clicking on `Continue`.
+4- Confirm your choice by clicking on `Continue`.
 
 <img src="images/upgrade-congrats.png" style="width: 850px;">
 
@@ -64,15 +60,11 @@ Considering you already have an app created in the `Essentials plan`, signin int
 
 <img src="images/upgrade-dashboard.png" style="width: 850px;">
 
-2- Locate the app from the list and click on `More Details`. In this example, I'm selecting the `react-starter.meteorapp.com` that is on the Essentials plan. You can also click directly on `Upgrade` on this page and skip to step 4.
+2- Locate the app from the list and click on `Upgrade`, next to your `App plan`.
 
 <img src="images/upgrade-apps-to-pro.png" style="width: 850px;">
 
-3- On this page, you can see your current plan and the features you will have access by upgrading from Essentials to Professional Plan. Just click on `Upgrade Plan` to see the options available.
-
-<img src="images/upgrade-app-to-pro.png" style="width: 850px;">
-
-4- See the plan details, and click on `Go to Professional` to upgrade your app from Essentials to the Professional plan.
+3- See the plan details, and click on `Go to Professional` to upgrade your app from Essentials to the Professional plan.
 
 <img src="images/upgrade-options.png" style="width: 850px;">
 

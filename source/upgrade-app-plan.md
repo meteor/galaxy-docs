@@ -44,18 +44,13 @@ Considering you already have an app created in the `Free plan`, signin into your
 
 <img src="images/upgrade-congrats.png" style="width: 850px;">
 
-App upgraded iwth success! Click on `Stay on Dashboard` to go back to your app page.
+App upgraded with success! Click on `Stay on Dashboard` to go back to your app page.
 
 <img src="images/upgrade-success.png" style="width: 850px;">
 
 You can see that your current plan is now Essentials! Enjoy all the new features and if you want to take more advantage of Galaxy and take your app to the next level, you can upgrade your app from Essentials to the Professional Plan by reading this [step-by-step](/upgrade-app-plan.html#essentials-to-professional).
 
 <img src="images/upgrade-confirmation.png" style="width: 850px;">
-
-
-
-
-
 
 <h2 id="essentials-to-professional">Essentials to Professional Plan</h2>
 
@@ -83,16 +78,13 @@ Considering you already have an app created in the `Essentials plan`, signin int
 
 <img src="images/upgrade-congrats-to-pro.png" style="width: 850px;">
 
-App upgraded iwth success! Click on `Stay on Dashboard` to go back to your app page.
+App upgraded with success! Click on `Stay on Dashboard` to go back to your app page.
 
 <img src="images/upgrade-success-to-pro.png" style="width: 850px;">
 
 You can see that your current plan is now Professional. Enjoy all the new features!
 
 <img src="images/upgrade-confirmation-to-pro.png" style="width: 850px;">
-
-
-
 
 <h2 id="professional-to-enterprise">Professional to Enterprise Plan</h2>
 

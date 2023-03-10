@@ -48,9 +48,11 @@ App upgraded with success! Click on `Stay on Dashboard` to go back to your app p
 
 <img src="images/upgrade-success.png" style="width: 850px;">
 
-You can see that your current plan is now Essentials! Enjoy all the new features and if you want to take more advantage of Galaxy and take your app to the next level, you can upgrade your app from Essentials to the Professional Plan by reading this [step-by-step](/upgrade-app-plan.html#essentials-to-professional).
+You can see that your current plan is now Essentials! Enjoy all the new features!
 
 <img src="images/upgrade-confirmation.png" style="width: 850px;">
+
+If you want to take more advantage of Galaxy and take your app to the next level, you can upgrade your app from Essentials to the `Professional plan` by reading this [step-by-step](/upgrade-app-plan.html#essentials-to-professional).
 
 <h2 id="essentials-to-professional">Essentials to Professional Plan</h2>
 
@@ -85,6 +87,8 @@ App upgraded with success! Click on `Stay on Dashboard` to go back to your app p
 You can see that your current plan is now Professional. Enjoy all the new features!
 
 <img src="images/upgrade-confirmation-to-pro.png" style="width: 850px;">
+
+If you want to take more advantage of Galaxy and have a complete custom configuration with private clusters, you can upgrade your app from the Professional to the `Enterprise plan`. Check how you can do that by reading these [instructions](/upgrade-app-plan.html#professional-to-enterprise).
 
 <h2 id="professional-to-enterprise">Professional to Enterprise Plan</h2>
 

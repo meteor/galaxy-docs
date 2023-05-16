@@ -26,9 +26,11 @@ To authorize your requests you need to provide a header in your HTTP post reques
 
 Each account (organization or individual) can have one API Key to access the API.
 
-You can generate your key in the Settings tab of your account on Galaxy dashboard (`https://galaxy.meteor.com/{username}/settings`).
+You can generate your API Key from your Account Settings tab in the Galaxy Dashboard by going to `https://galaxy.meteor.com/{username}/settings` and clicking on `Generate Key`.
 
-> API is only available for professional apps.
+<img src="/images/galaxy-api-key.png" alt="Galaxy API Key" style="width: 680px"/>
+
+> API access is only available for professional apps.
 
 Once you generate your API Key you use our API providing this key in the header `galaxy-api-key`. See one example using cURL and Galaxy US.
 

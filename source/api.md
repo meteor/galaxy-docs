@@ -6,7 +6,7 @@ description: Learn how to use Galaxy's public API
 
 Galaxy's public API is a GraphQL endpoint that enables you to monitor your apps running on Galaxy and change their configurations.
 
-<h2 id="endpoint">Access</h2>
+<h2 id="access">Access</h2>
 
 Each Galaxy region has a different URL and so each region also has a different endpoint.
 
@@ -20,7 +20,7 @@ To access the GraphQL HTTP endpoint you need to append `/graphql` to these URLs,
 
 You can also access the Explorer (GraphiQL) appending `/explorer`, for example, US East Explorer endpoint is `https://us-east-1.api.meteor.com/explorer`. Last but not least you can also connect Apollo DevTools if you open your browser in the API base URL.
 
-<h2 id="endpoint">Authorization</h2>
+<h2 id="authorization">Authorization</h2>
 
 To authorize your requests you need to provide a header in your HTTP post requests to these endpoints. Each Galaxy region is independent and so you will have a different API Key for each region.
 
@@ -49,7 +49,7 @@ You can set your API Key in the bottom right of Explorer.
 
 You can also provide your key as a variable called `galaxyApiKey` in your GraphQL requests, this can be useful in DevTools or if you have limitations in how to set a header in your http requests.
 
-<h2 id="endpoint">Examples</h2>
+<h2 id="examples">Examples</h2>
 
 Check this open-source version of interaction with Galaxy public API to see a few examples of usage:
 

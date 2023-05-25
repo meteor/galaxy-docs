@@ -34,7 +34,7 @@ Unsupported issues would include but are not limited to:
 
 If you write in to support about an out of scope issue, Galaxy support will explain its status and decline to continue investigating the issue. 
 
-Please familiarize yourself with our [Terms of Service](https://com-meteor-public-assets.s3.amazonaws.com/meteor-terms.pdf) and contact support if you have further questions.
+Please familiarize yourself with our [Terms of Service](https://lp.meteor.com/legal/terms-of-service) and contact support if you have further questions.
 
 <h2 id="venues">Venues for Assistance</h2>
 
@@ -46,7 +46,7 @@ If you believe your issue is related to Meteor, you can [file a bug](https://git
 
 Non-business days for technical support:
 - January 1
-- April 2, 4, 21
+- April 7, 21
 - May 1		
 - September 7	
 - October 12	

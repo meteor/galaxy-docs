@@ -35,8 +35,6 @@ By default, when deploy an app for the first time, Galaxy will always try to ena
 
 A common scenario is when your app is hosted at `www.mycompany.com` or `app.mycompany.com` and you'd like `mycompany.com` to redirect to the same app running in your subdomain. 
 
-> Galaxy does not support A record configuration using an IP but you can redirect your root domain (mycompany.com) to your app subdomain and the result will be pretty much the same, follow the next steps to learn how to do it.
-
 Here we are going to explain step-by-step how to redirect your root domain using AWS S3, AWS CloudFront, AWS Certificate Manager and AWS Route 53 services.
 
 > You can do this configuration in other providers, we are explaining AWS here in details because it is the most popular one.
@@ -176,6 +174,12 @@ Not all DNS providers support this feature and the implementation is usually ver
 *Note:* If you decide to host directly on a root domain, you will likely want to forward `www` to your root domain by setting up URL redirection (see above).
 
 [We recommend you use SSL](encryption.html) as a best practice. You can either enable LetsEncrypt using our integration or upload your own certificate.
+
+<h2 id="hosting-root-domain-using-an-a-record">Hosting on a Root Domain using an A Record</h2>
+
+If the DNS provider you're using doesn't support ANAME or ALIAS records, or CNAME flattening, don't worry. You can easily resolve this by adding an `A` record to point to your apps on Galaxy. A records are used to point to `IP` addresses and you can easily access your `app's settings` on Galaxy by going to the `Domains & HTTPS` section and point your Root Domain to the `IP` that is shown to you.
+
+After waiting for DNS propagation, don't forget to click on `Add New Domain` and fill in your Root Domain `(mycompany.com)`. After finishing the process, you may click on the `Generate certificate` button to activate HTTPS for your Root Domain and choose to force redirection from HTTP to HTTPS for your Root Domain as well. This will ensure increased security for your application.
 
 <h2 id="other-issues">Other issues</h2>
 

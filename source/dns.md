@@ -31,15 +31,35 @@ Ensure the hostname you [deployed to](deploy-to-galaxy.html) matches the [fully 
 
 By default, when deploy an app for the first time, Galaxy will always try to enable LetsEncrypt on your domain, as well as enable the SSL to force your domain redirect to the HTTPs protocol.
 
-<h2 id="root-domain">Redirecting the root domain</h2> 
+<h2 id="hosting-root-domain-using-an-a-record">Hosting on a Root Domain using an A Record</h2>
 
-A common scenario is when your app is hosted at `www.mycompany.com` or `app.mycompany.com` and you'd like `mycompany.com` to redirect to the same app running in your subdomain. 
+If the DNS provider you're using doesn't support ANAME or ALIAS records, or CNAME flattening, don't worry. You can easily resolve this by adding an `A` record to point to your apps on Galaxy. A records are used to point to `IP` addresses and you can easily access your `app's settings` on Galaxy by going to the `Domains & HTTPS` section and point your Root Domain to the `IP` that is shown to you.
+
+After waiting for DNS propagation, don't forget to click on `Add New Domain` and fill in your Root Domain `(mycompany.com)`. After finishing the process, you may click on the `Generate certificate` button to activate HTTPS for your Root Domain and choose to force redirection from HTTP to HTTPS for your Root Domain as well. This will ensure increased security for your application.
+
+<h2 id="hosting-root-domain">Hosting on a root domain using ALIAS</h2>
+
+In this scenario, you do want to emphasize a short URL like mycompany.com. While hosting on a root domain [can introduce complications](http://www.yes-www.org/why-use-www/), it's possible to do by using an ALIAS (also called an ANAME record).
+
+First, you'll need to either deploy your app to the root domain (e.g `myapp.com`) or add the root domain as an [additional domain for your app](custom-domains.html#add-domain). Next, you will need to add an ALIAS record to your DNS provider that points your root domain to `galaxy-ingress.meteor.com`.
+
+Not all DNS providers support this feature and the implementation is usually very specific to each provider. Providers we know and recommend are:
+
+* [ALIAS Record at DNSimple](https://support.dnsimple.com/articles/alias-record/)
+
+*Note:* If you decide to host directly on a root domain, you will likely want to forward `www` to your root domain by setting up URL redirection (see above).
+
+[We recommend you use SSL](encryption.html) as a best practice. You can either enable LetsEncrypt using our integration or upload your own certificate.
+
+<h2 id="root-domain-outdated">Redirecting the root domain (outdated)</h2>
+
+> You can now easily direct your root domain to our servers. See the section above. This section is here only as a reference in case your app was configured before this feature was available.
+
+A common scenario is when your app is hosted at `www.mycompany.com` or `app.mycompany.com` and you'd like `mycompany.com` to redirect to the same app running in your subdomain.
 
 Here we are going to explain step-by-step how to redirect your root domain using AWS S3, AWS CloudFront, AWS Certificate Manager and AWS Route 53 services.
 
 > You can do this configuration in other providers, we are explaining AWS here in details because it is the most popular one.
-> 
-> If you prefer a simple solution you could check [redirect.pizza](https://redirect.pizza/). Make sure to [check](https://redirect.pizza/pricing) limitations and paid plans.
 
 <h3 id="aws-setup">AWS Setup</h3>
 
@@ -48,8 +68,8 @@ We are going to do the following steps:
 - Create a bucket on AWS S3: it redirects the root domain to your app subdomain.
 - Create a Certificate on AWS Certificate Manager: it provides SSL Certificate to your app root domain.
 - Create a CloudFront distribution on AWS CloudFront: it provides an endpoint to be used in the A Record (your root domain).
-  - The bucket from the step above will be used here as the endpoint.
-  - The certificate from the step above will be used here as the certificate.
+    - The bucket from the step above will be used here as the endpoint.
+    - The certificate from the step above will be used here as the certificate.
 - Create a new A Record providing an Alias between the root domain and the CloudFront distribution: it provides, finally, the redirect that we want from your root domain to your app subdomain.
 
 Let's see how to do this.
@@ -64,7 +84,7 @@ In the Route 53 Dashboard click on `Create Hosted Zone`, fill your `Domain Name`
 
 You are going to see a list of records, copy the value from `NS` (Name server). You are going to need it soon.
 
-The value will be like 
+The value will be like
 ```
 ns-1623.awsdns-10.co.uk.
 ns-492.awsdns-61.com.
@@ -75,7 +95,7 @@ but don't copy these hosts from here, copy from your AWS Route 53 record because
 
 Go to the service where you bought your domain and replace your Name Server, sometimes called DNS Servers or DNS Provider, to use Route 53 pasting the name servers that you have copied from AWS Route 53.
 
-From now on every change in your DNS should be done in Route 53 as it is now your DNS Provider. 
+From now on every change in your DNS should be done in Route 53 as it is now your DNS Provider.
 
 Every service that sells domains, like GoDaddy, have a different way to set the Name Servers (DNS Provider) but it is usually very easy to find it, if you have any questions about this contact your domain seller support.
 
@@ -160,26 +180,6 @@ While the way to do this varies by DNS provider, these are common methods:
 Because another service is hosting the redirect page, you'll need to set up SSL using their methods, which will most likely involve a certificate upload.
 
 If you'd like to host on Galaxy on the naked domain with HTTPS, or would like to serve a redirect from Amazon S3 via Amazon CloudFront (which supports custom certs), [this guide](https://simonecarletti.com/blog/2016/08/redirect-domain-https-amazon-cloudfront/), from a member of the DNSimple team, may be helpful.
-
-<h2 id="hosting-root-domain">Hosting on a root domain using ALIAS</h2>
-
-In this scenario, you do want to emphasize a short URL like mycompany.com. While hosting on a root domain [can introduce complications](http://www.yes-www.org/why-use-www/), it's possible to do by using an ALIAS (also called an ANAME record).
-
-First, you'll need to either deploy your app to the root domain (e.g `myapp.com`) or add the root domain as an [additional domain for your app](custom-domains.html#add-domain). Next, you will need to add an ALIAS record to your DNS provider that points your root domain to `galaxy-ingress.meteor.com`.
-
-Not all DNS providers support this feature and the implementation is usually very specific to each provider. Providers we know and recommend are:
-
-* [ALIAS Record at DNSimple](https://support.dnsimple.com/articles/alias-record/)
-
-*Note:* If you decide to host directly on a root domain, you will likely want to forward `www` to your root domain by setting up URL redirection (see above).
-
-[We recommend you use SSL](encryption.html) as a best practice. You can either enable LetsEncrypt using our integration or upload your own certificate.
-
-<h2 id="hosting-root-domain-using-an-a-record">Hosting on a Root Domain using an A Record</h2>
-
-If the DNS provider you're using doesn't support ANAME or ALIAS records, or CNAME flattening, don't worry. You can easily resolve this by adding an `A` record to point to your apps on Galaxy. A records are used to point to `IP` addresses and you can easily access your `app's settings` on Galaxy by going to the `Domains & HTTPS` section and point your Root Domain to the `IP` that is shown to you.
-
-After waiting for DNS propagation, don't forget to click on `Add New Domain` and fill in your Root Domain `(mycompany.com)`. After finishing the process, you may click on the `Generate certificate` button to activate HTTPS for your Root Domain and choose to force redirection from HTTP to HTTPS for your Root Domain as well. This will ensure increased security for your application.
 
 <h2 id="other-issues">Other issues</h2>
 

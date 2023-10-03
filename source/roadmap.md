@@ -3,13 +3,17 @@ title: Roadmap
 description: Describes the high-level features and actions for Meteor Cloud in the near-to-medium term future.
 ---
 
-## Introduction
+## New Feature Request and Roadmap
 
-**Up to date as of Nov 01, 2022**
+**Updated October 3, 2023**
 
-As with any roadmap, this is a living document that will evolve as priorities and dependencies shift; we aim to update the roadmap with any changes or status updates every quarter.
+We've launched a new feedback platform where you can follow our roadmap and submit feature requests for Meteor Cloud (Galaxy, Meteor APM, and Atmosphere)!
 
-## Next releases
+Follow https://cloud-news.meteor.com and receive our news by email.
+
+This Roadmap page will not receive new updates.
+
+## Recently completed
 
 ### Push To Deploy
 Support **Bitbucket** as a Git provider and automatically deploy an application version based on a selected branch.
@@ -21,14 +25,6 @@ Create a new Changelog system with email notifications to improve our communicat
 
 ### DNS Services
 Support configuration for DNS root domain and SSL certificate.
-
-### New Best Practices Guide
-Create a guide sharing best practices and common mistakes in using Meteor Cloud.
-
-### Improve Debugging
-Server-side CPU, memory profiling, and ability to attach the Node inspector.
-
-## Recently completed
 
 ### Improve Cloud UI
 Provide a better UX across Meteor Cloud features.

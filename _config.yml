@@ -1,8 +1,8 @@
 title: Galaxy Docs
 subtitle: Galaxy Docs
 versions:
-  - '2.0'
-  - '1.0'
+  - "2.0"
+  - "1.0"
 versioned-netlify-redirects:
   netlify_site_id: galaxy-docs
 github_repo: meteor/galaxy-docs
@@ -73,6 +73,7 @@ sidebar_categories:
     - kb-widgets-methods
     - kb-error-tracking
     - apm-data-retention
+    - apm-data
   Accounts:
     - billing
     - collaborators
@@ -82,6 +83,6 @@ sidebar_categories:
     - dpa
 
 nav_links:
-  'Meteor.com': 'https://www.meteor.com'
+  "Meteor.com": "https://www.meteor.com"
 
 url: https://cloud-guide.meteor.com/

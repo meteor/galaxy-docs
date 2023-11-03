@@ -1,9 +1,23 @@
 ---
-title: Viewing stopped and crashed containers with APM
+title: How to view stopped and crashed containers using Meteor APM
 order: 67
-description: Learn how Debug Logs in APM
+description: Learn how to use Meteor APM to view the logs of stopped and crashed containers
 ---
 
-<h2 id="apm-data">Viewing stopped and crashed containers with APM</h2>
+<h2 id="apm-data">How to see crashed/stopped containers metrics</h2>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Viewing stopped and crashed containers can be helpful for troubleshooting problems with your applications. For example, if you are seeing errors in your application logs, you can view the logs of stopped and crashed containers to get more information about the cause of the errors.
+
+To find the crashed or stopped containers on Galaxy, go to the Logs tab in your app:
+![Alt text](image-1.png)
+
+Add crashed or stopped to filter and find the container ID:
+![Alt text](image-2.png)
+
+Click on the container id to see the container logs:
+![Alt text](image-3.png)
+
+Open Meteor APM and filter your hosts with the desired container id:
+![Alt text](image-4.png)
+
+Once you have identified the stopped or crashed container in Galaxy, you can use Meteor APM to view the container logs and troubleshoot the issue.

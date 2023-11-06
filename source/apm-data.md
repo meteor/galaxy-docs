@@ -20,4 +20,4 @@ Click on the container ID to view its logs. Then, click "View on APM" to see Met
 Open Meteor APM and filter your hosts (containers) with the desired container ID:
 ![Alt text](image-4.png)
 
-Once you have identified the stopped or crashed container in Galaxy, you can use Meteor APM to view the container logs and troubleshoot the issue.
+After identifying the stopped or crashed container in Galaxy, you can utilize Meteor APM to examine the container logs and resolve the problem. However, please note that Meteor APM is only available on Professional plans. If you are currently on a free or Essentials plan, you will need to upgrade to a Professional plan in order to access this feature.

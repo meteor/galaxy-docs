@@ -11,7 +11,7 @@ Viewing stopped and crashed containers can be helpful for troubleshooting proble
 To find the crashed or stopped containers on Galaxy, go to the Logs tab in your app:
 ![Alt text](image-1.png)
 
-Add crashed or stopped to filter and find the container ID:
+Search for crashed or stopped to filter the results and find the container ID:
 ![Alt text](image-2.png)
 
 Click on the container ID to view its logs. Then, click "View on APM" to see Meteor APM metrics.

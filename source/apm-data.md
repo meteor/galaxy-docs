@@ -4,7 +4,7 @@ order: 67
 description: Learn how to use Meteor APM to view the logs of stopped and crashed containers
 ---
 
-<h2 id="apm-data">How to see crashed/stopped containers metrics</h2>
+<h2 id="apm-data">How to view metrics for crashed/stopped containers</h2>
 
 Viewing stopped and crashed containers can be helpful for troubleshooting problems with your applications. For example, if you are seeing errors in your application logs, you can view the logs of stopped and crashed containers to get more information about the cause of the errors.
 

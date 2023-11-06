@@ -17,7 +17,7 @@ Add crashed or stopped to filter and find the container ID:
 Click on the container id to see the container logs:
 ![Alt text](image-3.png)
 
-Open Meteor APM and filter your hosts with the desired container id:
+Open Meteor APM and filter your hosts (containers) with the desired container ID:
 ![Alt text](image-4.png)
 
 Once you have identified the stopped or crashed container in Galaxy, you can use Meteor APM to view the container logs and troubleshoot the issue.

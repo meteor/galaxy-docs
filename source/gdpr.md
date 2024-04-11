@@ -32,7 +32,7 @@ Meteor Software is implementing a process to intake, review, and fulfill custome
 
 <h3 id="policies">Where can I learn more about Meteor Software's security and privacy policies?</h3>
 
-The legal terms and policies that apply to Meteor Software can be found on our [Terms of Service](https://lp.meteor.com/legal/terms-of-service) and [Privacy Policy](https://lp.meteor.com/legal/privacy-policy) pages. 
+The legal terms and policies that apply to Meteor Software can be found on our [Terms of Service](https://meteor.com/legal/terms-of-service) and [Privacy Policy](https://meteor.com/legal/privacy-policy) pages. 
 
 <h3 id="more">Where can I get more help?</h3>
 

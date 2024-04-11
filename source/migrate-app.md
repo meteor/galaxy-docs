@@ -14,4 +14,4 @@ Learn how to deploy on Galaxy by following our [main deployment guide](/deploy-t
 
 <h2 id="get-support">Get support</h2>
 
-If you aren't able to complete your app migration, contact [Galaxy Support](https://galaxy.meteor.com/support) and we'll assist you.
+If you aren't able to complete your app migration, contact [Galaxy Support](https://support.portal.meteor.com/servicedesk/customer/portal/1/group/-1) and we'll assist you.

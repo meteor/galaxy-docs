@@ -129,5 +129,3 @@ Running two different apps with the same load is not going to increase your cost
 To wrap up we also have an [example](https://github.com/meteor/examples/#double-app) app implementing this approach.
 
 We use this approach a lot internally as well, and we are sharing here as a best practice as we really believe it is a very effective way to solve this problem.
-
-Feel free to provide feedback about this approach at support@meteor.com.

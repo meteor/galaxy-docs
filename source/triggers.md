@@ -66,7 +66,7 @@ The `add containers` action as the name action name says will add more container
 
 Usually you will configure it based on CPU Usage (%) or Number of Connections, for example, if you know that your containers usually handle 500 connections you can add a rule to add more containers when you reach 450 connections per container. It's recommended to use `OR` if you want to use more than one rule here, so if any rule returns true you scale up your app.
 
-It's important to turn on the [notification](./notifications.html) for the activity `Trigger add containers limit error` so you know if your `add containers` action is not working because you have reached your account limit. You can always ask us to increase your container limit (support@meteor.com). You can check your current limit in your Account settings.
+It's important to turn on the [notification](./notifications.html) for the activity `Trigger add containers limit error` so you know if your `add containers` action is not working because you have reached your account limit. You can always ask us to increase your container limit by contacting [Galaxy Support](https://support.portal.meteor.com/servicedesk/customer/portal/1/group/-1). You can check your current limit in your Account settings.
 
 > This activity was introduced with Triggers release so review your Notifications.
 

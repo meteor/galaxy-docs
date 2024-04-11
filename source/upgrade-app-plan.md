@@ -100,4 +100,4 @@ We understand the hesitation to upgrade your app plan, but rest assured, we're h
 
 Let us ease your worries by answering any questions you may have so that you can make an informed decision.
 
-Send an email to support@meteor.com, and we will be happy to help.
+Submit a request through our [ticket platform](https://support.portal.meteor.com/servicedesk/customer/portal/1/group/-1), and we will be happy to help.

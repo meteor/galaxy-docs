@@ -54,6 +54,6 @@ Users of Double and Quad containers may want to set this flag higher than its de
 
 Conversely, users of Standard and Compact containers may want to lower this setting to ensure that their Node processes do their best to collect enough garbage to stay inside their container limits.
 
-We are currently investigating the best default values for each container type, in order to set defaults for our users. We welcome your <a href="mailto:support@meteor.com">feedback</a> as to what works best, in your own experience.
+We are currently investigating the best default values for each container type, in order to set defaults for our users. We welcome your <a href="https://support.portal.meteor.com/servicedesk/customer/portal/1/group/-1">feedback</a> as to what works best, in your own experience.
 
 

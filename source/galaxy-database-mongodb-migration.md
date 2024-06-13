@@ -31,7 +31,7 @@ Use the following command to run the migration container:
 docker run --rm \
   -e SOURCE_URI="" \
   -e TARGET_URI="" \
-  -e DB_NAME="simpletask" \
+  -e DB_NAME="example_db_name" \
   meteor/galaxy-mongodb-migrate:202405222003
 ```
 
@@ -43,7 +43,7 @@ Replace `SOURCE_URI`, `TARGET_URI`, and `DB_NAME` with your actual values.
 docker run --rm \
   -e SOURCE_URI="mongodb+srv://username:password@source-cluster.mongodb.net" \
   -e TARGET_URI="mongodb://username:password@destination-host-01.mongodb.net:27017,destination-host-02.mongodb.net:27017,destination-host-03.mongodb.net:27017/admin?replicaSet=replicaSetName" \
-  -e DB_NAME="simpletask" \
+  -e DB_NAME="example_db_name" \
   meteor/galaxy-mongodb-migrate:202405222003
 ```
 
@@ -60,7 +60,7 @@ We recommend creating a new user specifically for the database after migration t
    Use our compass guide on connecting to MongoDB.
 
 3. **Select the Database:**
-   Select the migrated database (e.g., `use simpletask`).
+   Select the migrated database (e.g., `use example_db_name`).
 
 4. **Create the New User:**
    Create a new user specific to this database. For example:
@@ -83,7 +83,7 @@ We recommend creating a new user specifically for the database after migration t
    ```
 
 #### Now you can use a URI like this in your Meteor app:
-`mongodb://newuser:pass@destination-host-01.mongodb.net:27017,destination-host-02.mongodb.net:27017,destination-host-03.mongodb.net:27017/simpletask?replicaSet=NameOfYourReplicaSet&readPreference=secondary`
+`mongodb://newuser:pass@destination-host-01.mongodb.net:27017,destination-host-02.mongodb.net:27017,destination-host-03.mongodb.net:27017/example_db_name?replicaSet=NameOfYourReplicaSet&readPreference=secondary`
 
 <h2 id="security-considerations">Security Considerations</h2>
 

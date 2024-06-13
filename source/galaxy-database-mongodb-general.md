@@ -25,7 +25,7 @@ The Galaxy Databases offer supports the following MongoDB versions:
 
 <h2 id="types">Types</h2>
 
-- **Standalone**: A single instance of MongoDB that operates independently.
+- **Standalone**: A single instance of MongoDB that operates independently. (Standalone does not support Oplog)
 - **ReplicaSet**: A set of MongoDB instances that offers high availability and data replication.
 
 <h2 id="hardware-resources">Hardware resources</h2>

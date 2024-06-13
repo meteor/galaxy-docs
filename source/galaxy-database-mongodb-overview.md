@@ -45,7 +45,6 @@ In the main section of the interface, the following information is presented:
   - Storage: 20 GB
 - **Status:** Running
 - **Containers in Use:** 1
-- **Monthly Cost:** $42 / month
 
 #### Credentials
 
@@ -54,7 +53,7 @@ The credentials section provides necessary information to access the database:
 - **Username:** admin
 - **Password:** password
 - **Connection String:**
-  `mongodb://username:<password>@philippeaquino92_amazonprime-01.mongodb.meteor.io:31002/admin`
+  `mongodb://<username>:<password>@philippeaquino92_amazonprime-01.mongodb.meteor.io:31002/admin`
 
 ## Usage Instructions
 
@@ -66,11 +65,10 @@ The credentials section provides necessary information to access the database:
 
 2. Connection Example:
    ```bash
-   mongo "mongodb://username:<password>@philippeaquino92_amazonprime-01.mongodb.meteor.io:31002/admin"
+   mongo "mongodb://<username>:<password>@philippeaquino92_amazonprime-01.mongodb.meteor.io:31002/admin"
    ```
 
-   Replace `<password>`:
-   - Make sure to replace `<password>` with the provided password.
+   - Replace `<username>` and `<password>` accordingly.
 
 #### Managing the Database
 

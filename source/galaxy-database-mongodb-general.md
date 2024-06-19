@@ -73,6 +73,8 @@ Here in Galaxy Databases, we use SSD NVMe drives, which are high-performance sol
 
 Contact our team to learn more about Advanced and Enterprise backup plans.
 
+ > Backups are performed daily at 5:00 AM (UTC). To adjust the backup time, please contact support.
+
 <h2 id="logs-metrics">Logs and Metrics</h2>
 
 Logs and metrics can be accessed through the Galaxy Database. Soon, you will be able to connect your observability tools to capture metrics and logs.

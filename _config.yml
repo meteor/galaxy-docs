@@ -75,6 +75,12 @@ sidebar_categories:
     - kb-error-tracking
     - apm-data-retention
     - apm-data
+  Galaxy Databases:
+    - galaxy-database-mongodb-general
+    - galaxy-database-mongodb-migration
+    - galaxy-database-mongodb-connect
+    - galaxy-database-mongodb-overview
+    - galaxy-database-mongodb-oplog
   Accounts:
     - billing
     - collaborators

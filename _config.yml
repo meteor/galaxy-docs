@@ -8,8 +8,9 @@ versioned-netlify-redirects:
 github_repo: meteor/galaxy-docs
 
 logo:
-  title:
-  subtitle: Galaxy
+  title: Galaxy
+  subtitle: Guide
+  nav_mobile: images/galaxy-logo.png
 
 sidebar_categories:
   null:

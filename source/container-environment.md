@@ -25,6 +25,7 @@ Galaxy runs your app with the following environment variables set:
 | Environment variable | Default value | meaning |
 | -------------------- | ------------- | ------- |
 | `APM_*` | Various | Galaxy Pro apps with Meteor APM enabled have several environment variables starting with `APM_` to configure their APM agent. |
+| `MONTI_APM_*` | Various | Galaxy Pro apps with Monti APM enabled have several environment variables starting with `MONTI_APM_` to configure their APM agent. |
 | `GALAXY_APP_ID` | App identifier like `Ss8o4Y6KrvFBKKkqM` | Internal identifier for your app. |
 | `GALAXY_APP_VERSION_ID` | Integer like `123` | The container's app version. |
 | `GALAXY_CONTAINER_ID` | Container ID including app ID, like `Ss8o4Y6KrvFBKKkqM-3n28` | Internal identifier for this container. |
@@ -103,7 +104,7 @@ Many reasons can cause your containers to use all the available CPU or memory, s
 
 Also, keep in mind that your code could also be improved to increase the capacity of your containers, in terms of CPU and Memory (RAM). It's very hard to estimate how much exactly each container size can handle because it depends more on your app code than of Node.js or Meteor itself.
 
-One important tool to identify bottlenecks is the [Meteor APM](/apm-getting-started.html) as it shows to you the Methods and Publications running. Specially in cases where you have spikes in CPU usage keep an eye as well in background jobs ([read more](/background-jobs.html)), maybe they are consuming all your CPU and then your container becomes unhealthy. Node.js is single threaded so is very important to be aware of heavy CPU operations in your app, mainly if you run background job tasks in the same app your users use the UI. 
+One important tool to identify bottlenecks is the [Monti APM](/apm-getting-started.html) as it shows to you the Methods and Publications running. Specially in cases where you have spikes in CPU usage keep an eye as well in background jobs ([read more](/background-jobs.html)), maybe they are consuming all your CPU and then your container becomes unhealthy. Node.js is single threaded so is very important to be aware of heavy CPU operations in your app, mainly if you run background job tasks in the same app your users use the UI. 
 
 You can also profile your CPU as you would in any Node.js project, this [package](https://github.com/quavedev/profile) can help you to generate a profile and send it to S3. If your problem is related with memory you could use this [package](https://github.com/npvn/meteor-heapsave) to get heap dumps from your container. 
 

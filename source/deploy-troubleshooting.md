@@ -41,7 +41,7 @@ Most of the time, the key to a solution will be found in the exception or error 
 
 <h2 id="else">If none of the above worked</h2>
 
-Consider if [Meteor APM](/apm-getting-started.html) might help you to identify your issue.
+Consider if [Monti APM](/apm-getting-started.html) might help you to identify your issue.
 
 Try adding more exception handlers, as an uncaught exception may be causing your app to crash.
 

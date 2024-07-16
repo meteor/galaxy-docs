@@ -23,7 +23,7 @@ Since every app has unique architecture and performance characteristics, adjusti
 
 [ECU](https://aws.amazon.com/ec2/faqs/#hardware-information) is defined by Amazon and is designed to provide a relative measure of processing power. The abbreviation stands for EC2 Compute Unit.
 
-The Galaxy CPU graphs show your CPU usage as a percentage of your container's allocated CPU cap (or as a percentage of the total of all your containers' CPU caps for the graph on your app's overview page).  Note that this is different from the CPU percentage shown in graphs in [Meteor APM](./apm-getting-started.html); APM does not known about container sizes and shows CPU as a percentage of a single underlying CPU core.
+The Galaxy CPU graphs show your CPU usage as a percentage of your container's allocated CPU cap (or as a percentage of the total of all your containers' CPU caps for the graph on your app's overview page).  Note that this is different from the CPU percentage shown in graphs in [Monti APM](./apm-getting-started.html); APM does not known about container sizes and shows CPU as a percentage of a single underlying CPU core.
 
 <h3 id="connect-logs">View logs from a specific container</h3>
 

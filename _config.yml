@@ -57,24 +57,12 @@ sidebar_categories:
   Best Pratices:
     - background-jobs
     - app-scaling
-  Meteor APM:
+  Monti APM:
     - apm-getting-started
-    - apm-make-your-app-faster
-    - apm-reducing-pubsub-data-usage
-    - apm-reduce-bandwidth-and-cpu-waste
-    - apm-optimize-your-app-for-oplog
-    - apm-managing-waittime
-    - apm-know-your-observers
-    - apm-debugging-meteor-response-time-bottlenecks
-    - apm-optimizing-your-app-for-live-queries
-    - apm-improve-cpu-and-network-usage
-    - kb-widgets-dashboard
-    - kb-widgets-pubsub
-    - kb-widgets-live-queries
-    - kb-widgets-methods
-    - kb-error-tracking
-    - apm-data-retention
-    - apm-data
+    - Monti APM Docs:
+      href: https://docs.montiapm.com/getting-started
+      title: Monti APM Docs
+      
   Galaxy Databases:
     - galaxy-database-mongodb-general
     - galaxy-database-mongodb-migration

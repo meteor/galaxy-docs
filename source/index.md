@@ -8,7 +8,7 @@ This is the official documentation for Meteor Cloud.
 
 <h2 id="what-is">What is Meteor Cloud?</h2>
 
-Meteor Cloud is the only full service cloud offering to host, monitor and manage Meteor Applications. Get access to Meteor APM, Atmosphere and Galaxy Hosting all from one centralized dashboard with Meteor Cloud.
+Meteor Cloud is the only full service cloud offering to host, monitor and manage Meteor Applications. Get access to Monti APM, Atmosphere and Galaxy Hosting all from one centralized dashboard with Meteor Cloud.
 
 
 
@@ -36,13 +36,12 @@ To learn more about creating and publishing packages, please visit the [Meteor G
 
 
 
-<h2 id="what-is-apm">What is Meteor APM?</h2> 
+<h2 id="what-is-apm">What is Monti APM?</h2> 
 
-Meteor APM is the only app performance monitoring tool build specifically for Meteor applications. 
-Meteor APM is available for apps on the [Meteor Cloud Professional plans](/billing.html).
-For more information on Meteor APM and how to get started, visit [Getting Started with APM](/apm-getting-started.html).
-We have plans to also make Meteor APM available as a standalone and separate service very soon.
+Monti APM is a service to help you understand what is happening inside your Meteor apps to make them faster, more reliable, and error free. You can see how your app is performing, when there are problems or errors, and diagnose the cause of issues.
 
+Monti APM is available for apps on the [Meteor Cloud Professional plans](/billing.html).
+For more information on Monti APM and how to get started, visit [Getting Started with APM](/apm-getting-started.html).
 
 
 <h2 id="what-is-galaxy">What is Galaxy Hosting?</h2>
@@ -57,7 +56,7 @@ Run your apps with confidence. Galaxy is easy to start, excellent to grow your a
 
 - **Notifications**: Receive in your Slack or Email what is happening in real-time
 
-- **Integrated Meteor APM**: Use Meteor APM to optimize the performance of your production application
+- **Integrated Monti APM**: Use Monti APM to optimize the performance of your production application
 
 - **Meteor expert support**: Have answers to all your questions 
 

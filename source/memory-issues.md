@@ -18,7 +18,7 @@ You can see memory utilization in the [container view](/containers.html) of your
 
 Your app may be experiencing memory issues even if your metrics never reach this level, if your container is running out of memory and crashing before our metrics can register the increase.
 
-You can upgrade to Galaxy Professional and use [Meteor APM](/apm-getting-started.html) in order to get a more exact sense of your app's memory usage over time, among other things. Using Meteor APM, your app's memory usage can be profiled for periods as short as 1 hour, and as long as 30 days.
+You can upgrade to Galaxy Professional and use [Monti APM](/apm-getting-started.html) in order to get a more exact sense of your app's memory usage over time, among other things. Using Monti APM, your app's memory usage can be profiled for periods as short as 1 hour, and as long as 30 days.
 
 You can also use npm modules to profile your memory usage and pinpoint erratic memory usage. The <a href="https://www.npmjs.com/package/heapdump">heapdump</a> npm module is one such module, though you'll need to transfer the file it creates to a place like S3 for download and closer examination. Another such module is <a href="https://www.npmjs.com/package/memwatch-next">memwatch-next</a>. While Galaxy does not officially support specific third-party modules, the community has found the use of modules of this type to be helpful.
 

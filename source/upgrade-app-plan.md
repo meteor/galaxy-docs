@@ -54,7 +54,7 @@ If you want to take more advantage of Galaxy and take your app to the next level
 
 Considering you already have an app created in the `Essentials plan`, signin into your account by acessing [https://cloud.meteor.com](https://cloud.meteor.com) and follow the steps below to upgrade to the `Professional plan`.
 
-> Upgrade to the Professional plan to make your app more secure using IP Whitelisting, access real-time monitoring with Meteor APM, Triggers for Autoscaling, Galaxy API access, and much more.
+> Upgrade to the Professional plan to make your app more secure using IP Whitelisting, access real-time monitoring with Monti APM, Triggers for Autoscaling, Galaxy API access, and much more.
 
 1- Click on `View App List` to list all the apps you have in your account. If you want to upgrade an app from an Organization click on `View Organizations`, locate the organization you want and click on `View Apps`.
 

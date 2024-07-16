@@ -10,7 +10,7 @@ Get a snapshot of the realtime status of your app and resource usage over time o
 
 <img src="/images/galaxy-app-overview-1.png" style="width: 780px"/>
 
-You may also want to consider using [Meteor APM](/apm-getting-started.html) for more insight.
+You may also want to consider using [Monti APM](/apm-getting-started.html) for more insight.
 
 <h3 id="usage">Usage</h3>
 

@@ -1,84 +1,41 @@
 ---
 title: Getting Started with APM
 order: 51
-description: Learn how to start with Meteor APM
+description: Learn how to start with Monti APM
 ---
 
-This guide will help you get started with Meteor APM, to better understand how your app behaves and identify areas for improvement.
+This guide will help you get started with Monti APM, to better understand how your app behaves and identify areas for improvement.
 
-## Install and Configure Meteor APM
+## Installation
 
-1. Run `meteor add mdg:meteor-apm-agent` inside your Meteor project.
+1. Run `meteor add montiapm:agent` inside your Meteor project.
 2. Once you have deployed your app, enable "Galaxy Professional" from the app settings page.
 
-Now your app will send information to Meteor APM. Visit [Galaxy](https://galaxy.meteor.com) to find links to your APM dashboard.  Links can be found in the following places:
+### Migrate from Meteor APM
 
-- In the *Performance* area on the App Overview & Containers pages.
-- In the *Galaxy Professional* area on the App Settings page.
+Your app cannot have both Meteor APM and Monti APM agents enabled at the same time.
 
-After a minute, data should begin appearing.
+This means that you'll need to remove the `mdg:meteor-apm-agent` package from your app.
 
-Permissions are handled by region, so if you are not able to see the APM data after the above steps, you may need to log out of Galaxy and log in again using one of the links below based on the region your app is hosted:
+1. Run `meteor add montiapm:agent` inside your Meteor project to install the Monti APM agent.
+2. Run `meteor remove mdg:meteor-apm-agent` inside your Meteor project to remove the old Meteor APM agent.
 
-- https://galaxy.meteor.com (if your app is in the US region)
-- https://eu-west-1.galaxy.meteor.com (if your app is in the Europe region)
-- https://ap-southeast-2.galaxy.meteor.com (if your app is in the Asia region)
+### Migrate from existing Monti APM configuration
 
-## Meteor APM Dashboard
+In order to use our provided Monti APM app, you will need to remove any existing Monti APM configuration from your app.
 
-This is the overview of the Meteor APM Dashboard.
+To ensure that Monti APM will connect with our provided app, you will need to:
 
-<img src="images/apm.dashboard.explain.png" style="width: 600px;">
+1. Ensure there's no `"monti"` settings in your Meteor settings file.
+2. Ensuring you don't call `Monti.connect()` in your code.
 
-The dashboard is meant to be self-explanatory, but if you'd like more information, watch our [Onboarding video](https://www.youtube.com/watch?v=GDkG2Wq3mLo).
+## Monitoring your app
 
-## How to Use Meteor APM
+After connecting your app to Monti APM following the steps above, your app will send information to Monti APM. Visit [Galaxy 2](https://galaxy-beta.meteor.com) to find links to your Monti APM dashboard.
 
-While there is no right or wrong way to use Meteor APM, here are some common use cases.
+Links can be found in your app overview page.
 
-### Finding Bottlenecks in Meteor Methods and Fixing Them
+<img src="/images/apm-view-app.gif" style="margin: 1em 0;"/>
 
-Normally, for a typical Meteor application, the Average Response Time of a Meteor Method should not be more than 200ms. If it exceeds this, you may be able to improve performance.
-
-* First click on **Methods** on the Main Menu and look at the Response Time.
-* Also look at the Response Time graph for any spikes.
-* If you find places where the Response Time is higher than 200ms, click the **Detailed View** button on the Sub Menu.
-* Then find the Response Time and click on the spike in the graph.
-* This will show a set of traced methods at that time.
-* Click on a trace to see exactly what has happened on that method at that time.
-* Follow this [article](/apm-make-your-app-faster.html) to understand the traced data and improve your method accordingly.
-
-<iframe width="640" height="480" src="https://www.youtube.com/embed/4vt2M7-bsDQ" frameborder="0" allowfullscreen="1">
-</iframe>
-
-> You can follow the [same process](https://www.youtube.com/watch?v=CQtmnzIlzE4&feature=youtu.be) for PubSub.
-
-### Finding Methods You Need to Improve
-
-In your app, you might be using many Meteor Methods. While you may need to improve all of them, it's good to start with the ones that have the most impact. We’ve determined that, if you can improve a method with higher Throughput, it will result in a total performance gain. To continue, follow these steps:
-
-* Click on the **Detailed View** of Methods.
-* Sort the Methods Breakdown by Throughput (the default sort criteria).
-* Click on a method name in the Methods Breakdown. Assess the impact if you improve the selected method.
-* Click on the Response Time Graph and find a trace.
-* Try to make your app [faster](/apm-make-your-app-faster.html) and improve your method if possible.
-* Do the same for all methods.
-
-<iframe width="640" height="480" src="https://www.youtube.com/embed/REUrBU7x6GU" frameborder="0" allowfullscreen="1">
-</iframe>
-
-> You can follow the [same process](https://www.youtube.com/watch?v=CTk0Qvj0n6Y&feature=youtu.be) for PubSub, but you will need to sort the Pub/Sub Breakdown by SubRate instead of Throughput.
-
-### Disabling APM
-
-If you want, you can disable APM temporarily without having to remove the package. To do that, you need to add this in your `settings.json` file: 
-
-```json
-{
-  "packages": {
-    "mdg:meteor-apm-agent": {
-      "isDisabled": true
-    }
-  }
-}
-```
+## Learn More
+For more information on Monti APM and how to get started, visit the [Monti APM Docs](https://docs.montiapm.com/getting-started).
